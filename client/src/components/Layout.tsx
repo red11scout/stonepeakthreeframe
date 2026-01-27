@@ -12,7 +12,9 @@ import {
   Moon,
   Menu,
   X,
+  LogOut,
 } from "lucide-react";
+import { useAppAuth } from "@/contexts/AuthContext";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -34,6 +36,7 @@ interface LayoutProps {
 export default function Layout({ children, title, subtitle }: LayoutProps) {
   const [location] = useLocation();
   const { theme, toggleTheme } = useTheme();
+  const { logout } = useAppAuth();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
@@ -101,6 +104,17 @@ export default function Layout({ children, title, subtitle }: LayoutProps) {
               ) : (
                 <Moon className="w-4 h-4" />
               )}
+            </Button>
+
+            {/* Logout Button */}
+            <Button
+              variant="ghost"
+              size="icon"
+              onClick={logout}
+              className="text-muted-foreground hover:text-destructive"
+              title="Logout"
+            >
+              <LogOut className="w-4 h-4" />
             </Button>
 
             {/* Mobile Menu Button */}

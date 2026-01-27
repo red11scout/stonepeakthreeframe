@@ -4,6 +4,7 @@ import NotFound from "@/pages/NotFound";
 import { Route, Switch } from "wouter";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
+import { AuthProvider, useAppAuth } from "./contexts/AuthContext";
 import Home from "./pages/Home";
 import Dashboard from "./pages/Dashboard";
 import Matrix from "./pages/Matrix";
@@ -12,8 +13,15 @@ import HoldPeriod from "./pages/HoldPeriod";
 import CompanyDetail from "./pages/CompanyDetail";
 import Reports from "./pages/Reports";
 import AIAssistant from "./pages/AIAssistant";
+import Login from "./pages/Login";
 
-function Router() {
+function ProtectedRoutes() {
+  const { isAuthenticated } = useAppAuth();
+
+  if (!isAuthenticated) {
+    return <Login />;
+  }
+
   return (
     <Switch>
       <Route path="/" component={Home} />
@@ -34,10 +42,12 @@ function App() {
   return (
     <ErrorBoundary>
       <ThemeProvider defaultTheme="dark" switchable>
-        <TooltipProvider>
-          <Toaster />
-          <Router />
-        </TooltipProvider>
+        <AuthProvider>
+          <TooltipProvider>
+            <Toaster />
+            <ProtectedRoutes />
+          </TooltipProvider>
+        </AuthProvider>
       </ThemeProvider>
     </ErrorBoundary>
   );
