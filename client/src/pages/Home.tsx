@@ -1,8 +1,7 @@
 import { Link } from "wouter";
-import { useAuth } from "@/_core/hooks/useAuth";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { getLoginUrl } from "@/const";
+import { useTheme } from "@/contexts/ThemeContext";
 import {
   ArrowRight,
   Target,
@@ -12,11 +11,12 @@ import {
   Zap,
   TrendingUp,
   Building2,
-  Sparkles,
   ChevronRight,
   BarChart3,
   Brain,
   Network,
+  Sun,
+  Moon,
 } from "lucide-react";
 import { motion } from "framer-motion";
 
@@ -35,8 +35,8 @@ const stagger = {
 };
 
 export default function Home() {
-  const { user, loading, isAuthenticated } = useAuth();
-
+  const { theme, toggleTheme } = useTheme();
+  
   return (
     <div className="min-h-screen bg-background">
       {/* Background Effects */}
@@ -47,31 +47,33 @@ export default function Home() {
       <nav className="relative z-50 border-b border-border/50 bg-background/80 backdrop-blur-xl">
         <div className="container flex items-center justify-between h-16">
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-primary to-accent flex items-center justify-center">
-              <Sparkles className="w-5 h-5 text-white" />
-            </div>
-            <div>
-              <span className="font-semibold text-lg">StonePeak</span>
-              <span className="text-primary ml-1 font-light">AI</span>
-            </div>
+            <img 
+              src={theme === "dark" ? "/blueally-logo-white.png" : "/blueally-logo-color.png"} 
+              alt="BlueAlly" 
+              className="h-8 w-auto"
+            />
+            <span className="text-primary font-semibold text-lg">AI</span>
           </div>
           
           <div className="flex items-center gap-4">
-            {isAuthenticated ? (
-              <Link href="/dashboard">
-                <Button className="relative overflow-hidden rounded-lg px-6 py-3 font-medium bg-gradient-to-r from-blue-600 to-cyan-500 text-white shadow-lg hover:shadow-xl transition-all">
-                  Enter Platform
-                  <ArrowRight className="w-4 h-4 ml-2" />
-                </Button>
-              </Link>
-            ) : (
-              <a href={getLoginUrl()}>
-                <Button className="relative overflow-hidden rounded-lg px-6 py-3 font-medium bg-gradient-to-r from-blue-600 to-cyan-500 text-white shadow-lg hover:shadow-xl transition-all">
-                  Sign In
-                  <ArrowRight className="w-4 h-4 ml-2" />
-                </Button>
-              </a>
-            )}
+            <Button
+              variant="ghost"
+              size="icon"
+              onClick={toggleTheme}
+              className="text-muted-foreground hover:text-foreground"
+            >
+              {theme === "dark" ? (
+                <Sun className="w-4 h-4" />
+              ) : (
+                <Moon className="w-4 h-4" />
+              )}
+            </Button>
+            <Link href="/dashboard">
+              <Button className="relative overflow-hidden rounded-lg px-6 py-3 font-medium bg-gradient-to-r from-blue-600 to-cyan-500 text-white shadow-lg hover:shadow-xl transition-all">
+                Enter Platform
+                <ArrowRight className="w-4 h-4 ml-2" />
+              </Button>
+            </Link>
           </div>
         </div>
       </nav>
@@ -112,21 +114,12 @@ export default function Home() {
               className="flex flex-col sm:flex-row items-center justify-center gap-4"
               variants={fadeInUp}
             >
-              {isAuthenticated ? (
-                <Link href="/dashboard">
-                  <Button size="lg" className="relative overflow-hidden rounded-lg px-6 py-3 font-medium bg-gradient-to-r from-blue-600 to-cyan-500 text-white shadow-lg hover:shadow-xl transition-all text-lg px-8 py-6">
-                    View Portfolio
-                    <ChevronRight className="w-5 h-5 ml-2" />
-                  </Button>
-                </Link>
-              ) : (
-                <a href={getLoginUrl()}>
-                  <Button size="lg" className="relative overflow-hidden rounded-lg px-6 py-3 font-medium bg-gradient-to-r from-blue-600 to-cyan-500 text-white shadow-lg hover:shadow-xl transition-all text-lg px-8 py-6">
-                    Get Started
-                    <ChevronRight className="w-5 h-5 ml-2" />
-                  </Button>
-                </a>
-              )}
+              <Link href="/dashboard">
+                <Button size="lg" className="relative overflow-hidden rounded-lg px-6 py-3 font-medium bg-gradient-to-r from-blue-600 to-cyan-500 text-white shadow-lg hover:shadow-xl transition-all text-lg px-8 py-6">
+                  View Portfolio
+                  <ChevronRight className="w-5 h-5 ml-2" />
+                </Button>
+              </Link>
               <Link href="/matrix">
                 <Button size="lg" variant="outline" className="text-lg px-8 py-6 bg-transparent border-border/50 hover:bg-card/50">
                   Explore Matrix
@@ -446,21 +439,12 @@ export default function Home() {
               <br />
               <span className="text-foreground/80">Enter the platform and see where your companies stand.</span>
             </p>
-            {isAuthenticated ? (
-              <Link href="/dashboard">
-                <Button size="lg" className="relative overflow-hidden rounded-lg px-6 py-3 font-medium bg-gradient-to-r from-blue-600 to-cyan-500 text-white shadow-lg hover:shadow-xl transition-all text-lg px-10 py-6">
-                  View Dashboard
-                  <ArrowRight className="w-5 h-5 ml-2" />
-                </Button>
-              </Link>
-            ) : (
-              <a href={getLoginUrl()}>
-                <Button size="lg" className="relative overflow-hidden rounded-lg px-6 py-3 font-medium bg-gradient-to-r from-blue-600 to-cyan-500 text-white shadow-lg hover:shadow-xl transition-all text-lg px-10 py-6">
-                  Get Started
-                  <ArrowRight className="w-5 h-5 ml-2" />
-                </Button>
-              </a>
-            )}
+            <Link href="/dashboard">
+              <Button size="lg" className="relative overflow-hidden rounded-lg px-6 py-3 font-medium bg-gradient-to-r from-blue-600 to-cyan-500 text-white shadow-lg hover:shadow-xl transition-all text-lg px-10 py-6">
+                View Dashboard
+                <ArrowRight className="w-5 h-5 ml-2" />
+              </Button>
+            </Link>
           </motion.div>
         </div>
       </section>
@@ -470,10 +454,16 @@ export default function Home() {
         <div className="container">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-muted-foreground">
             <div className="flex items-center gap-2">
-              <Sparkles className="w-4 h-4 text-primary" />
-              <span>StonePeak AI Portfolio Intelligence</span>
+              <img 
+                src={theme === "dark" ? "/blueally-logo-white.png" : "/blueally-logo-color.png"} 
+                alt="BlueAlly" 
+                className="h-5 w-auto"
+              />
+              <span className="text-primary font-medium">AI</span>
+              <span className="mx-2">·</span>
+              <span>Portfolio Intelligence Platform</span>
             </div>
-            <p>Powered by BlueAlly Technology Solutions</p>
+            <p>© {new Date().getFullYear()} BlueAlly Technology Solutions</p>
           </div>
         </div>
       </footer>

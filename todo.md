@@ -153,3 +153,19 @@
 - [x] Ensure proper theme switching (fixed ThemeContext to add/remove light class)
 - [x] Fix bg-grid and bg-radial-gradient for both modes
 - [x] Test both day and night modes
+
+
+## Phase 18: Remove Authentication
+- [x] Remove login/logout buttons from Layout header
+- [x] Remove user avatar/profile dropdown from Layout
+- [x] Remove authentication checks from pages
+- [x] Update API routes to work without authentication
+- [x] Test all pages work without login
+
+
+## Phase 19: BlueAlly Rebranding
+- [x] Copy BlueAlly logo assets (white logo, color logo, favicon)
+- [x] Add favicon to HTML
+- [x] Update header with BlueAlly logo
+- [x] Update footer with BlueAlly logo
+- [x] Replace all StonePeak text with BlueAlly AI

@@ -1,7 +1,7 @@
 import { COOKIE_NAME } from "@shared/const";
 import { getSessionCookieOptions } from "./_core/cookies";
 import { systemRouter } from "./_core/systemRouter";
-import { publicProcedure, protectedProcedure, router } from "./_core/trpc";
+import { publicProcedure, router } from "./_core/trpc";
 import { z } from "zod";
 import * as db from "./db";
 import { calculateAllScores, getFormulaDocumentation, type CompanyInputScores } from "./calculations";
@@ -45,7 +45,7 @@ export const appRouter = router({
         return db.getCompaniesByQuadrant(input.quadrant);
       }),
     
-    update: protectedProcedure
+    update: publicProcedure
       .input(z.object({
         id: z.number(),
         data: z.object({
@@ -63,9 +63,9 @@ export const appRouter = router({
           platformClassification: z.string().nullable().optional(),
         }),
       }))
-      .mutation(async ({ input, ctx }) => {
+      .mutation(async ({ input }) => {
         const oldCompany = await db.getCompanyById(input.id);
-        const updated = await db.updateCompany(input.id, input.data, ctx.user.id);
+        const updated = await db.updateCompany(input.id, input.data, 1);
         
         // Check if company moved to Champions quadrant
         if (oldCompany && oldCompany.quadrant !== 'Champions' && updated.quadrant === 'Champions') {
@@ -78,7 +78,7 @@ export const appRouter = router({
         return updated;
       }),
     
-    bulkUpdate: protectedProcedure
+    bulkUpdate: publicProcedure
       .input(z.object({
         updates: z.array(z.object({
           id: z.number(),
@@ -124,32 +124,32 @@ export const appRouter = router({
 
   // ============ Scenarios Router ============
   scenarios: router({
-    list: protectedProcedure.query(async ({ ctx }) => {
-      return db.getUserScenarios(ctx.user.id);
+    list: publicProcedure.query(async () => {
+      return db.getUserScenarios(1);
     }),
     
-    getById: protectedProcedure
+    getById: publicProcedure
       .input(z.object({ id: z.number() }))
       .query(async ({ input }) => {
         return db.getScenarioById(input.id);
       }),
     
-    create: protectedProcedure
+    create: publicProcedure
       .input(z.object({
         name: z.string().min(1).max(255),
         description: z.string().optional(),
         companyData: z.record(z.string(), z.any()).optional(),
       }))
-      .mutation(async ({ input, ctx }) => {
+      .mutation(async ({ input }) => {
         return db.createScenario({
-          userId: ctx.user.id,
+          userId: 1,
           name: input.name,
           description: input.description ?? null,
           companyData: input.companyData ?? {},
         });
       }),
     
-    update: protectedProcedure
+    update: publicProcedure
       .input(z.object({
         id: z.number(),
         name: z.string().min(1).max(255).optional(),
@@ -161,7 +161,7 @@ export const appRouter = router({
         return db.updateScenario(id, data);
       }),
     
-    delete: protectedProcedure
+    delete: publicProcedure
       .input(z.object({ id: z.number() }))
       .mutation(async ({ input }) => {
         await db.deleteScenario(input.id);
@@ -171,7 +171,7 @@ export const appRouter = router({
 
   // ============ Audit Logs Router ============
   audit: router({
-    getByCompany: protectedProcedure
+    getByCompany: publicProcedure
       .input(z.object({ companyId: z.number() }))
       .query(async ({ input }) => {
         return db.getCompanyAuditLogs(input.companyId);
@@ -189,7 +189,7 @@ export const appRouter = router({
         return db.getRecentInsights(input.limit ?? 10);
       }),
     
-    generateInsight: protectedProcedure
+    generateInsight: publicProcedure
       .input(z.object({ companyId: z.number() }))
       .mutation(async ({ input }) => {
         const company = await db.getCompanyById(input.companyId);
@@ -241,7 +241,7 @@ Keep the response under 150 words. Be direct and actionable like a McKinsey cons
         return insight;
       }),
     
-    query: protectedProcedure
+    query: publicProcedure
       .input(z.object({ question: z.string() }))
       .mutation(async ({ input }) => {
         const companies = await db.getAllCompanies();
@@ -281,7 +281,7 @@ ${context}`
         };
       }),
     
-    markAsRead: protectedProcedure
+    markAsRead: publicProcedure
       .input(z.object({ id: z.number() }))
       .mutation(async ({ input }) => {
         await db.markInsightAsRead(input.id);
