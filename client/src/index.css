@@ -3,6 +3,32 @@
 
 @custom-variant dark (&:is(.dark *));
 
+@font-face {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/dmsans/v15/rP2Hp2ywxg089UriCZOIHQ.woff2) format('woff2');
+}
+
+/* BlueAlly Brand Colors */
+:root {
+  --blueally-primary-dark: #003B73;
+  --blueally-primary-light: #00A3E0;
+  --blueally-green: #00B34A;
+  --blueally-charcoal: #2C2C2C;
+  --blueally-light-gray: #F5F5F5;
+  --blueally-medium-gray: #999999;
+  --theme-revenue-growth: #00B34A;
+  --theme-margin-expansion: #00A3E0;
+  --theme-cost-cutting: #003B73;
+  --category-digital: #003B73;
+  --category-energy: #00B34A;
+  --category-transport: #00A3E0;
+  --category-social: #7C3AED;
+  --category-realestate: #F59E0B;
+}
+
 @theme inline {
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
@@ -43,10 +69,11 @@
 }
 
 :root {
-  --primary: var(--color-blue-700);
-  --primary-foreground: var(--color-blue-50);
-  --sidebar-primary: var(--color-blue-600);
-  --sidebar-primary-foreground: var(--color-blue-50);
+  --primary: oklch(35% 0.12 250);
+  --primary-foreground: oklch(98% 0 0);
+  --sidebar-primary: oklch(35% 0.12 250);
+  --sidebar-primary-foreground: oklch(98% 0 0);
+  --font-sans: 'DM Sans', ui-sans-serif, system-ui, sans-serif;
   --chart-1: var(--color-blue-300);
   --chart-2: var(--color-blue-500);
   --chart-3: var(--color-blue-600);
@@ -118,7 +145,17 @@
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground antialiased;
+    font-family: 'DM Sans', ui-sans-serif, system-ui, sans-serif;
+    line-height: 1.6;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    color: var(--blueally-primary-dark);
+  }
+  .dark h1, .dark h2, .dark h3, .dark h4, .dark h5, .dark h6 {
+    color: var(--blueally-primary-light);
   }
   button:not(:disabled),
   [role="button"]:not([aria-disabled="true"]),
@@ -171,7 +208,130 @@
     .container {
       padding-left: 2rem; /* 32px - desktop padding */
       padding-right: 2rem;
-      max-width: 1280px; /* Standard content width */
+      max-width: 1400px;
     }
   }
+  
+  /* BlueAlly branded components */
+  .blueally-card {
+    @apply bg-card rounded-xl shadow-sm border border-border p-6;
+  }
+  
+  .blueally-metric-card {
+    @apply bg-card rounded-xl shadow-sm border border-border p-5 transition-all duration-200 hover:shadow-md;
+  }
+  
+  .blueally-gradient {
+    background: linear-gradient(135deg, var(--blueally-primary-dark) 0%, var(--blueally-primary-light) 100%);
+  }
+  
+  .blueally-gradient-text {
+    background: linear-gradient(135deg, var(--blueally-primary-dark) 0%, var(--blueally-primary-light) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  /* Quadrant colors */
+  .quadrant-champions {
+    background-color: rgba(0, 179, 74, 0.15);
+    border-color: var(--blueally-green);
+  }
+  
+  .quadrant-quickwins {
+    background-color: rgba(0, 163, 224, 0.15);
+    border-color: var(--blueally-primary-light);
+  }
+  
+  .quadrant-strategic {
+    background-color: rgba(124, 58, 237, 0.15);
+    border-color: #7C3AED;
+  }
+  
+  .quadrant-foundations {
+    background-color: rgba(153, 153, 153, 0.15);
+    border-color: var(--blueally-medium-gray);
+  }
+  
+  /* Theme badges */
+  .theme-revenue-growth {
+    @apply bg-green-100 text-green-800 dark:bg-green-900/30 dark:text-green-400;
+  }
+  
+  .theme-margin-expansion {
+    @apply bg-sky-100 text-sky-800 dark:bg-sky-900/30 dark:text-sky-400;
+  }
+  
+  .theme-cost-cutting {
+    @apply bg-blue-100 text-blue-800 dark:bg-blue-900/30 dark:text-blue-400;
+  }
+  
+  /* Category badges */
+  .category-digital {
+    @apply bg-blue-100 text-blue-800 dark:bg-blue-900/30 dark:text-blue-400;
+  }
+  
+  .category-energy {
+    @apply bg-green-100 text-green-800 dark:bg-green-900/30 dark:text-green-400;
+  }
+  
+  .category-transport {
+    @apply bg-sky-100 text-sky-800 dark:bg-sky-900/30 dark:text-sky-400;
+  }
+  
+  .category-social {
+    @apply bg-purple-100 text-purple-800 dark:bg-purple-900/30 dark:text-purple-400;
+  }
+  
+  .category-realestate {
+    @apply bg-amber-100 text-amber-800 dark:bg-amber-900/30 dark:text-amber-400;
+  }
+  
+  /* Score indicators */
+  .score-high {
+    @apply text-green-600 dark:text-green-400;
+  }
+  
+  .score-medium {
+    @apply text-amber-600 dark:text-amber-400;
+  }
+  
+  .score-low {
+    @apply text-red-600 dark:text-red-400;
+  }
+}
+
+@layer utilities {
+  .financial-number {
+    font-variant-numeric: tabular-nums;
+    font-feature-settings: "tnum";
+  }
+  
+  .transition-smooth {
+    @apply transition-all duration-300 ease-in-out;
+  }
+  
+  .glass-effect {
+    @apply bg-white/80 dark:bg-gray-900/80 backdrop-blur-sm;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--muted);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--blueally-medium-gray);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--blueally-primary-dark);
 }
