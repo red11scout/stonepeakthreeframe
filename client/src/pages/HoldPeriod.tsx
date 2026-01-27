@@ -266,7 +266,17 @@ export default function HoldPeriod() {
                       <Cell key={`cell-${index}`} fill={entry.color} />
                     ))}
                   </Pie>
-                  <Tooltip />
+                  <Tooltip
+                    contentStyle={{
+                      backgroundColor: "var(--tooltip-bg, hsl(var(--card)))",
+                      border: "1px solid hsl(var(--border))",
+                      borderRadius: "8px",
+                      color: "hsl(var(--foreground))",
+                      boxShadow: "0 4px 12px rgba(0,0,0,0.15)",
+                    }}
+                    labelStyle={{ color: "hsl(var(--foreground))" }}
+                    itemStyle={{ color: "hsl(var(--foreground))" }}
+                  />
                 </PieChart>
               </ResponsiveContainer>
             </div>
@@ -293,6 +303,15 @@ export default function HoldPeriod() {
                   />
                   <Tooltip
                     formatter={(value: number) => [formatCurrency(value), "Total Value"]}
+                    contentStyle={{
+                      backgroundColor: "var(--tooltip-bg, hsl(var(--card)))",
+                      border: "1px solid hsl(var(--border))",
+                      borderRadius: "8px",
+                      color: "hsl(var(--foreground))",
+                      boxShadow: "0 4px 12px rgba(0,0,0,0.15)",
+                    }}
+                    labelStyle={{ color: "hsl(var(--foreground))" }}
+                    itemStyle={{ color: "hsl(var(--foreground))" }}
                   />
                   <Bar dataKey="totalValue" radius={[4, 4, 0, 0]}>
                     {trackData.map((entry, index) => (

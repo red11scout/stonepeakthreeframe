@@ -201,6 +201,15 @@ export default function Portfolio() {
                 <Tooltip
                   formatter={(value: number) => [value.toFixed(1), "Avg Replication"]}
                   labelFormatter={(label) => categoryReplicationData.find(c => c.name === label)?.fullName || label}
+                  contentStyle={{
+                    backgroundColor: "var(--tooltip-bg, hsl(var(--card)))",
+                    border: "1px solid hsl(var(--border))",
+                    borderRadius: "8px",
+                    color: "hsl(var(--foreground))",
+                    boxShadow: "0 4px 12px rgba(0,0,0,0.15)",
+                  }}
+                  labelStyle={{ color: "hsl(var(--foreground))" }}
+                  itemStyle={{ color: "hsl(var(--foreground))" }}
                 />
                 <Bar dataKey="avgReplication" radius={[0, 4, 4, 0]}>
                   {categoryReplicationData.map((entry, index) => (

@@ -262,10 +262,14 @@ export default function Dashboard() {
                   </Pie>
                   <Tooltip
                     contentStyle={{
-                      backgroundColor: "oklch(0.15 0.01 250)",
-                      border: "1px solid oklch(0.25 0.01 250)",
+                      backgroundColor: "var(--tooltip-bg, hsl(var(--card)))",
+                      border: "1px solid hsl(var(--border))",
                       borderRadius: "8px",
+                      color: "hsl(var(--foreground))",
+                      boxShadow: "0 4px 12px rgba(0,0,0,0.15)",
                     }}
+                    labelStyle={{ color: "hsl(var(--foreground))" }}
+                    itemStyle={{ color: "hsl(var(--foreground))" }}
                   />
                 </PieChart>
               </ResponsiveContainer>
@@ -320,10 +324,14 @@ export default function Dashboard() {
                   </Pie>
                   <Tooltip
                     contentStyle={{
-                      backgroundColor: "oklch(0.15 0.01 250)",
-                      border: "1px solid oklch(0.25 0.01 250)",
+                      backgroundColor: "var(--tooltip-bg, hsl(var(--card)))",
+                      border: "1px solid hsl(var(--border))",
                       borderRadius: "8px",
+                      color: "hsl(var(--foreground))",
+                      boxShadow: "0 4px 12px rgba(0,0,0,0.15)",
                     }}
+                    labelStyle={{ color: "hsl(var(--foreground))" }}
+                    itemStyle={{ color: "hsl(var(--foreground))" }}
                   />
                 </PieChart>
               </ResponsiveContainer>

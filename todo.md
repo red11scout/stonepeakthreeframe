@@ -186,3 +186,9 @@
 - [x] Protect all routes behind authentication
 - [x] Add logout button to header
 - [x] Test login/logout flow
+
+
+## Phase 22: Fix Chart Tooltip Styling
+- [x] Fix black tooltip boxes on Recharts components (Dashboard, Portfolio, HoldPeriod)
+- [x] Update tooltip styling to use theme-aware CSS variables
+- [x] Test in both light and dark modes - tooltips now show with white background
