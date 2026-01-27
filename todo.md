@@ -145,3 +145,11 @@
 - [ ] Apply design updates to Reports
 - [ ] Apply design updates to AI Assistant
 - [ ] Test and polish all pages
+
+
+## Phase 17: Light Mode Fix
+- [x] Investigate light mode CSS variables
+- [x] Fix light mode color scheme (added complete light mode variables)
+- [x] Ensure proper theme switching (fixed ThemeContext to add/remove light class)
+- [x] Fix bg-grid and bg-radial-gradient for both modes
+- [x] Test both day and night modes

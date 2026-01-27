@@ -102,28 +102,72 @@
   --font-serif: 'Playfair Display', ui-serif, Georgia, serif;
 }
 
-/* Light mode */
+/* Light mode - Premium Light Theme */
 .light {
+  /* Core Colors - Clean White */
   --background: oklch(0.98 0.005 250);
   --foreground: oklch(0.15 0.02 250);
+  
+  /* Card Colors */
   --card: oklch(1.00 0.00 0);
   --card-foreground: oklch(0.15 0.02 250);
+  
+  /* Popover */
   --popover: oklch(1.00 0.00 0);
   --popover-foreground: oklch(0.15 0.02 250);
+  
+  /* Primary - Deep Blue */
   --primary: oklch(0.45 0.18 250);
   --primary-foreground: oklch(0.98 0.01 250);
+  
+  /* Secondary */
   --secondary: oklch(0.95 0.01 250);
   --secondary-foreground: oklch(0.25 0.02 250);
-  --muted: oklch(0.92 0.01 250);
-  --muted-foreground: oklch(0.45 0.02 250);
+  
+  /* Muted */
+  --muted: oklch(0.94 0.01 250);
+  --muted-foreground: oklch(0.40 0.02 250);
+  
+  /* Accent - Teal */
   --accent: oklch(0.50 0.15 200);
   --accent-foreground: oklch(0.98 0.01 250);
+  
+  /* Destructive */
+  --destructive: oklch(0.55 0.20 25);
+  --destructive-foreground: oklch(0.98 0.01 250);
+  
+  /* Border & Ring */
   --border: oklch(0.88 0.01 250);
-  --input: oklch(0.92 0.01 250);
+  --input: oklch(0.94 0.01 250);
   --ring: oklch(0.45 0.18 250);
-  --sidebar: oklch(0.96 0.01 250);
+  
+  /* Chart Colors - Vibrant for light mode */
+  --chart-1: oklch(0.55 0.18 145);
+  --chart-2: oklch(0.50 0.18 250);
+  --chart-3: oklch(0.55 0.15 200);
+  --chart-4: oklch(0.50 0.15 300);
+  --chart-5: oklch(0.55 0.15 45);
+  
+  /* Quadrant Colors - Slightly darker for light bg */
+  --champions: oklch(0.55 0.18 145);
+  --quick-wins: oklch(0.50 0.18 250);
+  --strategic: oklch(0.50 0.15 300);
+  --foundations: oklch(0.50 0.02 250);
+  
+  /* Glow Effects - Subtle for light mode */
+  --glow-primary: oklch(0.45 0.18 250 / 0.2);
+  --glow-accent: oklch(0.50 0.15 200 / 0.15);
+  --glow-success: oklch(0.55 0.18 145 / 0.15);
+  
+  /* Sidebar */
+  --sidebar: oklch(0.97 0.005 250);
   --sidebar-foreground: oklch(0.25 0.02 250);
-  --sidebar-border: oklch(0.88 0.01 250);
+  --sidebar-primary: oklch(0.45 0.18 250);
+  --sidebar-primary-foreground: oklch(0.98 0.01 250);
+  --sidebar-accent: oklch(0.94 0.01 250);
+  --sidebar-accent-foreground: oklch(0.25 0.02 250);
+  --sidebar-border: oklch(0.90 0.01 250);
+  --sidebar-ring: oklch(0.45 0.18 250);
 }
 
 @theme inline {
@@ -403,12 +447,25 @@
   /* Background Effects */
   .bg-grid {
     background-image: 
+      linear-gradient(oklch(0.5 0 0 / 0.05) 1px, transparent 1px),
+      linear-gradient(90deg, oklch(0.5 0 0 / 0.05) 1px, transparent 1px);
+    background-size: 40px 40px;
+  }
+  
+  :is(.dark) .bg-grid {
+    background-image: 
       linear-gradient(oklch(1 0 0 / 0.02) 1px, transparent 1px),
       linear-gradient(90deg, oklch(1 0 0 / 0.02) 1px, transparent 1px);
     background-size: 40px 40px;
   }
   
   .bg-radial-gradient {
+    background: radial-gradient(ellipse 80% 50% at 50% -20%, 
+      oklch(0.45 0.18 250 / 0.1) 0%, 
+      transparent 70%);
+  }
+  
+  :is(.dark) .bg-radial-gradient {
     background: radial-gradient(ellipse 80% 50% at 50% -20%, 
       oklch(0.65 0.18 250 / 0.15) 0%, 
       transparent 70%);

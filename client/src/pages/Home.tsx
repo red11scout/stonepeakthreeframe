@@ -172,7 +172,7 @@ export default function Home() {
               <span className="bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500 not-italic font-semibold">AI Intelligence</span>
             </h2>
             
-            <div className="prose prose-lg prose-invert mx-auto text-muted-foreground leading-relaxed">
+            <div className="prose prose-lg dark:prose-invert mx-auto text-muted-foreground leading-relaxed">
               <p className="text-lg md:text-xl">
                 Private equity firms hold a structural advantage in AI. They own multiple companies. 
                 They can deploy solutions across portfolios. They can learn once and apply many times.
