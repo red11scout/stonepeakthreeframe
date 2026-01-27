@@ -169,3 +169,11 @@
 - [x] Update header with BlueAlly logo
 - [x] Update footer with BlueAlly logo
 - [x] Replace all StonePeak text with BlueAlly AI
+
+
+## Phase 20: Matrix Threshold Lines Update
+- [x] Remove quadrant background colors from Matrix
+- [x] Add blue dotted vertical threshold line at 7.0 for Value
+- [x] Add blue dotted horizontal threshold line at 7.0 for Readiness
+- [x] Add labels for threshold lines ("Value = 7.0" and "Readiness = 7.0")
+- [x] Test visualization in both light and dark modes

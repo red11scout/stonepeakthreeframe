@@ -242,24 +242,49 @@ export default function Matrix() {
             </div>
 
             {/* Matrix Container */}
-            <div className="relative aspect-square max-h-[650px] w-full">
-              {/* Quadrant Backgrounds */}
-              <div className="absolute inset-0 grid grid-cols-2 grid-rows-2 rounded-lg overflow-hidden">
-                <div className="matrix-bg-strategic border-r border-b border-border/20" />
-                <div className="matrix-bg-champions border-b border-border/20" />
-                <div className="matrix-bg-foundations border-r border-border/20" />
-                <div className="matrix-bg-quick-wins" />
+            <div className="relative aspect-square max-h-[650px] w-full bg-card/30 rounded-lg border border-border/30">
+              {/* Clean Background - No Quadrant Colors */}
+              <div className="absolute inset-0 rounded-lg overflow-hidden">
+                {/* Subtle grid pattern */}
+                <div className="absolute inset-0 opacity-[0.03]" style={{
+                  backgroundImage: `
+                    linear-gradient(to right, currentColor 1px, transparent 1px),
+                    linear-gradient(to bottom, currentColor 1px, transparent 1px)
+                  `,
+                  backgroundSize: '10% 10%'
+                }} />
               </div>
 
-              {/* Threshold Lines */}
-              <div 
-                className="absolute left-0 right-0 border-t-2 border-dashed"
-                style={{ top: "30%", borderColor: "oklch(0.65 0.18 250 / 0.5)" }}
-              />
-              <div 
-                className="absolute top-0 bottom-0 border-l-2 border-dashed"
-                style={{ left: "70%", borderColor: "oklch(0.65 0.18 250 / 0.5)" }}
-              />
+              {/* Blue Dotted Threshold Lines */}
+              {/* Horizontal line at Value Score = 7.0 (70% from bottom = 30% from top) */}
+              <div className="absolute left-0 right-0" style={{ top: "30%" }}>
+                <div 
+                  className="w-full border-t-2 border-dashed"
+                  style={{ borderColor: "oklch(0.55 0.20 250)" }}
+                />
+                {/* Value Threshold Label */}
+                <div 
+                  className="absolute -left-2 -translate-y-1/2 bg-background/90 backdrop-blur-sm px-2 py-0.5 rounded text-xs font-medium"
+                  style={{ color: "oklch(0.55 0.20 250)" }}
+                >
+                  Value = 7.0
+                </div>
+              </div>
+              
+              {/* Vertical line at Readiness Score = 7.0 (70% from left) */}
+              <div className="absolute top-0 bottom-0" style={{ left: "70%" }}>
+                <div 
+                  className="h-full border-l-2 border-dashed"
+                  style={{ borderColor: "oklch(0.55 0.20 250)" }}
+                />
+                {/* Readiness Threshold Label */}
+                <div 
+                  className="absolute -bottom-6 -translate-x-1/2 bg-background/90 backdrop-blur-sm px-2 py-0.5 rounded text-xs font-medium whitespace-nowrap"
+                  style={{ color: "oklch(0.55 0.20 250)" }}
+                >
+                  Readiness = 7.0
+                </div>
+              </div>
 
               {/* Axis Labels */}
               <div className="absolute -left-1 top-1/2 -translate-y-1/2 -rotate-90 text-[10px] text-muted-foreground font-medium tracking-widest uppercase">
