@@ -1,6 +1,6 @@
 import { drizzle } from "drizzle-orm/mysql2";
 import { companies } from "../drizzle/schema";
-import { calculateAllScores, type CompanyInputScores } from "./calculations";
+import { determineQuadrant } from "./calculations";
 import portfolioData from "../shared/portfolio-data.json";
 
 interface RawCompanyData {
@@ -24,6 +24,7 @@ interface RawCompanyData {
   tech_infrastructure: number;
   org_capacity_dup: number;
   timeline_fit: number;
+  // Pre-calculated scores from Excel (source of truth)
   value_score: number;
   readiness_score: number;
   priority_score: number;
@@ -34,7 +35,6 @@ interface RawCompanyData {
 
 // Assign themes based on company characteristics
 function assignTheme(company: RawCompanyData): string | null {
-  const valueScore = company.value_score;
   const revenueEnablement = company.revenue_enablement;
   const ebitdaImpact = company.ebitda_impact;
   
@@ -77,6 +77,15 @@ function determinePlatformClassification(replicationPotential: number): string {
   return replicationPotential >= 7 ? 'Platform Play' : 'Point Solution';
 }
 
+// Calculate Portfolio-Adjusted Priority
+function calculatePortfolioAdjustedPriority(
+  adjustedPriority: number,
+  replicationPotential: number
+): number {
+  const replicationMultiplier = 0.10;
+  return adjustedPriority * (1 + (replicationPotential * replicationMultiplier));
+}
+
 export async function seedDatabase() {
   if (!process.env.DATABASE_URL) {
     console.error("DATABASE_URL not set");
@@ -85,27 +94,33 @@ export async function seedDatabase() {
   
   const db = drizzle(process.env.DATABASE_URL);
   
-  console.log(`Seeding ${portfolioData.length} companies...`);
+  // Clear existing data
+  console.log("Clearing existing company data...");
+  await db.delete(companies);
+  
+  console.log(`Seeding ${portfolioData.length} companies with Excel source data...`);
   
   for (const raw of portfolioData as RawCompanyData[]) {
-    // Calculate scores using our engine
-    const inputScores: CompanyInputScores = {
-      ebitdaImpact: raw.ebitda_impact,
-      revenueEnablement: raw.revenue_enablement,
-      riskReduction: raw.risk_reduction,
-      organizationalCapacity: raw.organizational_capacity,
-      dataAvailability: raw.data_availability,
-      techInfrastructure: raw.tech_infrastructure,
-      timelineFit: raw.timeline_fit,
-      ebitda: raw.ebitda,
-      replicationPotential: estimateReplicationPotential(raw),
-    };
-    
-    const calculated = calculateAllScores(inputScores);
     const theme = assignTheme(raw);
     const track = assignTrack(raw);
     const replicationPotential = estimateReplicationPotential(raw);
     const platformClassification = determinePlatformClassification(replicationPotential);
+    
+    // Use Excel's pre-calculated scores as source of truth
+    const valueScore = raw.value_score;
+    const readinessScore = raw.readiness_score;
+    const priorityScore = raw.priority_score;
+    const adjustedEbitda = raw.adjusted_ebitda;
+    const adjustedPriority = raw.adjusted_priority;
+    
+    // Calculate portfolio-adjusted priority
+    const portfolioAdjustedPriority = calculatePortfolioAdjustedPriority(
+      adjustedPriority,
+      replicationPotential
+    );
+    
+    // Determine quadrant using Excel's calculated scores
+    const quadrant = determineQuadrant(valueScore, readinessScore);
     
     try {
       await db.insert(companies).values({
@@ -122,6 +137,7 @@ export async function seedDatabase() {
         hqCountry: raw.hq_country,
         investmentDate: raw.investment_date,
         ebitda: String(raw.ebitda),
+        // Input scores
         ebitdaImpact: String(raw.ebitda_impact),
         revenueEnablement: String(raw.revenue_enablement),
         riskReduction: String(raw.risk_reduction),
@@ -129,26 +145,29 @@ export async function seedDatabase() {
         dataAvailability: String(raw.data_availability),
         techInfrastructure: String(raw.tech_infrastructure),
         timelineFit: String(raw.timeline_fit),
-        valueScore: String(calculated.valueScore),
-        readinessScore: String(calculated.readinessScore),
-        priorityScore: String(calculated.priorityScore),
-        adjustedEbitda: String(calculated.adjustedEbitda),
-        adjustedPriority: String(calculated.adjustedPriority),
+        // Use Excel's pre-calculated scores (source of truth)
+        valueScore: String(valueScore),
+        readinessScore: String(readinessScore),
+        priorityScore: String(priorityScore),
+        adjustedEbitda: String(adjustedEbitda),
+        adjustedPriority: String(adjustedPriority),
+        // Derived values
         theme,
         track,
         replicationPotential: String(replicationPotential),
         platformClassification,
-        portfolioAdjustedPriority: String(calculated.portfolioAdjustedPriority),
-        quadrant: calculated.quadrant,
+        portfolioAdjustedPriority: String(portfolioAdjustedPriority),
+        quadrant,
       });
       
-      console.log(`✓ Seeded: ${raw.company_name}`);
+      console.log(`✓ Seeded: ${raw.company_name} (${quadrant}, Value: ${valueScore.toFixed(2)}, Readiness: ${readinessScore.toFixed(2)})`);
     } catch (error) {
       console.error(`✗ Failed to seed ${raw.company_name}:`, error);
     }
   }
   
-  console.log("Seeding complete!");
+  console.log("\nSeeding complete!");
+  console.log(`Total companies seeded: ${portfolioData.length}`);
 }
 
 // Run if called directly
