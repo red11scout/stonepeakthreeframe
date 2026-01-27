@@ -1,4 +1,5 @@
 import Layout from "@/components/Layout";
+import { CompanyLogo } from "@/components/CompanyLogo";
 import { trpc } from "@/lib/trpc";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -240,6 +241,7 @@ export default function CompanyDetail() {
                 <ArrowLeft className="w-5 h-5" />
               </Button>
             </Link>
+            <CompanyLogo companyName={company.companyName} size="xl" />
             <h1 className="text-2xl md:text-3xl font-bold">{company.companyName}</h1>
             <Badge
               variant="outline"

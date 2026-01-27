@@ -1,4 +1,5 @@
 import Layout from "@/components/Layout";
+import { CompanyLogo } from "@/components/CompanyLogo";
 import { trpc } from "@/lib/trpc";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -101,7 +102,10 @@ function CustomTooltip({ active, payload }: CustomTooltipProps) {
   
   return (
     <div className="bg-popover text-popover-foreground rounded-lg shadow-lg border border-border p-4 max-w-xs">
-      <h4 className="font-bold text-base mb-2">{data.companyName}</h4>
+      <div className="flex items-center gap-3 mb-2">
+        <CompanyLogo companyName={data.companyName} size="md" />
+        <h4 className="font-bold text-base">{data.companyName}</h4>
+      </div>
       <div className="space-y-1 text-sm">
         <div className="flex justify-between">
           <span className="text-muted-foreground">Category:</span>
@@ -530,7 +534,10 @@ export default function Matrix() {
         <Card className="mt-6 border-2 border-primary">
           <CardHeader className="pb-2">
             <div className="flex items-center justify-between">
-              <CardTitle>{selectedCompany.companyName}</CardTitle>
+              <div className="flex items-center gap-3">
+                <CompanyLogo companyName={selectedCompany.companyName} size="lg" />
+                <CardTitle>{selectedCompany.companyName}</CardTitle>
+              </div>
               <div className="flex gap-2">
                 <Link href={`/company/${selectedCompany.id}`}>
                   <Button size="sm" className="gap-2">

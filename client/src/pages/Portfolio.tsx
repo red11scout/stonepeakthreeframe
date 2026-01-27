@@ -1,4 +1,5 @@
 import Layout from "@/components/Layout";
+import { CompanyLogo } from "@/components/CompanyLogo";
 import { trpc } from "@/lib/trpc";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -258,9 +259,12 @@ export default function Portfolio() {
                 <div className="flex-1 min-w-0">
                   <div className="flex items-center gap-2 mb-1">
                     <Link href={`/company/${company.id}`}>
-                      <span className="font-medium hover:text-primary cursor-pointer">
-                        {company.companyName}
-                      </span>
+                      <div className="flex items-center gap-2 hover:text-primary cursor-pointer">
+                        <CompanyLogo companyName={company.companyName} size="sm" />
+                        <span className="font-medium">
+                          {company.companyName}
+                        </span>
+                      </div>
                     </Link>
                     <Badge
                       variant="outline"

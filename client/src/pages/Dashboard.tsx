@@ -1,4 +1,5 @@
 import Layout from "@/components/Layout";
+import { CompanyLogo } from "@/components/CompanyLogo";
 import { trpc } from "@/lib/trpc";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -409,9 +410,12 @@ export default function Dashboard() {
                     </td>
                     <td className="py-3 px-2">
                       <Link href={`/company/${company.id}`}>
-                        <span className="font-medium hover:text-primary cursor-pointer">
-                          {company.companyName}
-                        </span>
+                        <div className="flex items-center gap-3 hover:text-primary cursor-pointer">
+                          <CompanyLogo companyName={company.companyName} size="sm" />
+                          <span className="font-medium">
+                            {company.companyName}
+                          </span>
+                        </div>
                       </Link>
                     </td>
                     <td className="py-3 px-2 hidden md:table-cell">
