@@ -1,523 +1,543 @@
+import { Link } from "wouter";
+import { trpc } from "@/lib/trpc";
 import Layout from "@/components/Layout";
 import { CompanyLogo } from "@/components/CompanyLogo";
-import { trpc } from "@/lib/trpc";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Progress } from "@/components/ui/progress";
-import { Skeleton } from "@/components/ui/skeleton";
 import {
-  Building2,
-  TrendingUp,
   Trophy,
   Zap,
   Target,
+  Layers,
+  TrendingUp,
   DollarSign,
-  BarChart3,
-  PieChart,
+  Building2,
+  ChevronRight,
+  Sparkles,
   ArrowUpRight,
-  ArrowRight,
 } from "lucide-react";
-import { Link } from "wouter";
-import { Button } from "@/components/ui/button";
+import { motion } from "framer-motion";
 import {
-  PieChart as RechartsPie,
+  PieChart,
   Pie,
   Cell,
   ResponsiveContainer,
-  BarChart,
-  Bar,
-  XAxis,
-  YAxis,
   Tooltip,
-  Legend,
 } from "recharts";
 
-const QUADRANT_COLORS = {
-  Champions: "#00B34A",
-  "Quick Wins": "#00A3E0",
-  Strategic: "#7C3AED",
-  Foundations: "#999999",
+const QUADRANT_CONFIG = {
+  Champions: { color: "oklch(0.65 0.18 145)", icon: Trophy },
+  "Quick Wins": { color: "oklch(0.60 0.18 250)", icon: Zap },
+  Strategic: { color: "oklch(0.60 0.15 300)", icon: Target },
+  Foundations: { color: "oklch(0.45 0.02 250)", icon: Layers },
+};
+
+const THEME_COLORS: Record<string, string> = {
+  "Revenue Growth": "oklch(0.70 0.18 145)",
+  "Margin Expansion": "oklch(0.70 0.15 200)",
+  "Cost Cutting": "oklch(0.65 0.18 250)",
 };
 
 const CATEGORY_COLORS: Record<string, string> = {
-  "Digital Infrastructure": "#003B73",
-  "Energy & Energy Transition": "#00B34A",
-  "Transport & Logistics": "#00A3E0",
-  "Social Infrastructure": "#7C3AED",
-  "Real Estate": "#F59E0B",
+  "Digital Infrastructure": "oklch(0.65 0.18 250)",
+  "Energy & Energy Transition": "oklch(0.70 0.18 145)",
+  "Transport & Logistics": "oklch(0.70 0.15 200)",
+  "Social Infrastructure": "oklch(0.65 0.15 300)",
+  "Real Estate": "oklch(0.70 0.15 45)",
 };
 
-function formatCurrency(value: number): string {
-  if (value >= 1000000000) {
-    return `$${(value / 1000000000).toFixed(1)}B`;
-  }
-  if (value >= 1000000) {
-    return `$${(value / 1000000).toFixed(1)}M`;
-  }
-  if (value >= 1000) {
-    return `$${(value / 1000).toFixed(1)}K`;
-  }
-  return `$${value.toFixed(0)}`;
-}
-
-function formatNumber(value: number): string {
-  return new Intl.NumberFormat("en-US").format(Math.round(value));
-}
-
-function MetricCard({
-  title,
-  value,
-  subtitle,
-  icon: Icon,
-  trend,
-  color = "primary",
-}: {
-  title: string;
-  value: string | number;
-  subtitle?: string;
-  icon: React.ElementType;
-  trend?: number;
-  color?: string;
-}) {
-  return (
-    <Card className="blueally-metric-card">
-      <CardContent className="p-5">
-        <div className="flex items-start justify-between">
-          <div className="space-y-2">
-            <p className="text-sm font-medium text-muted-foreground">{title}</p>
-            <p className="text-2xl md:text-3xl font-bold financial-number">{value}</p>
-            {subtitle && (
-              <p className="text-xs text-muted-foreground">{subtitle}</p>
-            )}
-          </div>
-          <div
-            className={`p-3 rounded-lg ${
-              color === "green"
-                ? "bg-green-100 dark:bg-green-900/30"
-                : color === "blue"
-                ? "bg-blue-100 dark:bg-blue-900/30"
-                : color === "purple"
-                ? "bg-purple-100 dark:bg-purple-900/30"
-                : "bg-primary/10"
-            }`}
-          >
-            <Icon
-              className={`w-5 h-5 ${
-                color === "green"
-                  ? "text-green-600 dark:text-green-400"
-                  : color === "blue"
-                  ? "text-blue-600 dark:text-blue-400"
-                  : color === "purple"
-                  ? "text-purple-600 dark:text-purple-400"
-                  : "text-primary"
-              }`}
-            />
-          </div>
-        </div>
-        {trend !== undefined && (
-          <div className="mt-3 flex items-center gap-1">
-            <ArrowUpRight
-              className={`w-4 h-4 ${
-                trend >= 0 ? "text-green-500" : "text-red-500 rotate-90"
-              }`}
-            />
-            <span
-              className={`text-sm font-medium ${
-                trend >= 0 ? "text-green-500" : "text-red-500"
-              }`}
-            >
-              {trend >= 0 ? "+" : ""}
-              {trend.toFixed(1)}%
-            </span>
-          </div>
-        )}
-      </CardContent>
-    </Card>
-  );
-}
-
-function QuadrantCard({
-  name,
-  count,
-  total,
-  color,
-}: {
-  name: string;
-  count: number;
-  total: number;
-  color: string;
-}) {
-  const percentage = total > 0 ? (count / total) * 100 : 0;
-  return (
-    <div className="space-y-2">
-      <div className="flex items-center justify-between">
-        <div className="flex items-center gap-2">
-          <div
-            className="w-3 h-3 rounded-full"
-            style={{ backgroundColor: color }}
-          />
-          <span className="text-sm font-medium">{name}</span>
-        </div>
-        <span className="text-sm font-bold">{count}</span>
-      </div>
-      <Progress value={percentage} className="h-2" />
-    </div>
-  );
-}
+type Company = {
+  id: number;
+  companyName: string;
+  investmentCategory: string;
+  valueScore: string | null;
+  readinessScore: string | null;
+  priorityScore: string | null;
+  adjustedEbitda: string | null;
+  adjustedPriority: string | null;
+  quadrant: string | null;
+  theme: string | null;
+  track: string | null;
+};
 
 export default function Dashboard() {
-  const { data: metrics, isLoading } = trpc.portfolio.metrics.useQuery();
-  const { data: companies } = trpc.companies.list.useQuery();
+  const { data: companies = [], isLoading } = trpc.companies.list.useQuery();
+  const { data: metrics } = trpc.portfolio.metrics.useQuery();
+
+  // Calculate metrics
+  const totalCompanies = companies.length;
+  const totalEbitda = companies.reduce((sum: number, c: Company) => 
+    sum + parseFloat(c.adjustedEbitda || "0"), 0
+  );
+  const totalPriority = companies.reduce((sum: number, c: Company) => 
+    sum + parseFloat(c.adjustedPriority || "0"), 0
+  );
+
+  // Quadrant distribution
+  const quadrantCounts = companies.reduce((acc: Record<string, number>, c: Company) => {
+    if (c.quadrant) {
+      acc[c.quadrant] = (acc[c.quadrant] || 0) + 1;
+    }
+    return acc;
+  }, {} as Record<string, number>);
+
+  const quadrantData = Object.entries(QUADRANT_CONFIG).map(([name, config]) => ({
+    name,
+    value: quadrantCounts[name] || 0,
+    color: config.color,
+  }));
+
+  // Theme distribution
+  const themeCounts = companies.reduce((acc: Record<string, number>, c: Company) => {
+    if (c.theme) {
+      acc[c.theme] = (acc[c.theme] || 0) + 1;
+    }
+    return acc;
+  }, {} as Record<string, number>);
+
+  const themeData = Object.entries(THEME_COLORS).map(([name, color]) => ({
+    name,
+    value: themeCounts[name] || 0,
+    color,
+  }));
+
+  // Category distribution
+  const categoryCounts = companies.reduce((acc: Record<string, number>, c: Company) => {
+    acc[c.investmentCategory] = (acc[c.investmentCategory] || 0) + 1;
+    return acc;
+  }, {} as Record<string, number>);
+
+  // Top 10 companies by adjusted priority
+  const top10 = [...companies]
+    .sort((a: Company, b: Company) => 
+      parseFloat(b.adjustedPriority || "0") - parseFloat(a.adjustedPriority || "0")
+    )
+    .slice(0, 10);
+
+  // Champions
+  const champions = companies.filter((c: Company) => c.quadrant === "Champions");
+
+  const formatCurrency = (value: number) => {
+    if (value >= 1e9) return `$${(value / 1e9).toFixed(2)}B`;
+    if (value >= 1e6) return `$${(value / 1e6).toFixed(1)}M`;
+    if (value >= 1e3) return `$${(value / 1e3).toFixed(0)}K`;
+    return `$${value.toFixed(0)}`;
+  };
 
   if (isLoading) {
     return (
-      <Layout title="Executive Summary" subtitle="Portfolio AI Intelligence Overview">
-        <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
-          {[...Array(4)].map((_, i) => (
-            <Card key={i} className="blueally-metric-card">
-              <CardContent className="p-5">
-                <Skeleton className="h-4 w-24 mb-2" />
-                <Skeleton className="h-8 w-32" />
-              </CardContent>
-            </Card>
-          ))}
+      <Layout title="Executive Dashboard" subtitle="Loading portfolio data...">
+        <div className="min-h-[400px] flex items-center justify-center">
+          <div className="text-center">
+            <div className="w-16 h-16 rounded-full border-4 border-primary/30 border-t-primary animate-spin mx-auto mb-4" />
+            <p className="text-muted-foreground">Loading portfolio intelligence...</p>
+          </div>
         </div>
       </Layout>
     );
   }
-
-  if (!metrics) {
-    return (
-      <Layout title="Executive Summary">
-        <div className="text-center py-12">
-          <p className="text-muted-foreground">No portfolio data available.</p>
-        </div>
-      </Layout>
-    );
-  }
-
-  // Prepare chart data
-  const quadrantData = [
-    { name: "Champions", value: metrics.championsCount, color: QUADRANT_COLORS.Champions },
-    { name: "Quick Wins", value: metrics.quickWinsCount, color: QUADRANT_COLORS["Quick Wins"] },
-    { name: "Strategic", value: metrics.strategicCount, color: QUADRANT_COLORS.Strategic },
-    { name: "Foundations", value: metrics.foundationsCount, color: QUADRANT_COLORS.Foundations },
-  ];
-
-  const categoryData = Object.entries(metrics.byCategory || {}).map(([name, count]) => ({
-    name: name.split(" ")[0], // Shorten for display
-    fullName: name,
-    count,
-    color: CATEGORY_COLORS[name] || "#999",
-  }));
-
-  const themeData = Object.entries(metrics.byTheme || {}).map(([name, count]) => ({
-    name,
-    count,
-  }));
 
   return (
-    <Layout
-      title="Executive Summary"
-      subtitle="Portfolio AI Intelligence Overview"
-    >
-      {/* Key Metrics */}
-      <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4 mb-8">
-        <MetricCard
-          title="Portfolio Companies"
-          value={metrics.totalCompanies}
-          subtitle="Active investments"
-          icon={Building2}
-          color="blue"
-        />
-        <MetricCard
-          title="Total Adjusted EBITDA Impact"
-          value={formatCurrency(metrics.totalAdjustedEbitda)}
-          subtitle="AI-enabled value creation"
-          icon={DollarSign}
-          color="green"
-        />
-        <MetricCard
-          title="Champions"
-          value={metrics.championsCount}
-          subtitle={`${formatCurrency(metrics.championsValue)} total value`}
-          icon={Trophy}
-          color="green"
-        />
-        <MetricCard
-          title="Avg Priority Score"
-          value={metrics.avgPriorityScore.toFixed(1)}
-          subtitle="Out of 10.0"
-          icon={Target}
-          color="purple"
-        />
-      </div>
-
-      {/* Secondary Metrics */}
-      <div className="grid gap-4 md:grid-cols-3 mb-8">
-        <MetricCard
-          title="Avg Value Score"
-          value={metrics.avgValueScore.toFixed(1)}
-          icon={TrendingUp}
-        />
-        <MetricCard
-          title="Avg Readiness Score"
-          value={metrics.avgReadinessScore.toFixed(1)}
-          icon={Zap}
-        />
-        <MetricCard
-          title="Total Portfolio EBITDA"
-          value={formatCurrency(metrics.totalEbitda)}
-          icon={BarChart3}
-        />
-      </div>
-
-      {/* Charts Row */}
-      <div className="grid gap-6 lg:grid-cols-2 mb-8">
-        {/* Quadrant Distribution */}
-        <Card>
-          <CardHeader className="pb-2">
-            <CardTitle className="text-lg flex items-center gap-2">
-              <PieChart className="w-5 h-5" />
-              Quadrant Distribution
-            </CardTitle>
-          </CardHeader>
-          <CardContent>
-            <div className="flex flex-col md:flex-row items-center gap-6">
-              <div className="w-48 h-48">
-                <ResponsiveContainer width="100%" height="100%">
-                  <RechartsPie>
-                    <Pie
-                      data={quadrantData}
-                      cx="50%"
-                      cy="50%"
-                      innerRadius={40}
-                      outerRadius={70}
-                      paddingAngle={2}
-                      dataKey="value"
-                    >
-                      {quadrantData.map((entry, index) => (
-                        <Cell key={`cell-${index}`} fill={entry.color} />
-                      ))}
-                    </Pie>
-                    <Tooltip
-                      formatter={(value: number) => [value, "Companies"]}
-                    />
-                  </RechartsPie>
-                </ResponsiveContainer>
-              </div>
-              <div className="flex-1 space-y-3 w-full">
-                {quadrantData.map((q) => (
-                  <QuadrantCard
-                    key={q.name}
-                    name={q.name}
-                    count={q.value}
-                    total={metrics.totalCompanies}
-                    color={q.color}
-                  />
-                ))}
-              </div>
-            </div>
-          </CardContent>
-        </Card>
-
-        {/* Category Distribution */}
-        <Card>
-          <CardHeader className="pb-2">
-            <CardTitle className="text-lg flex items-center gap-2">
-              <BarChart3 className="w-5 h-5" />
-              Investment Categories
-            </CardTitle>
-          </CardHeader>
-          <CardContent>
-            <div className="h-64">
-              <ResponsiveContainer width="100%" height="100%">
-                <BarChart data={categoryData} layout="vertical">
-                  <XAxis type="number" />
-                  <YAxis
-                    type="category"
-                    dataKey="name"
-                    width={80}
-                    tick={{ fontSize: 12 }}
-                  />
-                  <Tooltip
-                    formatter={(value: number, name: string, props: any) => [
-                      value,
-                      props.payload.fullName,
-                    ]}
-                  />
-                  <Bar dataKey="count" radius={[0, 4, 4, 0]}>
-                    {categoryData.map((entry, index) => (
-                      <Cell key={`cell-${index}`} fill={entry.color} />
-                    ))}
-                  </Bar>
-                </BarChart>
-              </ResponsiveContainer>
-            </div>
-          </CardContent>
-        </Card>
-      </div>
-
-      {/* Top 10 Companies */}
-      <Card>
-        <CardHeader className="flex flex-row items-center justify-between">
-          <CardTitle className="text-lg flex items-center gap-2">
-            <Trophy className="w-5 h-5" />
-            Top 10 Companies by Adjusted Priority
-          </CardTitle>
+    <Layout title="" subtitle="">
+      <div className="space-y-8">
+        {/* Header */}
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-4">
+          <div>
+            <h1 className="font-serif italic tracking-tight text-4xl md:text-5xl mb-2">
+              Executive<br />
+              <span className="bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500 not-italic font-semibold">Dashboard</span>
+            </h1>
+            <p className="text-muted-foreground text-lg font-light max-w-lg">
+              The complete view of your portfolio's AI potential. 
+              Clear numbers. Clear priorities. Clear action.
+            </p>
+          </div>
           <Link href="/matrix">
-            <Button variant="outline" size="sm" className="gap-2">
-              View All
-              <ArrowRight className="w-4 h-4" />
+            <Button className="relative overflow-hidden rounded-lg px-6 py-3 font-medium bg-gradient-to-r from-blue-600 to-cyan-500 text-white shadow-lg hover:shadow-xl transition-all">
+              View Matrix
+              <ChevronRight className="w-4 h-4 ml-1" />
             </Button>
           </Link>
-        </CardHeader>
-        <CardContent>
+        </div>
+
+        {/* Key Metrics */}
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
+          <motion.div
+            className="bg-card/90 backdrop-blur-xl rounded-xl border border-border/50 p-6 hover:border-primary/30 transition-all"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.1 }}
+          >
+            <div className="flex items-center gap-3 mb-4">
+              <div className="w-12 h-12 rounded-xl flex items-center justify-center bg-primary/15 text-primary">
+                <Building2 className="w-5 h-5" />
+              </div>
+              <span className="text-sm text-muted-foreground">Portfolio Companies</span>
+            </div>
+            <p className="text-4xl font-bold">{totalCompanies}</p>
+            <p className="text-sm text-muted-foreground mt-1">Active investments</p>
+          </motion.div>
+
+          <motion.div
+            className="bg-card/90 backdrop-blur-xl rounded-xl border border-border/50 p-6 hover:border-primary/30 transition-all"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.2 }}
+          >
+            <div className="flex items-center gap-3 mb-4">
+              <div className="w-12 h-12 rounded-xl flex items-center justify-center bg-primary/15 text-primary shadow-[0_0_40px_-10px_rgba(34,197,94,0.4)]">
+                <DollarSign className="w-5 h-5" />
+              </div>
+              <span className="text-sm text-muted-foreground">Total EBITDA Impact</span>
+            </div>
+            <p className="text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500">{formatCurrency(totalEbitda)}</p>
+            <p className="text-sm text-muted-foreground mt-1">Adjusted potential</p>
+          </motion.div>
+
+          <motion.div
+            className="bg-card/90 backdrop-blur-xl rounded-xl border border-border/50 p-6 hover:border-primary/30 transition-all"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.3 }}
+          >
+            <div className="flex items-center gap-3 mb-4">
+              <div className="w-12 h-12 rounded-xl flex items-center justify-center bg-primary/15 text-primary shadow-[0_0_40px_-10px_rgba(59,130,246,0.5)]">
+                <TrendingUp className="w-5 h-5" />
+              </div>
+              <span className="text-sm text-muted-foreground">Total Priority Value</span>
+            </div>
+            <p className="text-4xl font-bold">{formatCurrency(totalPriority)}</p>
+            <p className="text-sm text-muted-foreground mt-1">Portfolio-adjusted</p>
+          </motion.div>
+
+          <motion.div
+            className="bg-card/90 backdrop-blur-xl rounded-xl border border-border/50 p-6 hover:border-primary/30 transition-all"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.4 }}
+          >
+            <div className="flex items-center gap-3 mb-4">
+              <div className="w-12 h-12 rounded-xl flex items-center justify-center bg-primary/15 text-primary" style={{ color: QUADRANT_CONFIG.Champions.color }}>
+                <Trophy className="w-5 h-5" />
+              </div>
+              <span className="text-sm text-muted-foreground">Champions</span>
+            </div>
+            <p className="text-4xl font-bold" style={{ color: QUADRANT_CONFIG.Champions.color }}>
+              {champions.length}
+            </p>
+            <p className="text-sm text-muted-foreground mt-1">Ready for deployment</p>
+          </motion.div>
+        </div>
+
+        {/* Main Grid */}
+        <div className="grid lg:grid-cols-3 gap-6">
+          {/* Quadrant Distribution */}
+          <motion.div
+            className="bg-card/90 backdrop-blur-xl rounded-xl border border-border/50 p-6 hover:border-primary/30 transition-all"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.5 }}
+          >
+            <div className="flex items-center gap-2 mb-6">
+              <Sparkles className="w-5 h-5 text-primary" />
+              <h2 className="font-semibold">Quadrant Distribution</h2>
+            </div>
+            
+            <div className="h-[200px] mb-4">
+              <ResponsiveContainer width="100%" height="100%">
+                <PieChart>
+                  <Pie
+                    data={quadrantData}
+                    cx="50%"
+                    cy="50%"
+                    innerRadius={50}
+                    outerRadius={80}
+                    paddingAngle={3}
+                    dataKey="value"
+                  >
+                    {quadrantData.map((entry, index) => (
+                      <Cell key={`cell-${index}`} fill={entry.color} />
+                    ))}
+                  </Pie>
+                  <Tooltip
+                    contentStyle={{
+                      backgroundColor: "oklch(0.15 0.01 250)",
+                      border: "1px solid oklch(0.25 0.01 250)",
+                      borderRadius: "8px",
+                    }}
+                  />
+                </PieChart>
+              </ResponsiveContainer>
+            </div>
+
+            <div className="space-y-3">
+              {Object.entries(QUADRANT_CONFIG).map(([name, config]) => {
+                const Icon = config.icon;
+                const count = quadrantCounts[name] || 0;
+                const percentage = totalCompanies > 0 ? (count / totalCompanies) * 100 : 0;
+                return (
+                  <div key={name} className="flex items-center gap-3">
+                    <Icon className="w-4 h-4" style={{ color: config.color }} />
+                    <span className="text-sm flex-1">{name}</span>
+                    <span className="text-sm font-medium">{count}</span>
+                    <div className="w-16">
+                      <Progress value={percentage} className="h-1.5" />
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          </motion.div>
+
+          {/* Theme Distribution */}
+          <motion.div
+            className="bg-card/90 backdrop-blur-xl rounded-xl border border-border/50 p-6 hover:border-primary/30 transition-all"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.6 }}
+          >
+            <div className="flex items-center gap-2 mb-6">
+              <Target className="w-5 h-5 text-primary" />
+              <h2 className="font-semibold">Value Themes</h2>
+            </div>
+
+            <div className="h-[200px] mb-4">
+              <ResponsiveContainer width="100%" height="100%">
+                <PieChart>
+                  <Pie
+                    data={themeData}
+                    cx="50%"
+                    cy="50%"
+                    innerRadius={50}
+                    outerRadius={80}
+                    paddingAngle={3}
+                    dataKey="value"
+                  >
+                    {themeData.map((entry, index) => (
+                      <Cell key={`cell-${index}`} fill={entry.color} />
+                    ))}
+                  </Pie>
+                  <Tooltip
+                    contentStyle={{
+                      backgroundColor: "oklch(0.15 0.01 250)",
+                      border: "1px solid oklch(0.25 0.01 250)",
+                      borderRadius: "8px",
+                    }}
+                  />
+                </PieChart>
+              </ResponsiveContainer>
+            </div>
+
+            <div className="space-y-3">
+              {Object.entries(THEME_COLORS).map(([name, color]) => {
+                const count = themeCounts[name] || 0;
+                const percentage = totalCompanies > 0 ? (count / totalCompanies) * 100 : 0;
+                return (
+                  <div key={name} className="flex items-center gap-3">
+                    <div className="w-3 h-3 rounded-full" style={{ backgroundColor: color }} />
+                    <span className="text-sm flex-1">{name}</span>
+                    <span className="text-sm font-medium">{count}</span>
+                    <div className="w-16">
+                      <Progress value={percentage} className="h-1.5" />
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          </motion.div>
+
+          {/* Category Distribution */}
+          <motion.div
+            className="bg-card/90 backdrop-blur-xl rounded-xl border border-border/50 p-6 hover:border-primary/30 transition-all"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.7 }}
+          >
+            <div className="flex items-center gap-2 mb-6">
+              <Building2 className="w-5 h-5 text-primary" />
+              <h2 className="font-semibold">Investment Categories</h2>
+            </div>
+
+            <div className="space-y-4">
+              {Object.entries(CATEGORY_COLORS).map(([name, color]) => {
+                const count = categoryCounts[name] || 0;
+                const percentage = totalCompanies > 0 ? (count / totalCompanies) * 100 : 0;
+                return (
+                  <div key={name}>
+                    <div className="flex items-center justify-between mb-1.5">
+                      <span className="text-sm">{name}</span>
+                      <span className="text-sm font-medium">{count}</span>
+                    </div>
+                    <div className="h-2 bg-muted rounded-full overflow-hidden">
+                      <div 
+                        className="h-full rounded-full transition-all duration-500"
+                        style={{ width: `${percentage}%`, backgroundColor: color }}
+                      />
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          </motion.div>
+        </div>
+
+        {/* Top 10 Companies */}
+        <motion.div
+          className="bg-card/90 backdrop-blur-xl rounded-xl border border-border/50 p-6 hover:border-primary/30 transition-all"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.8 }}
+        >
+          <div className="flex items-center justify-between mb-6">
+            <div className="flex items-center gap-2">
+              <Trophy className="w-5 h-5 text-primary" />
+              <h2 className="font-semibold">Top 10 Companies by Priority</h2>
+            </div>
+            <Link href="/portfolio">
+              <Button variant="ghost" size="sm" className="text-muted-foreground hover:text-foreground">
+                View All
+                <ArrowUpRight className="w-4 h-4 ml-1" />
+              </Button>
+            </Link>
+          </div>
+
           <div className="overflow-x-auto">
             <table className="w-full">
               <thead>
-                <tr className="border-b border-border">
-                  <th className="text-left py-3 px-2 text-sm font-medium text-muted-foreground">
-                    Rank
-                  </th>
-                  <th className="text-left py-3 px-2 text-sm font-medium text-muted-foreground">
-                    Company
-                  </th>
-                  <th className="text-left py-3 px-2 text-sm font-medium text-muted-foreground hidden md:table-cell">
-                    Category
-                  </th>
-                  <th className="text-center py-3 px-2 text-sm font-medium text-muted-foreground">
-                    Quadrant
-                  </th>
-                  <th className="text-right py-3 px-2 text-sm font-medium text-muted-foreground">
-                    Priority
-                  </th>
-                  <th className="text-right py-3 px-2 text-sm font-medium text-muted-foreground">
-                    Adj. Priority
-                  </th>
+                <tr className="border-b border-border/50">
+                  <th className="text-left py-3 px-4 text-xs font-medium text-muted-foreground uppercase tracking-wider">Rank</th>
+                  <th className="text-left py-3 px-4 text-xs font-medium text-muted-foreground uppercase tracking-wider">Company</th>
+                  <th className="text-left py-3 px-4 text-xs font-medium text-muted-foreground uppercase tracking-wider hidden md:table-cell">Category</th>
+                  <th className="text-left py-3 px-4 text-xs font-medium text-muted-foreground uppercase tracking-wider">Quadrant</th>
+                  <th className="text-right py-3 px-4 text-xs font-medium text-muted-foreground uppercase tracking-wider">Value</th>
+                  <th className="text-right py-3 px-4 text-xs font-medium text-muted-foreground uppercase tracking-wider">Readiness</th>
+                  <th className="text-right py-3 px-4 text-xs font-medium text-muted-foreground uppercase tracking-wider">Adj. Priority</th>
                 </tr>
               </thead>
               <tbody>
-                {metrics.topCompanies?.map((company: any, index: number) => (
-                  <tr
-                    key={company.id}
-                    className="border-b border-border/50 hover:bg-muted/50 transition-colors"
+                {top10.map((company: Company, index: number) => (
+                  <tr 
+                    key={company.id} 
+                    className="border-b border-border/30 hover:bg-card/50 transition-colors"
                   >
-                    <td className="py-3 px-2">
-                      <span className="font-bold text-muted-foreground">
-                        #{index + 1}
+                    <td className="py-4 px-4">
+                      <span className={`w-7 h-7 rounded-full flex items-center justify-center text-sm font-semibold ${
+                        index < 3 ? "bg-primary/20 text-primary" : "bg-muted text-muted-foreground"
+                      }`}>
+                        {index + 1}
                       </span>
                     </td>
-                    <td className="py-3 px-2">
+                    <td className="py-4 px-4">
                       <Link href={`/company/${company.id}`}>
-                        <div className="flex items-center gap-3 hover:text-primary cursor-pointer">
+                        <div className="flex items-center gap-3 cursor-pointer hover:text-primary transition-colors">
                           <CompanyLogo companyName={company.companyName} size="sm" />
-                          <span className="font-medium">
-                            {company.companyName}
-                          </span>
+                          <span className="font-medium">{company.companyName}</span>
                         </div>
                       </Link>
                     </td>
-                    <td className="py-3 px-2 hidden md:table-cell">
-                      <Badge
-                        variant="outline"
-                        style={{
-                          borderColor:
-                            CATEGORY_COLORS[company.investmentCategory] || "#999",
-                          color:
-                            CATEGORY_COLORS[company.investmentCategory] || "#999",
+                    <td className="py-4 px-4 hidden md:table-cell">
+                      <Badge 
+                        variant="outline" 
+                        className="text-xs"
+                        style={{ 
+                          borderColor: CATEGORY_COLORS[company.investmentCategory],
+                          color: CATEGORY_COLORS[company.investmentCategory]
                         }}
                       >
-                        {company.investmentCategory.split(" ")[0]}
+                        {company.investmentCategory}
                       </Badge>
                     </td>
-                    <td className="py-3 px-2 text-center">
-                      <Badge
-                        style={{
-                          backgroundColor:
-                            QUADRANT_COLORS[
-                              company.quadrant as keyof typeof QUADRANT_COLORS
-                            ] + "20",
-                          color:
-                            QUADRANT_COLORS[
-                              company.quadrant as keyof typeof QUADRANT_COLORS
-                            ],
-                          borderColor:
-                            QUADRANT_COLORS[
-                              company.quadrant as keyof typeof QUADRANT_COLORS
-                            ],
-                        }}
-                        variant="outline"
-                      >
-                        {company.quadrant}
-                      </Badge>
+                    <td className="py-4 px-4">
+                      {company.quadrant && (
+                        <Badge 
+                          className="text-xs"
+                          style={{ 
+                            backgroundColor: `color-mix(in oklch, ${QUADRANT_CONFIG[company.quadrant as keyof typeof QUADRANT_CONFIG]?.color || "gray"} 20%, transparent)`,
+                            color: QUADRANT_CONFIG[company.quadrant as keyof typeof QUADRANT_CONFIG]?.color
+                          }}
+                        >
+                          {company.quadrant}
+                        </Badge>
+                      )}
                     </td>
-                    <td className="py-3 px-2 text-right font-medium financial-number">
-                      {Number(company.priorityScore).toFixed(2)}
+                    <td className="py-4 px-4 text-right font-medium">
+                      {parseFloat(company.valueScore || "0").toFixed(2)}
                     </td>
-                    <td className="py-3 px-2 text-right font-bold financial-number text-green-600 dark:text-green-400">
-                      {formatCurrency(Number(company.adjustedPriority))}
+                    <td className="py-4 px-4 text-right font-medium">
+                      {parseFloat(company.readinessScore || "0").toFixed(2)}
+                    </td>
+                    <td className="py-4 px-4 text-right">
+                      <span className="font-bold text-primary">
+                        {formatCurrency(parseFloat(company.adjustedPriority || "0"))}
+                      </span>
                     </td>
                   </tr>
                 ))}
               </tbody>
             </table>
           </div>
-        </CardContent>
-      </Card>
+        </motion.div>
 
-      {/* Quick Actions */}
-      <div className="mt-8 grid gap-4 md:grid-cols-3">
-        <Link href="/matrix">
-          <Card className="cursor-pointer hover:shadow-md transition-shadow">
-            <CardContent className="p-6 flex items-center gap-4">
-              <div className="p-3 rounded-lg bg-blue-100 dark:bg-blue-900/30">
-                <Target className="w-6 h-6 text-blue-600 dark:text-blue-400" />
+        {/* Quick Actions */}
+        <div className="grid md:grid-cols-3 gap-4">
+          <Link href="/matrix">
+            <motion.div
+              className="bg-card/90 backdrop-blur-xl rounded-xl border border-border/50 p-6 hover:border-primary/30 transition-all cursor-pointer group"
+              whileHover={{ scale: 1.02 }}
+              whileTap={{ scale: 0.98 }}
+            >
+              <div className="flex items-center gap-4">
+                <div className="w-12 h-12 rounded-xl flex items-center justify-center bg-primary/15 text-primary group-hover:shadow-[0_0_40px_-10px_rgba(59,130,246,0.5)] transition-all">
+                  <Target className="w-5 h-5" />
+                </div>
+                <div>
+                  <h3 className="font-semibold">Value-Readiness Matrix</h3>
+                  <p className="text-sm text-muted-foreground">Visualize company positioning</p>
+                </div>
+                <ChevronRight className="w-5 h-5 ml-auto text-muted-foreground group-hover:text-primary transition-colors" />
               </div>
-              <div>
-                <h3 className="font-semibold">Value-Readiness Matrix</h3>
-                <p className="text-sm text-muted-foreground">
-                  Visualize company positioning
-                </p>
-              </div>
-              <ArrowRight className="w-5 h-5 ml-auto text-muted-foreground" />
-            </CardContent>
-          </Card>
-        </Link>
+            </motion.div>
+          </Link>
 
-        <Link href="/portfolio">
-          <Card className="cursor-pointer hover:shadow-md transition-shadow">
-            <CardContent className="p-6 flex items-center gap-4">
-              <div className="p-3 rounded-lg bg-green-100 dark:bg-green-900/30">
-                <TrendingUp className="w-6 h-6 text-green-600 dark:text-green-400" />
+          <Link href="/portfolio">
+            <motion.div
+              className="bg-card/90 backdrop-blur-xl rounded-xl border border-border/50 p-6 hover:border-primary/30 transition-all cursor-pointer group"
+              whileHover={{ scale: 1.02 }}
+              whileTap={{ scale: 0.98 }}
+            >
+              <div className="flex items-center gap-4">
+                <div className="w-12 h-12 rounded-xl flex items-center justify-center bg-primary/15 text-primary group-hover:shadow-[0_0_40px_-10px_rgba(34,211,238,0.4)] transition-all">
+                  <TrendingUp className="w-5 h-5" />
+                </div>
+                <div>
+                  <h3 className="font-semibold">Portfolio Amplification</h3>
+                  <p className="text-sm text-muted-foreground">Cross-portfolio synergies</p>
+                </div>
+                <ChevronRight className="w-5 h-5 ml-auto text-muted-foreground group-hover:text-primary transition-colors" />
               </div>
-              <div>
-                <h3 className="font-semibold">Portfolio Amplification</h3>
-                <p className="text-sm text-muted-foreground">
-                  Cross-portfolio synergies
-                </p>
-              </div>
-              <ArrowRight className="w-5 h-5 ml-auto text-muted-foreground" />
-            </CardContent>
-          </Card>
-        </Link>
+            </motion.div>
+          </Link>
 
-        <Link href="/ai">
-          <Card className="cursor-pointer hover:shadow-md transition-shadow">
-            <CardContent className="p-6 flex items-center gap-4">
-              <div className="p-3 rounded-lg bg-purple-100 dark:bg-purple-900/30">
-                <Zap className="w-6 h-6 text-purple-600 dark:text-purple-400" />
+          <Link href="/ai">
+            <motion.div
+              className="bg-card/90 backdrop-blur-xl rounded-xl border border-border/50 p-6 hover:border-primary/30 transition-all cursor-pointer group"
+              whileHover={{ scale: 1.02 }}
+              whileTap={{ scale: 0.98 }}
+            >
+              <div className="flex items-center gap-4">
+                <div className="w-12 h-12 rounded-xl flex items-center justify-center bg-primary/15 text-primary group-hover:shadow-[0_0_40px_-10px_rgba(34,197,94,0.4)] transition-all">
+                  <Sparkles className="w-5 h-5" />
+                </div>
+                <div>
+                  <h3 className="font-semibold">AI Assistant</h3>
+                  <p className="text-sm text-muted-foreground">Natural language insights</p>
+                </div>
+                <ChevronRight className="w-5 h-5 ml-auto text-muted-foreground group-hover:text-primary transition-colors" />
               </div>
-              <div>
-                <h3 className="font-semibold">AI Assistant</h3>
-                <p className="text-sm text-muted-foreground">
-                  Natural language insights
-                </p>
-              </div>
-              <ArrowRight className="w-5 h-5 ml-auto text-muted-foreground" />
-            </CardContent>
-          </Card>
-        </Link>
+            </motion.div>
+          </Link>
+        </div>
       </div>
     </Layout>
   );

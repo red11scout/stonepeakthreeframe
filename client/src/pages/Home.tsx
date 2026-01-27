@@ -1,428 +1,479 @@
+import { Link } from "wouter";
 import { useAuth } from "@/_core/hooks/useAuth";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
 import { getLoginUrl } from "@/const";
-import { Link } from "wouter";
-import { useTheme } from "@/contexts/ThemeContext";
 import {
-  Building2,
-  LayoutDashboard,
-  Grid3X3,
-  Network,
-  Calendar,
-  Bot,
-  FileText,
   ArrowRight,
-  TrendingUp,
   Target,
+  Layers,
+  Clock,
+  Trophy,
   Zap,
-  Sun,
-  Moon,
-  ChevronRight,
+  TrendingUp,
+  Building2,
   Sparkles,
+  ChevronRight,
+  BarChart3,
+  Brain,
+  Network,
 } from "lucide-react";
+import { motion } from "framer-motion";
 
-const features = [
-  {
-    icon: LayoutDashboard,
-    title: "Executive Dashboard",
-    description:
-      "Real-time portfolio health metrics, EBITDA impact tracking, and top company rankings at a glance.",
-    href: "/dashboard",
-    color: "blue",
-  },
-  {
-    icon: Grid3X3,
-    title: "Value-Readiness Matrix",
-    description:
-      "Interactive scatter plot visualization with quadrant analysis, filtering, and drill-down capabilities.",
-    href: "/matrix",
-    color: "green",
-  },
-  {
-    icon: Network,
-    title: "Portfolio Amplification",
-    description:
-      "Cross-portfolio synergy analysis with replication potential scoring and Platform Play identification.",
-    href: "/portfolio",
-    color: "purple",
-  },
-  {
-    icon: Calendar,
-    title: "Hold Period Planning",
-    description:
-      "Three-track value capture model with phase-gate timeline visualization and initiative sequencing.",
-    href: "/hold-period",
-    color: "amber",
-  },
-  {
-    icon: Bot,
-    title: "AI Assistant",
-    description:
-      "Natural language querying for portfolio insights and AI-powered strategic recommendations.",
-    href: "/ai",
-    color: "sky",
-  },
-  {
-    icon: FileText,
-    title: "Reports & Exports",
-    description:
-      "Generate shareable HTML reports, Excel exports with formulas, and BlueAlly branded presentations.",
-    href: "/reports",
-    color: "rose",
-  },
-];
+const fadeInUp = {
+  initial: { opacity: 0, y: 30 },
+  animate: { opacity: 1, y: 0 },
+  transition: { duration: 0.6 }
+};
 
-const stats = [
-  { label: "Portfolio Companies", value: "55" },
-  { label: "Investment Categories", value: "5" },
-  { label: "Value Themes", value: "3" },
-  { label: "Hold Period Tracks", value: "3" },
-];
+const stagger = {
+  animate: {
+    transition: {
+      staggerChildren: 0.1
+    }
+  }
+};
 
 export default function Home() {
-  const { user, loading, logout } = useAuth();
-  const { theme, toggleTheme } = useTheme();
+  const { user, loading, isAuthenticated } = useAuth();
 
   return (
     <div className="min-h-screen bg-background">
-      {/* Header */}
-      <header className="sticky top-0 z-50 w-full border-b border-border bg-card/95 backdrop-blur supports-[backdrop-filter]:bg-card/60">
-        <div className="container flex h-16 items-center justify-between">
+      {/* Background Effects */}
+      <div className="fixed inset-0 bg-grid opacity-50" />
+      <div className="fixed inset-0 bg-radial-gradient" />
+      
+      {/* Navigation */}
+      <nav className="relative z-50 border-b border-border/50 bg-background/80 backdrop-blur-xl">
+        <div className="container flex items-center justify-between h-16">
           <div className="flex items-center gap-3">
-            <div className="flex items-center justify-center w-10 h-10 rounded-lg blueally-gradient">
-              <Building2 className="w-6 h-6 text-white" />
+            <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-primary to-accent flex items-center justify-center">
+              <Sparkles className="w-5 h-5 text-white" />
             </div>
             <div>
-              <span className="text-lg font-bold text-[#003B73] dark:text-[#00A3E0]">
-                StonePeak AI
-              </span>
-              <span className="hidden sm:inline text-sm text-muted-foreground ml-2">
-                Portfolio Intelligence
-              </span>
+              <span className="font-semibold text-lg">StonePeak</span>
+              <span className="text-primary ml-1 font-light">AI</span>
             </div>
           </div>
-
-          <div className="flex items-center gap-2">
-            <Button variant="ghost" size="icon" onClick={toggleTheme}>
-              {theme === "dark" ? (
-                <Sun className="w-5 h-5" />
-              ) : (
-                <Moon className="w-5 h-5" />
-              )}
-            </Button>
-
-            {user ? (
-              <div className="flex items-center gap-3">
-                <Link href="/dashboard">
-                  <Button>
-                    Go to Dashboard
-                    <ArrowRight className="w-4 h-4 ml-2" />
-                  </Button>
-                </Link>
-              </div>
+          
+          <div className="flex items-center gap-4">
+            {isAuthenticated ? (
+              <Link href="/dashboard">
+                <Button className="relative overflow-hidden rounded-lg px-6 py-3 font-medium bg-gradient-to-r from-blue-600 to-cyan-500 text-white shadow-lg hover:shadow-xl transition-all">
+                  Enter Platform
+                  <ArrowRight className="w-4 h-4 ml-2" />
+                </Button>
+              </Link>
             ) : (
-              <Button asChild>
-                <a href={getLoginUrl()}>Sign in</a>
-              </Button>
+              <a href={getLoginUrl()}>
+                <Button className="relative overflow-hidden rounded-lg px-6 py-3 font-medium bg-gradient-to-r from-blue-600 to-cyan-500 text-white shadow-lg hover:shadow-xl transition-all">
+                  Sign In
+                  <ArrowRight className="w-4 h-4 ml-2" />
+                </Button>
+              </a>
             )}
           </div>
         </div>
-      </header>
+      </nav>
 
       {/* Hero Section */}
-      <section className="relative overflow-hidden">
-        <div className="absolute inset-0 blueally-gradient opacity-5" />
-        <div className="container py-20 md:py-32">
-          <div className="max-w-4xl mx-auto text-center">
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-6">
-              <Sparkles className="w-4 h-4" />
-              AI-Powered Portfolio Intelligence
-            </div>
-
-            <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-6">
-              <span className="text-[#003B73] dark:text-white">Transform Your</span>
+      <section className="relative pt-20 pb-32 overflow-hidden">
+        <div className="container">
+          <motion.div 
+            className="max-w-4xl mx-auto text-center"
+            initial="initial"
+            animate="animate"
+            variants={stagger}
+          >
+            <motion.div variants={fadeInUp}>
+              <Badge className="mb-6 px-4 py-1.5 text-sm bg-primary/10 text-primary border-primary/20">
+                Portfolio Intelligence Platform
+              </Badge>
+            </motion.div>
+            
+            <motion.h1 
+              className="font-serif italic tracking-tight text-5xl md:text-7xl lg:text-8xl mb-6"
+              variants={fadeInUp}
+            >
+              Intelligence,<br />
+              <span className="bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500 not-italic font-semibold">Refined.</span>
+            </motion.h1>
+            
+            <motion.p 
+              className="text-muted-foreground text-lg font-light text-xl md:text-2xl max-w-2xl mx-auto mb-10"
+              variants={fadeInUp}
+            >
+              The future isn't just faster. It's clearer.
               <br />
-              <span className="blueally-gradient bg-clip-text text-transparent">
-                Portfolio Strategy
-              </span>
-            </h1>
-
-            <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-              Harness the power of AI to analyze, prioritize, and optimize value
-              creation initiatives across your private equity portfolio with
-              deterministic, auditable insights.
-            </p>
-
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-              {user ? (
+              <span className="text-foreground/80">Transform instinct into quantified conviction.</span>
+            </motion.p>
+            
+            <motion.div 
+              className="flex flex-col sm:flex-row items-center justify-center gap-4"
+              variants={fadeInUp}
+            >
+              {isAuthenticated ? (
                 <Link href="/dashboard">
-                  <Button size="lg" className="gap-2">
-                    <LayoutDashboard className="w-5 h-5" />
-                    Open Dashboard
+                  <Button size="lg" className="relative overflow-hidden rounded-lg px-6 py-3 font-medium bg-gradient-to-r from-blue-600 to-cyan-500 text-white shadow-lg hover:shadow-xl transition-all text-lg px-8 py-6">
+                    View Portfolio
+                    <ChevronRight className="w-5 h-5 ml-2" />
                   </Button>
                 </Link>
               ) : (
-                <Button size="lg" asChild className="gap-2">
-                  <a href={getLoginUrl()}>
+                <a href={getLoginUrl()}>
+                  <Button size="lg" className="relative overflow-hidden rounded-lg px-6 py-3 font-medium bg-gradient-to-r from-blue-600 to-cyan-500 text-white shadow-lg hover:shadow-xl transition-all text-lg px-8 py-6">
                     Get Started
-                    <ArrowRight className="w-5 h-5" />
-                  </a>
-                </Button>
+                    <ChevronRight className="w-5 h-5 ml-2" />
+                  </Button>
+                </a>
               )}
               <Link href="/matrix">
-                <Button size="lg" variant="outline" className="gap-2">
-                  <Grid3X3 className="w-5 h-5" />
-                  View Matrix
+                <Button size="lg" variant="outline" className="text-lg px-8 py-6 bg-transparent border-border/50 hover:bg-card/50">
+                  Explore Matrix
                 </Button>
               </Link>
-            </div>
-          </div>
-        </div>
-      </section>
+            </motion.div>
+          </motion.div>
 
-      {/* Stats Section */}
-      <section className="border-y border-border bg-muted/30">
-        <div className="container py-12">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            {stats.map((stat, index) => (
-              <div key={index} className="text-center">
-                <p className="text-3xl md:text-4xl font-bold text-[#003B73] dark:text-[#00A3E0]">
-                  {stat.value}
-                </p>
+          {/* Stats Row */}
+          <motion.div 
+            className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-20 max-w-4xl mx-auto"
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.4, duration: 0.6 }}
+          >
+            {[
+              { value: "55", label: "Portfolio Companies" },
+              { value: "$1.07B", label: "Total EBITDA Impact" },
+              { value: "10", label: "Champions Identified" },
+              { value: "3", label: "Strategic Frameworks" },
+            ].map((stat, i) => (
+              <div key={i} className="bg-card/90 backdrop-blur-xl rounded-xl border border-border/50 p-5 text-center">
+                <p className="text-3xl md:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500">{stat.value}</p>
                 <p className="text-sm text-muted-foreground mt-1">{stat.label}</p>
               </div>
             ))}
-          </div>
+          </motion.div>
         </div>
       </section>
 
-      {/* Features Section */}
-      <section className="py-20">
+      {/* Executive Summary - Hemingway Voice */}
+      <section className="relative py-24 border-t border-border/30">
         <div className="container">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Comprehensive Portfolio Analysis
+          <motion.div 
+            className="max-w-3xl mx-auto"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+          >
+            <h2 className="font-serif italic tracking-tight text-3xl md:text-4xl mb-8 text-center">
+              The Case for<br />
+              <span className="bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500 not-italic font-semibold">AI Intelligence</span>
             </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Everything you need to analyze, prioritize, and execute value
-              creation initiatives across your portfolio.
-            </p>
-          </div>
+            
+            <div className="prose prose-lg prose-invert mx-auto text-muted-foreground leading-relaxed">
+              <p className="text-lg md:text-xl">
+                Private equity firms hold a structural advantage in AI. They own multiple companies. 
+                They can deploy solutions across portfolios. They can learn once and apply many times.
+              </p>
+              
+              <p className="text-lg md:text-xl">
+                But advantage means nothing without action. And action requires clarity.
+              </p>
+              
+              <p className="text-lg md:text-xl">
+                This platform provides that clarity. It takes 55 portfolio companies. It measures their 
+                AI value potential. It measures their organizational readiness. It tells you where to 
+                invest your time and capital.
+              </p>
+              
+              <p className="text-lg md:text-xl font-medium text-foreground">
+                The numbers don't lie. The frameworks don't guess. The recommendations are clear.
+              </p>
+            </div>
+          </motion.div>
+        </div>
+      </section>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {features.map((feature, index) => (
-              <Link key={index} href={feature.href}>
-                <Card className="h-full hover:shadow-lg transition-all hover:border-primary/50 cursor-pointer group">
-                  <CardContent className="p-6">
-                    <div
-                      className={`w-12 h-12 rounded-lg flex items-center justify-center mb-4 ${
-                        feature.color === "blue"
-                          ? "bg-blue-100 dark:bg-blue-900/30"
-                          : feature.color === "green"
-                          ? "bg-green-100 dark:bg-green-900/30"
-                          : feature.color === "purple"
-                          ? "bg-purple-100 dark:bg-purple-900/30"
-                          : feature.color === "amber"
-                          ? "bg-amber-100 dark:bg-amber-900/30"
-                          : feature.color === "sky"
-                          ? "bg-sky-100 dark:bg-sky-900/30"
-                          : "bg-rose-100 dark:bg-rose-900/30"
-                      }`}
-                    >
-                      <feature.icon
-                        className={`w-6 h-6 ${
-                          feature.color === "blue"
-                            ? "text-blue-600 dark:text-blue-400"
-                            : feature.color === "green"
-                            ? "text-green-600 dark:text-green-400"
-                            : feature.color === "purple"
-                            ? "text-purple-600 dark:text-purple-400"
-                            : feature.color === "amber"
-                            ? "text-amber-600 dark:text-amber-400"
-                            : feature.color === "sky"
-                            ? "text-sky-600 dark:text-sky-400"
-                            : "text-rose-600 dark:text-rose-400"
-                        }`}
-                      />
-                    </div>
-                    <h3 className="text-lg font-semibold mb-2 group-hover:text-primary transition-colors">
-                      {feature.title}
-                    </h3>
-                    <p className="text-sm text-muted-foreground">
-                      {feature.description}
-                    </p>
-                    <div className="flex items-center gap-1 mt-4 text-sm text-primary opacity-0 group-hover:opacity-100 transition-opacity">
-                      Learn more
-                      <ChevronRight className="w-4 h-4" />
-                    </div>
-                  </CardContent>
-                </Card>
+      {/* Three Frameworks Section */}
+      <section className="relative py-24 border-t border-border/30">
+        <div className="container">
+          <motion.div 
+            className="text-center mb-16"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+          >
+            <h2 className="font-serif italic tracking-tight text-3xl md:text-4xl mb-4">
+              Three Frameworks.<br />
+              <span className="bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500 not-italic font-semibold">One Truth.</span>
+            </h2>
+            <p className="text-muted-foreground text-lg font-light max-w-xl mx-auto">
+              Each framework answers a different question. Together, they tell the complete story.
+            </p>
+          </motion.div>
+
+          <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+            {/* Framework 1: Value-Readiness Matrix */}
+            <motion.div 
+              className="bg-card/90 backdrop-blur-xl rounded-xl border border-border/50 p-8 group"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.1 }}
+            >
+              <div className="w-12 h-12 rounded-xl flex items-center justify-center bg-primary/15 text-primary mb-6 group-hover:shadow-[0_0_40px_-10px_rgba(59,130,246,0.5)] transition-all duration-300">
+                <Target className="w-6 h-6" />
+              </div>
+              <h3 className="text-xl font-semibold mb-3 text-foreground">Value-Readiness Matrix</h3>
+              <p className="text-muted-foreground mb-6 leading-relaxed">
+                Where should you focus? This matrix plots every company by AI value potential 
+                and organizational readiness. Four quadrants emerge. Champions lead. Foundations follow.
+              </p>
+              <div className="space-y-3 text-sm">
+                <div className="flex items-center gap-2">
+                  <Trophy className="w-4 h-4" style={{ color: "oklch(0.65 0.18 145)" }} />
+                  <span><strong>Champions</strong> — High value, high readiness. Deploy now.</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Zap className="w-4 h-4" style={{ color: "oklch(0.60 0.18 250)" }} />
+                  <span><strong>Quick Wins</strong> — Lower value, high readiness. Fast returns.</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Target className="w-4 h-4" style={{ color: "oklch(0.60 0.15 300)" }} />
+                  <span><strong>Strategic</strong> — High value, lower readiness. Build first.</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Layers className="w-4 h-4" style={{ color: "oklch(0.45 0.02 250)" }} />
+                  <span><strong>Foundations</strong> — Develop capabilities before AI.</span>
+                </div>
+              </div>
+              <Link href="/matrix">
+                <Button variant="ghost" className="mt-6 w-full justify-between group-hover:bg-primary/10">
+                  Explore Matrix
+                  <ArrowRight className="w-4 h-4" />
+                </Button>
               </Link>
-            ))}
+            </motion.div>
+
+            {/* Framework 2: Portfolio Amplification */}
+            <motion.div 
+              className="bg-card/90 backdrop-blur-xl rounded-xl border border-border/50 p-8 group"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.2 }}
+            >
+              <div className="w-12 h-12 rounded-xl flex items-center justify-center bg-primary/15 text-primary mb-6 group-hover:shadow-[0_0_40px_-10px_rgba(34,211,238,0.4)] transition-all duration-300">
+                <Network className="w-6 h-6" />
+              </div>
+              <h3 className="text-xl font-semibold mb-3 text-foreground">Portfolio Amplification</h3>
+              <p className="text-muted-foreground mb-6 leading-relaxed">
+                Which investments compound? An AI solution that works for one company might work 
+                for ten. This framework identifies replication potential across the portfolio.
+              </p>
+              <div className="space-y-3 text-sm">
+                <div className="flex items-start gap-2">
+                  <div className="w-4 h-4 rounded-full bg-primary/20 flex items-center justify-center mt-0.5">
+                    <span className="text-[10px] font-bold text-primary">P</span>
+                  </div>
+                  <span><strong>Platform Plays</strong> — Solutions that scale across 5+ companies with shared learning curves.</span>
+                </div>
+                <div className="flex items-start gap-2">
+                  <div className="w-4 h-4 rounded-full bg-muted flex items-center justify-center mt-0.5">
+                    <span className="text-[10px] font-bold text-muted-foreground">S</span>
+                  </div>
+                  <span><strong>Point Solutions</strong> — Company-specific implementations with limited replication.</span>
+                </div>
+              </div>
+              <p className="text-sm text-muted-foreground mt-4 italic">
+                "An initiative deployable across 10 companies delivers superior ROI to company-specific solutions."
+              </p>
+              <Link href="/portfolio">
+                <Button variant="ghost" className="mt-6 w-full justify-between group-hover:bg-primary/10">
+                  View Amplification
+                  <ArrowRight className="w-4 h-4" />
+                </Button>
+              </Link>
+            </motion.div>
+
+            {/* Framework 3: Hold Period Planning */}
+            <motion.div 
+              className="bg-card/90 backdrop-blur-xl rounded-xl border border-border/50 p-8 group"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.3 }}
+            >
+              <div className="w-12 h-12 rounded-xl flex items-center justify-center bg-primary/15 text-primary mb-6 group-hover:shadow-[0_0_40px_-10px_rgba(34,197,94,0.4)] transition-all duration-300">
+                <Clock className="w-6 h-6" />
+              </div>
+              <h3 className="text-xl font-semibold mb-3 text-foreground">Hold Period Planning</h3>
+              <p className="text-muted-foreground mb-6 leading-relaxed">
+                When should you act? AI investments must align with exit timelines. This framework 
+                sequences initiatives across three tracks to maximize realized value at exit.
+              </p>
+              <div className="space-y-3 text-sm">
+                <div className="flex items-center justify-between">
+                  <span className="flex items-center gap-2">
+                    <div className="w-3 h-3 rounded-full" style={{ backgroundColor: "oklch(0.65 0.18 250)" }} />
+                    <strong>EBITDA Accelerators</strong>
+                  </span>
+                  <span className="text-muted-foreground">0-12 mo</span>
+                </div>
+                <div className="flex items-center justify-between">
+                  <span className="flex items-center gap-2">
+                    <div className="w-3 h-3 rounded-full" style={{ backgroundColor: "oklch(0.70 0.15 200)" }} />
+                    <strong>Growth Enablers</strong>
+                  </span>
+                  <span className="text-muted-foreground">6-24 mo</span>
+                </div>
+                <div className="flex items-center justify-between">
+                  <span className="flex items-center gap-2">
+                    <div className="w-3 h-3 rounded-full" style={{ backgroundColor: "oklch(0.65 0.18 145)" }} />
+                    <strong>Exit Multipliers</strong>
+                  </span>
+                  <span className="text-muted-foreground">12-36 mo</span>
+                </div>
+              </div>
+              <p className="text-sm text-muted-foreground mt-4 italic">
+                "Balance near-term EBITDA capture with exit narrative development."
+              </p>
+              <Link href="/hold-period">
+                <Button variant="ghost" className="mt-6 w-full justify-between group-hover:bg-primary/10">
+                  Plan Timeline
+                  <ArrowRight className="w-4 h-4" />
+                </Button>
+              </Link>
+            </motion.div>
           </div>
         </div>
       </section>
 
-      {/* Framework Section */}
-      <section className="py-20 bg-muted/30">
+      {/* Value Themes Section */}
+      <section className="relative py-24 border-t border-border/30">
         <div className="container">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Three Analytical Frameworks
+          <motion.div 
+            className="text-center mb-16"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+          >
+            <h2 className="font-serif italic tracking-tight text-3xl md:text-4xl mb-4">
+              Three Value Themes.<br />
+              <span className="bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500 not-italic font-semibold">Clear Allocation.</span>
             </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Integrated frameworks for comprehensive portfolio analysis and
-              value creation planning.
+            <p className="text-muted-foreground text-lg font-light max-w-xl mx-auto">
+              Every AI use case maps to one of three strategic value themes. 
+              This enables clear capital allocation aligned with investment thesis.
             </p>
-          </div>
+          </motion.div>
 
-          <div className="grid md:grid-cols-3 gap-8">
-            <Card className="border-2 border-[#003B73]/20">
-              <CardContent className="p-6">
-                <div className="w-12 h-12 rounded-full bg-[#003B73]/10 flex items-center justify-center mb-4">
-                  <Target className="w-6 h-6 text-[#003B73]" />
-                </div>
-                <h3 className="text-xl font-bold mb-2 text-[#003B73]">
-                  Value-Readiness Matrix
-                </h3>
-                <p className="text-sm text-muted-foreground mb-4">
-                  Position companies across four quadrants based on AI value
-                  potential and implementation readiness.
-                </p>
-                <ul className="text-sm space-y-2">
-                  <li className="flex items-center gap-2">
-                    <div className="w-2 h-2 rounded-full bg-green-500" />
-                    Champions (High Value + High Readiness)
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <div className="w-2 h-2 rounded-full bg-sky-500" />
-                    Quick Wins (Lower Value + High Readiness)
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <div className="w-2 h-2 rounded-full bg-purple-500" />
-                    Strategic (High Value + Lower Readiness)
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <div className="w-2 h-2 rounded-full bg-gray-500" />
-                    Foundations (Lower Value + Lower Readiness)
-                  </li>
-                </ul>
-              </CardContent>
-            </Card>
+          <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+            <motion.div 
+              className="bg-card/90 backdrop-blur-xl rounded-xl border border-border/50 p-6 border-l-4"
+              style={{ borderLeftColor: "oklch(0.70 0.18 145)" }}
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+            >
+              <div className="flex items-center gap-3 mb-4">
+                <TrendingUp className="w-5 h-5" style={{ color: "oklch(0.70 0.18 145)" }} />
+                <h3 className="font-semibold">Revenue Growth</h3>
+              </div>
+              <p className="text-sm text-muted-foreground leading-relaxed">
+                AI applications that create new revenue streams, expand markets, enable premium pricing, 
+                or unlock new customer segments. The top line grows.
+              </p>
+            </motion.div>
 
-            <Card className="border-2 border-[#00A3E0]/20">
-              <CardContent className="p-6">
-                <div className="w-12 h-12 rounded-full bg-[#00A3E0]/10 flex items-center justify-center mb-4">
-                  <Network className="w-6 h-6 text-[#00A3E0]" />
-                </div>
-                <h3 className="text-xl font-bold mb-2 text-[#00A3E0]">
-                  Portfolio Amplification
-                </h3>
-                <p className="text-sm text-muted-foreground mb-4">
-                  Identify cross-portfolio synergies and replication
-                  opportunities for maximum value creation.
-                </p>
-                <ul className="text-sm space-y-2">
-                  <li className="flex items-center gap-2">
-                    <Zap className="w-4 h-4 text-[#00A3E0]" />
-                    Replication Potential Scoring (1-10)
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <Zap className="w-4 h-4 text-[#00A3E0]" />
-                    Platform Play vs Point Solution
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <Zap className="w-4 h-4 text-[#00A3E0]" />
-                    Cross-Portfolio Synergy Network
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <Zap className="w-4 h-4 text-[#00A3E0]" />
-                    Portfolio-Adjusted Priority
-                  </li>
-                </ul>
-              </CardContent>
-            </Card>
+            <motion.div 
+              className="bg-card/90 backdrop-blur-xl rounded-xl border border-border/50 p-6 border-l-4"
+              style={{ borderLeftColor: "oklch(0.70 0.15 200)" }}
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.1 }}
+            >
+              <div className="flex items-center gap-3 mb-4">
+                <BarChart3 className="w-5 h-5" style={{ color: "oklch(0.70 0.15 200)" }} />
+                <h3 className="font-semibold">Margin Expansion</h3>
+              </div>
+              <p className="text-sm text-muted-foreground leading-relaxed">
+                AI applications that improve EBITDA through yield optimization, throughput enhancement, 
+                and productivity gains. The margins widen.
+              </p>
+            </motion.div>
 
-            <Card className="border-2 border-[#00B34A]/20">
-              <CardContent className="p-6">
-                <div className="w-12 h-12 rounded-full bg-[#00B34A]/10 flex items-center justify-center mb-4">
-                  <TrendingUp className="w-6 h-6 text-[#00B34A]" />
-                </div>
-                <h3 className="text-xl font-bold mb-2 text-[#00B34A]">
-                  Hold Period Planning
-                </h3>
-                <p className="text-sm text-muted-foreground mb-4">
-                  Align AI initiatives with investment timeline through
-                  three-track value capture model.
-                </p>
-                <ul className="text-sm space-y-2">
-                  <li className="flex items-center gap-2">
-                    <div className="w-2 h-2 rounded-full bg-[#003B73]" />
-                    EBITDA Accelerators (40-50%, 0-12mo)
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <div className="w-2 h-2 rounded-full bg-[#00A3E0]" />
-                    Growth Enablers (30-40%, 12-24mo)
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <div className="w-2 h-2 rounded-full bg-[#00B34A]" />
-                    Exit Multipliers (15-25%, 24-36mo+)
-                  </li>
-                </ul>
-              </CardContent>
-            </Card>
+            <motion.div 
+              className="bg-card/90 backdrop-blur-xl rounded-xl border border-border/50 p-6 border-l-4"
+              style={{ borderLeftColor: "oklch(0.65 0.18 250)" }}
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.2 }}
+            >
+              <div className="flex items-center gap-3 mb-4">
+                <Building2 className="w-5 h-5" style={{ color: "oklch(0.65 0.18 250)" }} />
+                <h3 className="font-semibold">Cost Cutting</h3>
+              </div>
+              <p className="text-sm text-muted-foreground leading-relaxed">
+                AI applications that reduce SG&A through automation of back-office functions 
+                and elimination of administrative overhead. The costs fall.
+              </p>
+            </motion.div>
           </div>
         </div>
       </section>
 
       {/* CTA Section */}
-      <section className="py-20">
+      <section className="relative py-24 border-t border-border/30">
         <div className="container">
-          <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Ready to Transform Your Portfolio?
+          <motion.div 
+            className="bg-card/90 backdrop-blur-xl rounded-xl border border-border/50 p-12 md:p-16 text-center max-w-4xl mx-auto shadow-[0_0_40px_-10px_rgba(59,130,246,0.5)]"
+            initial={{ opacity: 0, scale: 0.95 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+          >
+            <Brain className="w-12 h-12 mx-auto mb-6 text-primary" />
+            <h2 className="font-serif italic tracking-tight text-3xl md:text-4xl mb-4">
+              Ready to See<br />
+              <span className="bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500 not-italic font-semibold">Your Portfolio?</span>
             </h2>
-            <p className="text-lg text-muted-foreground mb-8">
-              Start analyzing your portfolio with AI-powered insights today.
+            <p className="text-muted-foreground text-lg font-light max-w-lg mx-auto mb-8">
+              The data is ready. The frameworks are built. The insights await.
+              <br />
+              <span className="text-foreground/80">Enter the platform and see where your companies stand.</span>
             </p>
-            {user ? (
+            {isAuthenticated ? (
               <Link href="/dashboard">
-                <Button size="lg" className="gap-2">
-                  <LayoutDashboard className="w-5 h-5" />
-                  Go to Dashboard
+                <Button size="lg" className="relative overflow-hidden rounded-lg px-6 py-3 font-medium bg-gradient-to-r from-blue-600 to-cyan-500 text-white shadow-lg hover:shadow-xl transition-all text-lg px-10 py-6">
+                  View Dashboard
+                  <ArrowRight className="w-5 h-5 ml-2" />
                 </Button>
               </Link>
             ) : (
-              <Button size="lg" asChild className="gap-2">
-                <a href={getLoginUrl()}>
-                  Get Started Free
-                  <ArrowRight className="w-5 h-5" />
-                </a>
-              </Button>
+              <a href={getLoginUrl()}>
+                <Button size="lg" className="relative overflow-hidden rounded-lg px-6 py-3 font-medium bg-gradient-to-r from-blue-600 to-cyan-500 text-white shadow-lg hover:shadow-xl transition-all text-lg px-10 py-6">
+                  Get Started
+                  <ArrowRight className="w-5 h-5 ml-2" />
+                </Button>
+              </a>
             )}
-          </div>
+          </motion.div>
         </div>
       </section>
 
       {/* Footer */}
-      <footer className="border-t border-border bg-muted/30">
-        <div className="container py-8">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-            <div className="flex items-center gap-3">
-              <div className="flex items-center justify-center w-8 h-8 rounded-lg blueally-gradient">
-                <Building2 className="w-4 h-4 text-white" />
-              </div>
-              <span className="font-semibold text-[#003B73] dark:text-[#00A3E0]">
-                StonePeak AI
-              </span>
+      <footer className="relative py-8 border-t border-border/30">
+        <div className="container">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-muted-foreground">
+            <div className="flex items-center gap-2">
+              <Sparkles className="w-4 h-4 text-primary" />
+              <span>StonePeak AI Portfolio Intelligence</span>
             </div>
-            <div className="text-sm text-muted-foreground text-center">
-              Powered by <strong className="text-[#003B73] dark:text-[#00A3E0]">BlueAlly Technology Solutions</strong>
-            </div>
-            <div className="text-sm text-muted-foreground">
-              Trustworthiness • Reliability • Energized Innovation
-            </div>
+            <p>Powered by BlueAlly Technology Solutions</p>
           </div>
         </div>
       </footer>
