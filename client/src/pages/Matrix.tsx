@@ -190,8 +190,8 @@ export default function Matrix() {
         <MethodologyPanel {...VALUE_READINESS_METHODOLOGY} />
 
         {/* Controls */}
-        <div className="flex flex-wrap gap-4 mb-6">
-          <div className="relative flex-1 min-w-[240px] max-w-md">
+        <div className="flex flex-col sm:flex-row flex-wrap gap-3 mb-6">
+          <div className="relative flex-1 min-w-0 sm:min-w-[200px] sm:max-w-md">
             <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground" />
             <Input
               placeholder="Search companies..."
@@ -201,29 +201,31 @@ export default function Matrix() {
             />
           </div>
           
-          <Select value={sizeBy} onValueChange={(v: "ebitda" | "priority") => setSizeBy(v)}>
-            <SelectTrigger className="w-[180px] bg-card/50 border-border/50">
-              <SelectValue placeholder="Size by" />
-            </SelectTrigger>
-            <SelectContent>
-              <SelectItem value="ebitda">Size: Adj. EBITDA</SelectItem>
-              <SelectItem value="priority">Size: Adj. Priority</SelectItem>
-            </SelectContent>
-          </Select>
-          
-          <Select value={colorBy} onValueChange={(v: "category" | "quadrant") => setColorBy(v)}>
-            <SelectTrigger className="w-[180px] bg-card/50 border-border/50">
-              <SelectValue placeholder="Color by" />
-            </SelectTrigger>
-            <SelectContent>
-              <SelectItem value="category">Color: Category</SelectItem>
-              <SelectItem value="quadrant">Color: Quadrant</SelectItem>
-            </SelectContent>
-          </Select>
+          <div className="flex gap-3">
+            <Select value={sizeBy} onValueChange={(v: "ebitda" | "priority") => setSizeBy(v)}>
+              <SelectTrigger className="w-full sm:w-[160px] bg-card/50 border-border/50">
+                <SelectValue placeholder="Size by" />
+              </SelectTrigger>
+              <SelectContent>
+                <SelectItem value="ebitda">Size: EBITDA</SelectItem>
+                <SelectItem value="priority">Size: Priority</SelectItem>
+              </SelectContent>
+            </Select>
+            
+            <Select value={colorBy} onValueChange={(v: "category" | "quadrant") => setColorBy(v)}>
+              <SelectTrigger className="w-full sm:w-[160px] bg-card/50 border-border/50">
+                <SelectValue placeholder="Color by" />
+              </SelectTrigger>
+              <SelectContent>
+                <SelectItem value="category">Color: Category</SelectItem>
+                <SelectItem value="quadrant">Color: Quadrant</SelectItem>
+              </SelectContent>
+            </Select>
+          </div>
         </div>
 
         {/* Main Grid */}
-        <div className="grid grid-cols-1 xl:grid-cols-[1fr_340px] gap-6">
+        <div className="grid grid-cols-1 lg:grid-cols-[1fr_280px] xl:grid-cols-[1fr_340px] gap-4 lg:gap-6">
           {/* Matrix Visualization */}
           <div className="bg-card/90 backdrop-blur-xl rounded-xl border border-border/50 p-6">
             <div className="flex items-center justify-between mb-4">

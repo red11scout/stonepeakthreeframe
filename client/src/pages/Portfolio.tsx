@@ -261,66 +261,116 @@ export default function Portfolio() {
         <CardContent>
           <div className="space-y-4">
             {sortedCompanies.slice(0, 20).map((company, index) => (
-              <div
-                key={company.id}
-                className="flex items-center gap-4 p-4 rounded-lg border border-border hover:bg-muted/50 transition-colors"
-              >
-                <div className="flex items-center justify-center w-8 h-8 rounded-full bg-primary/10 text-primary font-bold text-sm">
-                  {index + 1}
-                </div>
+              <Link key={company.id} href={`/company/${company.id}`}>
+                <div className="p-4 rounded-lg border border-border hover:bg-muted/50 transition-colors cursor-pointer">
+                  {/* Mobile: Stacked layout */}
+                  <div className="flex flex-col gap-3 md:hidden">
+                    {/* Row 1: Rank, Company, Classification */}
+                    <div className="flex items-start gap-3">
+                      <div className="flex items-center justify-center w-8 h-8 rounded-full bg-primary/10 text-primary font-bold text-sm shrink-0">
+                        {index + 1}
+                      </div>
+                      <div className="flex-1 min-w-0">
+                        <div className="flex items-center gap-2">
+                          <CompanyLogo companyName={company.companyName} size="sm" />
+                          <span className="font-medium truncate">{company.companyName}</span>
+                        </div>
+                        <p className="text-xs text-muted-foreground mt-1 truncate">
+                          {company.investmentCategory}
+                        </p>
+                      </div>
+                    </div>
+                    {/* Row 2: Badge */}
+                    <div>
+                      <Badge
+                        variant="outline"
+                        className={
+                          company.platformClassification === "Platform Play"
+                            ? "border-blue-500 text-blue-600 text-xs"
+                            : "border-purple-500 text-purple-600 text-xs"
+                        }
+                      >
+                        {company.platformClassification}
+                      </Badge>
+                    </div>
+                    {/* Row 3: Metrics */}
+                    <div className="flex items-center justify-between gap-4 pt-2 border-t border-border/50">
+                      <div>
+                        <p className="text-xs text-muted-foreground">Replication</p>
+                        <div className="flex items-center gap-2 mt-1">
+                          <Progress
+                            value={Number(company.replicationPotential) * 10}
+                            className="w-12 h-2"
+                          />
+                          <span className="font-medium text-sm">
+                            {Number(company.replicationPotential).toFixed(0)}
+                          </span>
+                        </div>
+                      </div>
+                      <div className="text-right">
+                        <p className="text-xs text-muted-foreground">Portfolio-Adj.</p>
+                        <p className="font-bold text-green-600 dark:text-green-400">
+                          {formatCurrency(Number(company.portfolioAdjustedPriority))}
+                        </p>
+                      </div>
+                      <ArrowRight className="w-4 h-4 text-muted-foreground shrink-0" />
+                    </div>
+                  </div>
 
-                <div className="flex-1 min-w-0">
-                  <div className="flex items-center gap-2 mb-1">
-                    <Link href={`/company/${company.id}`}>
-                      <div className="flex items-center gap-2 hover:text-primary cursor-pointer">
-                        <CompanyLogo companyName={company.companyName} size="sm" />
-                        <span className="font-medium">
-                          {company.companyName}
+                  {/* Desktop: Horizontal layout */}
+                  <div className="hidden md:flex items-center gap-4">
+                    <div className="flex items-center justify-center w-8 h-8 rounded-full bg-primary/10 text-primary font-bold text-sm shrink-0">
+                      {index + 1}
+                    </div>
+
+                    <div className="flex-1 min-w-0">
+                      <div className="flex items-center gap-2 mb-1">
+                        <div className="flex items-center gap-2 hover:text-primary">
+                          <CompanyLogo companyName={company.companyName} size="sm" />
+                          <span className="font-medium">{company.companyName}</span>
+                        </div>
+                        <Badge
+                          variant="outline"
+                          className={
+                            company.platformClassification === "Platform Play"
+                              ? "border-blue-500 text-blue-600"
+                              : "border-purple-500 text-purple-600"
+                          }
+                        >
+                          {company.platformClassification}
+                        </Badge>
+                      </div>
+                      <p className="text-sm text-muted-foreground">
+                        {company.investmentCategory}
+                      </p>
+                    </div>
+
+                    <div className="text-center px-4 shrink-0">
+                      <p className="text-xs text-muted-foreground mb-1">Replication</p>
+                      <div className="flex items-center gap-2">
+                        <Progress
+                          value={Number(company.replicationPotential) * 10}
+                          className="w-16 h-2"
+                        />
+                        <span className="font-medium text-sm">
+                          {Number(company.replicationPotential).toFixed(0)}
                         </span>
                       </div>
-                    </Link>
-                    <Badge
-                      variant="outline"
-                      className={
-                        company.platformClassification === "Platform Play"
-                          ? "border-blue-500 text-blue-600"
-                          : "border-purple-500 text-purple-600"
-                      }
-                    >
-                      {company.platformClassification}
-                    </Badge>
-                  </div>
-                  <p className="text-sm text-muted-foreground">
-                    {company.investmentCategory}
-                  </p>
-                </div>
+                    </div>
 
-                <div className="text-center px-4">
-                  <p className="text-xs text-muted-foreground mb-1">Replication</p>
-                  <div className="flex items-center gap-2">
-                    <Progress
-                      value={Number(company.replicationPotential) * 10}
-                      className="w-16 h-2"
-                    />
-                    <span className="font-medium text-sm">
-                      {Number(company.replicationPotential).toFixed(0)}
-                    </span>
+                    <div className="text-right shrink-0">
+                      <p className="text-xs text-muted-foreground mb-1">Portfolio-Adj. Priority</p>
+                      <p className="font-bold text-green-600 dark:text-green-400">
+                        {formatCurrency(Number(company.portfolioAdjustedPriority))}
+                      </p>
+                    </div>
+
+                    <Button variant="ghost" size="icon" className="shrink-0">
+                      <ArrowRight className="w-4 h-4" />
+                    </Button>
                   </div>
                 </div>
-
-                <div className="text-right">
-                  <p className="text-xs text-muted-foreground mb-1">Portfolio-Adj. Priority</p>
-                  <p className="font-bold text-green-600 dark:text-green-400">
-                    {formatCurrency(Number(company.portfolioAdjustedPriority))}
-                  </p>
-                </div>
-
-                <Link href={`/company/${company.id}`}>
-                  <Button variant="ghost" size="icon">
-                    <ArrowRight className="w-4 h-4" />
-                  </Button>
-                </Link>
-              </div>
+              </Link>
             ))}
           </div>
         </CardContent>

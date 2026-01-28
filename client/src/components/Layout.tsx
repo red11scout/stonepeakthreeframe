@@ -28,8 +28,9 @@ const navigation = [
   { name: "Amplification", href: "/portfolio", icon: Network },
   { name: "Hold Period", href: "/hold-period", icon: Clock },
   { name: "Use Cases", href: "/use-cases", icon: Lightbulb },
-  { name: "Reports", href: "/reports", icon: FileText },
-  { name: "AI Assistant", href: "/ai", icon: MessageSquare },
+  // Hidden tabs - uncomment to re-enable
+  // { name: "Reports", href: "/reports", icon: FileText },
+  // { name: "AI Assistant", href: "/ai", icon: MessageSquare },
 ];
 
 interface LayoutProps {

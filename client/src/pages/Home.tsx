@@ -98,20 +98,21 @@ const tools = [
     icon: Lightbulb,
     badge: "170 Use Cases"
   },
-  {
-    name: "Reports & Export",
-    description: "Generate branded reports and export data",
-    href: "/reports",
-    icon: FileText,
-    badge: null
-  },
-  {
-    name: "AI Assistant",
-    description: "Ask questions about your portfolio in natural language",
-    href: "/ai",
-    icon: MessageSquare,
-    badge: "AI Powered"
-  },
+  // Hidden tabs - uncomment to re-enable
+  // {
+  //   name: "Reports & Export",
+  //   description: "Generate branded reports and export data",
+  //   href: "/reports",
+  //   icon: FileText,
+  //   badge: null
+  // },
+  // {
+  //   name: "AI Assistant",
+  //   description: "Ask questions about your portfolio in natural language",
+  //   href: "/ai",
+  //   icon: MessageSquare,
+  //   badge: "AI Powered"
+  // },
 ];
 
 export default function Home() {
