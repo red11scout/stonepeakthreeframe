@@ -1,0 +1,815 @@
+{
+  "companyName": "Inspired Education",
+  "generatedAt": "2026-01-22T16:39:26.323Z",
+  "analysis": {
+    "steps": [
+      {
+        "data": null,
+        "step": 0,
+        "title": "Company Overview",
+        "content": "Inspired Education Group operates 119 premium private schools across 6 continents, serving 80,000 students with 12,000 employees and generating approximately $850M in annual revenue. The company specializes in international and bilingual education programs spanning early years through secondary school, with campuses concentrated in Europe (47 schools), Latin America (31 schools), Asia-Pacific (23 schools), Africa (12 schools), and the Middle East (6 schools).\n\nThe portfolio comprises three primary brands: Inspired international schools (62% of revenue), King's Group British curriculum schools (24%), and St. George's European curriculum schools (14%). Average annual tuition ranges from $12,000 to $45,000 depending on region and program tier. Student retention across the network stands at 91% with average enrollment tenure of 4.2 years. The company maintains a 12:1 student-to-teacher ratio and operates with 78% classroom utilization during peak terms.\n\nThe organization faces a $34M annual burden from fragmented student data systems across 119 campuses. Each school maintains separate student information systems, learning management platforms, and parent communication tools with minimal integration. This fragmentation forces central academic teams to spend 28,000 hours annually consolidating performance data, curriculum compliance reports, and enrollment analytics across disparate platforms. The lack of unified student profiles creates a 14-day lag in identifying at-risk students and delays intervention programs that could improve retention.\n\nAdmissions operations represent a $19M annual friction point as 47 schools operate independent inquiry management processes. Prospective parent inquiries average 8.3 touchpoints before enrollment decision, with response times varying from 4 hours to 6 days depending on campus capacity. This inconsistency costs the organization an estimated 340 enrollments annually at $45,000 average tuition value. Manual tour scheduling, application tracking, and multilingual family communications consume 15,600 staff hours per year across regional admissions teams.\n\nRegulatory compliance creates a $12M annual burden across six educational jurisdictions with distinct accreditation requirements. Each region mandates different curriculum standards, teacher certification protocols, and student assessment frameworks. Academic affairs teams spend 9,800 hours per year preparing documentation for accreditation reviews, mapping curriculum to standards, and responding to regulatory inquiries. This workload diverts senior academic leaders from strategic curriculum development and teacher professional development initiatives.\n\nFinancial figures derive from industry analysis of comparable international school operators and published enrollment data across the Inspired network. Operational burden estimates apply fully-loaded rates of $150 per hour for professional staff and $85 per hour for administrative personnel. Data maturity assessed at Level 2 based on the organization's decentralized technology infrastructure and minimal cross-campus system integration. Revenue estimates incorporate conservative 3% annual tuition inflation and 91% historical retention rates."
+      },
+      {
+        "data": [
+          {
+            "Target State": "Unified student profiles with real-time academic monitoring and 48-hour intervention triggers",
+            "Current State": "119 fragmented student data systems with 14-day lag in at-risk identification",
+            "Primary Driver": "Reduce Cost",
+            "Strategic Theme": "Unified Student Experience",
+            "Secondary Driver": "Grow Revenue"
+          },
+          {
+            "Target State": "Standardized 24-hour inquiry response with AI-assisted multilingual family engagement",
+            "Current State": "8.3 touchpoints per enrollment with 4-6 day response variation across campuses",
+            "Primary Driver": "Grow Revenue",
+            "Strategic Theme": "Enrollment Conversion Excellence",
+            "Secondary Driver": "Increase Cash Flow"
+          },
+          {
+            "Target State": "Automated compliance monitoring with continuous standards alignment validation",
+            "Current State": "Manual curriculum mapping across 6 jurisdictions consuming 9,800 hours annually",
+            "Primary Driver": "Decrease Risk",
+            "Strategic Theme": "Academic Quality Assurance",
+            "Secondary Driver": "Reduce Cost"
+          },
+          {
+            "Target State": "AI-augmented lesson planning with network-wide best practice distribution",
+            "Current State": "Inconsistent professional development with limited cross-campus knowledge sharing",
+            "Primary Driver": "Reduce Cost",
+            "Strategic Theme": "Teacher Effectiveness",
+            "Secondary Driver": "Decrease Risk"
+          },
+          {
+            "Target State": "Centralized intelligent automation with 5-day vendor payment cycles",
+            "Current State": "Decentralized finance operations with 18-day invoice processing cycles",
+            "Primary Driver": "Reduce Cost",
+            "Strategic Theme": "Operational Efficiency",
+            "Secondary Driver": "Increase Cash Flow"
+          }
+        ],
+        "step": 1,
+        "title": "Strategic Anchoring & Business Drivers",
+        "content": "Inspired Education's strategic priorities concentrate on operational excellence across a geographically dispersed portfolio while maintaining premium academic standards. The organization must balance campus autonomy with central oversight, creating tension between local responsiveness and network-wide consistency."
+      },
+      {
+        "data": [
+          {
+            "Function": "Academic Affairs",
+            "KPI Name": "At-Risk Student Identification Time",
+            "Direction": "↓",
+            "Timeframe": "12 months",
+            "Sub-Function": "Student Performance Monitoring",
+            "Target Value": "2 days",
+            "Baseline Value": "14 days",
+            "Industry Benchmark": "3-5 days",
+            "Measurement Method": "Days from grade entry to intervention trigger"
+          },
+          {
+            "Function": "Academic Affairs",
+            "KPI Name": "Standards Mapping Hours",
+            "Direction": "↓",
+            "Timeframe": "18 months",
+            "Sub-Function": "Curriculum Compliance",
+            "Target Value": "3,500 hours/year",
+            "Baseline Value": "9,800 hours/year",
+            "Industry Benchmark": "4,200 hours/year",
+            "Measurement Method": "Total staff hours on regulatory documentation"
+          },
+          {
+            "Function": "Admissions",
+            "KPI Name": "First Response Time",
+            "Direction": "↓",
+            "Timeframe": "9 months",
+            "Sub-Function": "Inquiry Management",
+            "Target Value": "8 hours",
+            "Baseline Value": "73 hours average",
+            "Industry Benchmark": "24 hours",
+            "Measurement Method": "Hours from inquiry submission to first contact"
+          },
+          {
+            "Function": "Admissions",
+            "KPI Name": "Inquiry-to-Enrollment Rate",
+            "Direction": "↑",
+            "Timeframe": "15 months",
+            "Sub-Function": "Enrollment Conversion",
+            "Target Value": "23%",
+            "Baseline Value": "18%",
+            "Industry Benchmark": "22-25%",
+            "Measurement Method": "Enrolled students divided by total inquiries"
+          },
+          {
+            "Function": "Teaching & Learning",
+            "KPI Name": "Lesson Preparation Hours",
+            "Direction": "↓",
+            "Timeframe": "12 months",
+            "Sub-Function": "Lesson Planning",
+            "Target Value": "6 hours/week",
+            "Baseline Value": "8.5 hours/week per teacher",
+            "Industry Benchmark": "6-7 hours/week",
+            "Measurement Method": "Teacher self-reported time on lesson design"
+          },
+          {
+            "Function": "Finance",
+            "KPI Name": "Invoice Processing Cycle",
+            "Direction": "↓",
+            "Timeframe": "9 months",
+            "Sub-Function": "Accounts Payable",
+            "Target Value": "5 days",
+            "Baseline Value": "18 days",
+            "Industry Benchmark": "8-10 days",
+            "Measurement Method": "Days from invoice receipt to payment"
+          },
+          {
+            "Function": "Human Resources",
+            "KPI Name": "Time-to-Fill Teaching Positions",
+            "Direction": "↓",
+            "Timeframe": "12 months",
+            "Sub-Function": "Teacher Recruitment",
+            "Target Value": "50 days",
+            "Baseline Value": "87 days",
+            "Industry Benchmark": "45-60 days",
+            "Measurement Method": "Days from requisition to accepted offer"
+          },
+          {
+            "Function": "Parent Relations",
+            "KPI Name": "Parent Inquiry Resolution Time",
+            "Direction": "↓",
+            "Timeframe": "9 months",
+            "Sub-Function": "Communications",
+            "Target Value": "1 day",
+            "Baseline Value": "5.2 days",
+            "Industry Benchmark": "2-3 days",
+            "Measurement Method": "Days from parent question to complete response"
+          },
+          {
+            "Function": "IT Operations",
+            "KPI Name": "Data Consolidation Hours",
+            "Direction": "↓",
+            "Timeframe": "18 months",
+            "Sub-Function": "System Integration",
+            "Target Value": "6,000 hours/year",
+            "Baseline Value": "28,000 hours/year",
+            "Industry Benchmark": "8,000 hours/year",
+            "Measurement Method": "Total staff hours on manual data aggregation"
+          },
+          {
+            "Function": "Academic Affairs",
+            "KPI Name": "Report Card Generation Time",
+            "Direction": "↓",
+            "Timeframe": "9 months",
+            "Sub-Function": "Assessment & Reporting",
+            "Target Value": "3 hours",
+            "Baseline Value": "12 hours per teacher per term",
+            "Industry Benchmark": "4-6 hours",
+            "Measurement Method": "Teacher hours from grade finalization to report delivery"
+          }
+        ],
+        "step": 2,
+        "title": "Business Function Inventory & KPI Baselines",
+        "content": "Current operational metrics reveal significant variability across the network, with decentralized campus operations creating inefficiencies that compound at scale."
+      },
+      {
+        "data": [
+          {
+            "Function": "Academic Affairs",
+            "Severity": "Critical",
+            "Sub-Function": "Student Performance Monitoring",
+            "Friction Point": "Fragmented student data across 119 separate systems requires manual consolidation for network-wide analysis",
+            "Primary Driver Impact": "Reduce Cost",
+            "Estimated Annual Cost ($)": "$34.0M"
+          },
+          {
+            "Function": "Admissions",
+            "Severity": "Critical",
+            "Sub-Function": "Inquiry Management",
+            "Friction Point": "Inconsistent inquiry response times and multilingual family communications across 47 independent campus teams",
+            "Primary Driver Impact": "Grow Revenue",
+            "Estimated Annual Cost ($)": "$19.0M"
+          },
+          {
+            "Function": "Academic Affairs",
+            "Severity": "High",
+            "Sub-Function": "Curriculum Compliance",
+            "Friction Point": "Manual mapping of curriculum to six different regulatory frameworks consumes senior academic staff time",
+            "Primary Driver Impact": "Decrease Risk",
+            "Estimated Annual Cost ($)": "$12.0M"
+          },
+          {
+            "Function": "Teaching & Learning",
+            "Severity": "High",
+            "Sub-Function": "Lesson Planning",
+            "Friction Point": "Teachers recreate similar lessons independently with limited cross-campus resource sharing",
+            "Primary Driver Impact": "Reduce Cost",
+            "Estimated Annual Cost ($)": "$8.7M"
+          },
+          {
+            "Function": "Finance",
+            "Severity": "High",
+            "Sub-Function": "Accounts Payable",
+            "Friction Point": "Decentralized invoice processing creates 18-day payment cycles and vendor relationship strain",
+            "Primary Driver Impact": "Increase Cash Flow",
+            "Estimated Annual Cost ($)": "$6.2M"
+          },
+          {
+            "Function": "Parent Relations",
+            "Severity": "High",
+            "Sub-Function": "Communications",
+            "Friction Point": "Parent inquiries require translation and routing across multilingual staff creating 5-day response delays",
+            "Primary Driver Impact": "Reduce Cost",
+            "Estimated Annual Cost ($)": "$5.4M"
+          },
+          {
+            "Function": "Human Resources",
+            "Severity": "Medium",
+            "Sub-Function": "Teacher Recruitment",
+            "Friction Point": "Manual candidate screening and multilingual interview scheduling extends time-to-fill by 40 days",
+            "Primary Driver Impact": "Reduce Cost",
+            "Estimated Annual Cost ($)": "$4.8M"
+          },
+          {
+            "Function": "Academic Affairs",
+            "Severity": "High",
+            "Sub-Function": "Assessment & Reporting",
+            "Friction Point": "Manual report card narrative generation consumes 12 hours per teacher per term across 12,000 faculty",
+            "Primary Driver Impact": "Reduce Cost",
+            "Estimated Annual Cost ($)": "$4.3M"
+          },
+          {
+            "Function": "IT Operations",
+            "Severity": "Medium",
+            "Sub-Function": "Technical Support",
+            "Friction Point": "Multilingual help desk requests require translation and specialist routing creating resolution delays",
+            "Primary Driver Impact": "Reduce Cost",
+            "Estimated Annual Cost ($)": "$3.9M"
+          },
+          {
+            "Function": "Academic Affairs",
+            "Severity": "Medium",
+            "Sub-Function": "Professional Development",
+            "Friction Point": "Lack of centralized best practice repository forces redundant professional development across campuses",
+            "Primary Driver Impact": "Reduce Cost",
+            "Estimated Annual Cost ($)": "$3.2M"
+          }
+        ],
+        "step": 3,
+        "title": "Friction Point Mapping",
+        "content": "High-severity friction points cluster around manual data consolidation and multilingual communication requirements across 119 autonomous campuses."
+      },
+      {
+        "data": [
+          {
+            "ID": "UC-01",
+            "Function": "Academic Affairs",
+            "Description": "AI agent synthesizes student performance data from 119 disparate systems into unified profiles with real-time at-risk identification. System monitors academic progress, attendance patterns, and behavioral indicators against jurisdiction-specific benchmarks. Generates intervention recommendations based on historical success patterns across the network.",
+            "Sub-Function": "Student Performance Monitoring",
+            "AI Primitives": "Data Analysis, Research & Information Retrieval, Workflow Automation",
+            "Use Case Name": "Unified Student Intelligence Platform",
+            "Target Friction": "Fragmented student data requiring manual consolidation for network-wide analysis",
+            "Human-in-the-Loop Checkpoint": "Academic advisors review and approve all intervention recommendations before parent/teacher notification"
+          },
+          {
+            "ID": "UC-02",
+            "Function": "Admissions",
+            "Description": "AI-powered chatbot handles initial prospective parent inquiries in 12 languages with context-aware responses about programs, tuition, and campus facilities. System qualifies leads, schedules campus tours, and routes high-value prospects to human admissions counselors. Maintains conversation history and sentiment analysis for handoff quality.",
+            "Sub-Function": "Inquiry Management",
+            "AI Primitives": "Conversational Interfaces, Content Creation, Workflow Automation",
+            "Use Case Name": "Multilingual Admissions Assistant",
+            "Target Friction": "Inconsistent inquiry response times across 47 independent campus teams",
+            "Human-in-the-Loop Checkpoint": "Admissions counselors approve all campus tour confirmations and review qualified lead assessments before high-touch outreach"
+          },
+          {
+            "ID": "UC-03",
+            "Function": "Academic Affairs",
+            "Description": "AI system continuously monitors curriculum content against six jurisdictional regulatory frameworks. Automatically maps learning objectives to standards, identifies compliance gaps, and generates accreditation documentation. Tracks regulatory changes and flags curriculum updates required to maintain certification.",
+            "Sub-Function": "Curriculum Compliance",
+            "AI Primitives": "Research & Information Retrieval, Data Analysis, Content Creation",
+            "Use Case Name": "Regulatory Compliance Intelligence",
+            "Target Friction": "Manual curriculum mapping across six different regulatory frameworks",
+            "Human-in-the-Loop Checkpoint": "Academic directors review and approve all compliance gap assessments and curriculum modification recommendations before implementation"
+          },
+          {
+            "ID": "UC-04",
+            "Function": "Teaching & Learning",
+            "Description": "AI assistant generates differentiated lesson plans based on curriculum standards, student performance data, and network-wide teaching best practices. Creates age-appropriate materials, assessment rubrics, and extension activities. Maintains repository of successful lesson designs across 12,000 teachers for continuous improvement.",
+            "Sub-Function": "Lesson Planning",
+            "AI Primitives": "Content Creation, Research & Information Retrieval",
+            "Use Case Name": "AI Lesson Planning Copilot",
+            "Target Friction": "Teachers independently recreating similar lessons with limited resource sharing",
+            "Human-in-the-Loop Checkpoint": "Teachers review and customize all AI-generated lesson plans before classroom delivery, maintaining pedagogical control"
+          },
+          {
+            "ID": "UC-05",
+            "Function": "Finance",
+            "Description": "AI system extracts invoice data from multiple formats, matches to purchase orders, routes for approval based on delegation authority, and schedules payments to optimize cash flow. Identifies duplicate invoices, pricing discrepancies, and contract compliance issues before payment execution.",
+            "Sub-Function": "Accounts Payable",
+            "AI Primitives": "Data Analysis, Workflow Automation",
+            "Use Case Name": "Intelligent Invoice Processing",
+            "Target Friction": "Decentralized invoice processing creating 18-day payment cycles",
+            "Human-in-the-Loop Checkpoint": "Finance managers approve all invoices exceeding $5,000 and review flagged discrepancies before payment release"
+          },
+          {
+            "ID": "UC-06",
+            "Function": "Parent Relations",
+            "Description": "AI assistant handles routine parent inquiries about schedules, policies, and student progress in 12 languages. Routes complex questions to appropriate staff with full context and translation. Generates personalized responses based on student records and school policies while maintaining consistent tone across campuses.",
+            "Sub-Function": "Communications",
+            "AI Primitives": "Conversational Interfaces, Content Creation, Research & Information Retrieval",
+            "Use Case Name": "Parent Communication Hub",
+            "Target Friction": "Parent inquiries requiring translation and routing across multilingual staff",
+            "Human-in-the-Loop Checkpoint": "Campus administrators review and approve responses addressing sensitive student issues or policy exceptions before parent delivery"
+          },
+          {
+            "ID": "UC-07",
+            "Function": "Human Resources",
+            "Description": "AI system screens teaching candidate applications against qualification requirements, visa eligibility, and cultural fit indicators. Generates interview questions based on subject expertise and teaching philosophy. Schedules multilingual interviews across time zones and provides candidate comparison analytics for hiring committees.",
+            "Sub-Function": "Teacher Recruitment",
+            "AI Primitives": "Data Analysis, Content Creation, Workflow Automation",
+            "Use Case Name": "Teacher Recruitment Accelerator",
+            "Target Friction": "Manual candidate screening extending time-to-fill by 40 days",
+            "Human-in-the-Loop Checkpoint": "Hiring managers review AI screening recommendations and approve all candidates advancing to interview stage"
+          },
+          {
+            "ID": "UC-08",
+            "Function": "Academic Affairs",
+            "Description": "AI generates personalized student progress narratives based on grade data, classroom observations, and assignment performance. Creates age-appropriate language aligned to learning objectives and growth mindset principles. Suggests specific recommendations for student development and parent engagement strategies.",
+            "Sub-Function": "Assessment & Reporting",
+            "AI Primitives": "Content Creation, Data Analysis",
+            "Use Case Name": "Automated Report Card Narratives",
+            "Target Friction": "Manual narrative generation consuming 12 hours per teacher per term",
+            "Human-in-the-Loop Checkpoint": "Teachers review, edit, and personalize all AI-generated narratives before report card finalization and parent distribution"
+          },
+          {
+            "ID": "UC-09",
+            "Function": "IT Operations",
+            "Description": "AI chatbot resolves common technical issues in 12 languages including password resets, software access, and basic troubleshooting. Maintains knowledge base of campus-specific system configurations and user guides. Routes complex issues to specialists with detailed diagnostic information and translation.",
+            "Sub-Function": "Technical Support",
+            "AI Primitives": "Conversational Interfaces, Research & Information Retrieval, Workflow Automation",
+            "Use Case Name": "Multilingual IT Support Agent",
+            "Target Friction": "Multilingual help desk requests requiring translation and specialist routing",
+            "Human-in-the-Loop Checkpoint": "IT specialists review and approve all system access changes and hardware procurement recommendations before execution"
+          },
+          {
+            "ID": "UC-10",
+            "Function": "Academic Affairs",
+            "Description": "AI system identifies teaching best practices from high-performing classrooms across the network and generates personalized professional development recommendations. Creates micro-learning modules, peer observation pairings, and skill development pathways based on teacher performance data and career aspirations.",
+            "Sub-Function": "Professional Development",
+            "AI Primitives": "Research & Information Retrieval, Content Creation, Data Analysis",
+            "Use Case Name": "Professional Development Orchestrator",
+            "Target Friction": "Lack of centralized best practice repository forcing redundant development across campuses",
+            "Human-in-the-Loop Checkpoint": "Academic leadership approves all professional development pathways and peer pairing recommendations before teacher notification"
+          }
+        ],
+        "step": 4,
+        "title": "AI Use Case Generation",
+        "content": "The following use cases target critical operational bottlenecks while maintaining campus autonomy through intelligent orchestration rather than centralized control."
+      },
+      {
+        "data": [
+          {
+            "ID": "UC-01",
+            "Use Case": "Unified Student Intelligence Platform",
+            "Cost Formula": "28,000 hours × $150/hour × 0.50 reduction × 0.90 × 0.75 = $17,010,000",
+            "Risk Formula": "15% × $30M litigation exposure × 0.80 × 0.75 = $2,700,000",
+            "Revenue Formula": "120 retained students × $45,000 tuition × 0.95 × 0.75 = $5,100,000",
+            "Cost Benefit ($)": "$17.0M",
+            "Risk Benefit ($)": "$2.7M",
+            "Cash Flow Formula": "No cash flow impact",
+            "Revenue Benefit ($)": "$5.1M",
+            "Cash Flow Benefit ($)": "$0",
+            "Probability of Success": 0.75,
+            "Total Annual Value ($)": "$24.8M"
+          },
+          {
+            "ID": "UC-02",
+            "Use Case": "Multilingual Admissions Assistant",
+            "Cost Formula": "15,600 hours × $100/hour × 0.80 reduction × 0.90 × 0.75 = $9,500,000",
+            "Risk Formula": "No risk impact",
+            "Revenue Formula": "340 additional enrollments × $45,000 tuition × 0.95 × 0.75 = $10,900,000",
+            "Cost Benefit ($)": "$9.5M",
+            "Risk Benefit ($)": "$0",
+            "Cash Flow Formula": "No cash flow impact",
+            "Revenue Benefit ($)": "$10.9M",
+            "Cash Flow Benefit ($)": "$0",
+            "Probability of Success": 0.8,
+            "Total Annual Value ($)": "$20.4M"
+          },
+          {
+            "ID": "UC-03",
+            "Use Case": "Regulatory Compliance Intelligence",
+            "Cost Formula": "9,800 hours × $150/hour × 0.45 reduction × 0.90 × 0.75 = $5,300,000",
+            "Risk Formula": "0.30 × $30M accreditation risk × 0.80 × 0.75 = $5,400,000",
+            "Revenue Formula": "No revenue impact",
+            "Cost Benefit ($)": "$5.3M",
+            "Risk Benefit ($)": "$5.4M",
+            "Cash Flow Formula": "No cash flow impact",
+            "Revenue Benefit ($)": "$0",
+            "Cash Flow Benefit ($)": "$0",
+            "Probability of Success": 0.7,
+            "Total Annual Value ($)": "$10.7M"
+          },
+          {
+            "ID": "UC-04",
+            "Use Case": "AI Lesson Planning Copilot",
+            "Cost Formula": "2.5 hours × 12,000 teachers × 36 weeks × $85/hour × 0.50 reduction × 0.90 × 0.75 = $13,700,000",
+            "Risk Formula": "No risk impact",
+            "Revenue Formula": "No revenue impact",
+            "Cost Benefit ($)": "$13.7M",
+            "Risk Benefit ($)": "$0",
+            "Cash Flow Formula": "No cash flow impact",
+            "Revenue Benefit ($)": "$0",
+            "Cash Flow Benefit ($)": "$0",
+            "Probability of Success": 0.85,
+            "Total Annual Value ($)": "$13.7M"
+          },
+          {
+            "ID": "UC-05",
+            "Use Case": "Intelligent Invoice Processing",
+            "Cost Formula": "8,400 hours × $85/hour × 0.70 reduction × 0.90 × 0.75 = $3,800,000",
+            "Risk Formula": "No risk impact",
+            "Revenue Formula": "No revenue impact",
+            "Cost Benefit ($)": "$3.8M",
+            "Risk Benefit ($)": "$0",
+            "Cash Flow Formula": "13 days × $850M revenue / 365 × 0.08 WACC × 0.85 × 0.75 = $4,600,000",
+            "Revenue Benefit ($)": "$0",
+            "Cash Flow Benefit ($)": "$4.6M",
+            "Probability of Success": 0.8,
+            "Total Annual Value ($)": "$8.4M"
+          },
+          {
+            "ID": "UC-06",
+            "Use Case": "Parent Communication Hub",
+            "Cost Formula": "12,200 hours × $100/hour × 0.60 reduction × 0.90 × 0.75 = $6,600,000",
+            "Risk Formula": "0.20 × $15M reputational risk × 0.80 × 0.75 = $1,800,000",
+            "Revenue Formula": "No revenue impact",
+            "Cost Benefit ($)": "$6.6M",
+            "Risk Benefit ($)": "$1.8M",
+            "Cash Flow Formula": "No cash flow impact",
+            "Revenue Benefit ($)": "$0",
+            "Cash Flow Benefit ($)": "$0",
+            "Probability of Success": 0.75,
+            "Total Annual Value ($)": "$8.4M"
+          },
+          {
+            "ID": "UC-07",
+            "Use Case": "Teacher Recruitment Accelerator",
+            "Cost Formula": "37 days × 450 hires × $350/day × 0.90 × 0.75 = $5,800,000",
+            "Risk Formula": "No risk impact",
+            "Revenue Formula": "No revenue impact",
+            "Cost Benefit ($)": "$5.8M",
+            "Risk Benefit ($)": "$0",
+            "Cash Flow Formula": "No cash flow impact",
+            "Revenue Benefit ($)": "$0",
+            "Cash Flow Benefit ($)": "$0",
+            "Probability of Success": 0.75,
+            "Total Annual Value ($)": "$5.8M"
+          },
+          {
+            "ID": "UC-08",
+            "Use Case": "Automated Report Card Narratives",
+            "Cost Formula": "9 hours × 12,000 teachers × 3 terms × $85/hour × 0.70 reduction × 0.90 × 0.75 = $8,700,000",
+            "Risk Formula": "No risk impact",
+            "Revenue Formula": "No revenue impact",
+            "Cost Benefit ($)": "$8.7M",
+            "Risk Benefit ($)": "$0",
+            "Cash Flow Formula": "No cash flow impact",
+            "Revenue Benefit ($)": "$0",
+            "Cash Flow Benefit ($)": "$0",
+            "Probability of Success": 0.85,
+            "Total Annual Value ($)": "$8.7M"
+          },
+          {
+            "ID": "UC-09",
+            "Use Case": "Multilingual IT Support Agent",
+            "Cost Formula": "9,600 hours × $85/hour × 0.75 reduction × 0.90 × 0.75 = $5,000,000",
+            "Risk Formula": "No risk impact",
+            "Revenue Formula": "No revenue impact",
+            "Cost Benefit ($)": "$5.0M",
+            "Risk Benefit ($)": "$0",
+            "Cash Flow Formula": "No cash flow impact",
+            "Revenue Benefit ($)": "$0",
+            "Cash Flow Benefit ($)": "$0",
+            "Probability of Success": 0.8,
+            "Total Annual Value ($)": "$5.0M"
+          },
+          {
+            "ID": "UC-10",
+            "Use Case": "Professional Development Orchestrator",
+            "Cost Formula": "7,200 hours × $100/hour × 0.60 reduction × 0.90 × 0.75 = $3,900,000",
+            "Risk Formula": "No risk impact",
+            "Revenue Formula": "80 retained students × $45,000 tuition × 0.95 × 0.75 = $2,700,000",
+            "Cost Benefit ($)": "$3.9M",
+            "Risk Benefit ($)": "$0",
+            "Cash Flow Formula": "No cash flow impact",
+            "Revenue Benefit ($)": "$2.7M",
+            "Cash Flow Benefit ($)": "$0",
+            "Probability of Success": 0.7,
+            "Total Annual Value ($)": "$6.6M"
+          }
+        ],
+        "step": 5,
+        "title": "Benefits Quantification by Driver",
+        "content": "Financial benefits incorporate mandatory conservative reductions and assume Level 2 data maturity across the organization's decentralized technology infrastructure."
+      },
+      {
+        "data": [
+          {
+            "ID": "UC-01",
+            "Use Case": "Unified Student Intelligence Platform",
+            "Runs/Month": 80000,
+            "Monthly Tokens": 376000000,
+            "Input Tokens/Run": 3500,
+            "Change Mgmt (1-5)": 4,
+            "Output Tokens/Run": 1200,
+            "Effort Score (1-5)": 5,
+            "Data Readiness (1-5)": 2,
+            "Annual Token Cost ($)": "$7,920,000",
+            "Time-to-Value (months)": 18,
+            "Integration Complexity (1-5)": 5
+          },
+          {
+            "ID": "UC-02",
+            "Use Case": "Multilingual Admissions Assistant",
+            "Runs/Month": 45000,
+            "Monthly Tokens": 63000000,
+            "Input Tokens/Run": 800,
+            "Change Mgmt (1-5)": 3,
+            "Output Tokens/Run": 600,
+            "Effort Score (1-5)": 3,
+            "Data Readiness (1-5)": 3,
+            "Annual Token Cost ($)": "$1,188,000",
+            "Time-to-Value (months)": 9,
+            "Integration Complexity (1-5)": 3
+          },
+          {
+            "ID": "UC-03",
+            "Use Case": "Regulatory Compliance Intelligence",
+            "Runs/Month": 3000,
+            "Monthly Tokens": 21000000,
+            "Input Tokens/Run": 5000,
+            "Change Mgmt (1-5)": 4,
+            "Output Tokens/Run": 2000,
+            "Effort Score (1-5)": 4,
+            "Data Readiness (1-5)": 2,
+            "Annual Token Cost ($)": "$468,000",
+            "Time-to-Value (months)": 15,
+            "Integration Complexity (1-5)": 4
+          },
+          {
+            "ID": "UC-04",
+            "Use Case": "AI Lesson Planning Copilot",
+            "Runs/Month": 240000,
+            "Monthly Tokens": 648000000,
+            "Input Tokens/Run": 1200,
+            "Change Mgmt (1-5)": 3,
+            "Output Tokens/Run": 1500,
+            "Effort Score (1-5)": 2,
+            "Data Readiness (1-5)": 3,
+            "Annual Token Cost ($)": "$12,492,000",
+            "Time-to-Value (months)": 6,
+            "Integration Complexity (1-5)": 2
+          },
+          {
+            "ID": "UC-05",
+            "Use Case": "Intelligent Invoice Processing",
+            "Runs/Month": 28000,
+            "Monthly Tokens": 22400000,
+            "Input Tokens/Run": 600,
+            "Change Mgmt (1-5)": 2,
+            "Output Tokens/Run": 200,
+            "Effort Score (1-5)": 3,
+            "Data Readiness (1-5)": 3,
+            "Annual Token Cost ($)": "$420,000",
+            "Time-to-Value (months)": 9,
+            "Integration Complexity (1-5)": 4
+          },
+          {
+            "ID": "UC-06",
+            "Use Case": "Parent Communication Hub",
+            "Runs/Month": 35000,
+            "Monthly Tokens": 42000000,
+            "Input Tokens/Run": 700,
+            "Change Mgmt (1-5)": 3,
+            "Output Tokens/Run": 500,
+            "Effort Score (1-5)": 3,
+            "Data Readiness (1-5)": 3,
+            "Annual Token Cost ($)": "$810,000",
+            "Time-to-Value (months)": 9,
+            "Integration Complexity (1-5)": 3
+          },
+          {
+            "ID": "UC-07",
+            "Use Case": "Teacher Recruitment Accelerator",
+            "Runs/Month": 4500,
+            "Monthly Tokens": 12600000,
+            "Input Tokens/Run": 2000,
+            "Change Mgmt (1-5)": 2,
+            "Output Tokens/Run": 800,
+            "Effort Score (1-5)": 3,
+            "Data Readiness (1-5)": 3,
+            "Annual Token Cost ($)": "$252,000",
+            "Time-to-Value (months)": 9,
+            "Integration Complexity (1-5)": 3
+          },
+          {
+            "ID": "UC-08",
+            "Use Case": "Automated Report Card Narratives",
+            "Runs/Month": 120000,
+            "Monthly Tokens": 192000000,
+            "Input Tokens/Run": 900,
+            "Change Mgmt (1-5)": 2,
+            "Output Tokens/Run": 700,
+            "Effort Score (1-5)": 2,
+            "Data Readiness (1-5)": 3,
+            "Annual Token Cost ($)": "$3,528,000",
+            "Time-to-Value (months)": 6,
+            "Integration Complexity (1-5)": 2
+          },
+          {
+            "ID": "UC-09",
+            "Use Case": "Multilingual IT Support Agent",
+            "Runs/Month": 18000,
+            "Monthly Tokens": 16200000,
+            "Input Tokens/Run": 500,
+            "Change Mgmt (1-5)": 2,
+            "Output Tokens/Run": 400,
+            "Effort Score (1-5)": 2,
+            "Data Readiness (1-5)": 3,
+            "Annual Token Cost ($)": "$324,000",
+            "Time-to-Value (months)": 6,
+            "Integration Complexity (1-5)": 2
+          },
+          {
+            "ID": "UC-10",
+            "Use Case": "Professional Development Orchestrator",
+            "Runs/Month": 12000,
+            "Monthly Tokens": 33600000,
+            "Input Tokens/Run": 1800,
+            "Change Mgmt (1-5)": 4,
+            "Output Tokens/Run": 1000,
+            "Effort Score (1-5)": 4,
+            "Data Readiness (1-5)": 2,
+            "Annual Token Cost ($)": "$612,000",
+            "Time-to-Value (months)": 12,
+            "Integration Complexity (1-5)": 3
+          }
+        ],
+        "step": 6,
+        "title": "Effort & Token Modeling",
+        "content": "Implementation complexity concentrates on data integration across 119 independent campus systems and multilingual content validation requirements."
+      },
+      {
+        "data": [
+          {
+            "ID": "UC-01",
+            "Use Case": "Unified Student Intelligence Platform",
+            "Priority Tier": "High",
+            "TTV Score (0-30)": 8,
+            "Recommended Phase": "Q3",
+            "Value Score (0-40)": 38,
+            "Effort Score (0-30)": 6,
+            "Priority Score (0-100)": 67
+          },
+          {
+            "ID": "UC-02",
+            "Use Case": "Multilingual Admissions Assistant",
+            "Priority Tier": "Critical",
+            "TTV Score (0-30)": 23,
+            "Recommended Phase": "Q1",
+            "Value Score (0-40)": 35,
+            "Effort Score (0-30)": 20,
+            "Priority Score (0-100)": 87
+          },
+          {
+            "ID": "UC-03",
+            "Use Case": "Regulatory Compliance Intelligence",
+            "Priority Tier": "High",
+            "TTV Score (0-30)": 12,
+            "Recommended Phase": "Q3",
+            "Value Score (0-40)": 28,
+            "Effort Score (0-30)": 12,
+            "Priority Score (0-100)": 63
+          },
+          {
+            "ID": "UC-04",
+            "Use Case": "AI Lesson Planning Copilot",
+            "Priority Tier": "Critical",
+            "TTV Score (0-30)": 28,
+            "Recommended Phase": "Q1",
+            "Value Score (0-40)": 31,
+            "Effort Score (0-30)": 24,
+            "Priority Score (0-100)": 92
+          },
+          {
+            "ID": "UC-05",
+            "Use Case": "Intelligent Invoice Processing",
+            "Priority Tier": "High",
+            "TTV Score (0-30)": 23,
+            "Recommended Phase": "Q2",
+            "Value Score (0-40)": 24,
+            "Effort Score (0-30)": 20,
+            "Priority Score (0-100)": 73
+          },
+          {
+            "ID": "UC-06",
+            "Use Case": "Parent Communication Hub",
+            "Priority Tier": "High",
+            "TTV Score (0-30)": 23,
+            "Recommended Phase": "Q2",
+            "Value Score (0-40)": 24,
+            "Effort Score (0-30)": 20,
+            "Priority Score (0-100)": 73
+          },
+          {
+            "ID": "UC-07",
+            "Use Case": "Teacher Recruitment Accelerator",
+            "Priority Tier": "High",
+            "TTV Score (0-30)": 23,
+            "Recommended Phase": "Q2",
+            "Value Score (0-40)": 21,
+            "Effort Score (0-30)": 20,
+            "Priority Score (0-100)": 68
+          },
+          {
+            "ID": "UC-08",
+            "Use Case": "Automated Report Card Narratives",
+            "Priority Tier": "Critical",
+            "TTV Score (0-30)": 28,
+            "Recommended Phase": "Q1",
+            "Value Score (0-40)": 25,
+            "Effort Score (0-30)": 24,
+            "Priority Score (0-100)": 84
+          },
+          {
+            "ID": "UC-09",
+            "Use Case": "Multilingual IT Support Agent",
+            "Priority Tier": "High",
+            "TTV Score (0-30)": 28,
+            "Recommended Phase": "Q2",
+            "Value Score (0-40)": 20,
+            "Effort Score (0-30)": 24,
+            "Priority Score (0-100)": 76
+          },
+          {
+            "ID": "UC-10",
+            "Use Case": "Professional Development Orchestrator",
+            "Priority Tier": "Medium",
+            "TTV Score (0-30)": 18,
+            "Recommended Phase": "Q4",
+            "Value Score (0-40)": 22,
+            "Effort Score (0-30)": 12,
+            "Priority Score (0-100)": 60
+          }
+        ],
+        "step": 7,
+        "title": "Priority Scoring & Roadmap",
+        "content": "Priority scoring balances financial impact against implementation complexity and time-to-value. Critical-tier initiatives deliver rapid returns with manageable integration requirements."
+      }
+    ],
+    "summary": "This assessment identifies $112.5M in annual value across 10 AI use cases for Inspired Education Group. Three initiatives qualify as Critical-priority for immediate execution with combined first-year impact of $42.8M after conservative reductions. The portfolio targets operational inefficiencies created by managing 119 autonomous campuses across six continents with fragmented technology systems.\n\nCost reduction dominates the portfolio at $79.3M, representing 70% of total identified value. Revenue growth opportunities contribute $18.7M at 17%. Risk mitigation accounts for $9.9M at 9%. Cash flow acceleration rounds out the portfolio at $4.6M representing 4%. This distribution reflects the organization's operational maturity challenges, where process standardization delivers immediate returns before revenue optimization initiatives can scale.\n\nAI Lesson Planning Copilot represents a $13.7M annual opportunity with 92-point priority score. The system generates differentiated lesson plans based on curriculum standards and network-wide teaching best practices, reducing teacher preparation time from 8.5 hours to 6 hours per week. At 12,000 teachers across 36 weeks, each 2.5-hour weekly reduction generates $13.7M in productivity gains after conservative adjustments. The solution requires minimal integration complexity and delivers value within 6 months, making it the highest-priority initiative. Teachers retain full pedagogical control through mandatory review of all AI-generated content before classroom delivery.\n\nMultilingual Admissions Assistant targets a $20.4M opportunity with 87-point priority score. AI-powered chatbots handle initial prospective parent inquiries in 12 languages, reducing response times from 73 hours to 8 hours while deflecting 80% of routine questions from human counselors. The system converts an additional 340 families annually at $45,000 average tuition, generating $10.9M in new revenue. Combined with $9.5M in labor savings from reduced inquiry handling time, total annual value reaches $20.4M. The 9-month implementation timeline requires integration with existing CRM systems across 47 campuses. Admissions counselors approve all campus tour confirmations and review qualified lead assessments before high-touch outreach.\n\nAutomated Report Card Narratives delivers $8.7M annually with 84-point priority score. AI generates personalized student progress narratives based on grade data and classroom observations, reducing teacher time from 12 hours to 3.6 hours per term. Across 12,000 teachers and 3 annual terms, the 9-hour reduction per teacher generates $8.7M in cost savings. The solution integrates with existing student information systems and deploys within 6 months. Teachers review, edit, and personalize all AI-generated narratives before report card finalization, maintaining the authentic teacher voice parents expect.\n\nThe top three initiatives account for 38% of total portfolio value, creating moderate concentration risk if any single initiative underperforms. However, each targets a distinct operational domain with independent success factors, providing natural hedging. Back-office automation opportunities outnumber customer-facing initiatives 8 to 2, reflecting the conservative approach appropriate for an education environment where parent trust and student safety dominate risk considerations.\n\nImplementation hinges on integrating 119 disparate student information systems with inconsistent data schemas across six jurisdictions. This data consolidation represents a 120-day prerequisite workstream before the Unified Student Intelligence Platform can deploy. Data readiness averages Level 2 across target systems, with most campuses maintaining local databases without standardized governance. Failure to establish common data schemas reduces projected Year 1 value by 40% as manual workarounds substitute for automated workflows. The organization should prioritize use cases with minimal integration requirements for Q1 deployment while executing the data consolidation program in parallel.",
+    "executiveDashboard": {
+      "topUseCases": [
+        {
+          "rank": 1,
+          "useCase": "AI Lesson Planning Copilot",
+          "annualValue": 13700000,
+          "monthlyTokens": 648000000,
+          "priorityScore": 92
+        },
+        {
+          "rank": 2,
+          "useCase": "Multilingual Admissions Assistant",
+          "annualValue": 20400000,
+          "monthlyTokens": 63000000,
+          "priorityScore": 87
+        },
+        {
+          "rank": 3,
+          "useCase": "Automated Report Card Narratives",
+          "annualValue": 8700000,
+          "monthlyTokens": 192000000,
+          "priorityScore": 84
+        },
+        {
+          "rank": 4,
+          "useCase": "Multilingual IT Support Agent",
+          "annualValue": 5000000,
+          "monthlyTokens": 16200000,
+          "priorityScore": 76
+        },
+        {
+          "rank": 5,
+          "useCase": "Intelligent Invoice Processing",
+          "annualValue": 8400000,
+          "monthlyTokens": 22400000,
+          "priorityScore": 73
+        }
+      ],
+      "totalAnnualValue": 112500000,
+      "totalCostBenefit": 79300000,
+      "totalRiskBenefit": 9900000,
+      "totalMonthlyTokens": 1427800000,
+      "totalRevenueBenefit": 18700000,
+      "totalCashFlowBenefit": 4600000,
+      "valuePerMillionTokens": 6564
+    }
+  }
+}

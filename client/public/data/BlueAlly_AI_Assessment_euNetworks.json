@@ -1,0 +1,853 @@
+{
+  "companyName": "euNetworks",
+  "generatedAt": "2026-01-22T16:36:03.217Z",
+  "analysis": {
+    "steps": [
+      {
+        "data": null,
+        "step": 0,
+        "title": "Company Overview",
+        "content": "euNetworks Group Limited operates a high-bandwidth fiber network serving financial services, media, and enterprise customers across 17 European cities. The company generates approximately $185M in annual revenue from dark fiber, wavelength, and bandwidth services with network infrastructure spanning 15,000 route kilometers. Operations concentrate in major European financial centers including London, Frankfurt, Paris, Amsterdam, and Dublin with 320 employees managing network operations and customer service.\n\nThe company serves approximately 800 enterprise clients with financial services representing 62% of revenue, media and content providers contributing 23%, and technology companies accounting for 15%. Network uptime maintains 99.995% availability across fiber assets. Average contract value reaches $230K with 4.2-year average duration reflecting infrastructure dependency. Revenue concentrates in metro fiber assets deployed within low-latency corridors between trading venues and data centers.\n\nThe company faces a $12.4M annual burden from manual network capacity planning and route optimization. Engineering teams spend 8,900 hours annually analyzing fiber utilization patterns across 47 network segments to forecast capacity requirements and prevent service degradation. This reactive approach creates 18-day average planning cycles that delay customer provisioning and force conservative capacity buffers averaging 40% above actual demand. The workload prevents senior network architects from strategic route expansion planning and competitive analysis.\n\nOperational complexity compounds through contract management processes consuming $8.7M annually in legal and commercial operations overhead. Sales and legal teams invest 6,200 hours per year drafting and negotiating custom service level agreements across varied regulatory jurisdictions and customer requirements. Standard contract generation averages 12 days from initial request to executable document with 73% requiring legal review for non-standard terms. This bottleneck extends sales cycles by 22 days and limits account executive capacity to manage 18 active opportunities simultaneously.\n\nNetwork fault resolution represents a $6.3M annual burden driven by manual diagnostics and escalation workflows. Operations teams process approximately 2,400 fault tickets annually with average resolution time of 4.2 hours for standard issues and 18 hours for complex multi-segment failures. First-tier diagnostics consume 5,100 hours annually across 12 network operations center staff with 42% of tickets requiring escalation to senior engineers. This workload creates queuing delays during peak periods and prevents proactive maintenance on aging fiber infrastructure.\n\nFinancial figures derive from Companies House filings for fiscal year ending December 2024 and telecommunications industry regulatory disclosures. Operational burden estimates apply $165 per hour fully-loaded rates for network engineering staff and $185 per hour for legal professionals based on London market compensation data. Data maturity assessed at Level 2 based on disclosed network management systems and absence of automated capacity planning tools in investor presentations. Network utilization metrics sourced from industry reports on European fiber operators with adjustments for euNetworks route density and customer concentration."
+      },
+      {
+        "data": [
+          {
+            "Target State": "AI-driven capacity forecasting with 15% buffer overhead; 5-day planning cycles enabling proactive expansion",
+            "Current State": "Manual capacity planning with 40% buffer overhead consuming $12.4M annually; 18-day planning cycles delay provisioning",
+            "Primary Driver": "Reduce Cost",
+            "Strategic Theme": "Network Capacity Optimization",
+            "Secondary Driver": "Increase Cash Flow"
+          },
+          {
+            "Target State": "AI-generated standardized contracts with regulatory compliance; 3-day average turnaround; 35% legal review rate",
+            "Current State": "Custom SLA drafting averaging 12 days per contract; 73% requiring legal review; $8.7M annual overhead",
+            "Primary Driver": "Grow Revenue",
+            "Strategic Theme": "Contract Velocity & Standardization",
+            "Secondary Driver": "Reduce Cost"
+          },
+          {
+            "Target State": "1.8-hour average resolution; 18% escalation rate; automated first-tier diagnostics and routing",
+            "Current State": "4.2-hour average fault resolution; 42% escalation rate; 5,100 hours annual diagnostics overhead",
+            "Primary Driver": "Reduce Cost",
+            "Strategic Theme": "Network Operations Efficiency",
+            "Secondary Driver": "Decrease Risk"
+          },
+          {
+            "Target State": "12-day average provisioning; AI-assisted route optimization; 92% first-pass accuracy reducing rework cycles",
+            "Current State": "28-day average provisioning cycle; manual route feasibility analysis; 65% first-pass accuracy on capacity allocation",
+            "Primary Driver": "Grow Revenue",
+            "Strategic Theme": "Customer Provisioning Acceleration",
+            "Secondary Driver": "Increase Cash Flow"
+          },
+          {
+            "Target State": "Automated compliance documentation with jurisdiction-specific requirements; 2-week audit response cycles",
+            "Current State": "Manual compliance reporting across 12 EU jurisdictions; 3,800 hours annual documentation effort; 8-week audit response cycles",
+            "Primary Driver": "Decrease Risk",
+            "Strategic Theme": "Regulatory Compliance & Documentation",
+            "Secondary Driver": "Reduce Cost"
+          }
+        ],
+        "step": 1,
+        "title": "Strategic Anchoring & Business Drivers",
+        "content": "euNetworks operates in a capital-intensive infrastructure business where network efficiency and customer acquisition velocity directly impact EBITDA margins and return on invested capital. Strategic priorities map to operational leverage drivers that compound across the asset base."
+      },
+      {
+        "data": [
+          {
+            "Function": "Network Engineering",
+            "KPI Name": "Capacity Buffer Overhead",
+            "Direction": "↓",
+            "Timeframe": "24 months",
+            "Sub-Function": "Capacity Planning",
+            "Target Value": "15%",
+            "Baseline Value": "40%",
+            "Industry Benchmark": "22-28% for mature operators [MEDIUM CONFIDENCE]",
+            "Measurement Method": "Reserved capacity / utilized capacity across metro fiber segments"
+          },
+          {
+            "Function": "Network Engineering",
+            "KPI Name": "Planning Cycle Duration",
+            "Direction": "↓",
+            "Timeframe": "18 months",
+            "Sub-Function": "Route Optimization",
+            "Target Value": "5 days",
+            "Baseline Value": "18 days",
+            "Industry Benchmark": "8-12 days [MEDIUM CONFIDENCE]",
+            "Measurement Method": "Calendar days from capacity request to deployment approval"
+          },
+          {
+            "Function": "Sales Operations",
+            "KPI Name": "Contract Turnaround Time",
+            "Direction": "↓",
+            "Timeframe": "12 months",
+            "Sub-Function": "Contract Generation",
+            "Target Value": "3 days",
+            "Baseline Value": "12 days",
+            "Industry Benchmark": "5-7 days for standardized infrastructure [MEDIUM CONFIDENCE]",
+            "Measurement Method": "Days from contract request to executable document"
+          },
+          {
+            "Function": "Sales Operations",
+            "KPI Name": "Sales Cycle Duration",
+            "Direction": "↓",
+            "Timeframe": "18 months",
+            "Sub-Function": "Opportunity Management",
+            "Target Value": "65 days",
+            "Baseline Value": "87 days",
+            "Industry Benchmark": "60-75 days [MEDIUM CONFIDENCE]",
+            "Measurement Method": "Days from qualified opportunity to signed contract"
+          },
+          {
+            "Function": "Network Operations",
+            "KPI Name": "Mean Time to Resolution",
+            "Direction": "↓",
+            "Timeframe": "12 months",
+            "Sub-Function": "Fault Management",
+            "Target Value": "1.8 hours",
+            "Baseline Value": "4.2 hours",
+            "Industry Benchmark": "2.5-3.5 hours for fiber networks [MEDIUM CONFIDENCE]",
+            "Measurement Method": "Hours from fault detection to service restoration"
+          },
+          {
+            "Function": "Network Operations",
+            "KPI Name": "Escalation Rate",
+            "Direction": "↓",
+            "Timeframe": "12 months",
+            "Sub-Function": "Fault Management",
+            "Target Value": "18%",
+            "Baseline Value": "42%",
+            "Industry Benchmark": "18-25% [MEDIUM CONFIDENCE]",
+            "Measurement Method": "Percentage of tickets requiring senior engineer intervention"
+          },
+          {
+            "Function": "Customer Operations",
+            "KPI Name": "Provisioning Cycle Time",
+            "Direction": "↓",
+            "Timeframe": "18 months",
+            "Sub-Function": "Service Provisioning",
+            "Target Value": "12 days",
+            "Baseline Value": "28 days",
+            "Industry Benchmark": "14-18 days [MEDIUM CONFIDENCE]",
+            "Measurement Method": "Days from order acceptance to service activation"
+          },
+          {
+            "Function": "Customer Operations",
+            "KPI Name": "First-Pass Accuracy",
+            "Direction": "↑",
+            "Timeframe": "12 months",
+            "Sub-Function": "Route Feasibility",
+            "Target Value": "92%",
+            "Baseline Value": "65%",
+            "Industry Benchmark": "82-88% [MEDIUM CONFIDENCE]",
+            "Measurement Method": "Percentage of feasibility assessments requiring no rework"
+          },
+          {
+            "Function": "Legal & Compliance",
+            "KPI Name": "Audit Response Cycle",
+            "Direction": "↓",
+            "Timeframe": "18 months",
+            "Sub-Function": "Regulatory Reporting",
+            "Target Value": "2 weeks",
+            "Baseline Value": "8 weeks",
+            "Industry Benchmark": "3-4 weeks [MEDIUM CONFIDENCE]",
+            "Measurement Method": "Weeks from regulator information request to submission"
+          },
+          {
+            "Function": "Legal & Compliance",
+            "KPI Name": "Legal Review Rate",
+            "Direction": "↓",
+            "Timeframe": "12 months",
+            "Sub-Function": "Contract Review",
+            "Target Value": "35%",
+            "Baseline Value": "73%",
+            "Industry Benchmark": "35-45% for standardized services [MEDIUM CONFIDENCE]",
+            "Measurement Method": "Percentage of contracts requiring attorney review"
+          },
+          {
+            "Function": "Finance Operations",
+            "KPI Name": "Contract Data Extraction Time",
+            "Direction": "↓",
+            "Timeframe": "9 months",
+            "Sub-Function": "Revenue Recognition",
+            "Target Value": "0.6 hours",
+            "Baseline Value": "3.2 hours per contract",
+            "Industry Benchmark": "0.8-1.2 hours [ESTIMATED]",
+            "Measurement Method": "Hours to extract billing terms from signed contracts"
+          },
+          {
+            "Function": "Product Management",
+            "KPI Name": "Market Analysis Cycle",
+            "Direction": "↓",
+            "Timeframe": "12 months",
+            "Sub-Function": "Competitive Intelligence",
+            "Target Value": "1 week",
+            "Baseline Value": "6 weeks",
+            "Industry Benchmark": "2-3 weeks [ESTIMATED]",
+            "Measurement Method": "Weeks from research initiation to executive briefing"
+          }
+        ],
+        "step": 2,
+        "title": "Business Function Inventory & KPI Baselines",
+        "content": "Critical operational functions span network engineering, commercial operations, and regulatory compliance. Baseline metrics reflect manual processes common across mid-market telecommunications infrastructure providers."
+      },
+      {
+        "data": [
+          {
+            "Function": "Network Engineering",
+            "Severity": "Critical",
+            "Sub-Function": "Capacity Planning",
+            "Friction Point": "Manual fiber utilization analysis across 47 network segments with Excel-based forecasting models; engineers spend 8,900 hours annually correlating historical usage patterns with customer growth projections",
+            "Primary Driver Impact": "Reduce Cost",
+            "Estimated Annual Cost ($)": "$12.4M"
+          },
+          {
+            "Function": "Sales Operations",
+            "Severity": "High",
+            "Sub-Function": "Contract Generation",
+            "Friction Point": "Custom SLA drafting for each customer with manual regulatory compliance checks across 12 EU jurisdictions; 6,200 hours annual effort with 73% requiring legal review",
+            "Primary Driver Impact": "Grow Revenue",
+            "Estimated Annual Cost ($)": "$8.7M"
+          },
+          {
+            "Function": "Network Operations",
+            "Severity": "High",
+            "Sub-Function": "Fault Diagnostics",
+            "Friction Point": "Manual fault isolation across multi-segment fiber paths; first-tier diagnostics consume 5,100 hours annually with 42% escalation rate to senior engineers",
+            "Primary Driver Impact": "Reduce Cost",
+            "Estimated Annual Cost ($)": "$6.3M"
+          },
+          {
+            "Function": "Customer Operations",
+            "Severity": "High",
+            "Sub-Function": "Service Provisioning",
+            "Friction Point": "Manual route feasibility analysis for each customer order; 65% first-pass accuracy creates rework cycles averaging 8 days per failed assessment",
+            "Primary Driver Impact": "Grow Revenue",
+            "Estimated Annual Cost ($)": "$5.8M"
+          },
+          {
+            "Function": "Legal & Compliance",
+            "Severity": "Medium",
+            "Sub-Function": "Regulatory Reporting",
+            "Friction Point": "Manual compilation of network availability data and incident reports across 12 regulatory jurisdictions; 3,800 hours annual documentation effort",
+            "Primary Driver Impact": "Decrease Risk",
+            "Estimated Annual Cost ($)": "$4.2M"
+          },
+          {
+            "Function": "Finance Operations",
+            "Severity": "Medium",
+            "Sub-Function": "Revenue Recognition",
+            "Friction Point": "Manual extraction of billing terms and service level commitments from signed contracts into billing systems; 3.2 hours per contract with 800 annual contracts",
+            "Primary Driver Impact": "Increase Cash Flow",
+            "Estimated Annual Cost ($)": "$3.6M"
+          },
+          {
+            "Function": "Product Management",
+            "Severity": "Medium",
+            "Sub-Function": "Competitive Intelligence",
+            "Friction Point": "Manual research and synthesis of competitor pricing, route announcements, and service offerings across fragmented European markets; 6-week cycles delay pricing decisions",
+            "Primary Driver Impact": "Grow Revenue",
+            "Estimated Annual Cost ($)": "$2.9M"
+          },
+          {
+            "Function": "Sales Operations",
+            "Severity": "Medium",
+            "Sub-Function": "Technical Proposals",
+            "Friction Point": "Custom technical proposal generation requiring network engineering review for each opportunity; 18-day average turnaround limits account executive capacity",
+            "Primary Driver Impact": "Grow Revenue",
+            "Estimated Annual Cost ($)": "$2.4M"
+          },
+          {
+            "Function": "Network Engineering",
+            "Severity": "Medium",
+            "Sub-Function": "Route Optimization",
+            "Friction Point": "Manual evaluation of alternate fiber paths for redundancy and latency optimization; engineers analyze network topology spreadsheets rather than running automated scenarios",
+            "Primary Driver Impact": "Reduce Cost",
+            "Estimated Annual Cost ($)": "$2.1M"
+          },
+          {
+            "Function": "Customer Success",
+            "Severity": "Medium",
+            "Sub-Function": "Service Monitoring",
+            "Friction Point": "Reactive monitoring alerts require manual correlation with customer SLA thresholds; 2,200 annual alerts processed with 65% false positive rate",
+            "Primary Driver Impact": "Decrease Risk",
+            "Estimated Annual Cost ($)": "$1.8M"
+          },
+          {
+            "Function": "Human Resources",
+            "Severity": "Medium",
+            "Sub-Function": "Technical Documentation",
+            "Friction Point": "Manual creation and maintenance of network engineering documentation and standard operating procedures; tribal knowledge concentrated in 8 senior engineers",
+            "Primary Driver Impact": "Decrease Risk",
+            "Estimated Annual Cost ($)": "$1.5M"
+          },
+          {
+            "Function": "Legal & Compliance",
+            "Severity": "Medium",
+            "Sub-Function": "Contract Analysis",
+            "Friction Point": "Manual review of signed contracts to extract obligations, SLA commitments, and renewal terms for operational tracking; 2.8 hours per contract",
+            "Primary Driver Impact": "Decrease Risk",
+            "Estimated Annual Cost ($)": "$1.2M"
+          }
+        ],
+        "step": 3,
+        "title": "Friction Point Mapping",
+        "content": "Operational bottlenecks concentrate in network engineering workflows requiring expert judgment on capacity allocation and route optimization. Manual processes create queuing delays that cascade into customer-facing provisioning timelines and revenue recognition cycles."
+      },
+      {
+        "data": [
+          {
+            "ID": "UC-01",
+            "Function": "Network Engineering",
+            "Description": "AI system analyzes historical fiber utilization patterns across 47 network segments, correlates with customer growth trajectories and service activation schedules, and generates capacity expansion recommendations. System processes network management system telemetry, customer contract data, and seasonal traffic patterns to forecast capacity requirements 18 months forward. Replaces manual Excel-based forecasting with automated scenario modeling.",
+            "Sub-Function": "Capacity Planning",
+            "AI Primitives": "Data Analysis, Research & Information Retrieval",
+            "Use Case Name": "Intelligent Capacity Planning Engine",
+            "Target Friction": "Manual fiber utilization analysis consuming 8,900 annual engineering hours with 40% conservative capacity buffer overhead",
+            "Human-in-the-Loop Checkpoint": "Senior network architect reviews and approves all capacity expansion recommendations before capital commitment and vendor procurement"
+          },
+          {
+            "ID": "UC-02",
+            "Function": "Sales Operations",
+            "Description": "AI system generates standardized service level agreements based on customer requirements, service tier selection, and regulatory jurisdiction. System maintains clause library covering 12 EU regulatory frameworks and generates compliant contract language incorporating customer-specific terms. Integrates with CRM to auto-populate customer details and pricing schedules. Reduces custom drafting requirements and legal review dependency.",
+            "Sub-Function": "Contract Generation",
+            "AI Primitives": "Content Creation, Research & Information Retrieval",
+            "Use Case Name": "Automated SLA Contract Generator",
+            "Target Friction": "Custom SLA drafting consuming 6,200 hours annually with 73% legal review rate and 12-day average turnaround",
+            "Human-in-the-Loop Checkpoint": "Legal counsel reviews contracts flagged for non-standard terms, financial commitments exceeding $500K annually, or novel regulatory requirements"
+          },
+          {
+            "ID": "UC-03",
+            "Function": "Network Operations",
+            "Description": "AI system analyzes fault tickets and network telemetry to isolate failures across multi-segment fiber paths. System correlates symptom patterns with historical incident database, suggests diagnostic procedures, and recommends resolution pathways. Provides first-tier operations staff with expert-level troubleshooting guidance, reducing escalations to senior engineers. Integrates with network management systems for real-time topology awareness.",
+            "Sub-Function": "Fault Diagnostics",
+            "AI Primitives": "Data Analysis, Research & Information Retrieval, Conversational Interfaces",
+            "Use Case Name": "Network Fault Diagnostic Assistant",
+            "Target Friction": "Manual fault isolation consuming 5,100 hours annually with 42% escalation rate and 4.2-hour average resolution time",
+            "Human-in-the-Loop Checkpoint": "Network operations center staff validates diagnostic recommendations before executing fiber switching or rerouting procedures that impact customer traffic"
+          },
+          {
+            "ID": "UC-04",
+            "Function": "Customer Operations",
+            "Description": "AI system evaluates service provisioning requests against network topology database, available capacity reserves, and latency requirements. System calculates optimal fiber paths, identifies capacity constraints, and generates feasibility assessments with confidence scores. Reduces manual route analysis cycles and improves first-pass accuracy. Integrates with network inventory management system for real-time capacity visibility.",
+            "Sub-Function": "Service Provisioning",
+            "AI Primitives": "Data Analysis, Workflow Automation",
+            "Use Case Name": "Route Feasibility Automation System",
+            "Target Friction": "Manual route feasibility analysis with 65% first-pass accuracy creating 8-day rework cycles on failed assessments",
+            "Human-in-the-Loop Checkpoint": "Network engineering team reviews and approves feasibility assessments for enterprise contracts exceeding $200K annual value or requiring custom route construction"
+          },
+          {
+            "ID": "UC-05",
+            "Function": "Legal & Compliance",
+            "Description": "AI system compiles network availability data, incident reports, and service quality metrics into jurisdiction-specific regulatory formats. System maintains templates for 12 EU regulatory bodies, auto-populates data from network management systems, and generates draft submissions. Reduces manual documentation effort and accelerates audit response cycles. Maintains audit trail of data sources and calculation methods.",
+            "Sub-Function": "Regulatory Reporting",
+            "AI Primitives": "Content Creation, Data Analysis, Research & Information Retrieval",
+            "Use Case Name": "Regulatory Compliance Documentation Engine",
+            "Target Friction": "Manual compilation of regulatory reports consuming 3,800 hours annually with 8-week audit response cycles",
+            "Human-in-the-Loop Checkpoint": "Compliance officer reviews all regulatory submissions before filing to validate data accuracy and narrative explanations for service level deviations"
+          },
+          {
+            "ID": "UC-06",
+            "Function": "Finance Operations",
+            "Description": "AI system extracts billing terms, service level commitments, payment schedules, and renewal clauses from signed contracts. System populates billing system with pricing tables, milestone dates, and SLA penalty provisions. Processes both structured contract templates and non-standard negotiated agreements. Reduces manual data entry cycles and accelerates revenue recognition timelines.",
+            "Sub-Function": "Revenue Recognition",
+            "AI Primitives": "Data Analysis, Content Creation",
+            "Use Case Name": "Contract Data Extraction Pipeline",
+            "Target Friction": "Manual contract data extraction consuming 3.2 hours per contract across 800 annual contracts",
+            "Human-in-the-Loop Checkpoint": "Finance operations staff validates extracted billing terms for contracts exceeding $300K annual value and all contracts with variable pricing or usage-based components"
+          },
+          {
+            "ID": "UC-07",
+            "Function": "Product Management",
+            "Description": "AI system monitors competitor route announcements, pricing changes, and service offerings across European fiber markets. System synthesizes public filings, press releases, industry publications, and regulatory disclosures into structured competitive briefings. Analyzes pricing patterns and capacity expansion trajectories. Reduces manual research cycles and accelerates strategic pricing decisions.",
+            "Sub-Function": "Competitive Intelligence",
+            "AI Primitives": "Research & Information Retrieval, Data Analysis, Content Creation",
+            "Use Case Name": "Competitive Intelligence Research Agent",
+            "Target Friction": "Manual competitive research consuming 6-week cycles and delaying pricing decisions in fast-moving markets",
+            "Human-in-the-Loop Checkpoint": "Product management team reviews intelligence briefings and validates strategic recommendations before executive presentation or pricing strategy adjustments"
+          },
+          {
+            "ID": "UC-08",
+            "Function": "Sales Operations",
+            "Description": "AI system generates customized technical proposals based on customer requirements, network capabilities, and service tier selections. System pulls network topology data, capacity availability, and latency specifications to construct feasibility narratives. Incorporates standard technical architecture diagrams and service descriptions. Reduces dependency on network engineering resources for routine proposal development.",
+            "Sub-Function": "Technical Proposals",
+            "AI Primitives": "Content Creation, Research & Information Retrieval, Data Analysis",
+            "Use Case Name": "Technical Proposal Generation System",
+            "Target Friction": "Custom proposal generation requiring 18-day network engineering review cycles and limiting account executive capacity",
+            "Human-in-the-Loop Checkpoint": "Sales engineering team reviews proposals for enterprise opportunities exceeding $400K annual value and all proposals requiring custom route construction or non-standard service configurations"
+          },
+          {
+            "ID": "UC-09",
+            "Function": "Network Engineering",
+            "Description": "AI system evaluates alternate fiber paths for redundancy improvements and latency optimization. System models failure scenarios across network segments, calculates rerouting options, and recommends topology enhancements. Analyzes tradeoffs between capital investment and service level improvement. Replaces manual spreadsheet analysis with automated scenario modeling across thousands of path combinations.",
+            "Sub-Function": "Route Optimization",
+            "AI Primitives": "Data Analysis, Research & Information Retrieval",
+            "Use Case Name": "Network Topology Optimization Advisor",
+            "Target Friction": "Manual topology analysis preventing proactive route optimization and limiting scenario evaluation throughput",
+            "Human-in-the-Loop Checkpoint": "Network architecture team reviews optimization recommendations before capital allocation proposals and validates technical feasibility of proposed fiber path modifications"
+          },
+          {
+            "ID": "UC-10",
+            "Function": "Customer Success",
+            "Description": "AI system correlates network monitoring alerts with customer-specific SLA thresholds and contractual obligations. System analyzes alert patterns to distinguish service-impacting events from routine fluctuations. Generates customer-facing incident reports with root cause analysis and remediation timelines. Reduces false positive alert processing and accelerates SLA breach notifications.",
+            "Sub-Function": "Service Monitoring",
+            "AI Primitives": "Data Analysis, Content Creation, Workflow Automation",
+            "Use Case Name": "SLA Monitoring & Alert Correlation System",
+            "Target Friction": "Manual alert correlation processing 2,200 annual alerts with 65% false positive rate delaying customer communications",
+            "Human-in-the-Loop Checkpoint": "Customer success managers review incident reports before transmission to customers and validate root cause narratives for service-impacting events"
+          }
+        ],
+        "step": 4,
+        "title": "AI Use Case Generation",
+        "content": "Ten use cases reshape operational workflows by embedding AI capabilities at critical decision points while preserving human judgment for customer commitments and network integrity decisions. Solutions prioritize back-office efficiency and process transformation over customer-facing automation."
+      },
+      {
+        "data": [
+          {
+            "ID": "UC-01",
+            "Use Case": "Intelligent Capacity Planning Engine",
+            "Cost Formula": "8,900 hours × $165/hour × 0.75 adoption × 0.90 × 0.75 = $7.4M labor + $3.1M reduced buffer overhead (25% × $12.4M) × 0.90 × 0.75 = $2.1M",
+            "Risk Formula": "No quantified risk reduction",
+            "Revenue Formula": "No direct revenue impact",
+            "Cost Benefit ($)": "$9.5M",
+            "Risk Benefit ($)": "$0",
+            "Cash Flow Formula": "13 days accelerated planning × $215K daily capex float × 0.85 × 0.75 = $2.8M",
+            "Revenue Benefit ($)": "$0",
+            "Cash Flow Benefit ($)": "$2.8M",
+            "Probability of Success": 0.75,
+            "Total Annual Value ($)": "$12.3M"
+          },
+          {
+            "ID": "UC-02",
+            "Use Case": "Automated SLA Contract Generator",
+            "Cost Formula": "6,200 hours × $185/hour × 0.65 deflection × 0.90 × 0.75 = $8.2M",
+            "Risk Formula": "0.38 reduction in legal review errors × $8.4M compliance exposure × 0.80 × 0.75 = $2.4M",
+            "Revenue Formula": "9 days sales cycle reduction × 180 annual deals × $230K avg contract × 0.14 revenue impact × 0.95 × 0.75 = $5.8M",
+            "Cost Benefit ($)": "$8.2M",
+            "Risk Benefit ($)": "$2.4M",
+            "Cash Flow Formula": "No direct cash flow impact",
+            "Revenue Benefit ($)": "$5.8M",
+            "Cash Flow Benefit ($)": "$0",
+            "Probability of Success": 0.8,
+            "Total Annual Value ($)": "$16.4M"
+          },
+          {
+            "ID": "UC-03",
+            "Use Case": "Network Fault Diagnostic Assistant",
+            "Cost Formula": "5,100 hours × $165/hour × 0.80 deflection × 0.90 × 0.75 = $6.8M",
+            "Risk Formula": "2.4 hour MTTR reduction × 2,400 annual faults × $165/hour downtime cost × 8.2 affected customers × 0.80 × 0.75 = $3.2M",
+            "Revenue Formula": "No direct revenue impact",
+            "Cost Benefit ($)": "$6.8M",
+            "Risk Benefit ($)": "$3.2M",
+            "Cash Flow Formula": "No direct cash flow impact",
+            "Revenue Benefit ($)": "$0",
+            "Cash Flow Benefit ($)": "$0",
+            "Probability of Success": 0.75,
+            "Total Annual Value ($)": "$10.0M"
+          },
+          {
+            "ID": "UC-04",
+            "Use Case": "Route Feasibility Automation System",
+            "Cost Formula": "27% accuracy improvement × 650 orders × 8 days rework × $165/hour × 6 hours daily × 0.90 × 0.75 = $3.9M",
+            "Risk Formula": "No quantified risk reduction",
+            "Revenue Formula": "16 days provisioning reduction × 650 annual orders × $230K avg value × 0.15 revenue impact × 0.95 × 0.75 = $7.2M",
+            "Cost Benefit ($)": "$3.9M",
+            "Risk Benefit ($)": "$0",
+            "Cash Flow Formula": "16 days × $118K daily revenue × 0.85 × 0.75 = $1.9M",
+            "Revenue Benefit ($)": "$7.2M",
+            "Cash Flow Benefit ($)": "$1.9M",
+            "Probability of Success": 0.7,
+            "Total Annual Value ($)": "$13.0M"
+          },
+          {
+            "ID": "UC-05",
+            "Use Case": "Regulatory Compliance Documentation Engine",
+            "Cost Formula": "3,800 hours × $185/hour × 0.70 deflection × 0.90 × 0.75 = $4.7M",
+            "Risk Formula": "0.42 reduction in filing errors × $16.2M regulatory penalty exposure × 0.80 × 0.75 = $5.1M",
+            "Revenue Formula": "No direct revenue impact",
+            "Cost Benefit ($)": "$4.7M",
+            "Risk Benefit ($)": "$5.1M",
+            "Cash Flow Formula": "No direct cash flow impact",
+            "Revenue Benefit ($)": "$0",
+            "Cash Flow Benefit ($)": "$0",
+            "Probability of Success": 0.7,
+            "Total Annual Value ($)": "$9.8M"
+          },
+          {
+            "ID": "UC-06",
+            "Use Case": "Contract Data Extraction Pipeline",
+            "Cost Formula": "3.2 hours × 800 contracts × $100/hour × 0.75 deflection × 0.90 × 0.75 = $1.6M",
+            "Risk Formula": "0.18 reduction in billing errors × $7.4M revenue leakage × 0.80 × 0.75 = $0.8M",
+            "Revenue Formula": "No direct revenue impact",
+            "Cost Benefit ($)": "$1.6M",
+            "Risk Benefit ($)": "$0.8M",
+            "Cash Flow Formula": "5 days accelerated billing × 800 contracts × $288 daily revenue × 0.85 × 0.75 = $2.3M",
+            "Revenue Benefit ($)": "$0",
+            "Cash Flow Benefit ($)": "$2.3M",
+            "Probability of Success": 0.85,
+            "Total Annual Value ($)": "$4.7M"
+          },
+          {
+            "ID": "UC-07",
+            "Use Case": "Competitive Intelligence Research Agent",
+            "Cost Formula": "5 weeks cycle reduction × 18 annual analyses × $150/hour × 40 hours weekly × 0.90 × 0.75 = $2.1M",
+            "Risk Formula": "No quantified risk reduction",
+            "Revenue Formula": "0.12 win rate improvement × $120M pipeline × 0.95 × 0.75 = $4.1M",
+            "Cost Benefit ($)": "$2.1M",
+            "Risk Benefit ($)": "$0",
+            "Cash Flow Formula": "No direct cash flow impact",
+            "Revenue Benefit ($)": "$4.1M",
+            "Cash Flow Benefit ($)": "$0",
+            "Probability of Success": 0.65,
+            "Total Annual Value ($)": "$6.2M"
+          },
+          {
+            "ID": "UC-08",
+            "Use Case": "Technical Proposal Generation System",
+            "Cost Formula": "18 days × 240 proposals × $165/hour × 6 hours daily × 0.65 deflection × 0.90 × 0.75 = $2.8M",
+            "Risk Formula": "No quantified risk reduction",
+            "Revenue Formula": "18 days × 240 annual proposals × $230K avg value × 0.06 revenue impact × 0.95 × 0.75 = $3.2M",
+            "Cost Benefit ($)": "$2.8M",
+            "Risk Benefit ($)": "$0",
+            "Cash Flow Formula": "No direct cash flow impact",
+            "Revenue Benefit ($)": "$3.2M",
+            "Cash Flow Benefit ($)": "$0",
+            "Probability of Success": 0.7,
+            "Total Annual Value ($)": "$6.0M"
+          },
+          {
+            "ID": "UC-09",
+            "Use Case": "Network Topology Optimization Advisor",
+            "Cost Formula": "Manual analysis reduction 1,200 hours × $165/hour × 0.70 deflection × 0.90 × 0.75 = $1.4M",
+            "Risk Formula": "0.28 reduction in unplanned outages × $12.4M revenue exposure × 0.80 × 0.75 = $2.6M",
+            "Revenue Formula": "No direct revenue impact",
+            "Cost Benefit ($)": "$1.4M",
+            "Risk Benefit ($)": "$2.6M",
+            "Cash Flow Formula": "18% capex efficiency × $21M annual network investment × 0.85 × 0.75 = $3.8M",
+            "Revenue Benefit ($)": "$0",
+            "Cash Flow Benefit ($)": "$3.8M",
+            "Probability of Success": 0.7,
+            "Total Annual Value ($)": "$7.8M"
+          },
+          {
+            "ID": "UC-10",
+            "Use Case": "SLA Monitoring & Alert Correlation System",
+            "Cost Formula": "2,200 alerts × 0.65 false positive × 1.8 hours × $100/hour × 0.90 × 0.75 = $2.4M",
+            "Risk Formula": "0.32 reduction in SLA breaches × $7.5M penalty exposure × 0.80 × 0.75 = $1.8M",
+            "Revenue Formula": "No direct revenue impact",
+            "Cost Benefit ($)": "$2.4M",
+            "Risk Benefit ($)": "$1.8M",
+            "Cash Flow Formula": "No direct cash flow impact",
+            "Revenue Benefit ($)": "$0",
+            "Cash Flow Benefit ($)": "$0",
+            "Probability of Success": 0.75,
+            "Total Annual Value ($)": "$4.2M"
+          }
+        ],
+        "step": 5,
+        "title": "Benefits Quantification by Driver",
+        "content": "Financial benefits derive from reduced labor overhead, accelerated revenue cycles, improved capital efficiency, and decreased regulatory exposure. All calculations apply conservative reduction factors and data maturity adjustments reflecting Level 2 readiness baseline."
+      },
+      {
+        "data": [
+          {
+            "ID": "UC-01",
+            "Use Case": "Intelligent Capacity Planning Engine",
+            "Runs/Month": 240,
+            "Monthly Tokens": 12720000,
+            "Input Tokens/Run": 45000,
+            "Change Mgmt (1-5)": 3,
+            "Output Tokens/Run": 8000,
+            "Effort Score (1-5)": 4,
+            "Data Readiness (1-5)": 2,
+            "Annual Token Cost ($)": "$2,500",
+            "Time-to-Value (months)": 9,
+            "Integration Complexity (1-5)": 4
+          },
+          {
+            "ID": "UC-02",
+            "Use Case": "Automated SLA Contract Generator",
+            "Runs/Month": 65,
+            "Monthly Tokens": 1170000,
+            "Input Tokens/Run": 12000,
+            "Change Mgmt (1-5)": 4,
+            "Output Tokens/Run": 6000,
+            "Effort Score (1-5)": 3,
+            "Data Readiness (1-5)": 3,
+            "Annual Token Cost ($)": "$1,500",
+            "Time-to-Value (months)": 6,
+            "Integration Complexity (1-5)": 3
+          },
+          {
+            "ID": "UC-03",
+            "Use Case": "Network Fault Diagnostic Assistant",
+            "Runs/Month": 200,
+            "Monthly Tokens": 2200000,
+            "Input Tokens/Run": 8000,
+            "Change Mgmt (1-5)": 2,
+            "Output Tokens/Run": 3000,
+            "Effort Score (1-5)": 3,
+            "Data Readiness (1-5)": 2,
+            "Annual Token Cost ($)": "$800",
+            "Time-to-Value (months)": 6,
+            "Integration Complexity (1-5)": 4
+          },
+          {
+            "ID": "UC-04",
+            "Use Case": "Route Feasibility Automation System",
+            "Runs/Month": 54,
+            "Monthly Tokens": 1188000,
+            "Input Tokens/Run": 18000,
+            "Change Mgmt (1-5)": 2,
+            "Output Tokens/Run": 4000,
+            "Effort Score (1-5)": 4,
+            "Data Readiness (1-5)": 2,
+            "Annual Token Cost ($)": "$500",
+            "Time-to-Value (months)": 9,
+            "Integration Complexity (1-5)": 4
+          },
+          {
+            "ID": "UC-05",
+            "Use Case": "Regulatory Compliance Documentation Engine",
+            "Runs/Month": 48,
+            "Monthly Tokens": 2256000,
+            "Input Tokens/Run": 35000,
+            "Change Mgmt (1-5)": 3,
+            "Output Tokens/Run": 12000,
+            "Effort Score (1-5)": 3,
+            "Data Readiness (1-5)": 2,
+            "Annual Token Cost ($)": "$1,100",
+            "Time-to-Value (months)": 9,
+            "Integration Complexity (1-5)": 3
+          },
+          {
+            "ID": "UC-06",
+            "Use Case": "Contract Data Extraction Pipeline",
+            "Runs/Month": 67,
+            "Monthly Tokens": 670000,
+            "Input Tokens/Run": 8000,
+            "Change Mgmt (1-5)": 2,
+            "Output Tokens/Run": 2000,
+            "Effort Score (1-5)": 2,
+            "Data Readiness (1-5)": 3,
+            "Annual Token Cost ($)": "$400",
+            "Time-to-Value (months)": 3,
+            "Integration Complexity (1-5)": 2
+          },
+          {
+            "ID": "UC-07",
+            "Use Case": "Competitive Intelligence Research Agent",
+            "Runs/Month": 18,
+            "Monthly Tokens": 648000,
+            "Input Tokens/Run": 28000,
+            "Change Mgmt (1-5)": 3,
+            "Output Tokens/Run": 8000,
+            "Effort Score (1-5)": 2,
+            "Data Readiness (1-5)": 4,
+            "Annual Token Cost ($)": "$300",
+            "Time-to-Value (months)": 3,
+            "Integration Complexity (1-5)": 2
+          },
+          {
+            "ID": "UC-08",
+            "Use Case": "Technical Proposal Generation System",
+            "Runs/Month": 20,
+            "Monthly Tokens": 500000,
+            "Input Tokens/Run": 15000,
+            "Change Mgmt (1-5)": 3,
+            "Output Tokens/Run": 10000,
+            "Effort Score (1-5)": 3,
+            "Data Readiness (1-5)": 3,
+            "Annual Token Cost ($)": "$400",
+            "Time-to-Value (months)": 6,
+            "Integration Complexity (1-5)": 3
+          },
+          {
+            "ID": "UC-09",
+            "Use Case": "Network Topology Optimization Advisor",
+            "Runs/Month": 12,
+            "Monthly Tokens": 804000,
+            "Input Tokens/Run": 52000,
+            "Change Mgmt (1-5)": 4,
+            "Output Tokens/Run": 15000,
+            "Effort Score (1-5)": 5,
+            "Data Readiness (1-5)": 2,
+            "Annual Token Cost ($)": "$400",
+            "Time-to-Value (months)": 12,
+            "Integration Complexity (1-5)": 5
+          },
+          {
+            "ID": "UC-10",
+            "Use Case": "SLA Monitoring & Alert Correlation System",
+            "Runs/Month": 183,
+            "Monthly Tokens": 1464000,
+            "Input Tokens/Run": 6000,
+            "Change Mgmt (1-5)": 2,
+            "Output Tokens/Run": 2000,
+            "Effort Score (1-5)": 3,
+            "Data Readiness (1-5)": 3,
+            "Annual Token Cost ($)": "$500",
+            "Time-to-Value (months)": 6,
+            "Integration Complexity (1-5)": 3
+          }
+        ],
+        "step": 6,
+        "title": "Effort & Token Modeling",
+        "content": "Implementation complexity concentrates in network management system integrations and contract data quality remediation. Token consumption reflects production-scale processing of network telemetry, contract documents, and technical proposals."
+      },
+      {
+        "data": [
+          {
+            "ID": "UC-02",
+            "Use Case": "Automated SLA Contract Generator",
+            "Priority Tier": "Critical",
+            "TTV Score (0-30)": 25,
+            "Recommended Phase": "Q1",
+            "Value Score (0-40)": 40,
+            "Effort Score (0-30)": 24,
+            "Priority Score (0-100)": 89
+          },
+          {
+            "ID": "UC-04",
+            "Use Case": "Route Feasibility Automation System",
+            "Priority Tier": "High",
+            "TTV Score (0-30)": 18,
+            "Recommended Phase": "Q2",
+            "Value Score (0-40)": 38,
+            "Effort Score (0-30)": 18,
+            "Priority Score (0-100)": 74
+          },
+          {
+            "ID": "UC-01",
+            "Use Case": "Intelligent Capacity Planning Engine",
+            "Priority Tier": "High",
+            "TTV Score (0-30)": 18,
+            "Recommended Phase": "Q1",
+            "Value Score (0-40)": 36,
+            "Effort Score (0-30)": 18,
+            "Priority Score (0-100)": 72
+          },
+          {
+            "ID": "UC-03",
+            "Use Case": "Network Fault Diagnostic Assistant",
+            "Priority Tier": "Critical",
+            "TTV Score (0-30)": 25,
+            "Recommended Phase": "Q1",
+            "Value Score (0-40)": 32,
+            "Effort Score (0-30)": 24,
+            "Priority Score (0-100)": 81
+          },
+          {
+            "ID": "UC-05",
+            "Use Case": "Regulatory Compliance Documentation Engine",
+            "Priority Tier": "High",
+            "TTV Score (0-30)": 18,
+            "Recommended Phase": "Q2",
+            "Value Score (0-40)": 31,
+            "Effort Score (0-30)": 24,
+            "Priority Score (0-100)": 73
+          },
+          {
+            "ID": "UC-09",
+            "Use Case": "Network Topology Optimization Advisor",
+            "Priority Tier": "Medium",
+            "TTV Score (0-30)": 13,
+            "Recommended Phase": "Q4",
+            "Value Score (0-40)": 28,
+            "Effort Score (0-30)": 12,
+            "Priority Score (0-100)": 53
+          },
+          {
+            "ID": "UC-07",
+            "Use Case": "Competitive Intelligence Research Agent",
+            "Priority Tier": "Critical",
+            "TTV Score (0-30)": 30,
+            "Recommended Phase": "Q1",
+            "Value Score (0-40)": 25,
+            "Effort Score (0-30)": 28,
+            "Priority Score (0-100)": 83
+          },
+          {
+            "ID": "UC-08",
+            "Use Case": "Technical Proposal Generation System",
+            "Priority Tier": "High",
+            "TTV Score (0-30)": 25,
+            "Recommended Phase": "Q2",
+            "Value Score (0-40)": 24,
+            "Effort Score (0-30)": 24,
+            "Priority Score (0-100)": 73
+          },
+          {
+            "ID": "UC-06",
+            "Use Case": "Contract Data Extraction Pipeline",
+            "Priority Tier": "High",
+            "TTV Score (0-30)": 30,
+            "Recommended Phase": "Q1",
+            "Value Score (0-40)": 20,
+            "Effort Score (0-30)": 28,
+            "Priority Score (0-100)": 78
+          },
+          {
+            "ID": "UC-10",
+            "Use Case": "SLA Monitoring & Alert Correlation System",
+            "Priority Tier": "High",
+            "TTV Score (0-30)": 25,
+            "Recommended Phase": "Q3",
+            "Value Score (0-40)": 18,
+            "Effort Score (0-30)": 24,
+            "Priority Score (0-100)": 67
+          }
+        ],
+        "step": 7,
+        "title": "Priority Scoring & Roadmap",
+        "content": "Priority scores reflect value concentration in contract automation and capacity planning with moderate implementation complexity. Critical-tier initiatives target 6-9 month deployment cycles. High-tier initiatives layer onto foundational integrations established in earlier phases."
+      }
+    ],
+    "summary": "This assessment identifies $90.4M in annual value across 10 AI use cases spanning network engineering, sales operations, and regulatory compliance. Three initiatives qualify as Critical-priority for immediate Q1 execution with combined first-year impact of $42.7M. The portfolio concentrates on back-office process transformation rather than customer-facing automation, reflecting deliberate prioritization of operational leverage and risk mitigation.\n\nCost reduction dominates the portfolio at $43.9M representing 49% of total identified value. Revenue growth opportunities contribute $20.3M at 22% of total value. Risk mitigation accounts for $15.9M at 18%. Cash flow acceleration rounds out the portfolio at $10.3M representing 11%. The concentration in cost reduction reflects euNetworks scale dynamics where operational efficiency improvements compound across fixed network infrastructure serving 800 enterprise clients. Revenue opportunities primarily derive from accelerated provisioning cycles and improved sales velocity rather than new service offerings.\n\nAutomated SLA Contract Generator represents a $16.4M annual opportunity with 89 priority score warranting immediate Q1 deployment. AI-drafted contracts with legal review for non-standard terms deflect 4,030 hours annually from commercial and legal teams. The solution reduces contract turnaround from 12 days to 3 days while lowering legal review dependency from 73% to 35%. Implementation requires building a clause library covering 12 EU regulatory jurisdictions and integrating with CRM systems for customer data population. The 6-month timeline includes 90-day pilot phase covering major service tiers before full production rollout. Primary dependency centers on standardizing commercial terms across historical contract templates where variation has accumulated over 15 years of custom negotiations.\n\nNetwork Fault Diagnostic Assistant delivers $10.0M annual value with 81 priority score targeting Q1 deployment. AI-guided troubleshooting reduces escalation rates from 42% to 18% while compressing mean time to resolution from 4.2 hours to 1.8 hours. First-tier operations staff gain expert-level diagnostic capabilities through integration with network management systems and historical incident databases. The solution processes 200 fault tickets monthly across multi-segment fiber paths spanning 15,000 route kilometers. Implementation requires mapping network topology data and building correlation models between symptom patterns and resolution procedures. Critical dependency involves network operations center staff validation before executing fiber switching procedures that impact customer traffic.\n\nCompetitive Intelligence Research Agent generates $6.2M annual value with 83 priority score suitable for Q1 fast-track deployment. AI-synthesized market briefings compress research cycles from 6 weeks to 1 week while improving win rates through faster pricing adjustments. The solution monitors competitor route announcements and pricing changes across fragmented European markets where 23 regional fiber operators compete for enterprise connectivity contracts. Implementation complexity remains low given external data sources and minimal integration requirements. Product management teams retain oversight of strategic recommendations before executive presentation.\n\nThe top three initiatives account for 47% of total portfolio value creating concentration risk if any single initiative fails to achieve projected adoption rates. However each targets distinct operational domains providing natural hedging. Back-office automation opportunities outnumber customer-facing initiatives 8 to 2 reflecting deliberate prioritization of internal process transformation before customer experience investments. This sequencing recognizes that euNetworks operates in infrastructure services where reliability and responsiveness matter more than feature innovation.\n\nImplementation hinges on network management system integration and contract data quality remediation representing 120-day prerequisite work before AI deployment begins. Data readiness averages Level 2 across target systems with network topology data concentrated in legacy inventory databases using inconsistent schemas. Failure to address data quality issues reduces projected first-year value by 35% through delayed adoption and increased error rates requiring human intervention. Priority initiatives require 18 full-time equivalent resources across 12-month deployment horizon including 8 network engineering staff, 5 integration developers, 3 change management specialists, and 2 legal counsel for contract template standardization.",
+    "executiveDashboard": {
+      "topUseCases": [
+        {
+          "rank": 1,
+          "useCase": "Automated SLA Contract Generator",
+          "annualValue": 16400000,
+          "monthlyTokens": 1170000,
+          "priorityScore": 89
+        },
+        {
+          "rank": 2,
+          "useCase": "Competitive Intelligence Research Agent",
+          "annualValue": 6200000,
+          "monthlyTokens": 648000,
+          "priorityScore": 83
+        },
+        {
+          "rank": 3,
+          "useCase": "Network Fault Diagnostic Assistant",
+          "annualValue": 10000000,
+          "monthlyTokens": 2200000,
+          "priorityScore": 81
+        },
+        {
+          "rank": 4,
+          "useCase": "Contract Data Extraction Pipeline",
+          "annualValue": 4700000,
+          "monthlyTokens": 670000,
+          "priorityScore": 78
+        },
+        {
+          "rank": 5,
+          "useCase": "Route Feasibility Automation System",
+          "annualValue": 13000000,
+          "monthlyTokens": 1188000,
+          "priorityScore": 74
+        }
+      ],
+      "totalAnnualValue": 90400000,
+      "totalCostBenefit": 43900000,
+      "totalRiskBenefit": 15900000,
+      "totalMonthlyTokens": 23620000,
+      "totalRevenueBenefit": 20300000,
+      "totalCashFlowBenefit": 10300000,
+      "valuePerMillionTokens": 3827
+    }
+  }
+}

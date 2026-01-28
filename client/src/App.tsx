@@ -13,6 +13,8 @@ import HoldPeriod from "./pages/HoldPeriod";
 import CompanyDetail from "./pages/CompanyDetail";
 import Reports from "./pages/Reports";
 import AIAssistant from "./pages/AIAssistant";
+import UseCases from "./pages/UseCases";
+import Companies from "./pages/Companies";
 import Login from "./pages/Login";
 
 function ProtectedRoutes() {
@@ -32,6 +34,8 @@ function ProtectedRoutes() {
       <Route path="/company/:id" component={CompanyDetail} />
       <Route path="/reports" component={Reports} />
       <Route path="/ai" component={AIAssistant} />
+      <Route path="/use-cases" component={UseCases} />
+      <Route path="/companies" component={Companies} />
       <Route path="/404" component={NotFound} />
       <Route component={NotFound} />
     </Switch>

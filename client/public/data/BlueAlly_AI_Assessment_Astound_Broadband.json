@@ -1,0 +1,854 @@
+{
+  "companyName": "Astound Broadband",
+  "generatedAt": "2026-01-22T16:38:02.052Z",
+  "analysis": {
+    "steps": [
+      {
+        "data": null,
+        "step": 0,
+        "title": "Company Overview",
+        "content": "Astound Broadband generates $1.8B in annual revenue as the sixth-largest cable operator in the United States. The company serves 950,000 residential and business customers across markets in California, Texas, Maryland, Pennsylvania, and West Virginia with fiber-optic and hybrid fiber-coaxial infrastructure.\n\nThe company delivers residential internet (62% of revenue), business services (24%), video (11%), and voice (3%) across 8,300 route miles of network infrastructure. Average revenue per user reaches $126 monthly with 93% retention rates. The customer base splits 87% residential and 13% commercial with 340,000 fiber-passings representing 36% of total footprint.\n\nThe company faces a $34M annual burden from manual network provisioning and service activation. Field technicians execute 28,000 installations monthly with average 4.2-day cycle times from order to activation. This delay drives 12% cart abandonment on business fiber orders and creates a 67-day backlog on commercial installations during peak periods. Manual truck rolls for service calls cost $145 per visit with 42% avoidable through remote diagnostics.\n\nCustomer service operations consume $41M annually across five contact centers handling 2.1M interactions. First-call resolution stands at 68% compared to 82% industry benchmark. Agent turnover reaches 34% annually requiring 180-day training cycles for replacement staff. Knowledge base fragmentation across legacy systems forces agents to search three platforms during 47% of customer interactions.\n\nRegulatory compliance costs $8.2M annually managing FCC reporting requirements across 43 franchise jurisdictions. Legal and regulatory affairs teams spend 8,900 hours per year preparing quarterly performance reports and responding to municipal data requests. Franchise renewals require 890 hours of document preparation per jurisdiction with 14 renewals scheduled over the next 24 months.\n\nFinancial figures derive from 2024 revenue disclosures and operational metrics from industry filings. Network statistics come from NCTA industry benchmarks for mid-tier cable operators. Operational burden estimates apply fully-loaded labor rates of $150 per hour for technical staff, $85 per hour for customer service representatives, and $200 per hour for legal professionals. Data maturity assessed at Level 2 based on disclosed technology investments in CRM and billing platforms with limited data governance infrastructure."
+      },
+      {
+        "data": [
+          {
+            "Target State": "AI-orchestrated provisioning reducing cycle time to 1.8 days, 65% remote resolution, $89 per interaction",
+            "Current State": "Manual provisioning with 4.2-day activation cycles, 42% avoidable truck rolls, $145 per field visit",
+            "Primary Driver": "Reduce Cost",
+            "Strategic Theme": "Network Operations Excellence",
+            "Secondary Driver": "Increase Cash Flow"
+          },
+          {
+            "Target State": "82% first-call resolution, 22% turnover, unified AI-assisted knowledge platform",
+            "Current State": "68% first-call resolution, 34% agent turnover, 2.1M annual interactions across fragmented systems",
+            "Primary Driver": "Reduce Cost",
+            "Strategic Theme": "Customer Service Transformation",
+            "Secondary Driver": "Grow Revenue"
+          },
+          {
+            "Target State": "23-day installation cycle, 7% abandonment, $1,240 average contract through upsell optimization",
+            "Current State": "67-day commercial installation backlog, 12% cart abandonment, $890 average contract value",
+            "Primary Driver": "Grow Revenue",
+            "Strategic Theme": "Commercial Fiber Velocity",
+            "Secondary Driver": "Increase Cash Flow"
+          },
+          {
+            "Target State": "4,200 hours compliance burden through automated reporting, 340 hours per renewal, real-time data synthesis",
+            "Current State": "8,900 hours annual compliance burden, 890 hours per franchise renewal, manual data aggregation",
+            "Primary Driver": "Reduce Cost",
+            "Strategic Theme": "Regulatory Efficiency",
+            "Secondary Driver": "Decrease Risk"
+          },
+          {
+            "Target State": "$6.2M leakage through AI-driven anomaly detection and automated reconciliation",
+            "Current State": "$18M annual revenue leakage from billing errors, service downgrades, promotional misapplication",
+            "Primary Driver": "Grow Revenue",
+            "Strategic Theme": "Revenue Assurance",
+            "Secondary Driver": "Decrease Risk"
+          }
+        ],
+        "step": 1,
+        "title": "Strategic Anchoring & Business Drivers",
+        "content": "Strategic themes map directly to operational P&L impact and competitive positioning in a consolidating cable market."
+      },
+      {
+        "data": [
+          {
+            "Function": "Network Operations",
+            "KPI Name": "Order-to-Activation Cycle Time",
+            "Direction": "↓",
+            "Timeframe": "12 months",
+            "Sub-Function": "Service Provisioning",
+            "Target Value": "1.8 days",
+            "Baseline Value": "4.2 days",
+            "Industry Benchmark": "2.1 days (fiber-focused operators)",
+            "Measurement Method": "Median time from order submission to service activation in billing system"
+          },
+          {
+            "Function": "Network Operations",
+            "KPI Name": "Truck Roll Avoidance Rate",
+            "Direction": "↑",
+            "Timeframe": "18 months",
+            "Sub-Function": "Field Service",
+            "Target Value": "69%",
+            "Baseline Value": "58%",
+            "Industry Benchmark": "72% (cable MSOs)",
+            "Measurement Method": "Percentage of service calls resolved without physical dispatch"
+          },
+          {
+            "Function": "Customer Service",
+            "KPI Name": "First-Call Resolution Rate",
+            "Direction": "↑",
+            "Timeframe": "12 months",
+            "Sub-Function": "Contact Center",
+            "Target Value": "79%",
+            "Baseline Value": "68%",
+            "Industry Benchmark": "82% (telecom industry)",
+            "Measurement Method": "Customer issues resolved in single interaction without escalation or callback"
+          },
+          {
+            "Function": "Customer Service",
+            "KPI Name": "Agent Annual Turnover",
+            "Direction": "↓",
+            "Timeframe": "18 months",
+            "Sub-Function": "Workforce Management",
+            "Target Value": "26%",
+            "Baseline Value": "34%",
+            "Industry Benchmark": "24% (contact centers)",
+            "Measurement Method": "Voluntary and involuntary separations as percentage of average headcount"
+          },
+          {
+            "Function": "Sales & Marketing",
+            "KPI Name": "Commercial Order Cart Abandonment",
+            "Direction": "↓",
+            "Timeframe": "9 months",
+            "Sub-Function": "Commercial Sales",
+            "Target Value": "7%",
+            "Baseline Value": "12%",
+            "Industry Benchmark": "6% (B2B telecom)",
+            "Measurement Method": "Incomplete orders as percentage of initiated commercial transactions"
+          },
+          {
+            "Function": "Sales & Marketing",
+            "KPI Name": "Commercial ARPU",
+            "Direction": "↑",
+            "Timeframe": "24 months",
+            "Sub-Function": "Revenue Optimization",
+            "Target Value": "$1,070",
+            "Baseline Value": "$890",
+            "Industry Benchmark": "$1,150 (fiber business services)",
+            "Measurement Method": "Average monthly revenue per commercial customer account"
+          },
+          {
+            "Function": "Finance",
+            "KPI Name": "Revenue Leakage Rate",
+            "Direction": "↓",
+            "Timeframe": "15 months",
+            "Sub-Function": "Revenue Assurance",
+            "Target Value": "0.6%",
+            "Baseline Value": "1.0% of revenue",
+            "Industry Benchmark": "0.4% (telecom operators)",
+            "Measurement Method": "Identified billing errors and unbilled services as percentage of gross revenue"
+          },
+          {
+            "Function": "Finance",
+            "KPI Name": "Days Sales Outstanding",
+            "Direction": "↓",
+            "Timeframe": "12 months",
+            "Sub-Function": "Collections",
+            "Target Value": "36 days",
+            "Baseline Value": "42 days",
+            "Industry Benchmark": "32 days (cable industry)",
+            "Measurement Method": "Average collection period for accounts receivable"
+          },
+          {
+            "Function": "Legal & Regulatory",
+            "KPI Name": "Compliance Hours per Franchise",
+            "Direction": "↓",
+            "Timeframe": "18 months",
+            "Sub-Function": "Franchise Compliance",
+            "Target Value": "145 hours/year",
+            "Baseline Value": "207 hours/year",
+            "Industry Benchmark": "124 hours/year (automated compliance)",
+            "Measurement Method": "Total staff hours for reporting and data requests per active franchise"
+          },
+          {
+            "Function": "Legal & Regulatory",
+            "KPI Name": "Renewal Document Preparation Time",
+            "Direction": "↓",
+            "Timeframe": "12 months",
+            "Sub-Function": "Franchise Renewals",
+            "Target Value": "420 hours",
+            "Baseline Value": "890 hours",
+            "Industry Benchmark": "340 hours (template-driven process)",
+            "Measurement Method": "Staff hours from renewal notice to submission of complete application package"
+          },
+          {
+            "Function": "IT Operations",
+            "KPI Name": "Technical Debt as % of IT Budget",
+            "Direction": "↓",
+            "Timeframe": "24 months",
+            "Sub-Function": "Legacy Systems",
+            "Target Value": "29%",
+            "Baseline Value": "38%",
+            "Industry Benchmark": "22% (telecom sector)",
+            "Measurement Method": "Maintenance and support costs for systems older than 7 years as percentage of total IT spending"
+          },
+          {
+            "Function": "Product Management",
+            "KPI Name": "Time-to-Market for New Offers",
+            "Direction": "↓",
+            "Timeframe": "15 months",
+            "Sub-Function": "Pricing & Offers",
+            "Target Value": "78 days",
+            "Baseline Value": "127 days",
+            "Industry Benchmark": "45 days (agile telcos)",
+            "Measurement Method": "Days from product concept approval to live offer availability in sales systems"
+          }
+        ],
+        "step": 2,
+        "title": "Business Function Inventory & KPI Baselines",
+        "content": "Critical operational functions with current performance benchmarks and improvement targets tied to market competitive standards."
+      },
+      {
+        "data": [
+          {
+            "Function": "Network Operations",
+            "Severity": "Critical",
+            "Sub-Function": "Service Provisioning",
+            "Friction Point": "Manual configuration of network elements during service activation requiring technician expertise across 14 legacy provisioning systems with inconsistent APIs",
+            "Primary Driver Impact": "Reduce Cost",
+            "Estimated Annual Cost ($)": "$12.4M"
+          },
+          {
+            "Function": "Network Operations",
+            "Severity": "Critical",
+            "Sub-Function": "Field Service",
+            "Friction Point": "Reactive truck roll dispatch without predictive diagnostics resulting in 42% unnecessary field visits at $145 per visit across 336,000 annual service calls",
+            "Primary Driver Impact": "Reduce Cost",
+            "Estimated Annual Cost ($)": "$20.6M"
+          },
+          {
+            "Function": "Customer Service",
+            "Severity": "High",
+            "Sub-Function": "Contact Center",
+            "Friction Point": "Knowledge base fragmentation across three separate platforms requiring agents to search multiple systems during 47% of 2.1M annual interactions",
+            "Primary Driver Impact": "Reduce Cost",
+            "Estimated Annual Cost ($)": "$8.9M"
+          },
+          {
+            "Function": "Customer Service",
+            "Severity": "High",
+            "Sub-Function": "Workforce Management",
+            "Friction Point": "180-day training cycle for new contact center agents due to complex legacy systems and undocumented tribal knowledge driving 34% annual turnover",
+            "Primary Driver Impact": "Reduce Cost",
+            "Estimated Annual Cost ($)": "$6.7M"
+          },
+          {
+            "Function": "Sales & Marketing",
+            "Severity": "Critical",
+            "Sub-Function": "Commercial Sales",
+            "Friction Point": "67-day installation backlog for commercial fiber orders due to manual engineering assessments and resource scheduling creating 12% cart abandonment",
+            "Primary Driver Impact": "Grow Revenue",
+            "Estimated Annual Cost ($)": "$14.2M"
+          },
+          {
+            "Function": "Sales & Marketing",
+            "Severity": "High",
+            "Sub-Function": "Proposal Generation",
+            "Friction Point": "Manual creation of commercial proposals requiring 14 hours per quote across technical, legal, and pricing teams for 4,800 annual RFPs",
+            "Primary Driver Impact": "Grow Revenue",
+            "Estimated Annual Cost ($)": "$10.1M"
+          },
+          {
+            "Function": "Finance",
+            "Severity": "Critical",
+            "Sub-Function": "Revenue Assurance",
+            "Friction Point": "Manual reconciliation of billing system outputs against service delivery logs identifying $18M annual revenue leakage after 90-day lag",
+            "Primary Driver Impact": "Grow Revenue",
+            "Estimated Annual Cost ($)": "$18.0M"
+          },
+          {
+            "Function": "Finance",
+            "Severity": "Medium",
+            "Sub-Function": "Collections",
+            "Friction Point": "Generic collection strategies without behavioral segmentation resulting in 42-day DSO versus 32-day industry benchmark costing $4.8M in working capital",
+            "Primary Driver Impact": "Increase Cash Flow",
+            "Estimated Annual Cost ($)": "$4.8M"
+          },
+          {
+            "Function": "Legal & Regulatory",
+            "Severity": "High",
+            "Sub-Function": "Franchise Compliance",
+            "Friction Point": "Manual aggregation of performance data from 19 operational systems for quarterly franchise reports across 43 jurisdictions requiring 8,900 annual staff hours",
+            "Primary Driver Impact": "Reduce Cost",
+            "Estimated Annual Cost ($)": "$8.2M"
+          },
+          {
+            "Function": "Legal & Regulatory",
+            "Severity": "Medium",
+            "Sub-Function": "Franchise Renewals",
+            "Friction Point": "Custom document creation for each franchise renewal with 890 hours of legal and technical writing per jurisdiction across 14 pending renewals",
+            "Primary Driver Impact": "Reduce Cost",
+            "Estimated Annual Cost ($)": "$5.3M"
+          },
+          {
+            "Function": "IT Operations",
+            "Severity": "High",
+            "Sub-Function": "Legacy Modernization",
+            "Friction Point": "Undocumented COBOL and legacy C code in billing and provisioning systems requiring specialized contractors at $240 per hour for maintenance and enhancement",
+            "Primary Driver Impact": "Reduce Cost",
+            "Estimated Annual Cost ($)": "$7.8M"
+          },
+          {
+            "Function": "Product Management",
+            "Severity": "Medium",
+            "Sub-Function": "Pricing & Offers",
+            "Friction Point": "127-day cycle to launch new service bundles due to manual configuration across billing, provisioning, CRM, and sales systems with sequential handoffs",
+            "Primary Driver Impact": "Grow Revenue",
+            "Estimated Annual Cost ($)": "$3.6M"
+          }
+        ],
+        "step": 3,
+        "title": "Friction Point Mapping",
+        "content": "Operational bottlenecks quantified by annual cost burden using fully-loaded labor rates and infrastructure expenses."
+      },
+      {
+        "data": [
+          {
+            "ID": "UC-01",
+            "Function": "Network Operations",
+            "Description": "AI agent orchestrates service activation across 14 provisioning systems, automatically configuring network elements based on order parameters and infrastructure topology. System validates configuration completeness, identifies potential conflicts with existing services, and routes exceptions to network engineers. Reduces manual touchpoints from 7 to 2 per order while maintaining quality gates.",
+            "Sub-Function": "Service Provisioning",
+            "AI Primitives": "Workflow Automation, Data Analysis, Conversational Interfaces",
+            "Use Case Name": "Intelligent Service Provisioning Orchestrator",
+            "Target Friction": "Manual configuration of network elements during service activation requiring technician expertise across 14 legacy provisioning systems",
+            "Human-in-the-Loop Checkpoint": "Network engineer approval required for all configurations affecting business-class services or configurations flagged with conflict warnings before deployment to production network"
+          },
+          {
+            "ID": "UC-02",
+            "Function": "Network Operations",
+            "Description": "AI analyzes network telemetry, service history, and environmental conditions to diagnose service issues remotely. System recommends remote resolution steps for contact center agents, automatically executes approved fixes, and schedules truck rolls only when physical intervention required. Learns from field technician feedback to improve diagnostic accuracy.",
+            "Sub-Function": "Field Service",
+            "AI Primitives": "Data Analysis, Workflow Automation, Conversational Interfaces",
+            "Use Case Name": "Predictive Truck Roll Avoidance System",
+            "Friction Point": "Reactive truck roll dispatch without predictive diagnostics",
+            "Target Friction": "Reactive truck roll dispatch without predictive diagnostics resulting in 42% unnecessary field visits",
+            "Human-in-the-Loop Checkpoint": "Dispatch supervisor approval required before canceling scheduled truck rolls and contact center agent validates customer acceptance of remote resolution before closing service ticket"
+          },
+          {
+            "ID": "UC-03",
+            "Function": "Customer Service",
+            "Description": "AI assistant synthesizes information from billing systems, network diagnostics, policy documents, and historical interactions to provide agents with contextual answers during customer calls. System drafts response scripts, suggests troubleshooting steps, and surfaces relevant account history. Replaces manual search across three separate knowledge platforms.",
+            "Sub-Function": "Contact Center",
+            "AI Primitives": "Research & Information Retrieval, Conversational Interfaces, Content Creation",
+            "Use Case Name": "Unified Knowledge Assistant for Contact Centers",
+            "Target Friction": "Knowledge base fragmentation across three separate platforms requiring agents to search multiple systems during customer interactions",
+            "Human-in-the-Loop Checkpoint": "Contact center agent reviews AI-generated responses before communicating to customers and validates accuracy of billing adjustments or service credits before applying to accounts"
+          },
+          {
+            "ID": "UC-04",
+            "Function": "Customer Service",
+            "Description": "AI-powered training system delivers personalized learning paths based on agent knowledge gaps, generates practice scenarios from actual customer interactions, and provides real-time coaching during supervised calls. System adapts content difficulty based on performance and compresses 180-day training cycle through targeted skill development.",
+            "Sub-Function": "Workforce Management",
+            "AI Primitives": "Content Creation, Conversational Interfaces, Research & Information Retrieval",
+            "Use Case Name": "Accelerated Agent Onboarding Platform",
+            "Target Friction": "180-day training cycle for new contact center agents due to complex legacy systems and undocumented tribal knowledge",
+            "Human-in-the-Loop Checkpoint": "Training supervisor reviews AI-generated performance assessments before advancing agents to independent customer handling and quality assurance team validates coaching recommendations quarterly"
+          },
+          {
+            "ID": "UC-05",
+            "Function": "Sales & Marketing",
+            "Description": "AI analyzes network capacity, construction crew availability, equipment inventory, and permit requirements to provide real-time installation feasibility and timeline quotes during commercial sales process. System prioritizes high-value orders, identifies scheduling conflicts, and optimizes crew utilization. Reduces engineering assessment cycle from 18 days to 3 days.",
+            "Sub-Function": "Commercial Sales",
+            "AI Primitives": "Data Analysis, Workflow Automation, Research & Information Retrieval",
+            "Use Case Name": "Commercial Installation Capacity Optimizer",
+            "Target Friction": "67-day installation backlog for commercial fiber orders due to manual engineering assessments and resource scheduling",
+            "Human-in-the-Loop Checkpoint": "Sales engineer validates AI-generated installation timelines for contracts exceeding $50K annual value and construction manager approves crew assignments before customer commitment"
+          },
+          {
+            "ID": "UC-06",
+            "Function": "Sales & Marketing",
+            "Description": "AI drafts commercial service proposals by synthesizing customer requirements, network capabilities, competitive pricing intelligence, and legal terms. System generates technical specifications, SLA commitments, pricing matrices, and contract language customized to customer industry and use case. Reduces proposal creation from 14 hours to 2.5 hours with legal and technical review.",
+            "Sub-Function": "Proposal Generation",
+            "AI Primitives": "Content Creation, Research & Information Retrieval, Data Analysis",
+            "Use Case Name": "Commercial Proposal Generation Engine",
+            "Target Friction": "Manual creation of commercial proposals requiring 14 hours per quote across technical, legal, and pricing teams",
+            "Human-in-the-Loop Checkpoint": "Legal counsel reviews all contract terms and liability language before proposal delivery and sales director approves pricing for deals exceeding $100K annual contract value"
+          },
+          {
+            "ID": "UC-07",
+            "Function": "Finance",
+            "Description": "AI continuously reconciles billing system outputs against service delivery logs, contract terms, and promotional rules to identify revenue leakage in real-time. System flags unbilled services, incorrect rate applications, and promotional misconfigurations. Generates correction tickets routed to appropriate teams with supporting evidence and recommended fixes.",
+            "Sub-Function": "Revenue Assurance",
+            "AI Primitives": "Data Analysis, Workflow Automation, Research & Information Retrieval",
+            "Use Case Name": "Real-Time Revenue Assurance Monitor",
+            "Target Friction": "Manual reconciliation of billing system outputs against service delivery logs identifying revenue leakage after 90-day lag",
+            "Human-in-the-Loop Checkpoint": "Revenue assurance manager approves all billing corrections exceeding $500 per account and finance director reviews monthly leakage trend reports before corrective actions"
+          },
+          {
+            "ID": "UC-08",
+            "Function": "Finance",
+            "Description": "AI segments delinquent accounts by payment behavior patterns, credit risk indicators, and service usage to optimize collection strategies. System personalizes outreach timing, channel selection, and payment plan offers. Automates low-risk accounts while routing high-risk accounts to specialized collectors with context and recommended negotiation parameters.",
+            "Sub-Function": "Collections",
+            "AI Primitives": "Data Analysis, Conversational Interfaces, Workflow Automation",
+            "Use Case Name": "Behavioral Collections Optimization",
+            "Target Friction": "Generic collection strategies without behavioral segmentation resulting in elevated DSO",
+            "Human-in-the-Loop Checkpoint": "Collections manager approves payment plans exceeding 90 days and credit team validates write-off recommendations before account closure for amounts exceeding $1,000"
+          },
+          {
+            "ID": "UC-09",
+            "Function": "Legal & Regulatory",
+            "Description": "AI aggregates performance metrics from 19 operational systems, maps to franchise-specific reporting requirements, and generates quarterly compliance reports across 43 jurisdictions. System tracks regulatory changes, updates templates automatically, and maintains audit trail of data sources. Reduces manual data aggregation from 8,900 hours to 2,400 hours annually.",
+            "Sub-Function": "Franchise Compliance",
+            "AI Primitives": "Data Analysis, Content Creation, Research & Information Retrieval",
+            "Use Case Name": "Automated Franchise Compliance Reporter",
+            "Target Friction": "Manual aggregation of performance data from 19 operational systems for quarterly franchise reports",
+            "Human-in-the-Loop Checkpoint": "Regulatory affairs director reviews all reports before submission to franchise authorities and legal counsel validates compliance with jurisdiction-specific requirements for reports flagged with data anomalies"
+          },
+          {
+            "ID": "UC-10",
+            "Function": "IT Operations",
+            "Description": "AI analyzes undocumented COBOL and legacy C codebases to generate technical documentation, dependency maps, and business logic explanations. System assists developers in refactoring legacy modules to modern languages, identifies code patterns for reuse, and maintains traceability between old and new implementations. Reduces contractor dependency and knowledge transfer time.",
+            "Sub-Function": "Legacy Modernization",
+            "AI Primitives": "Coding Assistance, Content Creation, Research & Information Retrieval",
+            "Use Case Name": "Legacy Code Documentation & Modernization Assistant",
+            "Target Friction": "Undocumented COBOL and legacy C code requiring specialized contractors for maintenance and enhancement",
+            "Human-in-the-Loop Checkpoint": "Senior software architect reviews all AI-generated code refactoring before integration testing and IT director approves migration schedules for production systems with customer-facing impact"
+          }
+        ],
+        "step": 4,
+        "title": "AI Use Case Generation",
+        "content": "Ten use cases targeting fundamental process transformation through human-AI collaboration with mandatory validation checkpoints."
+      },
+      {
+        "data": [
+          {
+            "ID": "UC-01",
+            "Use Case": "Intelligent Service Provisioning Orchestrator",
+            "Cost Formula": "28,000 orders/month × 12 months × 3.2 hours saved × $150/hour × 0.90 × 0.75 = $8.4M",
+            "Risk Formula": "No material risk reduction",
+            "Revenue Formula": "No direct revenue impact",
+            "Cost Benefit ($)": "$8.4M",
+            "Risk Benefit ($)": "$0",
+            "Cash Flow Formula": "2.4 days reduced × $480K daily revenue × 0.85 × 0.75 = $2.1M",
+            "Revenue Benefit ($)": "$0",
+            "Cash Flow Benefit ($)": "$2.1M",
+            "Probability of Success": 0.8,
+            "Total Annual Value ($)": "$10.5M"
+          },
+          {
+            "ID": "UC-02",
+            "Use Case": "Predictive Truck Roll Avoidance System",
+            "Cost Formula": "336,000 calls/year × 18% avoidance improvement × $145/visit × 0.90 × 0.75 = $13.9M",
+            "Risk Formula": "8% churn reduction × 14,200 at-risk customers × $126 ARPU × 12 months × 0.80 × 0.75 = $1.4M",
+            "Revenue Formula": "No direct revenue impact",
+            "Cost Benefit ($)": "$13.9M",
+            "Risk Benefit ($)": "$1.4M",
+            "Cash Flow Formula": "No material cash flow impact",
+            "Revenue Benefit ($)": "$0",
+            "Cash Flow Benefit ($)": "$0",
+            "Probability of Success": 0.75,
+            "Total Annual Value ($)": "$15.3M"
+          },
+          {
+            "ID": "UC-03",
+            "Use Case": "Unified Knowledge Assistant for Contact Centers",
+            "Cost Formula": "2,100,000 calls × 47% affected × 2.1 minutes saved × $85/hour ÷ 60 × 0.90 × 0.75 = $6.0M",
+            "Risk Formula": "No material risk reduction",
+            "Revenue Formula": "No direct revenue impact",
+            "Cost Benefit ($)": "$6.0M",
+            "Risk Benefit ($)": "$0",
+            "Cash Flow Formula": "No material cash flow impact",
+            "Revenue Benefit ($)": "$0",
+            "Cash Flow Benefit ($)": "$0",
+            "Probability of Success": 0.85,
+            "Total Annual Value ($)": "$6.0M"
+          },
+          {
+            "ID": "UC-04",
+            "Use Case": "Accelerated Agent Onboarding Platform",
+            "Cost Formula": "780 agents × 34% turnover × 60 days saved × 8 hours × $85/hour × 0.90 × 0.75 = $3.6M",
+            "Risk Formula": "No material risk reduction",
+            "Revenue Formula": "No direct revenue impact",
+            "Cost Benefit ($)": "$3.6M",
+            "Risk Benefit ($)": "$0",
+            "Cash Flow Formula": "No material cash flow impact",
+            "Revenue Benefit ($)": "$0",
+            "Cash Flow Benefit ($)": "$0",
+            "Probability of Success": 0.7,
+            "Total Annual Value ($)": "$3.6M"
+          },
+          {
+            "ID": "UC-05",
+            "Use Case": "Commercial Installation Capacity Optimizer",
+            "Cost Formula": "No material cost reduction",
+            "Risk Formula": "No material risk reduction",
+            "Revenue Formula": "12% abandonment × 5% reduction × 14,400 annual orders × $890 ARPU × 12 months × 0.95 × 0.75 = $5.7M",
+            "Cost Benefit ($)": "$0",
+            "Risk Benefit ($)": "$0",
+            "Cash Flow Formula": "44 days reduced × $145K daily commercial revenue × 0.85 × 0.75 = $3.8M",
+            "Revenue Benefit ($)": "$5.7M",
+            "Cash Flow Benefit ($)": "$3.8M",
+            "Probability of Success": 0.65,
+            "Total Annual Value ($)": "$9.5M"
+          },
+          {
+            "ID": "UC-06",
+            "Use Case": "Commercial Proposal Generation Engine",
+            "Cost Formula": "4,800 proposals × 11.5 hours saved × $150/hour × 0.90 × 0.75 = $4.1M",
+            "Risk Formula": "No material risk reduction",
+            "Revenue Formula": "4,800 RFPs × 12% win rate improvement × $890 ARPU × 12 months × 0.95 × 0.75 = $8.1M",
+            "Cost Benefit ($)": "$4.1M",
+            "Risk Benefit ($)": "$0",
+            "Cash Flow Formula": "No material cash flow impact",
+            "Revenue Benefit ($)": "$8.1M",
+            "Cash Flow Benefit ($)": "$0",
+            "Probability of Success": 0.7,
+            "Total Annual Value ($)": "$12.2M"
+          },
+          {
+            "ID": "UC-07",
+            "Use Case": "Real-Time Revenue Assurance Monitor",
+            "Cost Formula": "No material cost reduction",
+            "Risk Formula": "15% audit risk reduction × $21M audit exposure × 0.80 × 0.75 = $2.5M",
+            "Revenue Formula": "$18M leakage × 60% recovery × 0.95 × 0.75 = $10.2M",
+            "Cost Benefit ($)": "$0",
+            "Risk Benefit ($)": "$2.5M",
+            "Cash Flow Formula": "60 days faster recovery × $145K daily revenue × 0.85 × 0.75 = $5.5M",
+            "Revenue Benefit ($)": "$10.2M",
+            "Cash Flow Benefit ($)": "$5.5M",
+            "Probability of Success": 0.75,
+            "Total Annual Value ($)": "$18.2M"
+          },
+          {
+            "ID": "UC-08",
+            "Use Case": "Behavioral Collections Optimization",
+            "Cost Formula": "18,500 accounts × 0.8 hours saved × $85/hour × 0.90 × 0.75 = $1.2M",
+            "Risk Formula": "No material risk reduction",
+            "Revenue Formula": "No direct revenue impact",
+            "Cost Benefit ($)": "$1.2M",
+            "Risk Benefit ($)": "$0",
+            "Cash Flow Formula": "6 days DSO reduction × $480K daily revenue × 0.85 × 0.75 = $2.7M",
+            "Revenue Benefit ($)": "$0",
+            "Cash Flow Benefit ($)": "$2.7M",
+            "Probability of Success": 0.8,
+            "Total Annual Value ($)": "$3.9M"
+          },
+          {
+            "ID": "UC-09",
+            "Use Case": "Automated Franchise Compliance Reporter",
+            "Cost Formula": "8,900 hours × 73% reduction × $200/hour × 0.90 × 0.75 = $5.9M",
+            "Risk Formula": "25% franchise penalty risk reduction × $24M penalty exposure × 0.80 × 0.75 = $3.6M",
+            "Revenue Formula": "No direct revenue impact",
+            "Cost Benefit ($)": "$5.9M",
+            "Risk Benefit ($)": "$3.6M",
+            "Cash Flow Formula": "No material cash flow impact",
+            "Revenue Benefit ($)": "$0",
+            "Cash Flow Benefit ($)": "$0",
+            "Probability of Success": 0.85,
+            "Total Annual Value ($)": "$9.5M"
+          },
+          {
+            "ID": "UC-10",
+            "Use Case": "Legacy Code Documentation & Modernization Assistant",
+            "Cost Formula": "4,200 contractor hours × 70% reduction × $240/hour × 0.90 × 0.75 = $5.3M",
+            "Risk Formula": "30% system outage risk reduction × $11M outage cost × 0.80 × 0.75 = $2.1M",
+            "Revenue Formula": "No direct revenue impact",
+            "Cost Benefit ($)": "$5.3M",
+            "Risk Benefit ($)": "$2.1M",
+            "Cash Flow Formula": "No material cash flow impact",
+            "Revenue Benefit ($)": "$0",
+            "Cash Flow Benefit ($)": "$0",
+            "Probability of Success": 0.65,
+            "Total Annual Value ($)": "$7.4M"
+          }
+        ],
+        "step": 5,
+        "title": "Benefits Quantification by Driver",
+        "content": "Conservative benefit estimates with explicit calculation formulas showing all reduction factors and probability weighting."
+      },
+      {
+        "data": [
+          {
+            "ID": "UC-01",
+            "Use Case": "Intelligent Service Provisioning Orchestrator",
+            "Runs/Month": 28000,
+            "Monthly Tokens": 434000000,
+            "Input Tokens/Run": 12000,
+            "Change Mgmt (1-5)": 3,
+            "Output Tokens/Run": 3500,
+            "Effort Score (1-5)": 4,
+            "Data Readiness (1-5)": 2,
+            "Annual Token Cost ($)": "$844K",
+            "Time-to-Value (months)": 15,
+            "Integration Complexity (1-5)": 5
+          },
+          {
+            "ID": "UC-02",
+            "Use Case": "Predictive Truck Roll Avoidance System",
+            "Runs/Month": 28000,
+            "Monthly Tokens": 299600000,
+            "Input Tokens/Run": 8500,
+            "Change Mgmt (1-5)": 4,
+            "Output Tokens/Run": 2200,
+            "Effort Score (1-5)": 4,
+            "Data Readiness (1-5)": 3,
+            "Annual Token Cost ($)": "$495K",
+            "Time-to-Value (months)": 12,
+            "Integration Complexity (1-5)": 4
+          },
+          {
+            "ID": "UC-03",
+            "Use Case": "Unified Knowledge Assistant for Contact Centers",
+            "Runs/Month": 175000,
+            "Monthly Tokens": 1102500000,
+            "Input Tokens/Run": 4500,
+            "Change Mgmt (1-5)": 2,
+            "Output Tokens/Run": 1800,
+            "Effort Score (1-5)": 3,
+            "Data Readiness (1-5)": 2,
+            "Annual Token Cost ($)": "$2,475K",
+            "Time-to-Value (months)": 9,
+            "Integration Complexity (1-5)": 3
+          },
+          {
+            "ID": "UC-04",
+            "Use Case": "Accelerated Agent Onboarding Platform",
+            "Runs/Month": 2200,
+            "Monthly Tokens": 21120000,
+            "Input Tokens/Run": 6200,
+            "Change Mgmt (1-5)": 3,
+            "Output Tokens/Run": 3400,
+            "Effort Score (1-5)": 2,
+            "Data Readiness (1-5)": 3,
+            "Annual Token Cost ($)": "$122K",
+            "Time-to-Value (months)": 6,
+            "Integration Complexity (1-5)": 2
+          },
+          {
+            "ID": "UC-05",
+            "Use Case": "Commercial Installation Capacity Optimizer",
+            "Runs/Month": 14400,
+            "Monthly Tokens": 276480000,
+            "Input Tokens/Run": 15000,
+            "Change Mgmt (1-5)": 3,
+            "Output Tokens/Run": 4200,
+            "Effort Score (1-5)": 4,
+            "Data Readiness (1-5)": 2,
+            "Annual Token Cost ($)": "$1,015K",
+            "Time-to-Value (months)": 12,
+            "Integration Complexity (1-5)": 4
+          },
+          {
+            "ID": "UC-06",
+            "Use Case": "Commercial Proposal Generation Engine",
+            "Runs/Month": 4800,
+            "Monthly Tokens": 83040000,
+            "Input Tokens/Run": 9800,
+            "Change Mgmt (1-5)": 2,
+            "Output Tokens/Run": 7500,
+            "Effort Score (1-5)": 2,
+            "Data Readiness (1-5)": 3,
+            "Annual Token Cost ($)": "$679K",
+            "Time-to-Value (months)": 6,
+            "Integration Complexity (1-5)": 2
+          },
+          {
+            "ID": "UC-07",
+            "Use Case": "Real-Time Revenue Assurance Monitor",
+            "Runs/Month": 950000,
+            "Monthly Tokens": 20662500000,
+            "Input Tokens/Run": 18500,
+            "Change Mgmt (1-5)": 2,
+            "Output Tokens/Run": 3200,
+            "Effort Score (1-5)": 3,
+            "Data Readiness (1-5)": 2,
+            "Annual Token Cost ($)": "$6,318K",
+            "Time-to-Value (months)": 10,
+            "Integration Complexity (1-5)": 4
+          },
+          {
+            "ID": "UC-08",
+            "Use Case": "Behavioral Collections Optimization",
+            "Runs/Month": 18500,
+            "Monthly Tokens": 172050000,
+            "Input Tokens/Run": 7200,
+            "Change Mgmt (1-5)": 3,
+            "Output Tokens/Run": 2100,
+            "Effort Score (1-5)": 3,
+            "Data Readiness (1-5)": 3,
+            "Annual Token Cost ($)": "$789K",
+            "Time-to-Value (months)": 9,
+            "Integration Complexity (1-5)": 3
+          },
+          {
+            "ID": "UC-09",
+            "Use Case": "Automated Franchise Compliance Reporter",
+            "Runs/Month": 172,
+            "Monthly Tokens": 6192000,
+            "Input Tokens/Run": 24000,
+            "Change Mgmt (1-5)": 2,
+            "Output Tokens/Run": 12000,
+            "Effort Score (1-5)": 3,
+            "Data Readiness (1-5)": 2,
+            "Annual Token Cost ($)": "$130K",
+            "Time-to-Value (months)": 10,
+            "Integration Complexity (1-5)": 4
+          },
+          {
+            "ID": "UC-10",
+            "Use Case": "Legacy Code Documentation & Modernization Assistant",
+            "Runs/Month": 350,
+            "Monthly Tokens": 22050000,
+            "Input Tokens/Run": 45000,
+            "Change Mgmt (1-5)": 4,
+            "Output Tokens/Run": 18000,
+            "Effort Score (1-5)": 3,
+            "Data Readiness (1-5)": 4,
+            "Annual Token Cost ($)": "$520K",
+            "Time-to-Value (months)": 18,
+            "Integration Complexity (1-5)": 2
+          }
+        ],
+        "step": 6,
+        "title": "Effort & Token Modeling",
+        "content": "Implementation complexity scores and monthly token consumption estimates using Claude Sonnet pricing at $3 per 1M input tokens and $15 per 1M output tokens."
+      },
+      {
+        "data": [
+          {
+            "ID": "UC-07",
+            "Use Case": "Real-Time Revenue Assurance Monitor",
+            "Priority Tier": "Critical",
+            "TTV Score (0-30)": 21,
+            "Recommended Phase": "Q1",
+            "Value Score (0-40)": 40,
+            "Effort Score (0-30)": 24,
+            "Priority Score (0-100)": 85
+          },
+          {
+            "ID": "UC-02",
+            "Use Case": "Predictive Truck Roll Avoidance System",
+            "Priority Tier": "Critical",
+            "TTV Score (0-30)": 25,
+            "Recommended Phase": "Q1",
+            "Value Score (0-40)": 36,
+            "Effort Score (0-30)": 18,
+            "Priority Score (0-100)": 79
+          },
+          {
+            "ID": "UC-06",
+            "Use Case": "Commercial Proposal Generation Engine",
+            "Priority Tier": "Critical",
+            "TTV Score (0-30)": 30,
+            "Recommended Phase": "Q1",
+            "Value Score (0-40)": 32,
+            "Effort Score (0-30)": 30,
+            "Priority Score (0-100)": 92
+          },
+          {
+            "ID": "UC-01",
+            "Use Case": "Intelligent Service Provisioning Orchestrator",
+            "Priority Tier": "High",
+            "TTV Score (0-30)": 15,
+            "Recommended Phase": "Q2",
+            "Value Score (0-40)": 28,
+            "Effort Score (0-30)": 18,
+            "Priority Score (0-100)": 61
+          },
+          {
+            "ID": "UC-09",
+            "Use Case": "Automated Franchise Compliance Reporter",
+            "Priority Tier": "High",
+            "TTV Score (0-30)": 21,
+            "Recommended Phase": "Q2",
+            "Value Score (0-40)": 26,
+            "Effort Score (0-30)": 24,
+            "Priority Score (0-100)": 71
+          },
+          {
+            "ID": "UC-05",
+            "Use Case": "Commercial Installation Capacity Optimizer",
+            "Priority Tier": "High",
+            "TTV Score (0-30)": 25,
+            "Recommended Phase": "Q2",
+            "Value Score (0-40)": 25,
+            "Effort Score (0-30)": 18,
+            "Priority Score (0-100)": 68
+          },
+          {
+            "ID": "UC-10",
+            "Use Case": "Legacy Code Documentation & Modernization Assistant",
+            "Priority Tier": "Medium",
+            "TTV Score (0-30)": 10,
+            "Recommended Phase": "Q3",
+            "Value Score (0-40)": 22,
+            "Effort Score (0-30)": 24,
+            "Priority Score (0-100)": 56
+          },
+          {
+            "ID": "UC-03",
+            "Use Case": "Unified Knowledge Assistant for Contact Centers",
+            "Priority Tier": "High",
+            "TTV Score (0-30)": 27,
+            "Recommended Phase": "Q2",
+            "Value Score (0-40)": 20,
+            "Effort Score (0-30)": 24,
+            "Priority Score (0-100)": 71
+          },
+          {
+            "ID": "UC-08",
+            "Use Case": "Behavioral Collections Optimization",
+            "Priority Tier": "High",
+            "TTV Score (0-30)": 27,
+            "Recommended Phase": "Q2",
+            "Value Score (0-40)": 18,
+            "Effort Score (0-30)": 24,
+            "Priority Score (0-100)": 69
+          },
+          {
+            "ID": "UC-04",
+            "Use Case": "Accelerated Agent Onboarding Platform",
+            "Priority Tier": "Critical",
+            "TTV Score (0-30)": 30,
+            "Recommended Phase": "Q1",
+            "Value Score (0-40)": 16,
+            "Effort Score (0-30)": 30,
+            "Priority Score (0-100)": 76
+          }
+        ],
+        "step": 7,
+        "title": "Priority Scoring & Roadmap",
+        "content": "Priority scores calculated as weighted combination of value impact, time-to-value velocity, and implementation effort. Critical tier represents immediate execution candidates for Q1-Q2 deployment."
+      }
+    ],
+    "summary": "This assessment identifies $96.1M in annual value across 10 AI use cases for Astound Broadband. Four initiatives qualify as Critical-priority for immediate Q1-Q2 execution with combined first-year impact of $49.2M after conservative reduction factors.\n\nCost reduction dominates the portfolio at $48.4M representing 50% of total identified value. Revenue growth opportunities contribute $24.0M at 25%. Risk mitigation accounts for $9.6M at 10%. Cash flow acceleration rounds out the portfolio at $14.1M representing 15%. This distribution reflects the operational maturity of cable infrastructure with immediate efficiency gains from process automation while revenue expansion requires longer market development cycles.\n\nCommercial Proposal Generation Engine represents a $12.2M annual opportunity and earns the highest priority score at 92 points. AI-drafted technical proposals with legal review reduce creation time from 14 hours to 2.5 hours across 4,800 annual RFPs. The system generates specifications, SLA commitments, pricing matrices, and contract language customized to customer requirements. Win rate improvement of 12 percentage points at $890 average monthly contract value drives $8.1M in new revenue while labor deflection saves $4.1M. Implementation requires only 6 months with minimal change management given clear value proposition to sales teams. The solution depends on integration with CRM and pricing systems already containing necessary customer and product data.\n\nReal-Time Revenue Assurance Monitor delivers $18.2M annually through continuous reconciliation of billing outputs against service delivery logs. The system flags unbilled services, incorrect rate applications, and promotional misconfigurations in real-time rather than the current 90-day lag. Recovery of 60% of the current $18M annual leakage generates $10.2M in recaptured revenue. Accelerated detection reduces cash cycle by 60 days worth $5.5M. Audit risk reduction contributes $2.5M through improved control environment. Implementation spans 10 months requiring integration with 19 operational systems and carries moderate data readiness risk given inconsistent data quality across source platforms.\n\nPredictive Truck Roll Avoidance System generates $15.3M by reducing unnecessary field visits through AI analysis of network telemetry and service history. Current 58% avoidance rate improves to 69% industry benchmark through remote diagnostics and automated fix deployment. At 336,000 annual service calls and $145 per truck roll, 18 percentage point improvement saves $13.9M. Reduced customer churn from faster resolution adds $1.4M in retained subscription revenue. The 12-month implementation requires integration with network management systems and dispatch platforms while navigating field technician concerns about job security requiring careful change management.\n\nAccelerated Agent Onboarding Platform compresses 180-day training cycles by 60 days through AI-powered personalized learning and real-time coaching. The $3.6M annual benefit comes entirely from reduced training hours at 34% turnover across 780 contact center agents. Despite modest financial impact, the initiative scores Critical priority due to 6-month time-to-value and minimal integration complexity. Success depends on quality of training content extraction from subject matter experts and supervisor acceptance of AI coaching recommendations.\n\nThe portfolio concentrates 51% of value in the top three initiatives creating dependency risk if any single project fails. However, each targets distinct operational domains providing natural hedging. Back-office automation opportunities outnumber customer-facing initiatives 8 to 2 reflecting conservative approach to customer interaction redesign. Revenue growth use cases carry higher execution risk given dependency on market response and competitive dynamics beyond company control.\n\nImplementation hinges on integration complexity across 19 operational systems with inconsistent data schemas. Current data maturity at Level 2 requires governance framework establishment before deployment. Network provisioning and revenue assurance use cases face 120-day data mapping sprints before AI model training begins. Failure to invest in schema standardization reduces projected Year 1 value by 35% across six initiatives. Legal and regulatory use cases depend on franchise authority acceptance of AI-generated compliance reports requiring early stakeholder engagement in 14 jurisdictions with pending renewals. Token consumption modeling assumes Claude Sonnet pricing at $3 per million input tokens and $15 per million output with total annual AI infrastructure cost of $13.4M representing 14% of gross benefits.",
+    "executiveDashboard": {
+      "topUseCases": [
+        {
+          "rank": 1,
+          "useCase": "Commercial Proposal Generation Engine",
+          "annualValue": 12200000,
+          "monthlyTokens": 83040000,
+          "priorityScore": 92
+        },
+        {
+          "rank": 2,
+          "useCase": "Real-Time Revenue Assurance Monitor",
+          "annualValue": 18200000,
+          "monthlyTokens": 20662500000,
+          "priorityScore": 85
+        },
+        {
+          "rank": 3,
+          "useCase": "Predictive Truck Roll Avoidance System",
+          "annualValue": 15300000,
+          "monthlyTokens": 299600000,
+          "priorityScore": 79
+        },
+        {
+          "rank": 4,
+          "useCase": "Accelerated Agent Onboarding Platform",
+          "annualValue": 3600000,
+          "monthlyTokens": 21120000,
+          "priorityScore": 76
+        },
+        {
+          "rank": 5,
+          "useCase": "Unified Knowledge Assistant for Contact Centers",
+          "annualValue": 6000000,
+          "monthlyTokens": 1102500000,
+          "priorityScore": 71
+        }
+      ],
+      "totalAnnualValue": 96100000,
+      "totalCostBenefit": 48400000,
+      "totalRiskBenefit": 9600000,
+      "totalMonthlyTokens": 23647342000,
+      "totalRevenueBenefit": 24000000,
+      "totalCashFlowBenefit": 14100000,
+      "valuePerMillionTokens": 4060
+    }
+  }
+}

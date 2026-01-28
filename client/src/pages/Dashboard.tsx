@@ -33,12 +33,6 @@ const QUADRANT_CONFIG = {
   Foundations: { color: "oklch(0.45 0.02 250)", icon: Layers },
 };
 
-const THEME_COLORS: Record<string, string> = {
-  "Revenue Growth": "oklch(0.70 0.18 145)",
-  "Margin Expansion": "oklch(0.70 0.15 200)",
-  "Cost Cutting": "oklch(0.65 0.18 250)",
-};
-
 const CATEGORY_COLORS: Record<string, string> = {
   "Digital Infrastructure": "oklch(0.65 0.18 250)",
   "Energy & Energy Transition": "oklch(0.70 0.18 145)",
@@ -57,7 +51,7 @@ type Company = {
   adjustedEbitda: string | null;
   adjustedPriority: string | null;
   quadrant: string | null;
-  theme: string | null;
+
   track: string | null;
 };
 
@@ -86,20 +80,6 @@ export default function Dashboard() {
     name,
     value: quadrantCounts[name] || 0,
     color: config.color,
-  }));
-
-  // Theme distribution
-  const themeCounts = companies.reduce((acc: Record<string, number>, c: Company) => {
-    if (c.theme) {
-      acc[c.theme] = (acc[c.theme] || 0) + 1;
-    }
-    return acc;
-  }, {} as Record<string, number>);
-
-  const themeData = Object.entries(THEME_COLORS).map(([name, color]) => ({
-    name,
-    value: themeCounts[name] || 0,
-    color,
   }));
 
   // Category distribution
@@ -162,20 +142,20 @@ export default function Dashboard() {
         </div>
 
         {/* Key Metrics */}
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 md:gap-4">
           <motion.div
             className="bg-card/90 backdrop-blur-xl rounded-xl border border-border/50 p-6 hover:border-primary/30 transition-all"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1 }}
           >
-            <div className="flex items-center gap-3 mb-4">
-              <div className="w-12 h-12 rounded-xl flex items-center justify-center bg-primary/15 text-primary">
-                <Building2 className="w-5 h-5" />
+            <div className="flex items-center gap-2 sm:gap-3 mb-3 sm:mb-4">
+              <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl flex items-center justify-center bg-primary/15 text-primary">
+                <Building2 className="w-4 h-4 sm:w-5 sm:h-5" />
               </div>
-              <span className="text-sm text-muted-foreground">Portfolio Companies</span>
+              <span className="text-xs sm:text-sm text-muted-foreground">Portfolio Companies</span>
             </div>
-            <p className="text-4xl font-bold">{totalCompanies}</p>
+            <p className="text-2xl sm:text-3xl md:text-4xl font-bold">{totalCompanies}</p>
             <p className="text-sm text-muted-foreground mt-1">Active investments</p>
           </motion.div>
 
@@ -294,67 +274,6 @@ export default function Dashboard() {
             </div>
           </motion.div>
 
-          {/* Theme Distribution */}
-          <motion.div
-            className="bg-card/90 backdrop-blur-xl rounded-xl border border-border/50 p-6 hover:border-primary/30 transition-all"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.6 }}
-          >
-            <div className="flex items-center gap-2 mb-6">
-              <Target className="w-5 h-5 text-primary" />
-              <h2 className="font-semibold">Value Themes</h2>
-            </div>
-
-            <div className="h-[200px] mb-4">
-              <ResponsiveContainer width="100%" height="100%">
-                <PieChart>
-                  <Pie
-                    data={themeData}
-                    cx="50%"
-                    cy="50%"
-                    innerRadius={50}
-                    outerRadius={80}
-                    paddingAngle={3}
-                    dataKey="value"
-                  >
-                    {themeData.map((entry, index) => (
-                      <Cell key={`cell-${index}`} fill={entry.color} />
-                    ))}
-                  </Pie>
-                  <Tooltip
-                    contentStyle={{
-                      backgroundColor: "var(--tooltip-bg, hsl(var(--card)))",
-                      border: "1px solid hsl(var(--border))",
-                      borderRadius: "8px",
-                      color: "hsl(var(--foreground))",
-                      boxShadow: "0 4px 12px rgba(0,0,0,0.15)",
-                    }}
-                    labelStyle={{ color: "hsl(var(--foreground))" }}
-                    itemStyle={{ color: "hsl(var(--foreground))" }}
-                  />
-                </PieChart>
-              </ResponsiveContainer>
-            </div>
-
-            <div className="space-y-3">
-              {Object.entries(THEME_COLORS).map(([name, color]) => {
-                const count = themeCounts[name] || 0;
-                const percentage = totalCompanies > 0 ? (count / totalCompanies) * 100 : 0;
-                return (
-                  <div key={name} className="flex items-center gap-3">
-                    <div className="w-3 h-3 rounded-full" style={{ backgroundColor: color }} />
-                    <span className="text-sm flex-1">{name}</span>
-                    <span className="text-sm font-medium">{count}</span>
-                    <div className="w-16">
-                      <Progress value={percentage} className="h-1.5" />
-                    </div>
-                  </div>
-                );
-              })}
-            </div>
-          </motion.div>
-
           {/* Category Distribution */}
           <motion.div
             className="bg-card/90 backdrop-blur-xl rounded-xl border border-border/50 p-6 hover:border-primary/30 transition-all"
@@ -410,8 +329,8 @@ export default function Dashboard() {
             </Link>
           </div>
 
-          <div className="overflow-x-auto">
-            <table className="w-full">
+          <div className="overflow-x-auto -mx-3 sm:mx-0 px-3 sm:px-0">
+            <table className="w-full min-w-[600px] sm:min-w-0">
               <thead>
                 <tr className="border-b border-border/50">
                   <th className="text-left py-3 px-4 text-xs font-medium text-muted-foreground uppercase tracking-wider">Rank</th>

@@ -1,5 +1,6 @@
 import Layout from "@/components/Layout";
 import { CompanyLogo } from "@/components/CompanyLogo";
+import { MethodologyPanel, PORTFOLIO_AMPLIFICATION_METHODOLOGY } from "@/components/MethodologyPanel";
 import { trpc } from "@/lib/trpc";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -126,6 +127,9 @@ export default function Portfolio() {
       title="Portfolio Amplification"
       subtitle="Cross-portfolio synergy and replication potential analysis"
     >
+      {/* Methodology Panel */}
+      <MethodologyPanel {...PORTFOLIO_AMPLIFICATION_METHODOLOGY} />
+
       {/* Summary Cards */}
       <div className="grid gap-4 md:grid-cols-3 mb-8">
         <Card className="blueally-metric-card">

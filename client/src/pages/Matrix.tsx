@@ -3,6 +3,7 @@ import { Link } from "wouter";
 import { trpc } from "@/lib/trpc";
 import Layout from "@/components/Layout";
 import { CompanyLogo } from "@/components/CompanyLogo";
+import { MethodologyPanel, VALUE_READINESS_METHODOLOGY } from "@/components/MethodologyPanel";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Badge } from "@/components/ui/badge";
@@ -68,7 +69,6 @@ type Company = {
   adjustedEbitda: string | null;
   adjustedPriority: string | null;
   quadrant: string | null;
-  theme: string | null;
   track: string | null;
 };
 
@@ -185,6 +185,9 @@ export default function Matrix() {
             Make decisions that matter.
           </p>
         </div>
+
+        {/* Methodology Panel */}
+        <MethodologyPanel {...VALUE_READINESS_METHODOLOGY} />
 
         {/* Controls */}
         <div className="flex flex-wrap gap-4 mb-6">

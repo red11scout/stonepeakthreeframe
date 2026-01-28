@@ -8,11 +8,14 @@ import {
   Clock,
   FileText,
   MessageSquare,
+  Lightbulb,
+  Building2,
   Sun,
   Moon,
   Menu,
   X,
   LogOut,
+  Home,
 } from "lucide-react";
 import { useAppAuth } from "@/contexts/AuthContext";
 import { useState } from "react";
@@ -20,9 +23,11 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const navigation = [
   { name: "Dashboard", href: "/dashboard", icon: LayoutDashboard },
+  { name: "Companies", href: "/companies", icon: Building2 },
   { name: "Matrix", href: "/matrix", icon: Grid3X3 },
   { name: "Amplification", href: "/portfolio", icon: Network },
   { name: "Hold Period", href: "/hold-period", icon: Clock },
+  { name: "Use Cases", href: "/use-cases", icon: Lightbulb },
   { name: "Reports", href: "/reports", icon: FileText },
   { name: "AI Assistant", href: "/ai", icon: MessageSquare },
 ];
@@ -47,7 +52,7 @@ export default function Layout({ children, title, subtitle }: LayoutProps) {
 
       {/* Header */}
       <header className="sticky top-0 z-50 w-full border-b border-border/50 bg-background/80 backdrop-blur-xl">
-        <div className="container flex h-16 items-center justify-between">
+        <div className="container flex h-14 md:h-16 items-center justify-between px-3 md:px-4">
           {/* Logo and Brand */}
           <div className="flex items-center gap-6">
             <Link href="/" className="flex items-center gap-3 group">
@@ -61,7 +66,7 @@ export default function Layout({ children, title, subtitle }: LayoutProps) {
             </Link>
 
             {/* Desktop Navigation */}
-            <nav className="hidden lg:flex items-center gap-1">
+            <nav className="hidden xl:flex items-center gap-0.5">
               {navigation.map((item) => {
                 const isActive = location === item.href;
                 return (
@@ -92,6 +97,18 @@ export default function Layout({ children, title, subtitle }: LayoutProps) {
 
           {/* Right side actions */}
           <div className="flex items-center gap-3">
+            {/* Home Button */}
+            <Link href="/">
+              <Button
+                variant="ghost"
+                size="icon"
+                className="text-muted-foreground hover:text-primary"
+                title="Home"
+              >
+                <Home className="w-4 h-4" />
+              </Button>
+            </Link>
+
             {/* Theme Toggle */}
             <Button
               variant="ghost"
@@ -121,7 +138,7 @@ export default function Layout({ children, title, subtitle }: LayoutProps) {
             <Button
               variant="ghost"
               size="icon"
-              className="lg:hidden"
+              className="xl:hidden"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             >
               {mobileMenuOpen ? (
@@ -140,9 +157,20 @@ export default function Layout({ children, title, subtitle }: LayoutProps) {
               initial={{ opacity: 0, height: 0 }}
               animate={{ opacity: 1, height: "auto" }}
               exit={{ opacity: 0, height: 0 }}
-              className="lg:hidden border-t border-border/50 bg-background/95 backdrop-blur-xl"
+              className="xl:hidden border-t border-border/50 bg-background/95 backdrop-blur-xl"
             >
               <nav className="container py-4 space-y-1">
+                {/* Home Link */}
+                <Link href="/">
+                  <Button
+                    variant="ghost"
+                    className="w-full justify-start gap-3 text-muted-foreground border-b border-border/30 mb-2 pb-3"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    <Home className="w-5 h-5" />
+                    Home
+                  </Button>
+                </Link>
                 {navigation.map((item) => {
                   const isActive = location === item.href;
                   return (
@@ -169,14 +197,14 @@ export default function Layout({ children, title, subtitle }: LayoutProps) {
       {/* Page Header */}
       {(title || subtitle) && (
         <div className="border-b border-border/30 bg-background/50">
-          <div className="container py-6">
+          <div className="container py-4 md:py-6 px-3 md:px-4">
             {title && (
-              <h1 className="font-serif italic tracking-tight text-3xl md:text-4xl mb-1">
+              <h1 className="font-serif italic tracking-tight text-2xl sm:text-3xl md:text-4xl mb-1">
                 {title}
               </h1>
             )}
             {subtitle && (
-              <p className="text-muted-foreground text-lg font-light">{subtitle}</p>
+              <p className="text-muted-foreground text-sm sm:text-base md:text-lg font-light">{subtitle}</p>
             )}
           </div>
         </div>
@@ -184,7 +212,7 @@ export default function Layout({ children, title, subtitle }: LayoutProps) {
 
       {/* Main Content */}
       <main className="relative">
-        <div className="container py-8">{children}</div>
+        <div className="container py-4 md:py-8 px-3 md:px-4">{children}</div>
       </main>
 
       {/* Footer */}

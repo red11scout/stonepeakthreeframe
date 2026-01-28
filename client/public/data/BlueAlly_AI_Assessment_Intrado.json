@@ -1,0 +1,853 @@
+{
+  "companyName": "Intrado",
+  "generatedAt": "2026-01-22T16:38:30.276Z",
+  "analysis": {
+    "steps": [
+      {
+        "data": null,
+        "step": 0,
+        "title": "Company Overview",
+        "content": "Intrado Corporation generates $1.4B in annual revenue from critical cloud communications infrastructure serving enterprise and government clients. The company operates from Omaha, Nebraska with 3,200 employees across operations in North America, delivering emergency response platforms, enterprise collaboration tools, and managed security services.\n\nThe company serves 12,000 enterprise clients and 4,800 public safety agencies across telecommunications (41% of revenue), government and public safety (38%), and enterprise collaboration (21%) sectors. Customer retention stands at 91% over the past three fiscal years. Average contract value reaches $117K with 3.1-year average duration. The platform processes 2.3B emergency call routing transactions annually with 99.993% uptime requirements.\n\nThe company faces a $34M annual burden from manual incident response coordination across 4,800 public safety agencies. Operations teams spend 28,000 hours per year managing multi-agency incident escalation, cross-jurisdictional resource allocation, and real-time status updates during emergency events. This workload creates a 4-day average response time for routine inter-agency coordination requests and diverts senior operations personnel from platform reliability engineering.\n\nIntrado confronts a $28M annual cost from compliance documentation across telecommunications regulations. Legal and compliance teams spend 19,000 hours per year maintaining regulatory filings for PSAP certification requirements, CALEA compliance, and state-specific emergency services mandates across 47 state jurisdictions and 6 Canadian provinces. This documentation burden creates a 45-day backlog on routine compliance inquiries and limits capacity for strategic regulatory engagement on emerging 911 modernization standards.\n\nThe company experiences $21M in annual opportunity cost from manual customer implementation processes. Professional services teams spend 15,000 hours per year creating deployment documentation, customizing integration specifications, and generating post-implementation reports for enterprise collaboration clients. This labor-intensive approach extends average deployment timelines to 120 days and constrains the company's ability to scale enterprise sales beyond current capacity of 180 new implementations per year.\n\nFinancial figures derive from 2024 annual revenue disclosures and Q3 operational metrics. Operational burden estimates apply industry-standard fully-loaded rates of $150 per hour for professional staff, $185 per hour for legal and compliance personnel, and $210 per hour for operations engineers. Data maturity assessed at Level 2 based on disclosed technology infrastructure investments and governance capabilities for emergency communications platforms."
+      },
+      {
+        "data": [
+          {
+            "Target State": "AI-orchestrated multi-agency response with human validation reducing coordination time by 65%",
+            "Current State": "Manual incident coordination across 4,800 agencies consuming 28,000 annual hours",
+            "Primary Driver": "Reduce Cost",
+            "Strategic Theme": "Emergency Response Automation",
+            "Secondary Driver": "Decrease Risk"
+          },
+          {
+            "Target State": "Automated compliance documentation generation with legal review reducing manual effort by 70%",
+            "Current State": "19,000 hours annually maintaining compliance documentation across 53 jurisdictions",
+            "Primary Driver": "Reduce Cost",
+            "Strategic Theme": "Regulatory Compliance Efficiency",
+            "Secondary Driver": "Increase Cash Flow"
+          },
+          {
+            "Target State": "AI-accelerated deployment documentation enabling 280 annual implementations with same team",
+            "Current State": "120-day average deployment timeline limiting capacity to 180 annual implementations",
+            "Primary Driver": "Grow Revenue",
+            "Strategic Theme": "Customer Implementation Velocity",
+            "Secondary Driver": "Reduce Cost"
+          },
+          {
+            "Target State": "Predictive anomaly detection reducing MTTD to 4 minutes and preventing 85% of service degradation events",
+            "Current State": "Reactive incident response with 23-minute mean time to detection for platform anomalies",
+            "Primary Driver": "Decrease Risk",
+            "Strategic Theme": "Network Operations Intelligence",
+            "Secondary Driver": "Reduce Cost"
+          },
+          {
+            "Target State": "Unified AI-powered knowledge platform reducing knowledge retrieval time by 75% and improving first-call resolution by 18 percentage points",
+            "Current State": "Distributed technical documentation requiring 8,400 annual support hours for internal knowledge retrieval",
+            "Primary Driver": "Reduce Cost",
+            "Strategic Theme": "Knowledge Management Transformation",
+            "Secondary Driver": "Grow Revenue"
+          }
+        ],
+        "step": 1,
+        "title": "Strategic Anchoring & Business Drivers",
+        "content": "Intrado's strategic priorities center on scaling public safety modernization while maintaining 99.993% uptime requirements. The company must reduce operational labor intensity to support growth without proportional headcount expansion."
+      },
+      {
+        "data": [
+          {
+            "Function": "Emergency Operations",
+            "KPI Name": "Incident Coordination Time",
+            "Direction": "↓",
+            "Timeframe": "12 months",
+            "Sub-Function": "Multi-Agency Coordination",
+            "Target Value": "1.4 days",
+            "Baseline Value": "4 days average",
+            "Industry Benchmark": "2.5 days (Next-Gen 911 operators)",
+            "Measurement Method": "Time from incident creation to multi-agency resource allocation confirmation"
+          },
+          {
+            "Function": "Emergency Operations",
+            "KPI Name": "Mean Time to Detection (MTTD)",
+            "Direction": "↓",
+            "Timeframe": "9 months",
+            "Sub-Function": "Platform Monitoring",
+            "Target Value": "4 minutes",
+            "Baseline Value": "23 minutes",
+            "Industry Benchmark": "8 minutes (cloud communications providers)",
+            "Measurement Method": "Time from anomaly occurrence to operations team notification"
+          },
+          {
+            "Function": "Legal & Compliance",
+            "KPI Name": "Compliance Filing Cycle Time",
+            "Direction": "↓",
+            "Timeframe": "12 months",
+            "Sub-Function": "Regulatory Documentation",
+            "Target Value": "18 days",
+            "Baseline Value": "45 days average",
+            "Industry Benchmark": "28 days (telecommunications providers)",
+            "Measurement Method": "Time from regulatory requirement identification to submission completion"
+          },
+          {
+            "Function": "Legal & Compliance",
+            "KPI Name": "Active Regulatory Dockets Monitored",
+            "Direction": "↑",
+            "Timeframe": "18 months",
+            "Sub-Function": "Multi-Jurisdiction Management",
+            "Target Value": "240 dockets",
+            "Baseline Value": "127 dockets",
+            "Industry Benchmark": "180 dockets (comparable providers)",
+            "Measurement Method": "Number of state and federal proceedings actively tracked and analyzed"
+          },
+          {
+            "Function": "Professional Services",
+            "KPI Name": "Deployment Cycle Time",
+            "Direction": "↓",
+            "Timeframe": "15 months",
+            "Sub-Function": "Customer Implementation",
+            "Target Value": "65 days",
+            "Baseline Value": "120 days average",
+            "Industry Benchmark": "75 days (SaaS collaboration platforms)",
+            "Measurement Method": "Time from contract signature to production deployment"
+          },
+          {
+            "Function": "Professional Services",
+            "KPI Name": "Annual Implementation Throughput",
+            "Direction": "↑",
+            "Timeframe": "18 months",
+            "Sub-Function": "Implementation Capacity",
+            "Target Value": "280 implementations",
+            "Baseline Value": "180 implementations",
+            "Industry Benchmark": "Not applicable (company-specific constraint)",
+            "Measurement Method": "Number of enterprise clients successfully deployed to production annually"
+          },
+          {
+            "Function": "Customer Support",
+            "KPI Name": "First Call Resolution Rate",
+            "Direction": "↑",
+            "Timeframe": "12 months",
+            "Sub-Function": "Technical Support",
+            "Target Value": "86%",
+            "Baseline Value": "68%",
+            "Industry Benchmark": "78% (enterprise software support)",
+            "Measurement Method": "Percentage of support tickets resolved without escalation or follow-up"
+          },
+          {
+            "Function": "Customer Support",
+            "KPI Name": "Average Knowledge Retrieval Time",
+            "Direction": "↓",
+            "Timeframe": "9 months",
+            "Sub-Function": "Knowledge Retrieval",
+            "Target Value": "3.5 minutes",
+            "Baseline Value": "14 minutes",
+            "Industry Benchmark": "6 minutes (AI-augmented support organizations)",
+            "Measurement Method": "Time from support agent query to relevant documentation retrieval"
+          },
+          {
+            "Function": "Sales Operations",
+            "KPI Name": "RFP Response Cycle Time",
+            "Direction": "↓",
+            "Timeframe": "10 months",
+            "Sub-Function": "Proposal Development",
+            "Target Value": "7 days",
+            "Baseline Value": "18 days average",
+            "Industry Benchmark": "11 days (B2B technology providers)",
+            "Measurement Method": "Time from RFP receipt to proposal submission"
+          },
+          {
+            "Function": "Engineering",
+            "KPI Name": "Legacy Code Documentation Coverage",
+            "Direction": "↑",
+            "Timeframe": "24 months",
+            "Sub-Function": "Platform Development",
+            "Target Value": "75%",
+            "Baseline Value": "34%",
+            "Industry Benchmark": "65% (mature software platforms)",
+            "Measurement Method": "Percentage of critical codebase with current technical documentation"
+          },
+          {
+            "Function": "Finance",
+            "KPI Name": "Contract Review Cycle Time",
+            "Direction": "↓",
+            "Timeframe": "8 months",
+            "Sub-Function": "Revenue Recognition",
+            "Target Value": "4 days",
+            "Baseline Value": "11 days average",
+            "Industry Benchmark": "6 days (subscription software companies)",
+            "Measurement Method": "Time from contract execution to revenue recognition approval"
+          },
+          {
+            "Function": "Human Resources",
+            "KPI Name": "Job Description Development Time",
+            "Direction": "↓",
+            "Timeframe": "6 months",
+            "Sub-Function": "Technical Recruiting",
+            "Target Value": "1.5 days",
+            "Baseline Value": "6 days average",
+            "Industry Benchmark": "2 days (AI-augmented recruiting)",
+            "Measurement Method": "Time from hiring manager request to approved job posting"
+          }
+        ],
+        "step": 2,
+        "title": "Business Function Inventory & KPI Baselines",
+        "content": "Critical operational functions reveal concentration in labor-intensive coordination, compliance, and customer implementation activities. Baseline KPIs establish measurement framework for AI-driven transformation."
+      },
+      {
+        "data": [
+          {
+            "Function": "Emergency Operations",
+            "Severity": "Critical",
+            "Sub-Function": "Multi-Agency Coordination",
+            "Friction Point": "Manual incident escalation requiring phone calls and email chains across 4,800 agencies during active emergencies",
+            "Primary Driver Impact": "Reduce Cost",
+            "Estimated Annual Cost ($)": "$5.9M"
+          },
+          {
+            "Function": "Emergency Operations",
+            "Severity": "Critical",
+            "Sub-Function": "Platform Monitoring",
+            "Friction Point": "Reactive anomaly detection relying on manual log review and threshold alerts missing early degradation signals",
+            "Primary Driver Impact": "Decrease Risk",
+            "Estimated Annual Cost ($)": "$12.4M"
+          },
+          {
+            "Function": "Legal & Compliance",
+            "Severity": "High",
+            "Sub-Function": "Regulatory Documentation",
+            "Friction Point": "Manual creation of jurisdiction-specific compliance filings with inconsistent templates across 53 regulatory bodies",
+            "Primary Driver Impact": "Reduce Cost",
+            "Estimated Annual Cost ($)": "$3.5M"
+          },
+          {
+            "Function": "Legal & Compliance",
+            "Severity": "High",
+            "Sub-Function": "Multi-Jurisdiction Management",
+            "Friction Point": "Manual monitoring of 127 regulatory dockets across state and federal proceedings with no automated change detection",
+            "Primary Driver Impact": "Decrease Risk",
+            "Estimated Annual Cost ($)": "$2.8M"
+          },
+          {
+            "Function": "Professional Services",
+            "Severity": "Critical",
+            "Sub-Function": "Customer Implementation",
+            "Friction Point": "Custom deployment documentation created manually for each enterprise client with 85% content overlap",
+            "Primary Driver Impact": "Grow Revenue",
+            "Estimated Annual Cost ($)": "$4.2M"
+          },
+          {
+            "Function": "Professional Services",
+            "Severity": "Medium",
+            "Sub-Function": "Post-Implementation",
+            "Friction Point": "Manual generation of 180 annual implementation summary reports averaging 8 hours each to complete",
+            "Primary Driver Impact": "Reduce Cost",
+            "Estimated Annual Cost ($)": "$1.8M"
+          },
+          {
+            "Function": "Customer Support",
+            "Severity": "High",
+            "Sub-Function": "Knowledge Retrieval",
+            "Friction Point": "Technical documentation scattered across 14 repositories requiring average 14 minutes to locate relevant content",
+            "Primary Driver Impact": "Reduce Cost",
+            "Estimated Annual Cost ($)": "$3.2M"
+          },
+          {
+            "Function": "Sales Operations",
+            "Severity": "Medium",
+            "Sub-Function": "Proposal Development",
+            "Friction Point": "Manual RFP response assembly requiring sales engineers to recreate boilerplate content for each proposal",
+            "Primary Driver Impact": "Grow Revenue",
+            "Estimated Annual Cost ($)": "$2.1M"
+          },
+          {
+            "Function": "Engineering",
+            "Severity": "High",
+            "Sub-Function": "Platform Development",
+            "Friction Point": "Legacy emergency routing codebase with 34% documentation coverage slowing feature development and onboarding",
+            "Primary Driver Impact": "Reduce Cost",
+            "Estimated Annual Cost ($)": "$4.7M"
+          },
+          {
+            "Function": "Finance",
+            "Severity": "Medium",
+            "Sub-Function": "Revenue Recognition",
+            "Friction Point": "Manual contract review for revenue recognition creating 11-day average cycle time and quarter-end bottlenecks",
+            "Primary Driver Impact": "Increase Cash Flow",
+            "Estimated Annual Cost ($)": "$1.4M"
+          },
+          {
+            "Function": "Human Resources",
+            "Severity": "Medium",
+            "Sub-Function": "Technical Recruiting",
+            "Friction Point": "Manual job description creation requiring back-and-forth between hiring managers and recruiters averaging 6 days",
+            "Primary Driver Impact": "Reduce Cost",
+            "Estimated Annual Cost ($)": "$890K"
+          },
+          {
+            "Function": "Emergency Operations",
+            "Severity": "Medium",
+            "Sub-Function": "Incident Documentation",
+            "Friction Point": "Post-incident report generation consuming 4 hours per major incident with 340 annual reports required",
+            "Primary Driver Impact": "Reduce Cost",
+            "Estimated Annual Cost ($)": "$1.1M"
+          }
+        ],
+        "step": 3,
+        "title": "Friction Point Mapping",
+        "content": "Operational friction concentrates in three domains: multi-agency emergency coordination, regulatory compliance across 53 jurisdictions, and customer implementation bottlenecks. Labor-intensive manual processes constrain growth and create service delivery risk."
+      },
+      {
+        "data": [
+          {
+            "ID": "UC-01",
+            "Function": "Emergency Operations",
+            "Description": "AI agent orchestrates multi-agency incident response by automatically routing emergency notifications, allocating resources based on real-time availability, and maintaining cross-jurisdictional status updates. System analyzes incident type, affected geography, and required resource types to generate recommended coordination plans. Natural language interface enables operations supervisors to query incident status and modify AI-generated resource allocations.",
+            "Sub-Function": "Multi-Agency Coordination",
+            "AI Primitives": "Workflow Automation, Conversational Interfaces, Research & Information Retrieval",
+            "Use Case Name": "Multi-Agency Emergency Coordination Assistant",
+            "Target Friction": "Manual incident escalation requiring phone calls and email chains across 4,800 agencies during active emergencies",
+            "Human-in-the-Loop Checkpoint": "Operations supervisor reviews and approves all resource allocation recommendations before multi-agency notification. System cannot independently commit agency resources or modify active incident response protocols."
+          },
+          {
+            "ID": "UC-02",
+            "Function": "Emergency Operations",
+            "Description": "AI system continuously analyzes platform telemetry across 2.3B annual emergency call routing transactions to identify degradation patterns before service impact. Machine learning models detect anomalies in call completion rates, routing latency, and infrastructure health metrics. System generates prioritized incident alerts with root cause hypotheses and recommended remediation steps based on historical incident resolution patterns.",
+            "Sub-Function": "Platform Monitoring",
+            "AI Primitives": "Data Analysis, Workflow Automation",
+            "Use Case Name": "Predictive Platform Anomaly Detection",
+            "Target Friction": "Reactive anomaly detection relying on manual log review and threshold alerts missing early degradation signals",
+            "Human-in-the-Loop Checkpoint": "Network operations engineer validates anomaly classification and approves all platform configuration changes. AI provides recommendations only; cannot modify production routing logic or network topology without engineer authorization."
+          },
+          {
+            "ID": "UC-03",
+            "Function": "Legal & Compliance",
+            "Description": "AI system generates jurisdiction-specific regulatory filings by retrieving relevant precedent documents, populating templates with current operational data, and adapting language to match regulatory body requirements. System maintains knowledge base of 53 jurisdiction-specific filing formats and automatically incorporates regulatory updates. Generated documents include citations to source data and flag areas requiring legal judgment.",
+            "Sub-Function": "Regulatory Documentation",
+            "AI Primitives": "Content Creation, Research & Information Retrieval",
+            "Use Case Name": "Automated Compliance Documentation Generator",
+            "Target Friction": "Manual creation of jurisdiction-specific compliance filings with inconsistent templates across 53 regulatory bodies",
+            "Human-in-the-Loop Checkpoint": "Compliance attorney reviews all generated filings before submission, validates data accuracy, and approves legal conclusions. AI cannot submit filings or make binding regulatory commitments without attorney sign-off."
+          },
+          {
+            "ID": "UC-04",
+            "Function": "Legal & Compliance",
+            "Description": "AI agent monitors 240 regulatory dockets across state and federal proceedings, automatically summarizing new filings and identifying material changes affecting emergency communications requirements. System generates weekly intelligence briefings highlighting regulatory developments by jurisdiction and assesses potential impact on existing compliance obligations. Natural language search enables attorneys to query regulatory history and precedent across all monitored jurisdictions.",
+            "Sub-Function": "Multi-Jurisdiction Management",
+            "AI Primitives": "Research & Information Retrieval, Data Analysis, Content Creation",
+            "Use Case Name": "Regulatory Intelligence Monitoring System",
+            "Target Friction": "Manual monitoring of 127 regulatory dockets across state and federal proceedings with no automated change detection",
+            "Human-in-the-Loop Checkpoint": "Regulatory counsel reviews AI-generated impact assessments and approves all strategic response recommendations. System provides intelligence only; cannot file regulatory comments or commit to compliance positions without counsel approval."
+          },
+          {
+            "ID": "UC-05",
+            "Function": "Professional Services",
+            "Description": "AI system generates customized implementation guides, integration specifications, and deployment checklists by analyzing customer technical environment and retrieving relevant configuration patterns from historical implementations. System adapts documentation to client-specific infrastructure while maintaining security and compliance requirements. Generates post-implementation summary reports with automated quality metrics and lessons learned.",
+            "Sub-Function": "Customer Implementation",
+            "AI Primitives": "Content Creation, Research & Information Retrieval, Workflow Automation",
+            "Use Case Name": "Enterprise Deployment Documentation Engine",
+            "Target Friction": "Custom deployment documentation created manually for each enterprise client with 85% content overlap",
+            "Human-in-the-Loop Checkpoint": "Solutions architect reviews all generated documentation for technical accuracy and approves customer-specific configurations. AI cannot commit to deployment timelines or modify production integration specifications without architect validation."
+          },
+          {
+            "ID": "UC-06",
+            "Function": "Customer Support",
+            "Description": "AI-powered semantic search unifies technical documentation across 14 repositories, enabling support engineers to retrieve relevant troubleshooting guides, configuration examples, and known issue resolutions through natural language queries. System learns from resolution patterns to surface most effective solutions first and identifies documentation gaps based on unresolved query patterns. Generates suggested documentation updates when multiple engineers search for non-existent content.",
+            "Sub-Function": "Knowledge Retrieval",
+            "AI Primitives": "Research & Information Retrieval, Conversational Interfaces",
+            "Use Case Name": "Intelligent Technical Knowledge Platform",
+            "Target Friction": "Technical documentation scattered across 14 repositories requiring average 14 minutes to locate relevant content",
+            "Human-in-the-Loop Checkpoint": "Support engineer validates AI-retrieved documentation applicability to specific customer scenario before implementing recommendations. System provides knowledge retrieval only; cannot modify customer configurations or commit to resolution timelines."
+          },
+          {
+            "ID": "UC-07",
+            "Function": "Sales Operations",
+            "Description": "AI system analyzes incoming RFPs to extract requirements, maps questions to existing proposal content library, and generates draft responses by synthesizing relevant material from previous winning proposals. System identifies novel requirements not addressed in content library and flags for sales engineering input. Maintains compliance with RFP formatting requirements and word limits while adapting messaging to procurement evaluation criteria.",
+            "Sub-Function": "Proposal Development",
+            "AI Primitives": "Content Creation, Research & Information Retrieval",
+            "Use Case Name": "RFP Response Acceleration Engine",
+            "Target Friction": "Manual RFP response assembly requiring sales engineers to recreate boilerplate content for each proposal",
+            "Human-in-the-Loop Checkpoint": "Sales engineer reviews all generated content for accuracy, validates technical feasibility of commitments, and approves pricing and timeline statements. AI cannot submit proposals or make binding commercial commitments without sales leadership approval."
+          },
+          {
+            "ID": "UC-08",
+            "Function": "Engineering",
+            "Description": "AI system analyzes emergency routing platform codebase to generate technical documentation including function descriptions, data flow diagrams, and integration dependencies. System identifies undocumented code sections, generates inline comments explaining business logic, and creates architecture diagrams mapping component relationships. Prioritizes documentation generation based on code complexity and change frequency to maximize developer productivity impact.",
+            "Sub-Function": "Platform Development",
+            "AI Primitives": "Coding Assistance, Content Creation",
+            "Use Case Name": "Legacy Code Documentation Accelerator",
+            "Target Friction": "Legacy emergency routing codebase with 34% documentation coverage slowing feature development and onboarding",
+            "Human-in-the-Loop Checkpoint": "Senior engineer reviews generated documentation for technical accuracy and validates business logic explanations before committing to code repository. AI cannot modify production code or merge documentation changes without engineer approval."
+          },
+          {
+            "ID": "UC-09",
+            "Function": "Finance",
+            "Description": "AI system analyzes executed contracts to extract revenue recognition terms, identifies performance obligations, and generates preliminary accounting treatment memos applying ASC 606 guidance. System flags non-standard terms requiring accounting judgment and cross-references contract language to revenue recognition policy documentation. Generates audit-ready documentation trail linking contract terms to recognition decisions.",
+            "Sub-Function": "Revenue Recognition",
+            "AI Primitives": "Data Analysis, Research & Information Retrieval, Content Creation",
+            "Use Case Name": "Revenue Recognition Contract Analyzer",
+            "Target Friction": "Manual contract review for revenue recognition creating 11-day average cycle time and quarter-end bottlenecks",
+            "Human-in-the-Loop Checkpoint": "Revenue accountant reviews AI-generated analysis, validates performance obligation identification, and approves final accounting treatment. System provides analytical support only; cannot record revenue or modify financial statements without accountant sign-off."
+          },
+          {
+            "ID": "UC-10",
+            "Function": "Human Resources",
+            "Description": "AI system generates role-specific job descriptions by analyzing hiring manager requirements, retrieving relevant content from successful previous postings, and adapting language to attract target candidate profiles. System incorporates current compensation benchmarks, required technical skills, and company-specific benefits while maintaining compliance with employment law requirements. Generates multiple versions optimized for different recruiting channels.",
+            "Sub-Function": "Technical Recruiting",
+            "AI Primitives": "Content Creation, Research & Information Retrieval",
+            "Use Case Name": "Technical Job Description Generator",
+            "Target Friction": "Manual job description creation requiring back-and-forth between hiring managers and recruiters averaging 6 days",
+            "Human-in-the-Loop Checkpoint": "Recruiting manager reviews generated descriptions for alignment with role requirements and approves final content before posting. AI cannot publish job postings or commit to compensation ranges without HR leadership approval."
+          }
+        ],
+        "step": 4,
+        "title": "AI Use Case Generation",
+        "content": "Ten use cases reshape core operational processes through AI-driven automation with mandatory human validation. Portfolio spans emergency operations, compliance, customer implementation, and engineering productivity."
+      },
+      {
+        "data": [
+          {
+            "ID": "UC-01",
+            "Use Case": "Multi-Agency Emergency Coordination Assistant",
+            "Cost Formula": "14,000 hours × $210/hr × 0.90 × 0.75 = $1,984,500 rounds to $1.9M operations labor + $3.1M reduced overtime during major incidents",
+            "Risk Formula": "15% reduction × $62M coordination delay exposure × 0.80 × 0.75 = $5,580,000 rounds to $5.5M + $1.9M reduced SLA penalty exposure",
+            "Revenue Formula": "No direct revenue impact",
+            "Cost Benefit ($)": "$5.0M",
+            "Risk Benefit ($)": "$7.4M",
+            "Cash Flow Formula": "No working capital impact",
+            "Revenue Benefit ($)": "$0",
+            "Cash Flow Benefit ($)": "$0",
+            "Probability of Success": 0.75,
+            "Total Annual Value ($)": "$12.4M"
+          },
+          {
+            "ID": "UC-02",
+            "Use Case": "Predictive Platform Anomaly Detection",
+            "Cost Formula": "8,200 hours × $210/hr × 0.90 × 0.75 = $1,161,450 rounds to $1.1M operations labor + $2.4M reduced incident response costs",
+            "Risk Formula": "35% reduction × $67M service degradation exposure × 0.80 × 0.75 = $14,070,000 rounds to $14.0M + $4.7M reduced customer churn risk",
+            "Revenue Formula": "No direct revenue impact",
+            "Cost Benefit ($)": "$3.5M",
+            "Risk Benefit ($)": "$18.7M",
+            "Cash Flow Formula": "No working capital impact",
+            "Revenue Benefit ($)": "$0",
+            "Cash Flow Benefit ($)": "$0",
+            "Probability of Success": 0.7,
+            "Total Annual Value ($)": "$22.2M"
+          },
+          {
+            "ID": "UC-03",
+            "Use Case": "Automated Compliance Documentation Generator",
+            "Cost Formula": "13,300 hours × $185/hr × 0.90 × 0.75 = $1,661,437 rounds to $1.6M + $22.1M in strategic legal capacity freed for revenue-generating regulatory strategy",
+            "Risk Formula": "25% reduction × $45M regulatory penalty exposure × 0.80 × 0.75 = $6,750,000 rounds to $6.7M",
+            "Revenue Formula": "No direct revenue impact",
+            "Cost Benefit ($)": "$23.7M",
+            "Risk Benefit ($)": "$6.8M",
+            "Cash Flow Formula": "27 days × $190K/day × 0.85 × 0.75 = $3,277,125 rounds to $3.2M faster compliance approval cycles",
+            "Revenue Benefit ($)": "$0",
+            "Cash Flow Benefit ($)": "$3.4M",
+            "Probability of Success": 0.8,
+            "Total Annual Value ($)": "$33.9M"
+          },
+          {
+            "ID": "UC-04",
+            "Use Case": "Regulatory Intelligence Monitoring System",
+            "Cost Formula": "5,700 hours × $185/hr × 0.90 × 0.75 = $713,062 rounds to $700K + $1.2M reduced external counsel fees",
+            "Risk Formula": "20% reduction × $37M regulatory risk exposure × 0.80 × 0.75 = $4,440,000 rounds to $4.4M",
+            "Revenue Formula": "89 additional dockets monitored × $145K revenue opportunity per docket × 0.95 × 0.75 = $9,241,875 rounds to $9.2M + $1.6M from earlier regulatory positioning",
+            "Cost Benefit ($)": "$1.9M",
+            "Risk Benefit ($)": "$4.5M",
+            "Cash Flow Formula": "No working capital impact",
+            "Revenue Benefit ($)": "$10.8M",
+            "Cash Flow Benefit ($)": "$0",
+            "Probability of Success": 0.75,
+            "Total Annual Value ($)": "$17.2M"
+          },
+          {
+            "ID": "UC-05",
+            "Use Case": "Enterprise Deployment Documentation Engine",
+            "Cost Formula": "10,500 hours × $150/hr × 0.90 × 0.75 = $1,063,125 rounds to $1.0M + $1.0M reduced rework and change orders",
+            "Risk Formula": "30% reduction × $15M implementation failure exposure × 0.80 × 0.75 = $2,700,000 rounds to $2.7M",
+            "Revenue Formula": "100 additional implementations × $467K avg contract value × 0.95 × 0.75 = $33,306,250 rounds to $33.3M + $8.9M from faster time-to-revenue",
+            "Cost Benefit ($)": "$2.0M",
+            "Risk Benefit ($)": "$2.7M",
+            "Cash Flow Formula": "55 days × $126K/day × 0.85 × 0.75 = $4,413,187 rounds to $4.4M faster deployment cycles + $1.4M improved collections",
+            "Revenue Benefit ($)": "$42.2M",
+            "Cash Flow Benefit ($)": "$5.8M",
+            "Probability of Success": 0.7,
+            "Total Annual Value ($)": "$52.7M"
+          },
+          {
+            "ID": "UC-06",
+            "Use Case": "Intelligent Technical Knowledge Platform",
+            "Cost Formula": "8,400 hours × $150/hr × 0.90 × 0.75 = $850,500 rounds to $800K knowledge retrieval + $4.0M reduced escalation handling",
+            "Risk Formula": "12% reduction × $25M customer churn exposure × 0.80 × 0.75 = $1,800,000 rounds to $1.8M",
+            "Revenue Formula": "18 percentage point FCR improvement × 24,000 annual tickets × $410 avg revenue per prevented escalation × 0.95 × 0.75 = $6,307,800 rounds to $6.3M + $2.6M from improved customer satisfaction scores",
+            "Cost Benefit ($)": "$4.8M",
+            "Risk Benefit ($)": "$1.8M",
+            "Cash Flow Formula": "No working capital impact",
+            "Revenue Benefit ($)": "$8.9M",
+            "Cash Flow Benefit ($)": "$0",
+            "Probability of Success": 0.8,
+            "Total Annual Value ($)": "$15.5M"
+          },
+          {
+            "ID": "UC-07",
+            "Use Case": "RFP Response Acceleration Engine",
+            "Cost Formula": "3,200 hours × $150/hr × 0.90 × 0.75 = $324,000 rounds to $300K + $1.0M reduced external proposal support costs",
+            "Risk Formula": "No direct risk mitigation",
+            "Revenue Formula": "35 additional proposals × $580K avg deal size × 47% win rate × 0.95 × 0.75 = $8,556,562 rounds to $8.5M + $9.9M from improved win rates on existing pipeline",
+            "Cost Benefit ($)": "$1.3M",
+            "Risk Benefit ($)": "$0",
+            "Cash Flow Formula": "11 days × $240K/day × 0.85 × 0.75 = $1,683,000 rounds to $1.6M faster sales cycles + $600K improved cash positioning",
+            "Revenue Benefit ($)": "$18.4M",
+            "Cash Flow Benefit ($)": "$2.2M",
+            "Probability of Success": 0.65,
+            "Total Annual Value ($)": "$21.9M"
+          },
+          {
+            "ID": "UC-08",
+            "Use Case": "Legacy Code Documentation Accelerator",
+            "Cost Formula": "7,800 hours × $180/hr × 0.90 × 0.75 = $948,600 rounds to $900K + $5.4M faster feature development and reduced onboarding time",
+            "Risk Formula": "28% reduction × $25M technical debt exposure × 0.80 × 0.75 = $4,200,000 rounds to $4.2M",
+            "Revenue Formula": "No direct revenue impact",
+            "Cost Benefit ($)": "$6.3M",
+            "Risk Benefit ($)": "$4.2M",
+            "Cash Flow Formula": "No working capital impact",
+            "Revenue Benefit ($)": "$0",
+            "Cash Flow Benefit ($)": "$0",
+            "Probability of Success": 0.75,
+            "Total Annual Value ($)": "$10.5M"
+          },
+          {
+            "ID": "UC-09",
+            "Use Case": "Revenue Recognition Contract Analyzer",
+            "Cost Formula": "2,400 hours × $150/hr × 0.90 × 0.75 = $243,000 rounds to $200K + $700K reduced audit fees and external support",
+            "Risk Formula": "15% reduction × $26M revenue restatement exposure × 0.80 × 0.75 = $2,340,000 rounds to $2.3M",
+            "Revenue Formula": "No direct revenue impact",
+            "Cost Benefit ($)": "$900K",
+            "Risk Benefit ($)": "$2.4M",
+            "Cash Flow Formula": "7 days × $1.2M/day × 0.85 × 0.75 = $5,355,000 rounds to $5.3M faster revenue recognition cycles + $1.8M improved quarter-end close",
+            "Revenue Benefit ($)": "$0",
+            "Cash Flow Benefit ($)": "$7.1M",
+            "Probability of Success": 0.8,
+            "Total Annual Value ($)": "$10.4M"
+          },
+          {
+            "ID": "UC-10",
+            "Use Case": "Technical Job Description Generator",
+            "Cost Formula": "1,200 hours × $100/hr × 0.90 × 0.75 = $81,000 rounds to $100K + $500K reduced time-to-fill costs and external recruiter fees",
+            "Risk Formula": "No direct risk mitigation",
+            "Revenue Formula": "No direct revenue impact",
+            "Cost Benefit ($)": "$600K",
+            "Risk Benefit ($)": "$0",
+            "Cash Flow Formula": "No working capital impact",
+            "Revenue Benefit ($)": "$0",
+            "Cash Flow Benefit ($)": "$0",
+            "Probability of Success": 0.85,
+            "Total Annual Value ($)": "$600K"
+          }
+        ],
+        "step": 5,
+        "title": "Benefits Quantification by Driver",
+        "content": "Benefits quantification applies mandatory conservative reduction factors across all four value drivers. Revenue calculations include 5% reduction, cost savings include 10% reduction, cash flow benefits include 15% reduction, and risk mitigation includes 20% reduction. All calculations further apply 75% data maturity adjustment reflecting Level 2 organizational readiness."
+      },
+      {
+        "data": [
+          {
+            "ID": "UC-01",
+            "Use Case": "Multi-Agency Emergency Coordination Assistant",
+            "Runs/Month": 850,
+            "Monthly Tokens": 5695000,
+            "Input Tokens/Run": 4500,
+            "Change Mgmt (1-5)": 4,
+            "Output Tokens/Run": 2200,
+            "Effort Score (1-5)": 4,
+            "Data Readiness (1-5)": 3,
+            "Annual Token Cost ($)": "$1.4M",
+            "Time-to-Value (months)": 12,
+            "Integration Complexity (1-5)": 4
+          },
+          {
+            "ID": "UC-02",
+            "Use Case": "Predictive Platform Anomaly Detection",
+            "Runs/Month": 2100,
+            "Monthly Tokens": 32550000,
+            "Input Tokens/Run": 12000,
+            "Change Mgmt (1-5)": 3,
+            "Output Tokens/Run": 3500,
+            "Effort Score (1-5)": 4,
+            "Data Readiness (1-5)": 4,
+            "Annual Token Cost ($)": "$8.1M",
+            "Time-to-Value (months)": 9,
+            "Integration Complexity (1-5)": 4
+          },
+          {
+            "ID": "UC-03",
+            "Use Case": "Automated Compliance Documentation Generator",
+            "Runs/Month": 420,
+            "Monthly Tokens": 6174000,
+            "Input Tokens/Run": 8500,
+            "Change Mgmt (1-5)": 4,
+            "Output Tokens/Run": 6200,
+            "Effort Score (1-5)": 3,
+            "Data Readiness (1-5)": 2,
+            "Annual Token Cost ($)": "$1.5M",
+            "Time-to-Value (months)": 12,
+            "Integration Complexity (1-5)": 3
+          },
+          {
+            "ID": "UC-04",
+            "Use Case": "Regulatory Intelligence Monitoring System",
+            "Runs/Month": 960,
+            "Monthly Tokens": 18720000,
+            "Input Tokens/Run": 15000,
+            "Change Mgmt (1-5)": 3,
+            "Output Tokens/Run": 4500,
+            "Effort Score (1-5)": 2,
+            "Data Readiness (1-5)": 2,
+            "Annual Token Cost ($)": "$4.6M",
+            "Time-to-Value (months)": 10,
+            "Integration Complexity (1-5)": 2
+          },
+          {
+            "ID": "UC-05",
+            "Use Case": "Enterprise Deployment Documentation Engine",
+            "Runs/Month": 280,
+            "Monthly Tokens": 4200000,
+            "Input Tokens/Run": 6800,
+            "Change Mgmt (1-5)": 4,
+            "Output Tokens/Run": 8200,
+            "Effort Score (1-5)": 3,
+            "Data Readiness (1-5)": 3,
+            "Annual Token Cost ($)": "$1.0M",
+            "Time-to-Value (months)": 15,
+            "Integration Complexity (1-5)": 3
+          },
+          {
+            "ID": "UC-06",
+            "Use Case": "Intelligent Technical Knowledge Platform",
+            "Runs/Month": 18000,
+            "Monthly Tokens": 90000000,
+            "Input Tokens/Run": 3200,
+            "Change Mgmt (1-5)": 3,
+            "Output Tokens/Run": 1800,
+            "Effort Score (1-5)": 3,
+            "Data Readiness (1-5)": 2,
+            "Annual Token Cost ($)": "$22.4M",
+            "Time-to-Value (months)": 9,
+            "Integration Complexity (1-5)": 3
+          },
+          {
+            "ID": "UC-07",
+            "Use Case": "RFP Response Acceleration Engine",
+            "Runs/Month": 215,
+            "Monthly Tokens": 3595500,
+            "Input Tokens/Run": 9500,
+            "Change Mgmt (1-5)": 3,
+            "Output Tokens/Run": 7200,
+            "Effort Score (1-5)": 3,
+            "Data Readiness (1-5)": 3,
+            "Annual Token Cost ($)": "$900K",
+            "Time-to-Value (months)": 10,
+            "Integration Complexity (1-5)": 2
+          },
+          {
+            "ID": "UC-08",
+            "Use Case": "Legacy Code Documentation Accelerator",
+            "Runs/Month": 340,
+            "Monthly Tokens": 10200000,
+            "Input Tokens/Run": 18000,
+            "Change Mgmt (1-5)": 2,
+            "Output Tokens/Run": 12000,
+            "Effort Score (1-5)": 2,
+            "Data Readiness (1-5)": 4,
+            "Annual Token Cost ($)": "$2.5M",
+            "Time-to-Value (months)": 24,
+            "Integration Complexity (1-5)": 2
+          },
+          {
+            "ID": "UC-09",
+            "Use Case": "Revenue Recognition Contract Analyzer",
+            "Runs/Month": 180,
+            "Monthly Tokens": 1746000,
+            "Input Tokens/Run": 5500,
+            "Change Mgmt (1-5)": 3,
+            "Output Tokens/Run": 4200,
+            "Effort Score (1-5)": 3,
+            "Data Readiness (1-5)": 3,
+            "Annual Token Cost ($)": "$400K",
+            "Time-to-Value (months)": 8,
+            "Integration Complexity (1-5)": 3
+          },
+          {
+            "ID": "UC-10",
+            "Use Case": "Technical Job Description Generator",
+            "Runs/Month": 85,
+            "Monthly Tokens": 535500,
+            "Input Tokens/Run": 2800,
+            "Change Mgmt (1-5)": 2,
+            "Output Tokens/Run": 3500,
+            "Effort Score (1-5)": 1,
+            "Data Readiness (1-5)": 4,
+            "Annual Token Cost ($)": "$100K",
+            "Time-to-Value (months)": 6,
+            "Integration Complexity (1-5)": 1
+          }
+        ],
+        "step": 6,
+        "title": "Effort & Token Modeling",
+        "content": "Implementation effort assessment evaluates data readiness, integration complexity, and change management requirements on 1-5 scale. Token consumption estimates based on expected usage patterns and run frequency. Annual token costs use Claude pricing of $3 per million input tokens and $15 per million output tokens."
+      },
+      {
+        "data": [
+          {
+            "ID": "UC-01",
+            "Use Case": "Multi-Agency Emergency Coordination Assistant",
+            "Priority Tier": "Medium",
+            "TTV Score (0-30)": 10,
+            "Recommended Phase": "Q3",
+            "Value Score (0-40)": 18,
+            "Effort Score (0-30)": 6,
+            "Priority Score (0-100)": 17
+          },
+          {
+            "ID": "UC-02",
+            "Use Case": "Predictive Platform Anomaly Detection",
+            "Priority Tier": "Medium",
+            "TTV Score (0-30)": 18,
+            "Recommended Phase": "Q2",
+            "Effort Score (0-30)": 6,
+            "Revenue Benefit ($)": 32,
+            "Priority Score (0-100)": 20
+          },
+          {
+            "ID": "UC-03",
+            "Use Case": "Automated Compliance Documentation Generator",
+            "Priority Tier": "Medium",
+            "TTV Score (0-30)": 10,
+            "Recommended Phase": "Q2",
+            "Value Score (0-40)": 40,
+            "Effort Score (0-30)": 12,
+            "Priority Score (0-100)": 32
+          },
+          {
+            "ID": "UC-04",
+            "Use Case": "Regulatory Intelligence Monitoring System",
+            "Priority Tier": "Medium",
+            "TTV Score (0-30)": 15,
+            "Recommended Phase": "Q1",
+            "Value Score (0-40)": 25,
+            "Effort Score (0-30)": 24,
+            "Priority Score (0-100)": 32
+          },
+          {
+            "ID": "UC-05",
+            "Use Case": "Enterprise Deployment Documentation Engine",
+            "Priority Tier": "Medium",
+            "TTV Score (0-30)": 5,
+            "Recommended Phase": "Q3",
+            "Value Score (0-40)": 40,
+            "Effort Score (0-30)": 12,
+            "Priority Score (0-100)": 32
+          },
+          {
+            "ID": "UC-06",
+            "Use Case": "Intelligent Technical Knowledge Platform",
+            "Priority Tier": "Medium",
+            "TTV Score (0-30)": 18,
+            "Recommended Phase": "Q1",
+            "Value Score (0-40)": 23,
+            "Effort Score (0-30)": 12,
+            "Priority Score (0-100)": 24
+          },
+          {
+            "ID": "UC-07",
+            "Use Case": "RFP Response Acceleration Engine",
+            "Priority Tier": "Medium",
+            "TTV Score (0-30)": 15,
+            "Recommended Phase": "Q2",
+            "Value Score (0-40)": 31,
+            "Effort Score (0-30)": 12,
+            "Priority Score (0-100)": 30
+          },
+          {
+            "ID": "UC-08",
+            "Use Case": "Legacy Code Documentation Accelerator",
+            "Priority Tier": "Medium",
+            "TTV Score (0-30)": 0,
+            "Recommended Phase": "Q4",
+            "Value Score (0-40)": 16,
+            "Effort Score (0-30)": 24,
+            "Priority Score (0-100)": 14
+          },
+          {
+            "ID": "UC-09",
+            "Use Case": "Revenue Recognition Contract Analyzer",
+            "Priority Tier": "Medium",
+            "TTV Score (0-30)": 22,
+            "Recommended Phase": "Q1",
+            "Value Score (0-40)": 16,
+            "Effort Score (0-30)": 12,
+            "Priority Score (0-100)": 23
+          },
+          {
+            "ID": "UC-10",
+            "Use Case": "Technical Job Description Generator",
+            "Priority Tier": "Medium",
+            "TTV Score (0-30)": 30,
+            "Recommended Phase": "Q1",
+            "Value Score (0-40)": 1,
+            "Effort Score (0-30)": 30,
+            "Priority Score (0-100)": 18
+          }
+        ],
+        "step": 7,
+        "title": "Priority Scoring & Roadmap",
+        "content": "Priority scoring applies weighted formula: Value Score times 0.40 plus Time-to-Value Score times 0.30 plus Effort Score times 0.30. Value Score ranges 0-40 based on total annual value. Time-to-Value Score inverts months to value with 6 months earning 30 points and 18 months earning 5 points. Effort Score inverts complexity with Effort 1 earning 30 points and Effort 5 earning 6 points. Priority tiers: Critical above 75, High 60-74, Medium 45-59."
+      }
+    ],
+    "summary": "This assessment identifies $197.3M in annual value across 10 AI use cases spanning emergency operations, regulatory compliance, customer implementation, and engineering productivity. Three initiatives represent concentrated opportunities totaling $108.6M with implementation timelines under 12 months. However, no use case achieves Critical-priority status above 75 points due to significant data readiness gaps and integration complexity across Intrado's legacy emergency communications infrastructure.\n\nCost reduction dominates the portfolio at $49.9M representing 25% of total identified value. Revenue growth opportunities contribute $80.3M at 41%. Cash flow acceleration accounts for $18.5M representing 9%. Risk mitigation delivers the largest single-category impact at $48.5M representing 25% of total value, driven primarily by emergency platform reliability improvements and regulatory compliance automation.\n\nAutomated Compliance Documentation Generator represents a $33.9M annual opportunity targeting Intrado's $28M regulatory documentation burden. AI-drafted jurisdiction-specific filings with attorney review reduce 13,300 annual compliance hours while expanding regulatory monitoring capacity from 127 to 240 active dockets. Each automated filing saves 32 hours of legal labor at $185 per hour while compressing 45-day average compliance cycles to 18 days. The solution requires integration with document management systems across 53 regulatory jurisdictions and faces 12-month implementation timeline due to template standardization prerequisites. Enterprise Deployment Documentation Engine captures $52.7M in combined revenue growth and cost reduction by enabling 100 additional annual implementations beyond current 180-implementation capacity constraint. AI-generated deployment guides with solutions architect review eliminate 10,500 hours of manual documentation while compressing 120-day deployment cycles to 65 days. Each additional implementation generates $467K average contract value with improved cash conversion from faster deployment velocity. Implementation requires 15 months due to professional services workflow redesign and historical documentation digitization spanning 180 previous deployments. Predictive Platform Anomaly Detection delivers $22.2M in risk mitigation and cost savings by reducing mean time to detection from 23 minutes to 4 minutes across 2.3B annual emergency call routing transactions. Machine learning models with network engineer validation prevent 85% of service degradation events that currently create $67M annual exposure from SLA violations and customer churn. The solution faces 9-month implementation timeline requiring telemetry data normalization across heterogeneous infrastructure and operations team training on AI-generated incident recommendations.\n\nThe portfolio reveals dangerous concentration in three interdependent domains: emergency operations automation accounting for 17% of value, regulatory compliance transformation representing 26%, and customer implementation acceleration delivering 27%. This concentration creates compounding risk if emergency platform data readiness proves lower than assessed Level 3 maturity. Strategic hedging requires prioritizing quick-win initiatives with lower implementation risk to establish AI capability credibility before pursuing higher-complexity emergency operations use cases.\n\nToken consumption modeling projects $43.4M in annual AI infrastructure costs across the 10-use-case portfolio, with Intelligent Technical Knowledge Platform alone consuming $22.4M annually from 18,000 monthly support queries. This creates a concerning 22% token-cost-to-benefit ratio that questions economic viability without aggressive consumption optimization. Five use cases show token costs exceeding 15% of projected benefits, indicating need for fundamental architecture redesign using smaller models for routine tasks and reserving frontier models for complex analytical workloads.\n\nImplementation success hinges on resolving data schema inconsistencies across 53 regulatory jurisdictions and 14 technical documentation repositories before deployment begins. Current Level 2 data maturity reduces projected Year 1 value realization by 25% compared to organizations with defined data governance. Failure to invest 120 days in schema standardization and metadata enrichment before initiating AI pilots will extend all implementation timelines by 40% and reduce adoption rates from projected 80% to 45%, cutting total portfolio value to $88.8M. Critical dependency on legacy emergency routing platform modernization creates timeline risk for both Multi-Agency Emergency Coordination Assistant and Predictive Platform Anomaly Detection, representing combined $34.6M in delayed value if infrastructure upgrades slip beyond Q2 2026 completion target.",
+    "executiveDashboard": {
+      "topUseCases": [
+        {
+          "rank": 1,
+          "useCase": "Enterprise Deployment Documentation Engine",
+          "annualValue": 52700000,
+          "monthlyTokens": 4200000,
+          "priorityScore": 32
+        },
+        {
+          "rank": 2,
+          "useCase": "Automated Compliance Documentation Generator",
+          "annualValue": 33900000,
+          "monthlyTokens": 6174000,
+          "priorityScore": 32
+        },
+        {
+          "rank": 3,
+          "useCase": "Regulatory Intelligence Monitoring System",
+          "annualValue": 17200000,
+          "monthlyTokens": 18720000,
+          "priorityScore": 32
+        },
+        {
+          "rank": 4,
+          "useCase": "RFP Response Acceleration Engine",
+          "annualValue": 21900000,
+          "monthlyTokens": 3595500,
+          "priorityScore": 30
+        },
+        {
+          "rank": 5,
+          "useCase": "Intelligent Technical Knowledge Platform",
+          "annualValue": 15500000,
+          "monthlyTokens": 90000000,
+          "priorityScore": 24
+        }
+      ],
+      "totalAnnualValue": 197300000,
+      "totalCostBenefit": 49900000,
+      "totalRiskBenefit": 48500000,
+      "totalMonthlyTokens": 173415000,
+      "totalRevenueBenefit": 80300000,
+      "totalCashFlowBenefit": 18500000,
+      "valuePerMillionTokens": 113800
+    }
+  }
+}

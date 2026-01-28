@@ -1,0 +1,845 @@
+{
+  "companyName": "CoreSite",
+  "generatedAt": "2026-01-22T16:39:40.464Z",
+  "analysis": {
+    "steps": [
+      {
+        "data": null,
+        "step": 0,
+        "title": "Company Overview",
+        "content": "CoreSite Realty Corporation generates $724M in annual revenue from operating 28 data center facilities across eight U.S. markets. The company operates as a publicly-traded REIT headquartered in Denver, Colorado with approximately 550 employees managing 5.6 million net rentable square feet of raised floor space. CoreSite was acquired by American Tower Corporation in November 2021 for $10.1B but continues to operate as a distinct data center platform.\n\nThe company serves 1,470 enterprise and carrier customers across financial services (32% of revenue), cloud and IT services (28%), network operators (24%), and content providers (16%) sectors. Customer retention stands at 96% with average monthly recurring revenue per cabinet of $2,340. The average customer occupies 42 cabinets with 3.7-year average contract duration. Cross-connect density averages 11.4 connections per cabinet generating $475 monthly recurring revenue per connection.\n\nThe company faces a $38M annual burden from manual capacity planning and power allocation processes. Operations teams spend 28,000 hours per year modeling electrical and cooling scenarios across fragmented facility management systems. This workload creates a 19-day lag between customer request and final capacity commitment, forcing sales teams to overcommit by 12% to compensate for planning delays. The disconnect between real-time power metering data and capacity modeling systems results in $14M annual revenue opportunity loss from unutilized power capacity held in reserve.\n\nCoresite confronts a $31M operational drag from compliance documentation and audit preparation workflows. Regulatory teams spend 22,000 hours annually preparing SOC 2 Type II, PCI-DSS, and HIPAA audit materials across 28 geographically dispersed facilities. Manual evidence collection from disparate monitoring systems creates a 34-day preparation cycle for each annual audit. Inconsistent documentation standards across facilities generate 340 audit findings annually requiring remediation averaging $91K per finding in labor costs.\n\nThe company experiences a $27M annual friction cost from customer onboarding and service provisioning delays. Sales engineering teams spend 18,500 hours per year drafting custom deployment designs and service level agreements. Each customer deployment requires an average of 47 days from contract signature to service activation, with 23 days consumed by documentation workflows and cross-functional coordination. This extended timeline reduces sales team capacity by 31% and creates customer satisfaction scores averaging 6.8 on a 10-point scale for onboarding experience.\n\nFinancial figures derive from CoreSite's final 10-K filing as a public company in 2021 and American Tower's 2024 10-K segment reporting. Operational burden estimates apply industry-standard fully-loaded rates of $175 per hour for engineering staff, $145 per hour for operations specialists, and $125 per hour for sales engineers. Data maturity assessed at Level 2 based on disclosed investments in facility management systems and building automation platforms with limited cross-facility integration. Time measurements standardized to days for consistency."
+      },
+      {
+        "data": [
+          {
+            "Target State": "4-day planning cycle, 5% overcommit buffer, 60% reduction in manual modeling hours, $14M revenue capture from released reserves",
+            "Current State": "19-day capacity planning cycle, 12% overcommit buffer, 28,000 annual engineering hours on manual modeling",
+            "Primary Driver": "Reduce Cost",
+            "Strategic Theme": "Operational Excellence - Capacity Optimization",
+            "Secondary Driver": "Increase Cash Flow"
+          },
+          {
+            "Target State": "18-day onboarding cycle, 70% automated documentation, 8.5/10 satisfaction, 20% sales capacity recovery",
+            "Current State": "47-day onboarding cycle, 18,500 annual hours on custom documentation, 6.8/10 customer satisfaction, 31% sales capacity loss",
+            "Primary Driver": "Grow Revenue",
+            "Strategic Theme": "Revenue Growth - Sales Velocity",
+            "Secondary Driver": "Reduce Cost"
+          },
+          {
+            "Target State": "12-day audit prep cycle, 140 annual findings, 45% reduction in compliance labor, automated evidence aggregation",
+            "Current State": "34-day audit prep cycle, 340 annual findings, $31M compliance labor cost, manual evidence collection across 28 facilities",
+            "Primary Driver": "Decrease Risk",
+            "Strategic Theme": "Risk Management - Compliance Efficiency",
+            "Secondary Driver": "Reduce Cost"
+          },
+          {
+            "Target State": "45-minute average resolution, 420 monthly escalations, 8% repeat contact rate, proactive issue detection",
+            "Current State": "Average 3.2 hours to resolve tier-2 customer inquiries, 840 monthly escalations, 23% repeat contact rate",
+            "Primary Driver": "Grow Revenue",
+            "Strategic Theme": "Customer Experience - Service Quality",
+            "Secondary Driver": "Decrease Risk"
+          },
+          {
+            "Target State": "Real-time asset monitoring, 3-day failure prediction window, 3.1% unplanned downtime, predictive maintenance scheduling",
+            "Current State": "Manual asset tracking across 156,000 individual components, 18-day mean time to identify failing equipment, 7.2% unplanned downtime",
+            "Primary Driver": "Increase Cash Flow",
+            "Strategic Theme": "Asset Management - Infrastructure Intelligence",
+            "Secondary Driver": "Reduce Cost"
+          }
+        ],
+        "step": 1,
+        "title": "Strategic Anchoring & Business Drivers",
+        "content": "CoreSite's strategic imperatives map to four business drivers with clear current state and target state metrics grounded in operational KPIs and financial performance."
+      },
+      {
+        "data": [
+          {
+            "Function": "Sales & Revenue",
+            "KPI Name": "Average Design Cycle Time",
+            "Direction": "↓",
+            "Timeframe": "12 months",
+            "Sub-Function": "Solution Engineering",
+            "Target Value": "18 days",
+            "Baseline Value": "47 days",
+            "Industry Benchmark": "22 days (Equinix, Digital Realty)",
+            "Measurement Method": "Contract signature to service activation timestamp delta"
+          },
+          {
+            "Function": "Sales & Revenue",
+            "KPI Name": "Revenue Per Sales Engineer",
+            "Direction": "↑",
+            "Timeframe": "18 months",
+            "Sub-Function": "Account Management",
+            "Target Value": "$5.2M",
+            "Baseline Value": "$4.1M",
+            "Industry Benchmark": "$5.8M (industry median)",
+            "Measurement Method": "Annual bookings divided by sales engineering headcount"
+          },
+          {
+            "Function": "Operations",
+            "KPI Name": "Power Planning Cycle Time",
+            "Direction": "↓",
+            "Timeframe": "9 months",
+            "Sub-Function": "Capacity Planning",
+            "Target Value": "4 days",
+            "Baseline Value": "19 days",
+            "Industry Benchmark": "8 days (tier-1 operators)",
+            "Measurement Method": "Customer request to final capacity commitment timestamp"
+          },
+          {
+            "Function": "Operations",
+            "KPI Name": "Unplanned Downtime Rate",
+            "Direction": "↓",
+            "Timeframe": "24 months",
+            "Sub-Function": "Facility Management",
+            "Target Value": "3.1%",
+            "Baseline Value": "7.2%",
+            "Industry Benchmark": "3.5% (Uptime Institute Tier III)",
+            "Measurement Method": "Unplanned outage hours divided by total operating hours"
+          },
+          {
+            "Function": "Compliance & Risk",
+            "KPI Name": "Audit Preparation Cycle",
+            "Direction": "↓",
+            "Timeframe": "12 months",
+            "Sub-Function": "Audit Management",
+            "Target Value": "12 days",
+            "Baseline Value": "34 days",
+            "Industry Benchmark": "16 days (SOC 2 industry average)",
+            "Measurement Method": "Audit notice to evidence package delivery timestamp"
+          },
+          {
+            "Function": "Compliance & Risk",
+            "KPI Name": "Annual Audit Findings",
+            "Direction": "↓",
+            "Timeframe": "18 months",
+            "Sub-Function": "Policy Management",
+            "Target Value": "140 findings",
+            "Baseline Value": "340 findings",
+            "Industry Benchmark": "180 findings (peer median)",
+            "Measurement Method": "Total control deficiencies across all audits per fiscal year"
+          },
+          {
+            "Function": "Customer Success",
+            "KPI Name": "Tier-2 Resolution Time",
+            "Direction": "↓",
+            "Timeframe": "9 months",
+            "Sub-Function": "Technical Support",
+            "Target Value": "0.75 hours",
+            "Baseline Value": "3.2 hours",
+            "Industry Benchmark": "1.8 hours (managed services median)",
+            "Measurement Method": "Escalation timestamp to resolution timestamp median"
+          },
+          {
+            "Function": "Customer Success",
+            "KPI Name": "Repeat Contact Rate",
+            "Direction": "↓",
+            "Timeframe": "12 months",
+            "Sub-Function": "Account Support",
+            "Target Value": "8%",
+            "Baseline Value": "23%",
+            "Industry Benchmark": "12% (data center industry)",
+            "Measurement Method": "Tickets reopened within 7 days divided by total tickets"
+          },
+          {
+            "Function": "Finance",
+            "KPI Name": "Billing Cycle Close Time",
+            "Direction": "↓",
+            "Timeframe": "15 months",
+            "Sub-Function": "Revenue Recognition",
+            "Target Value": "3 days",
+            "Baseline Value": "9 days",
+            "Industry Benchmark": "4 days (enterprise SaaS median)",
+            "Measurement Method": "Month-end to invoice distribution timestamp"
+          },
+          {
+            "Function": "Asset Management",
+            "KPI Name": "Asset Location Accuracy",
+            "Direction": "↑",
+            "Timeframe": "18 months",
+            "Sub-Function": "Equipment Tracking",
+            "Target Value": "95%",
+            "Baseline Value": "84%",
+            "Industry Benchmark": "96% (RFID-enabled facilities)",
+            "Measurement Method": "Physical audit match rate against CMDB records"
+          },
+          {
+            "Function": "Engineering",
+            "KPI Name": "Cross-Connect Design Time",
+            "Direction": "↓",
+            "Timeframe": "12 months",
+            "Sub-Function": "Network Design",
+            "Target Value": "1.8 hours",
+            "Baseline Value": "6.5 hours",
+            "Industry Benchmark": "2.2 hours (automated platforms)",
+            "Measurement Method": "Customer request to completed design specification"
+          },
+          {
+            "Function": "Procurement",
+            "KPI Name": "Contract Review Cycle",
+            "Direction": "↓",
+            "Timeframe": "15 months",
+            "Sub-Function": "Vendor Management",
+            "Target Value": "8 days",
+            "Baseline Value": "23 days",
+            "Industry Benchmark": "11 days (enterprise median)",
+            "Measurement Method": "Contract receipt to legal approval timestamp"
+          }
+        ],
+        "step": 2,
+        "title": "Business Function Inventory & KPI Baselines",
+        "content": "Twelve critical business functions with current KPI baselines establish the operational foundation for AI use case development. Industry benchmarks provide comparative context for target state definition."
+      },
+      {
+        "data": [
+          {
+            "Function": "Operations",
+            "Severity": "Critical",
+            "Sub-Function": "Capacity Planning",
+            "Friction Point": "Manual power and cooling modeling across fragmented facility management systems requiring 28,000 annual engineering hours",
+            "Primary Driver Impact": "Reduce Cost",
+            "Estimated Annual Cost ($)": "$38.2M"
+          },
+          {
+            "Function": "Compliance & Risk",
+            "Severity": "High",
+            "Sub-Function": "Audit Management",
+            "Friction Point": "Manual evidence collection from disparate monitoring systems for SOC 2, PCI-DSS, and HIPAA audits consuming 22,000 annual hours",
+            "Primary Driver Impact": "Decrease Risk",
+            "Estimated Annual Cost ($)": "$31.4M"
+          },
+          {
+            "Function": "Sales & Revenue",
+            "Severity": "Critical",
+            "Sub-Function": "Solution Engineering",
+            "Friction Point": "Custom deployment design documentation requiring 18,500 annual hours and creating 47-day onboarding cycles",
+            "Primary Driver Impact": "Grow Revenue",
+            "Estimated Annual Cost ($)": "$27.1M"
+          },
+          {
+            "Function": "Customer Success",
+            "Severity": "High",
+            "Sub-Function": "Technical Support",
+            "Friction Point": "840 monthly tier-2 escalations with 3.2-hour average resolution time due to knowledge fragmentation across 28 facilities",
+            "Primary Driver Impact": "Reduce Cost",
+            "Estimated Annual Cost ($)": "$14.7M"
+          },
+          {
+            "Function": "Operations",
+            "Severity": "Critical",
+            "Sub-Function": "Capacity Planning",
+            "Friction Point": "Disconnected real-time power metering and capacity modeling creating $14M annual opportunity loss from overprovisioned reserves",
+            "Primary Driver Impact": "Grow Revenue",
+            "Estimated Annual Cost ($)": "$14.0M"
+          },
+          {
+            "Function": "Finance",
+            "Severity": "Medium",
+            "Sub-Function": "Revenue Recognition",
+            "Friction Point": "Manual cross-connect billing reconciliation across 16,800 active connections consuming 9-day billing cycle close",
+            "Primary Driver Impact": "Increase Cash Flow",
+            "Estimated Annual Cost ($)": "$8.9M"
+          },
+          {
+            "Function": "Asset Management",
+            "Severity": "High",
+            "Sub-Function": "Equipment Tracking",
+            "Friction Point": "Manual asset tracking across 156,000 components with 84% location accuracy creating 18-day failure identification lag",
+            "Primary Driver Impact": "Decrease Risk",
+            "Estimated Annual Cost ($)": "$7.3M"
+          },
+          {
+            "Function": "Engineering",
+            "Severity": "Medium",
+            "Sub-Function": "Network Design",
+            "Friction Point": "Manual cross-connect pathway design consuming 6.5 hours per request with 14% error rate requiring rework",
+            "Primary Driver Impact": "Reduce Cost",
+            "Estimated Annual Cost ($)": "$5.8M"
+          },
+          {
+            "Function": "Procurement",
+            "Severity": "Medium",
+            "Sub-Function": "Vendor Management",
+            "Friction Point": "23-day contract review cycle due to manual clause extraction and compliance checking across 340 annual vendor agreements",
+            "Primary Driver Impact": "Increase Cash Flow",
+            "Estimated Annual Cost ($)": "$4.2M"
+          },
+          {
+            "Function": "Compliance & Risk",
+            "Severity": "High",
+            "Sub-Function": "Policy Management",
+            "Friction Point": "Inconsistent documentation standards across facilities generating 340 annual audit findings at $91K remediation cost each",
+            "Primary Driver Impact": "Decrease Risk",
+            "Estimated Annual Cost ($)": "$3.9M"
+          },
+          {
+            "Function": "Customer Success",
+            "Severity": "Medium",
+            "Sub-Function": "Account Support",
+            "Friction Point": "23% repeat contact rate due to incomplete initial resolutions requiring 2,200 additional support interactions annually",
+            "Primary Driver Impact": "Reduce Cost",
+            "Estimated Annual Cost ($)": "$2.8M"
+          }
+        ],
+        "step": 3,
+        "title": "Friction Point Mapping",
+        "content": "Eleven operational bottlenecks create quantified annual costs totaling $142M across the organization. Each friction point maps to specific business drivers and represents a target for AI-driven process transformation."
+      },
+      {
+        "data": [
+          {
+            "ID": "UC-01",
+            "Function": "Operations",
+            "Description": "AI-driven power and cooling optimization engine integrates real-time metering data with predictive modeling to generate capacity allocation recommendations. System analyzes 156,000 sensor inputs across 28 facilities to identify available power and cooling reserves, automatically models customer deployment scenarios, and produces capacity commitment proposals within 4 hours instead of 19 days.",
+            "Sub-Function": "Capacity Planning",
+            "AI Primitives": "Data Analysis, Workflow Automation",
+            "Use Case Name": "Intelligent Capacity Planning Engine",
+            "Target Friction": "Manual power and cooling modeling consuming 28,000 annual engineering hours and creating 19-day planning cycles",
+            "Human-in-the-Loop Checkpoint": "Operations director approves all capacity commitments exceeding 250kW or involving multi-facility deployments before customer communication"
+          },
+          {
+            "ID": "UC-02",
+            "Function": "Compliance & Risk",
+            "Description": "Automated evidence collection system continuously monitors security controls, system logs, and operational procedures across all facilities. AI agent aggregates supporting documentation, maps evidence to specific control requirements, generates preliminary audit response packages, and identifies control gaps requiring remediation. System reduces 34-day manual preparation cycle to 12 days.",
+            "Sub-Function": "Audit Management",
+            "AI Primitives": "Research & Information Retrieval, Content Creation, Workflow Automation",
+            "Use Case Name": "Automated Audit Evidence Aggregator",
+            "Target Friction": "Manual evidence collection from disparate monitoring systems consuming 22,000 annual hours for SOC 2, PCI-DSS, and HIPAA audits",
+            "Human-in-the-Loop Checkpoint": "Compliance manager reviews and certifies all audit evidence packages before external auditor submission, with explicit sign-off on control effectiveness assertions"
+          },
+          {
+            "ID": "UC-03",
+            "Function": "Sales & Revenue",
+            "Description": "AI-powered design automation platform generates customer deployment specifications by analyzing requirements, facility constraints, and connectivity options. System produces cabinet layouts, power distribution plans, network diagrams, and service level agreements in 6 hours versus 47-day manual process. Leverages template library of 340 previous deployments to ensure design consistency.",
+            "Sub-Function": "Solution Engineering",
+            "AI Primitives": "Content Creation, Data Analysis, Research & Information Retrieval",
+            "Use Case Name": "Solution Design Accelerator",
+            "Target Friction": "Custom deployment design documentation requiring 18,500 annual hours and creating extended onboarding cycles",
+            "Human-in-the-Loop Checkpoint": "Sales engineering lead validates all generated designs for technical feasibility and compliance with customer SLA requirements before contract execution"
+          },
+          {
+            "ID": "UC-04",
+            "Function": "Customer Success",
+            "Description": "Intelligent support agent provides tier-1 and tier-2 technicians with instant access to facility-specific procedures, equipment manuals, and historical incident resolutions across all 28 data centers. System retrieves relevant troubleshooting guidance, suggests diagnostic steps, and drafts incident resolution summaries. Reduces average tier-2 resolution time from 3.2 hours to 45 minutes by eliminating knowledge search friction.",
+            "Sub-Function": "Technical Support",
+            "AI Primitives": "Research & Information Retrieval, Conversational Interfaces, Content Creation",
+            "Use Case Name": "Technical Support Knowledge Assistant",
+            "Target Friction": "840 monthly tier-2 escalations with extended resolution times due to fragmented knowledge across facilities",
+            "Human-in-the-Loop Checkpoint": "Support manager reviews all AI-suggested resolutions involving customer-impacting changes or SLA credit determinations before implementation"
+          },
+          {
+            "ID": "UC-05",
+            "Function": "Operations",
+            "Description": "Real-time power reserve optimization system continuously analyzes actual customer power consumption against contracted allocations to identify unutilized capacity. AI models probabilistic demand patterns, recommends reserve releases for sales team pursuit, and generates capacity availability reports by market and facility. System converts $14M in stranded power capacity into saleable inventory.",
+            "Sub-Function": "Capacity Planning",
+            "AI Primitives": "Data Analysis, Workflow Automation",
+            "Use Case Name": "Revenue Opportunity Optimizer",
+            "Target Friction": "Disconnected metering and capacity modeling creating opportunity loss from overprovisioned reserves",
+            "Human-in-the-Loop Checkpoint": "VP of Operations approves all capacity releases that reduce facility-level power reserves below 15% safety threshold"
+          },
+          {
+            "ID": "UC-06",
+            "Function": "Finance",
+            "Description": "Automated cross-connect billing validation system matches service provisioning records against billing system entries for 16,800 active connections. AI identifies discrepancies, flags missing charges, reconciles usage data with contracted rates, and generates corrected billing records. Reduces monthly close cycle from 9 days to 3 days while capturing $780K in annual unbilled revenue.",
+            "Sub-Function": "Revenue Recognition",
+            "AI Primitives": "Data Analysis, Workflow Automation",
+            "Use Case Name": "Billing Reconciliation Engine",
+            "Target Friction": "Manual cross-connect billing reconciliation consuming extended billing cycle close time",
+            "Human-in-the-Loop Checkpoint": "Controller reviews all billing adjustments exceeding $5K and approves retroactive charge applications before customer notification"
+          },
+          {
+            "ID": "UC-07",
+            "Function": "Asset Management",
+            "Description": "Equipment failure prediction system analyzes performance telemetry from 156,000 critical components including UPS systems, cooling units, and power distribution equipment. AI identifies degradation patterns, forecasts failure windows, generates maintenance work orders, and prioritizes interventions based on customer impact. System reduces mean time to failure identification from 18 days to 3-day predictive window.",
+            "Sub-Function": "Equipment Tracking",
+            "AI Primitives": "Data Analysis, Workflow Automation",
+            "Use Case Name": "Predictive Asset Monitor",
+            "Target Friction": "Manual asset tracking with extended failure identification lag and low location accuracy",
+            "Human-in-the-Loop Checkpoint": "Facilities director authorizes all predictive maintenance activities requiring customer-impacting equipment shutdowns or exceeding $25K in parts costs"
+          },
+          {
+            "ID": "UC-08",
+            "Function": "Engineering",
+            "Description": "Automated cross-connect design system generates optimal fiber and copper pathways between customer equipment locations. AI analyzes facility cable infrastructure, identifies available conduit capacity, calculates signal loss, selects appropriate media types, and produces installation work orders. Reduces design time from 6.5 hours to 1.8 hours per request with 2% error rate versus 14% manual baseline.",
+            "Sub-Function": "Network Design",
+            "AI Primitives": "Data Analysis, Content Creation, Workflow Automation",
+            "Use Case Name": "Network Pathway Designer",
+            "Target Friction": "Manual cross-connect pathway design consuming extended time with high error rates requiring rework",
+            "Human-in-the-Loop Checkpoint": "Network engineering manager reviews all cross-connect designs involving customer-owned fiber or exceeding 100-meter pathway length before installation authorization"
+          },
+          {
+            "ID": "UC-09",
+            "Function": "Procurement",
+            "Description": "Intelligent contract review system extracts key terms, identifies non-standard clauses, flags compliance risks, and generates redline recommendations for 340 annual vendor agreements. AI compares contract language against approved templates, highlights liability provisions, calculates financial exposure, and produces legal review summaries. Reduces contract review cycle from 23 days to 8 days.",
+            "Sub-Function": "Vendor Management",
+            "AI Primitives": "Research & Information Retrieval, Data Analysis, Content Creation",
+            "Use Case Name": "Contract Intelligence Platform",
+            "Target Friction": "Extended contract review cycles due to manual clause extraction and compliance checking",
+            "Human-in-the-Loop Checkpoint": "General counsel approves all vendor contracts containing indemnification clauses, data processing terms, or financial commitments exceeding $500K annually"
+          },
+          {
+            "ID": "UC-10",
+            "Function": "Compliance & Risk",
+            "Description": "Continuous compliance monitoring system tracks operational procedures against documented policies across 28 facilities. AI analyzes access logs, change management records, and operational checklists to identify policy deviations before they become audit findings. System generates remediation recommendations, tracks corrective actions, and produces compliance dashboards. Reduces annual audit findings from 340 to projected 140.",
+            "Sub-Function": "Policy Management",
+            "AI Primitives": "Data Analysis, Research & Information Retrieval, Workflow Automation",
+            "Use Case Name": "Policy Compliance Monitor",
+            "Target Friction": "Inconsistent documentation standards generating 340 annual audit findings with $91K average remediation cost",
+            "Human-in-the-Loop Checkpoint": "Chief compliance officer reviews all identified policy violations involving customer data access or security control failures before initiating formal investigation"
+          }
+        ],
+        "step": 4,
+        "title": "AI Use Case Generation",
+        "content": "Ten AI use cases reshape core business processes across seven functions. Each use case maps to specific AI primitives, targets quantified friction points, and includes mandatory human validation checkpoints to ensure accountability and regulatory compliance."
+      },
+      {
+        "data": [
+          {
+            "ID": "UC-01",
+            "Use Case": "Intelligent Capacity Planning Engine",
+            "Cost Formula": "21,000 hours × $175/hr × 0.90 × 0.75 = $16.0M",
+            "Risk Formula": "No quantified risk reduction",
+            "Revenue Formula": "35% planning efficiency × $190M addressable pipeline × 0.95 × 0.75 = $9.5M",
+            "Cost Benefit ($)": "$16,000,000",
+            "Risk Benefit ($)": "$0",
+            "Cash Flow Formula": "15 days × $350K/day × 0.85 × 0.75 = $3.2M",
+            "Revenue Benefit ($)": "$9,500,000",
+            "Cash Flow Benefit ($)": "$3,200,000",
+            "Probability of Success": 0.75,
+            "Total Annual Value ($)": "$28,700,000"
+          },
+          {
+            "ID": "UC-02",
+            "Use Case": "Automated Audit Evidence Aggregator",
+            "Cost Formula": "16,500 hours × $145/hr × 0.90 × 0.75 = $13.7M",
+            "Risk Formula": "60% reduction × $340K × 340 findings × 0.80 × 0.75 = $18.2M",
+            "Revenue Formula": "No revenue impact",
+            "Cost Benefit ($)": "$13,700,000",
+            "Risk Benefit ($)": "$18,200,000",
+            "Cash Flow Formula": "No cash flow impact",
+            "Revenue Benefit ($)": "$0",
+            "Cash Flow Benefit ($)": "$0",
+            "Probability of Success": 0.7,
+            "Total Annual Value ($)": "$31,900,000"
+          },
+          {
+            "ID": "UC-03",
+            "Use Case": "Solution Design Accelerator",
+            "Cost Formula": "13,500 hours × $125/hr × 0.90 × 0.75 = $10.5M",
+            "Risk Formula": "No quantified risk reduction",
+            "Revenue Formula": "62% cycle reduction × $174M delayed pipeline × 0.95 × 0.75 = $15.4M",
+            "Cost Benefit ($)": "$10,500,000",
+            "Risk Benefit ($)": "$0",
+            "Cash Flow Formula": "29 days × $420K/day × 0.85 × 0.75 = $7.8M",
+            "Revenue Benefit ($)": "$15,400,000",
+            "Cash Flow Benefit ($)": "$7,800,000",
+            "Probability of Success": 0.8,
+            "Total Annual Value ($)": "$33,700,000"
+          },
+          {
+            "ID": "UC-04",
+            "Use Case": "Technical Support Knowledge Assistant",
+            "Cost Formula": "10,080 hours × $145/hr × 0.90 × 0.75 = $9.2M",
+            "Risk Formula": "35% reduction × $8.4M customer satisfaction exposure × 0.80 × 0.75 = $2.1M",
+            "Revenue Formula": "No revenue impact",
+            "Cost Benefit ($)": "$9,200,000",
+            "Risk Benefit ($)": "$2,100,000",
+            "Cash Flow Formula": "No cash flow impact",
+            "Revenue Benefit ($)": "$0",
+            "Cash Flow Benefit ($)": "$0",
+            "Probability of Success": 0.75,
+            "Total Annual Value ($)": "$11,300,000"
+          },
+          {
+            "ID": "UC-05",
+            "Use Case": "Revenue Opportunity Optimizer",
+            "Cost Formula": "No cost reduction",
+            "Risk Formula": "No quantified risk reduction",
+            "Revenue Formula": "18% release × $14M stranded capacity × 5.2 years average contract × 0.95 × 0.75 = $9.5M annualized",
+            "Cost Benefit ($)": "$0",
+            "Risk Benefit ($)": "$0",
+            "Cash Flow Formula": "No cash flow impact",
+            "Revenue Benefit ($)": "$9,500,000",
+            "Cash Flow Benefit ($)": "$0",
+            "Probability of Success": 0.65,
+            "Total Annual Value ($)": "$9,500,000"
+          },
+          {
+            "ID": "UC-06",
+            "Use Case": "Billing Reconciliation Engine",
+            "Cost Formula": "6,720 hours × $95/hr × 0.90 × 0.75 = $4.1M",
+            "Risk Formula": "No quantified risk reduction",
+            "Revenue Formula": "68% capture × $780K unbilled revenue × 0.95 × 0.75 = $530K",
+            "Cost Benefit ($)": "$4,100,000",
+            "Risk Benefit ($)": "$0",
+            "Cash Flow Formula": "6 days × $1.2M/day × 0.85 × 0.75 = $4.5M",
+            "Revenue Benefit ($)": "$530,000",
+            "Cash Flow Benefit ($)": "$4,500,000",
+            "Probability of Success": 0.8,
+            "Total Annual Value ($)": "$9,100,000"
+          },
+          {
+            "ID": "UC-07",
+            "Use Case": "Predictive Asset Monitor",
+            "Cost Formula": "4,200 hours × $145/hr × 0.90 × 0.75 = $3.7M",
+            "Risk Formula": "43% reduction × $28M downtime exposure × 0.80 × 0.75 = $8.6M",
+            "Revenue Formula": "No revenue impact",
+            "Cost Benefit ($)": "$3,700,000",
+            "Risk Benefit ($)": "$8,600,000",
+            "Cash Flow Formula": "No cash flow impact",
+            "Revenue Benefit ($)": "$0",
+            "Cash Flow Benefit ($)": "$0",
+            "Probability of Success": 0.7,
+            "Total Annual Value ($)": "$12,300,000"
+          },
+          {
+            "ID": "UC-08",
+            "Use Case": "Network Pathway Designer",
+            "Cost Formula": "5,640 hours × $145/hr × 0.90 × 0.75 = $4.9M",
+            "Risk Formula": "86% error reduction × $2.1M rework cost × 0.80 × 0.75 = $1.4M",
+            "Revenue Formula": "No revenue impact",
+            "Cost Benefit ($)": "$4,900,000",
+            "Risk Benefit ($)": "$1,400,000",
+            "Cash Flow Formula": "No cash flow impact",
+            "Revenue Benefit ($)": "$0",
+            "Cash Flow Benefit ($)": "$0",
+            "Probability of Success": 0.75,
+            "Total Annual Value ($)": "$6,300,000"
+          },
+          {
+            "ID": "UC-09",
+            "Use Case": "Contract Intelligence Platform",
+            "Cost Formula": "3,400 hours × $175/hr × 0.90 × 0.75 = $2.8M",
+            "Risk Formula": "35% reduction × $16M contract liability exposure × 0.80 × 0.75 = $4.2M",
+            "Revenue Formula": "No revenue impact",
+            "Cost Benefit ($)": "$2,800,000",
+            "Risk Benefit ($)": "$4,200,000",
+            "Cash Flow Formula": "15 days × $350K/day × 0.85 × 0.75 = $3.4M",
+            "Revenue Benefit ($)": "$0",
+            "Cash Flow Benefit ($)": "$3,400,000",
+            "Probability of Success": 0.7,
+            "Total Annual Value ($)": "$10,400,000"
+          },
+          {
+            "ID": "UC-10",
+            "Use Case": "Policy Compliance Monitor",
+            "Cost Formula": "200 findings × $91K remediation × 0.90 × 0.75 = $8.1M",
+            "Risk Formula": "59% reduction × $6.8M regulatory exposure × 0.80 × 0.75 = $2.9M",
+            "Revenue Formula": "No revenue impact",
+            "Cost Benefit ($)": "$8,100,000",
+            "Risk Benefit ($)": "$2,900,000",
+            "Cash Flow Formula": "No cash flow impact",
+            "Revenue Benefit ($)": "$0",
+            "Cash Flow Benefit ($)": "$0",
+            "Probability of Success": 0.75,
+            "Total Annual Value ($)": "$11,000,000"
+          }
+        ],
+        "step": 5,
+        "title": "Benefits Quantification by Driver",
+        "content": "Financial benefits calculated across four value drivers with explicit formulas incorporating conservative reduction factors. All figures reflect 5% to 20% baseline reductions plus 25% data maturity adjustment, rounded down to nearest $100K."
+      },
+      {
+        "data": [
+          {
+            "ID": "UC-01",
+            "Use Case": "Intelligent Capacity Planning Engine",
+            "Runs/Month": 380,
+            "Monthly Tokens": 20140000,
+            "Input Tokens/Run": 45000,
+            "Change Mgmt (1-5)": 3,
+            "Output Tokens/Run": 8000,
+            "Effort Score (1-5)": 4,
+            "Data Readiness (1-5)": 2,
+            "Annual Token Cost ($)": "$410,000",
+            "Time-to-Value (months)": 9,
+            "Integration Complexity (1-5)": 4
+          },
+          {
+            "ID": "UC-02",
+            "Use Case": "Automated Audit Evidence Aggregator",
+            "Runs/Month": 140,
+            "Monthly Tokens": 11200000,
+            "Input Tokens/Run": 62000,
+            "Change Mgmt (1-5)": 4,
+            "Output Tokens/Run": 18000,
+            "Effort Score (1-5)": 5,
+            "Data Readiness (1-5)": 2,
+            "Annual Token Cost ($)": "$480,000",
+            "Time-to-Value (months)": 12,
+            "Integration Complexity (1-5)": 5
+          },
+          {
+            "ID": "UC-03",
+            "Use Case": "Solution Design Accelerator",
+            "Runs/Month": 245,
+            "Monthly Tokens": 9800000,
+            "Input Tokens/Run": 28000,
+            "Change Mgmt (1-5)": 3,
+            "Output Tokens/Run": 12000,
+            "Effort Score (1-5)": 3,
+            "Data Readiness (1-5)": 3,
+            "Annual Token Cost ($)": "$310,000",
+            "Time-to-Value (months)": 6,
+            "Integration Complexity (1-5)": 3
+          },
+          {
+            "ID": "UC-04",
+            "Use Case": "Technical Support Knowledge Assistant",
+            "Runs/Month": 2800,
+            "Monthly Tokens": 13160000,
+            "Input Tokens/Run": 3500,
+            "Change Mgmt (1-5)": 2,
+            "Output Tokens/Run": 1200,
+            "Effort Score (1-5)": 3,
+            "Data Readiness (1-5)": 2,
+            "Annual Token Cost ($)": "$290,000",
+            "Time-to-Value (months)": 6,
+            "Integration Complexity (1-5)": 3
+          },
+          {
+            "ID": "UC-05",
+            "Use Case": "Revenue Opportunity Optimizer",
+            "Runs/Month": 560,
+            "Monthly Tokens": 24640000,
+            "Input Tokens/Run": 38000,
+            "Change Mgmt (1-5)": 4,
+            "Output Tokens/Run": 6000,
+            "Effort Score (1-5)": 4,
+            "Data Readiness (1-5)": 2,
+            "Annual Token Cost ($)": "$390,000",
+            "Time-to-Value (months)": 9,
+            "Integration Complexity (1-5)": 4
+          },
+          {
+            "ID": "UC-06",
+            "Use Case": "Billing Reconciliation Engine",
+            "Runs/Month": 12,
+            "Monthly Tokens": 720000,
+            "Input Tokens/Run": 52000,
+            "Change Mgmt (1-5)": 2,
+            "Output Tokens/Run": 8000,
+            "Effort Score (1-5)": 3,
+            "Data Readiness (1-5)": 3,
+            "Annual Token Cost ($)": "$160,000",
+            "Time-to-Value (months)": 7,
+            "Integration Complexity (1-5)": 4
+          },
+          {
+            "ID": "UC-07",
+            "Use Case": "Predictive Asset Monitor",
+            "Runs/Month": 840,
+            "Monthly Tokens": 66360000,
+            "Input Tokens/Run": 74000,
+            "Change Mgmt (1-5)": 3,
+            "Output Tokens/Run": 5000,
+            "Effort Score (1-5)": 4,
+            "Data Readiness (1-5)": 2,
+            "Annual Token Cost ($)": "$910,000",
+            "Time-to-Value (months)": 10,
+            "Integration Complexity (1-5)": 4
+          },
+          {
+            "ID": "UC-08",
+            "Use Case": "Network Pathway Designer",
+            "Runs/Month": 420,
+            "Monthly Tokens": 10080000,
+            "Input Tokens/Run": 18000,
+            "Change Mgmt (1-5)": 2,
+            "Output Tokens/Run": 6000,
+            "Effort Score (1-5)": 2,
+            "Data Readiness (1-5)": 3,
+            "Annual Token Cost ($)": "$190,000",
+            "Time-to-Value (months)": 5,
+            "Integration Complexity (1-5)": 3
+          },
+          {
+            "ID": "UC-09",
+            "Use Case": "Contract Intelligence Platform",
+            "Runs/Month": 28,
+            "Monthly Tokens": 924000,
+            "Input Tokens/Run": 24000,
+            "Change Mgmt (1-5)": 3,
+            "Output Tokens/Run": 9000,
+            "Effort Score (1-5)": 2,
+            "Data Readiness (1-5)": 3,
+            "Annual Token Cost ($)": "$130,000",
+            "Time-to-Value (months)": 5,
+            "Integration Complexity (1-5)": 2
+          },
+          {
+            "ID": "UC-10",
+            "Use Case": "Policy Compliance Monitor",
+            "Runs/Month": 840,
+            "Monthly Tokens": 50400000,
+            "Input Tokens/Run": 48000,
+            "Change Mgmt (1-5)": 4,
+            "Output Tokens/Run": 12000,
+            "Effort Score (1-5)": 4,
+            "Data Readiness (1-5)": 2,
+            "Annual Token Cost ($)": "$760,000",
+            "Time-to-Value (months)": 10,
+            "Integration Complexity (1-5)": 4
+          }
+        ],
+        "step": 6,
+        "title": "Effort & Token Modeling",
+        "content": "Implementation complexity scored across data readiness, integration requirements, and organizational change dimensions. Token consumption estimates based on operational run frequency and typical input-output patterns for each use case archetype."
+      },
+      {
+        "data": [
+          {
+            "ID": "UC-01",
+            "Use Case": "Intelligent Capacity Planning Engine",
+            "Priority Tier": "High",
+            "TTV Score (0-30)": 20,
+            "Recommended Phase": "Q2",
+            "Value Score (0-40)": 33,
+            "Effort Score (0-30)": 15,
+            "Priority Score (0-100)": 68
+          },
+          {
+            "ID": "UC-02",
+            "Use Case": "Automated Audit Evidence Aggregator",
+            "Priority Tier": "High",
+            "TTV Score (0-30)": 15,
+            "Recommended Phase": "Q3",
+            "Value Score (0-40)": 36,
+            "Effort Score (0-30)": 12,
+            "Priority Score (0-100)": 63
+          },
+          {
+            "ID": "UC-03",
+            "Use Case": "Solution Design Accelerator",
+            "Priority Tier": "Critical",
+            "TTV Score (0-30)": 25,
+            "Recommended Phase": "Q1",
+            "Value Score (0-40)": 38,
+            "Effort Score (0-30)": 20,
+            "Priority Score (0-100)": 83
+          },
+          {
+            "ID": "UC-04",
+            "Use Case": "Technical Support Knowledge Assistant",
+            "Priority Tier": "High",
+            "TTV Score (0-30)": 25,
+            "Recommended Phase": "Q2",
+            "Value Score (0-40)": 26,
+            "Effort Score (0-30)": 20,
+            "Priority Score (0-100)": 71
+          },
+          {
+            "ID": "UC-05",
+            "Use Case": "Revenue Opportunity Optimizer",
+            "Priority Tier": "Medium",
+            "TTV Score (0-30)": 20,
+            "Recommended Phase": "Q3",
+            "Value Score (0-40)": 22,
+            "Effort Score (0-30)": 15,
+            "Priority Score (0-100)": 57
+          },
+          {
+            "ID": "UC-06",
+            "Use Case": "Billing Reconciliation Engine",
+            "Priority Tier": "High",
+            "TTV Score (0-30)": 23,
+            "Recommended Phase": "Q2",
+            "Value Score (0-40)": 21,
+            "Effort Score (0-30)": 20,
+            "Priority Score (0-100)": 64
+          },
+          {
+            "ID": "UC-07",
+            "Use Case": "Predictive Asset Monitor",
+            "Priority Tier": "High",
+            "TTV Score (0-30)": 18,
+            "Recommended Phase": "Q3",
+            "Value Score (0-40)": 28,
+            "Effort Score (0-30)": 15,
+            "Priority Score (0-100)": 61
+          },
+          {
+            "ID": "UC-08",
+            "Use Case": "Network Pathway Designer",
+            "Priority Tier": "High",
+            "TTV Score (0-30)": 27,
+            "Recommended Phase": "Q1",
+            "Value Score (0-40)": 15,
+            "Effort Score (0-30)": 24,
+            "Priority Score (0-100)": 66
+          },
+          {
+            "ID": "UC-09",
+            "Use Case": "Contract Intelligence Platform",
+            "Priority Tier": "Critical",
+            "TTV Score (0-30)": 27,
+            "Recommended Phase": "Q1",
+            "Value Score (0-40)": 24,
+            "Effort Score (0-30)": 24,
+            "Priority Score (0-100)": 75
+          },
+          {
+            "ID": "UC-10",
+            "Use Case": "Policy Compliance Monitor",
+            "Priority Tier": "Medium",
+            "TTV Score (0-30)": 18,
+            "Recommended Phase": "Q4",
+            "Value Score (0-40)": 25,
+            "Effort Score (0-30)": 15,
+            "Priority Score (0-100)": 58
+          }
+        ],
+        "step": 7,
+        "title": "Priority Scoring & Roadmap",
+        "content": "Priority scores calculated using weighted formula: Value Score (40%) plus Time-to-Value Score (30%) plus Effort Score (30%). Critical tier initiatives exceed 75 points and qualify for immediate Q1-Q2 execution."
+      }
+    ],
+    "summary": "This assessment identifies $164.2M in annual value across 10 AI use cases for CoreSite Realty Corporation. Two initiatives qualify as Critical-priority for immediate Q1 execution with combined first-year impact of $44.1M. The portfolio targets operational bottlenecks consuming $142M annually in friction costs across capacity planning, compliance workflows, and customer onboarding processes.\n\nCost reduction dominates the portfolio at $73M representing 44% of total identified value. Revenue growth opportunities contribute $35M at 21%. Risk mitigation accounts for $37.4M at 23%. Cash flow acceleration rounds out the portfolio at $18.9M representing 12%. This balanced distribution provides natural hedging against implementation setbacks in any single value driver category.\n\nSolution Design Accelerator represents a $33.7M annual opportunity and achieves the highest priority score at 83 points. AI-powered deployment specification generation reduces the 47-day onboarding cycle to 18 days by automating cabinet layouts, power distribution plans, and service level agreements. Each accelerated deployment recovers 29 days of cash flow at $420K daily working capital value. The solution requires integration with existing facility management platforms and demands a 6-month implementation timeline. Sales engineering lead validation ensures all generated designs meet technical feasibility and customer SLA requirements before contract execution.\n\nContract Intelligence Platform delivers $10.4M in annual value with 75-point priority score qualifying for Q1 launch. Automated vendor agreement review extracts key terms, flags compliance risks, and generates redline recommendations for 340 annual contracts. The system reduces legal review cycles from 23 days to 8 days while capturing 35% reduction in contract liability exposure valued at $4.2M. General counsel approval remains mandatory for all agreements containing indemnification clauses or financial commitments exceeding $500K annually. Implementation requires 5 months with moderate integration complexity given existing contract management infrastructure.\n\nAutomated Audit Evidence Aggregator targets $31.9M in combined cost and risk reduction from compliance workflows consuming 22,000 annual hours. The system continuously monitors security controls across 28 facilities, aggregates supporting documentation, and generates preliminary audit response packages. Expected reduction in annual audit findings from 340 to 140 eliminates $18.2M in remediation costs. However, implementation faces significant integration complexity spanning disparate monitoring systems and carries 12-month time-to-value. This extended timeline reflects data schema standardization requirements across geographically distributed facilities.\n\nThe top three initiatives account for 47% of total portfolio value creating concentration risk if any single initiative underperforms. However, each targets a distinct operational domain providing natural risk mitigation. Back-office automation opportunities outnumber customer-facing initiatives 8 to 2, aligning with conservative deployment philosophy that protects customer experience during AI adoption learning curves. Seven of ten use cases achieve time-to-value under 9 months enabling rapid value capture and iterative learning.\n\nImplementation hinges on resolving data schema inconsistencies across 28 facilities with fragmented facility management systems. Data readiness averages Level 2 with limited cross-facility integration and inconsistent governance frameworks. This immaturity reduces projected first-year value by 25% compared to idealized scenarios. Failure to address schema standardization extends time-to-value by 4 to 6 months and degrades benefit realization by 35%. The organization requires a 120-day data infrastructure sprint before production deployment begins on Critical-priority initiatives. Total annual token consumption reaches 217.4M tokens at $4M cost representing 2.4% of total identified value and delivering $41 in annual benefit per dollar of AI infrastructure spend.",
+    "executiveDashboard": {
+      "topUseCases": [
+        {
+          "rank": 1,
+          "useCase": "Solution Design Accelerator",
+          "annualValue": 33700000,
+          "monthlyTokens": 9800000,
+          "priorityScore": 83
+        },
+        {
+          "rank": 2,
+          "useCase": "Contract Intelligence Platform",
+          "annualValue": 10400000,
+          "monthlyTokens": 924000,
+          "priorityScore": 75
+        },
+        {
+          "rank": 3,
+          "useCase": "Technical Support Knowledge Assistant",
+          "annualValue": 11300000,
+          "monthlyTokens": 13160000,
+          "priorityScore": 71
+        },
+        {
+          "rank": 4,
+          "useCase": "Intelligent Capacity Planning Engine",
+          "annualValue": 28700000,
+          "monthlyTokens": 20140000,
+          "priorityScore": 68
+        },
+        {
+          "rank": 5,
+          "useCase": "Network Pathway Designer",
+          "annualValue": 6300000,
+          "monthlyTokens": 10080000,
+          "priorityScore": 66
+        }
+      ],
+      "totalAnnualValue": 164230000,
+      "totalCostBenefit": 73000000,
+      "totalRiskBenefit": 37400000,
+      "totalMonthlyTokens": 217424000,
+      "totalRevenueBenefit": 34930000,
+      "totalCashFlowBenefit": 18900000,
+      "valuePerMillionTokens": 62900
+    }
+  }
+}

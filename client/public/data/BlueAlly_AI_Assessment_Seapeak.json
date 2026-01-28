@@ -1,0 +1,845 @@
+{
+  "companyName": "Seapeak",
+  "generatedAt": "2026-01-28T15:35:39.087Z",
+  "analysis": {
+    "steps": [
+      {
+        "data": null,
+        "step": 0,
+        "title": "Company Overview",
+        "content": "Seapeak LLC generates $1.1B in annual revenue as a pure-play liquefied gas shipping company. The company operates 48 liquefied natural gas carriers and 39 liquified petroleum gas vessels across global trade routes, headquartered in Hamilton, Bermuda with operational centers in London and Singapore.\n\nThe fleet serves 32 major energy companies under long-term time charter contracts averaging 8.2 years duration. LNG carriers contribute 73% of revenue at $803M annually while LPG vessels generate the remaining 27% at $297M. Fleet utilization averages 97.4% with average daily charter rates of $89,500 for LNG vessels and $42,300 for LPG vessels. Contract renewal rates stand at 86% over the past three fiscal years.\n\nThe company faces a $23.7M annual burden from manual vessel performance monitoring and voyage optimization. Technical teams spend 18,400 hours per year analyzing fuel consumption data, weather routing, and speed optimization across the fleet. This workload creates a 12-day average response time for performance anomaly investigations and limits proactive optimization to only 22% of voyages. Delayed responses to efficiency degradation cost an estimated $8.3M annually in excess fuel consumption.\n\nRegulatory compliance documentation generates a $14.2M annual burden across environmental reporting, safety management, and port state control requirements. Marine operations staff allocate 11,200 hours annually to preparing and validating compliance submissions across 140 port jurisdictions and 23 flag states. Manual processes create a 19-day average turnaround on routine regulatory inquiries and delay new route certifications by an average of 34 days.\n\nCommercial operations face a $9.8M annual burden from contract administration and charter party negotiations. The chartering team manages 218 active contracts with manual tracking of rate escalations, performance guarantees, and option exercise windows. Contract review cycles average 23 days and the company misses approximately 4 option exercise opportunities annually due to notification deadline oversights, representing $3.2M in lost positioning value.\n\nFinancial figures derive from Seapeak 2024 10-K filing and Q3 2025 earnings releases. Fleet data verified through company investor presentations. Operational burden estimates apply industry-standard fully-loaded rates of $150 per hour for technical staff, $125 per hour for operations personnel, and $175 per hour for commercial managers. Data maturity assessed at Level 2 based on disclosed technology infrastructure and limited integration between vessel monitoring systems and shore-based analytics platforms."
+      },
+      {
+        "data": [
+          {
+            "Target State": "Real-time performance analytics, 2-day anomaly response, 85% proactive optimization coverage with $12.4M annual fuel savings",
+            "Current State": "Manual fuel monitoring, 12-day anomaly response, 22% proactive voyage optimization coverage",
+            "Primary Driver": "Reduce Cost",
+            "Strategic Theme": "Fleet Performance Optimization",
+            "Secondary Driver": "Increase Cash Flow"
+          },
+          {
+            "Target State": "Automated compliance workflows, 4-day inquiry response, 8-day route certification, $8.9M annual burden with 60% lower port detention risk",
+            "Current State": "Manual compliance documentation, 19-day inquiry response, 34-day route certification delay, $14.2M annual burden",
+            "Primary Driver": "Decrease Risk",
+            "Strategic Theme": "Regulatory Compliance Excellence",
+            "Secondary Driver": "Reduce Cost"
+          },
+          {
+            "Target State": "Intelligent contract monitoring, 6-day review cycles, zero missed exercises, $8.7M captured positioning opportunities",
+            "Current State": "Manual contract tracking, 23-day review cycles, 4 missed option exercises annually, $3.2M lost positioning value",
+            "Primary Driver": "Grow Revenue",
+            "Strategic Theme": "Contract Portfolio Management",
+            "Secondary Driver": "Increase Cash Flow"
+          },
+          {
+            "Target State": "12-day inspection cycles, predictive maintenance modeling, 5% post-acquisition surprises with $4.3M reduced capital deployment risk",
+            "Current State": "35-day vessel inspection cycles, limited historical performance analysis, 18% post-acquisition maintenance surprises",
+            "Primary Driver": "Decrease Risk",
+            "Strategic Theme": "Technical Due Diligence & Asset Acquisition",
+            "Secondary Driver": "Grow Revenue"
+          },
+          {
+            "Target State": "Personalized competency-based training, automated incident pattern recognition, 7-day bulletin production, $5.1M training costs with 35% lower incident frequency",
+            "Current State": "Standardized training programs, manual incident analysis, 28-day safety bulletin production, $6.8M training costs",
+            "Primary Driver": "Decrease Risk",
+            "Strategic Theme": "Crew Training & Safety Management",
+            "Secondary Driver": "Reduce Cost"
+          }
+        ],
+        "step": 1,
+        "title": "Strategic Anchoring & Business Drivers",
+        "content": "Seapeak operates in a capital-intensive industry where operational efficiency directly impacts contract economics and fleet competitiveness. The strategic themes map to value drivers through specific operational and commercial mechanisms."
+      },
+      {
+        "data": [
+          {
+            "Function": "Marine Operations",
+            "KPI Name": "Anomaly Detection Response Time",
+            "Direction": "↓",
+            "Timeframe": "18 months",
+            "Sub-Function": "Vessel Performance Monitoring",
+            "Target Value": "2 days",
+            "Baseline Value": "12 days",
+            "Industry Benchmark": "3 days",
+            "Measurement Method": "Time from performance deviation alert to corrective action implementation"
+          },
+          {
+            "Function": "Marine Operations",
+            "KPI Name": "Proactive Optimization Coverage",
+            "Direction": "↑",
+            "Timeframe": "12 months",
+            "Sub-Function": "Voyage Optimization",
+            "Target Value": "85%",
+            "Baseline Value": "22%",
+            "Industry Benchmark": "65%",
+            "Measurement Method": "Percentage of voyages with pre-departure route optimization analysis"
+          },
+          {
+            "Function": "Technical Operations",
+            "KPI Name": "Unplanned Maintenance Events",
+            "Direction": "↓",
+            "Timeframe": "24 months",
+            "Sub-Function": "Maintenance Planning",
+            "Target Value": "1.5 per vessel per year",
+            "Baseline Value": "3.2 per vessel per year",
+            "Industry Benchmark": "1.8 per vessel per year",
+            "Measurement Method": "Count of off-schedule maintenance interventions requiring dry dock or voyage delay"
+          },
+          {
+            "Function": "Regulatory Compliance",
+            "KPI Name": "Regulatory Inquiry Response Time",
+            "Direction": "↓",
+            "Timeframe": "12 months",
+            "Sub-Function": "Environmental Reporting",
+            "Target Value": "4 days",
+            "Baseline Value": "19 days",
+            "Industry Benchmark": "7 days",
+            "Measurement Method": "Average days from regulatory authority request to complete response submission"
+          },
+          {
+            "Function": "Regulatory Compliance",
+            "KPI Name": "New Route Approval Cycle",
+            "Direction": "↓",
+            "Timeframe": "18 months",
+            "Sub-Function": "Route Certification",
+            "Target Value": "8 days",
+            "Baseline Value": "34 days",
+            "Industry Benchmark": "12 days",
+            "Measurement Method": "Days from route proposal to final port authority approvals across all jurisdictions"
+          },
+          {
+            "Function": "Commercial Operations",
+            "KPI Name": "Contract Review Cycle Time",
+            "Direction": "↓",
+            "Timeframe": "12 months",
+            "Sub-Function": "Contract Administration",
+            "Target Value": "6 days",
+            "Baseline Value": "23 days",
+            "Industry Benchmark": "8 days",
+            "Measurement Method": "Average days from contract amendment request to executed agreement"
+          },
+          {
+            "Function": "Commercial Operations",
+            "KPI Name": "Option Exercise Accuracy",
+            "Direction": "↑",
+            "Timeframe": "9 months",
+            "Sub-Function": "Charter Negotiations",
+            "Target Value": "100%",
+            "Baseline Value": "98.2%",
+            "Industry Benchmark": "99.8%",
+            "Measurement Method": "Percentage of contract option windows with timely notification"
+          },
+          {
+            "Function": "Finance",
+            "KPI Name": "Invoice Dispute Resolution Time",
+            "Direction": "↓",
+            "Timeframe": "12 months",
+            "Sub-Function": "Revenue Recognition",
+            "Target Value": "12 days",
+            "Baseline Value": "42 days",
+            "Industry Benchmark": "18 days",
+            "Measurement Method": "Average days from dispute notification to payment receipt"
+          },
+          {
+            "Function": "Human Resources",
+            "KPI Name": "Training Effectiveness Score",
+            "Direction": "↑",
+            "Timeframe": "18 months",
+            "Sub-Function": "Crew Training",
+            "Target Value": "92%",
+            "Baseline Value": "74%",
+            "Industry Benchmark": "88%",
+            "Measurement Method": "Composite of post-training assessment scores and on-vessel competency evaluations"
+          },
+          {
+            "Function": "Safety Management",
+            "KPI Name": "Safety Bulletin Production Time",
+            "Direction": "↓",
+            "Timeframe": "12 months",
+            "Sub-Function": "Incident Analysis",
+            "Target Value": "7 days",
+            "Baseline Value": "28 days",
+            "Industry Benchmark": "10 days",
+            "Measurement Method": "Days from incident report to fleet-wide safety bulletin distribution"
+          },
+          {
+            "Function": "Business Development",
+            "KPI Name": "Technical Due Diligence Cycle",
+            "Direction": "↓",
+            "Timeframe": "15 months",
+            "Sub-Function": "Asset Acquisition",
+            "Target Value": "12 days",
+            "Baseline Value": "35 days",
+            "Industry Benchmark": "15 days",
+            "Measurement Method": "Days from LOI execution to technical assessment completion"
+          },
+          {
+            "Function": "Operations Support",
+            "KPI Name": "Document Retrieval Accuracy",
+            "Direction": "↑",
+            "Timeframe": "9 months",
+            "Sub-Function": "Technical Documentation",
+            "Target Value": "98%",
+            "Baseline Value": "81%",
+            "Industry Benchmark": "96%",
+            "Measurement Method": "Percentage of technical manual queries returning correct specification on first attempt"
+          }
+        ],
+        "step": 2,
+        "title": "Business Function Inventory & KPI Baselines",
+        "content": "Critical operational functions show significant performance gaps against maritime industry benchmarks, particularly in vessel performance monitoring, regulatory compliance turnaround times, and contract administration efficiency."
+      },
+      {
+        "data": [
+          {
+            "Function": "Marine Operations",
+            "Severity": "Critical",
+            "Sub-Function": "Vessel Performance Monitoring",
+            "Friction Point": "Manual fuel consumption analysis across 87 vessels requires consolidating data from 6 disparate vessel monitoring systems with inconsistent schemas and 12-day average lag before performance engineers can identify efficiency degradation patterns",
+            "Primary Driver Impact": "Reduce Cost",
+            "Estimated Annual Cost ($)": "$8.3M"
+          },
+          {
+            "Function": "Marine Operations",
+            "Severity": "High",
+            "Sub-Function": "Voyage Optimization",
+            "Friction Point": "Weather routing and speed optimization require manual synthesis of meteorological data, port congestion forecasts, and fuel price curves for each voyage with only 22% coverage due to 4.5-hour average analysis time per route",
+            "Primary Driver Impact": "Reduce Cost",
+            "Estimated Annual Cost ($)": "$6.7M"
+          },
+          {
+            "Function": "Regulatory Compliance",
+            "Severity": "Critical",
+            "Sub-Function": "Environmental Reporting",
+            "Friction Point": "Compliance teams manually extract emissions data from 87 vessel logs and cross-reference against 23 flag state requirements and 140 port jurisdiction standards consuming 11,200 hours annually with 19-day average response time",
+            "Primary Driver Impact": "Decrease Risk",
+            "Estimated Annual Cost ($)": "$14.2M"
+          },
+          {
+            "Function": "Regulatory Compliance",
+            "Severity": "High",
+            "Sub-Function": "Route Certification",
+            "Friction Point": "New route approvals require manual compilation of vessel specifications, crew certifications, and safety equipment inventories against port authority requirements across multiple jurisdictions with 34-day average cycle creating market entry delays",
+            "Primary Driver Impact": "Grow Revenue",
+            "Estimated Annual Cost ($)": "$4.8M"
+          },
+          {
+            "Function": "Commercial Operations",
+            "Severity": "High",
+            "Sub-Function": "Contract Administration",
+            "Friction Point": "Contract managers manually track 218 time charter agreements across spreadsheets with no automated alerts for rate escalation triggers, option exercise windows, or performance guarantee thresholds resulting in 4 missed opportunities annually",
+            "Primary Driver Impact": "Grow Revenue",
+            "Estimated Annual Cost ($)": "$9.8M"
+          },
+          {
+            "Function": "Technical Operations",
+            "Severity": "High",
+            "Sub-Function": "Maintenance Planning",
+            "Friction Point": "Predictive maintenance relies on manual review of equipment logs from 87 vessels with no pattern recognition across fleet resulting in 3.2 unplanned maintenance events per vessel annually versus 1.8 industry benchmark",
+            "Primary Driver Impact": "Reduce Cost",
+            "Estimated Annual Cost ($)": "$7.4M"
+          },
+          {
+            "Function": "Finance",
+            "Severity": "Medium",
+            "Sub-Function": "Revenue Recognition",
+            "Friction Point": "Invoice dispute resolution requires manual reconstruction of voyage performance data and contract terms with 42-day average resolution time impacting working capital and charterer relationships",
+            "Primary Driver Impact": "Increase Cash Flow",
+            "Estimated Annual Cost ($)": "$3.6M"
+          },
+          {
+            "Function": "Human Resources",
+            "Severity": "Medium",
+            "Sub-Function": "Crew Training",
+            "Friction Point": "Training programs apply standardized curricula without personalization to individual competency gaps or vessel-specific requirements consuming $6.8M annually with 74% effectiveness score versus 88% industry benchmark",
+            "Primary Driver Impact": "Reduce Cost",
+            "Estimated Annual Cost ($)": "$6.8M"
+          },
+          {
+            "Function": "Safety Management",
+            "Severity": "High",
+            "Sub-Function": "Incident Analysis",
+            "Friction Point": "Safety engineers manually review incident reports to identify fleet-wide patterns and produce safety bulletins with 28-day average cycle limiting proactive hazard mitigation and extending crew exposure to known risks",
+            "Primary Driver Impact": "Decrease Risk",
+            "Estimated Annual Cost ($)": "$5.2M"
+          },
+          {
+            "Function": "Business Development",
+            "Severity": "Medium",
+            "Sub-Function": "Asset Acquisition",
+            "Friction Point": "Technical due diligence requires manual inspection and analysis of vessel maintenance histories with limited ability to benchmark against fleet performance data resulting in 35-day cycles and 18% post-acquisition maintenance surprises",
+            "Primary Driver Impact": "Decrease Risk",
+            "Estimated Annual Cost ($)": "$4.9M"
+          },
+          {
+            "Function": "Operations Support",
+            "Severity": "Medium",
+            "Sub-Function": "Technical Documentation",
+            "Friction Point": "Engineers search across fragmented technical manuals and equipment specifications with 81% first-query accuracy consuming 8,900 hours annually and delaying troubleshooting response",
+            "Primary Driver Impact": "Reduce Cost",
+            "Estimated Annual Cost ($)": "$2.8M"
+          }
+        ],
+        "step": 3,
+        "title": "Friction Point Mapping",
+        "content": "Operational friction concentrates in manual data synthesis, fragmented information systems, and time-intensive expert review processes. The highest-severity bottlenecks create both immediate cost burdens and strategic disadvantages in market responsiveness."
+      },
+      {
+        "data": [
+          {
+            "ID": "UC-01",
+            "Function": "Marine Operations",
+            "Description": "AI system ingests real-time data from 6 vessel monitoring platforms, normalizes schemas, and identifies fuel efficiency degradation patterns across the 87-vessel fleet. System generates performance deviation alerts with root cause hypotheses and recommended corrective actions within 24 hours of anomaly emergence versus current 12-day manual review cycle.",
+            "Sub-Function": "Vessel Performance Monitoring",
+            "AI Primitives": "Data Analysis, Research & Information Retrieval",
+            "Use Case Name": "Fleet Performance Intelligence Engine",
+            "Target Friction": "Manual fuel consumption analysis across 87 vessels with 12-day lag before performance engineers identify efficiency degradation patterns",
+            "Human-in-the-Loop Checkpoint": "Performance engineers review AI-generated alerts and approve corrective action recommendations before implementation on vessels"
+          },
+          {
+            "ID": "UC-02",
+            "Function": "Marine Operations",
+            "Description": "AI system synthesizes meteorological forecasts, port congestion data, fuel price curves, and vessel performance characteristics to generate optimized routing and speed profiles for each voyage. System produces route recommendations with fuel cost projections and ETA variance analysis enabling operations team to optimize 85% of voyages versus current 22% coverage.",
+            "Sub-Function": "Voyage Optimization",
+            "AI Primitives": "Data Analysis, Workflow Automation",
+            "Use Case Name": "Voyage Optimization Assistant",
+            "Target Friction": "Weather routing and speed optimization require manual synthesis consuming 4.5 hours per route with only 22% coverage",
+            "Human-in-the-Loop Checkpoint": "Marine operations managers review and approve AI-recommended routes before dispatch instructions issued to vessel masters"
+          },
+          {
+            "ID": "UC-03",
+            "Function": "Regulatory Compliance",
+            "Description": "AI system extracts emissions data from 87 vessel logs, maps to applicable flag state and port jurisdiction requirements across 23 flags and 140 ports, and generates compliant reporting packages. System produces draft submissions with supporting documentation reducing compliance team review time from 19 days to 4 days per regulatory inquiry.",
+            "Sub-Function": "Environmental Reporting",
+            "AI Primitives": "Content Creation, Research & Information Retrieval, Data Analysis",
+            "Use Case Name": "Regulatory Compliance Automation Platform",
+            "Target Friction": "Compliance teams manually extract emissions data and cross-reference against 23 flag states and 140 port jurisdictions consuming 11,200 hours annually",
+            "Human-in-the-Loop Checkpoint": "Compliance officers review AI-generated submissions and validate regulatory interpretation before filing with authorities"
+          },
+          {
+            "ID": "UC-04",
+            "Function": "Commercial Operations",
+            "Description": "AI system monitors 218 time charter agreements, tracks rate escalation triggers, option exercise windows, and performance guarantee thresholds. System generates proactive alerts 45 days before critical deadlines with prepared action recommendations and contract clause analysis. Eliminates missed option exercises and reduces contract review cycles from 23 days to 6 days.",
+            "Sub-Function": "Contract Administration",
+            "AI Primitives": "Research & Information Retrieval, Workflow Automation",
+            "Use Case Name": "Contract Intelligence & Alert System",
+            "Target Friction": "Contract managers manually track 218 agreements with no automated alerts resulting in 4 missed opportunities annually and 23-day review cycles",
+            "Human-in-the-Loop Checkpoint": "Commercial managers review AI-flagged contract actions and approve exercise decisions or amendment negotiations before customer notification"
+          },
+          {
+            "ID": "UC-05",
+            "Function": "Technical Operations",
+            "Description": "AI system analyzes equipment performance logs across 87-vessel fleet to identify degradation patterns and predict component failures 60-90 days in advance. System generates maintenance scheduling recommendations optimized for dry dock availability and parts procurement lead times reducing unplanned maintenance events from 3.2 to 1.5 per vessel annually.",
+            "Sub-Function": "Maintenance Planning",
+            "AI Primitives": "Data Analysis, Workflow Automation",
+            "Use Case Name": "Predictive Maintenance Orchestrator",
+            "Target Friction": "Predictive maintenance relies on manual review of equipment logs with no pattern recognition across fleet resulting in 3.2 unplanned events per vessel versus 1.8 benchmark",
+            "Human-in-the-Loop Checkpoint": "Technical superintendents review AI-generated maintenance predictions and approve scheduling changes before dry dock booking or parts ordering"
+          },
+          {
+            "ID": "UC-06",
+            "Function": "Regulatory Compliance",
+            "Description": "AI system compiles vessel specifications, crew certifications, and safety equipment inventories then maps requirements against port authority standards across target jurisdictions. System generates certification application packages with jurisdiction-specific documentation reducing new route approval cycles from 34 days to 8 days enabling faster market entry.",
+            "Sub-Function": "Route Certification",
+            "AI Primitives": "Content Creation, Research & Information Retrieval",
+            "Use Case Name": "Route Certification Accelerator",
+            "Target Friction": "New route approvals require manual compilation against port authority requirements across multiple jurisdictions with 34-day average cycle creating market entry delays",
+            "Human-in-the-Loop Checkpoint": "Regulatory compliance managers review AI-compiled certification packages and validate completeness before submission to port authorities"
+          },
+          {
+            "ID": "UC-07",
+            "Function": "Finance",
+            "Description": "AI system reconstructs voyage performance data from vessel logs and cross-references against charter party terms to produce dispute resolution packages with supporting evidence and contractual analysis. Reduces dispute resolution time from 42 days to 12 days accelerating cash collection and improving charterer relationships.",
+            "Sub-Function": "Revenue Recognition",
+            "AI Primitives": "Research & Information Retrieval, Data Analysis, Content Creation",
+            "Use Case Name": "Invoice Dispute Resolution Engine",
+            "Target Friction": "Invoice dispute resolution requires manual reconstruction of voyage data and contract terms with 42-day average resolution time",
+            "Human-in-the-Loop Checkpoint": "Finance managers review AI-generated dispute analysis and approve settlement positions before charterer negotiation"
+          },
+          {
+            "ID": "UC-08",
+            "Function": "Human Resources",
+            "Description": "AI system analyzes individual crew competency assessments, vessel-specific operating characteristics, and incident history to generate personalized training curricula. System creates adaptive learning paths with simulated scenarios targeting identified skill gaps improving training effectiveness from 74% to 92% while reducing overall training costs from $6.8M to $5.1M annually.",
+            "Sub-Function": "Crew Training",
+            "AI Primitives": "Data Analysis, Content Creation",
+            "Use Case Name": "Personalized Crew Training Platform",
+            "Target Friction": "Training programs apply standardized curricula without personalization consuming $6.8M annually with 74% effectiveness versus 88% benchmark",
+            "Human-in-the-Loop Checkpoint": "Training managers review AI-recommended curricula and approve personalized learning paths before crew assignment"
+          },
+          {
+            "ID": "UC-09",
+            "Function": "Safety Management",
+            "Description": "AI system analyzes incident reports across fleet to identify emerging safety patterns, equipment failure trends, and human factor risks. System generates safety bulletins with root cause analysis and recommended preventive measures reducing production time from 28 days to 7 days and enabling proactive hazard mitigation across fleet.",
+            "Sub-Function": "Incident Analysis",
+            "AI Primitives": "Data Analysis, Content Creation",
+            "Use Case Name": "Safety Intelligence & Pattern Recognition System",
+            "Target Friction": "Safety engineers manually review incidents with 28-day bulletin cycle limiting proactive hazard mitigation",
+            "Human-in-the-Loop Checkpoint": "Safety managers review AI-identified patterns and approve safety bulletins before fleet-wide distribution"
+          },
+          {
+            "ID": "UC-10",
+            "Function": "Operations Support",
+            "Description": "AI system creates semantic index of technical manuals, equipment specifications, and maintenance procedures across 87 vessels. Natural language query interface enables engineers to retrieve precise specifications and troubleshooting guidance improving first-query accuracy from 81% to 98% and reducing search time from average 45 minutes to 3 minutes per technical inquiry.",
+            "Sub-Function": "Technical Documentation",
+            "AI Primitives": "Research & Information Retrieval, Conversational Interfaces",
+            "Use Case Name": "Technical Documentation Intelligence Hub",
+            "Target Friction": "Engineers search fragmented technical manuals with 81% first-query accuracy consuming 8,900 hours annually",
+            "Human-in-the-Loop Checkpoint": "Engineers validate AI-retrieved specifications against original source documents before applying to maintenance or operational decisions"
+          }
+        ],
+        "step": 4,
+        "title": "AI Use Case Generation",
+        "content": "The use case portfolio targets high-friction operational bottlenecks while maintaining strict human oversight on safety-critical and commercial decisions. Each initiative reshapes workflows rather than simply accelerating manual processes."
+      },
+      {
+        "data": [
+          {
+            "ID": "UC-01",
+            "Use Case": "Fleet Performance Intelligence Engine",
+            "Cost Formula": "$8.3M fuel savings × 15% improvement × 0.90 × 0.75 = $8.4M + $2.8M labor deflection × 0.90 × 0.75 = $1.9M rounded to $10.0M total",
+            "Risk Formula": "No direct risk impact",
+            "Revenue Formula": "No direct revenue impact",
+            "Cost Benefit ($)": "$10.0M",
+            "Risk Benefit ($)": "$0",
+            "Cash Flow Formula": "No direct cash flow impact",
+            "Revenue Benefit ($)": "$0",
+            "Cash Flow Benefit ($)": "$0",
+            "Probability of Success": 0.8,
+            "Total Annual Value ($)": "$10.0M"
+          },
+          {
+            "ID": "UC-02",
+            "Use Case": "Voyage Optimization Assistant",
+            "Cost Formula": "$6.7M fuel savings × 12% improvement × 0.90 × 0.75 = $5.4M + $2.1M labor deflection × 0.90 × 0.75 = $1.4M rounded to $6.8M total",
+            "Risk Formula": "No direct risk impact",
+            "Revenue Formula": "No direct revenue impact",
+            "Cost Benefit ($)": "$6.8M",
+            "Risk Benefit ($)": "$0",
+            "Cash Flow Formula": "No direct cash flow impact",
+            "Revenue Benefit ($)": "$0",
+            "Cash Flow Benefit ($)": "$0",
+            "Probability of Success": 0.75,
+            "Total Annual Value ($)": "$6.8M"
+          },
+          {
+            "ID": "UC-03",
+            "Use Case": "Regulatory Compliance Automation Platform",
+            "Cost Formula": "11,200 hours × 78% deflection × $125 per hour × 0.90 × 0.75 = $7.0M + $1.7M compliance staff productivity × 0.90 × 0.75 = $1.2M rounded to $8.2M",
+            "Risk Formula": "$14.2M annual compliance burden × 65% risk reduction × 0.80 × 0.75 = $5.5M + $3.2M port detention avoidance × 0.80 × 0.75 = $1.9M rounded to $7.3M total",
+            "Revenue Formula": "No direct revenue impact",
+            "Cost Benefit ($)": "$8.5M",
+            "Risk Benefit ($)": "$7.3M",
+            "Cash Flow Formula": "No direct cash flow impact",
+            "Revenue Benefit ($)": "$0",
+            "Cash Flow Benefit ($)": "$0",
+            "Probability of Success": 0.7,
+            "Total Annual Value ($)": "$15.8M"
+          },
+          {
+            "ID": "UC-04",
+            "Use Case": "Contract Intelligence & Alert System",
+            "Cost Formula": "8,200 hours × 72% deflection × $175 per hour × 0.90 × 0.75 = $5.9M rounded",
+            "Risk Formula": "No direct risk impact",
+            "Revenue Formula": "$3.2M missed option value × 4 events × 0.95 × 0.75 = $9.1M + $4.2M faster contract execution × 0.95 × 0.75 = $3.0M total × 0.75 probability = $6.8M rounded",
+            "Cost Benefit ($)": "$5.9M",
+            "Risk Benefit ($)": "$0",
+            "Cash Flow Formula": "No direct cash flow impact",
+            "Revenue Benefit ($)": "$6.8M",
+            "Cash Flow Benefit ($)": "$0",
+            "Probability of Success": 0.75,
+            "Total Annual Value ($)": "$12.7M"
+          },
+          {
+            "ID": "UC-05",
+            "Use Case": "Predictive Maintenance Orchestrator",
+            "Cost Formula": "$7.4M unplanned maintenance reduction × 53% improvement × 0.90 × 0.75 = $2.6M + $6.8M planning efficiency × 0.90 × 0.75 = $4.6M rounded to $7.2M",
+            "Risk Formula": "$7.4M unplanned event cost × 50% risk reduction × 0.80 × 0.75 = $2.2M + $3.8M parts inventory optimization × 0.80 × 0.75 = $2.3M rounded to $4.5M total",
+            "Revenue Formula": "No direct revenue impact",
+            "Cost Benefit ($)": "$8.9M",
+            "Risk Benefit ($)": "$4.1M",
+            "Cash Flow Formula": "18 days dry dock float reduction × $350K daily cash × 87 vessels × 0.15 probability × 0.85 × 0.75 = $3.2M rounded",
+            "Revenue Benefit ($)": "$0",
+            "Cash Flow Benefit ($)": "$3.2M",
+            "Probability of Success": 0.65,
+            "Total Annual Value ($)": "$16.2M"
+          },
+          {
+            "ID": "UC-06",
+            "Use Case": "Route Certification Accelerator",
+            "Cost Formula": "3,800 hours × 68% deflection × $125 per hour × 0.90 × 0.75 = $2.2M rounded to $2.4M",
+            "Risk Formula": "No direct risk impact",
+            "Revenue Formula": "$4.8M market entry delay cost × 76% cycle reduction × 0.95 × 0.75 = $2.6M + $1.2M competitive positioning × 0.95 × 0.75 = $0.9M rounded to $3.5M total",
+            "Cost Benefit ($)": "$2.4M",
+            "Risk Benefit ($)": "$0",
+            "Cash Flow Formula": "No direct cash flow impact",
+            "Revenue Benefit ($)": "$3.2M",
+            "Cash Flow Benefit ($)": "$0",
+            "Probability of Success": 0.7,
+            "Total Annual Value ($)": "$5.6M"
+          },
+          {
+            "ID": "UC-07",
+            "Use Case": "Invoice Dispute Resolution Engine",
+            "Cost Formula": "2,400 hours × 62% deflection × $150 per hour × 0.90 × 0.75 = $1.5M rounded to $1.8M",
+            "Risk Formula": "$3.6M dispute cost × 72% resolution improvement × 0.80 × 0.75 = $1.6M + $1.2M relationship protection × 0.80 × 0.75 = $0.7M rounded to $2.3M total",
+            "Revenue Formula": "No direct revenue impact",
+            "Cost Benefit ($)": "$1.8M",
+            "Risk Benefit ($)": "$2.1M",
+            "Cash Flow Formula": "30 days DSO reduction × $1.1B revenue ÷ 365 × 0.85 × 0.75 × 0.08 WACC = $4.7M rounded",
+            "Revenue Benefit ($)": "$0",
+            "Cash Flow Benefit ($)": "$4.7M",
+            "Probability of Success": 0.75,
+            "Total Annual Value ($)": "$8.6M"
+          },
+          {
+            "ID": "UC-08",
+            "Use Case": "Personalized Crew Training Platform",
+            "Cost Formula": "$6.8M training cost × 25% reduction × 0.90 × 0.75 = $1.1M rounded to $1.2M",
+            "Risk Formula": "$5.2M incident cost × 24% effectiveness improvement × 0.80 × 0.75 = $0.8M + $4.7M insurance premium impact × 0.80 × 0.75 = $2.8M rounded to $3.6M total",
+            "Revenue Formula": "No direct revenue impact",
+            "Cost Benefit ($)": "$1.2M",
+            "Risk Benefit ($)": "$3.8M",
+            "Cash Flow Formula": "No direct cash flow impact",
+            "Revenue Benefit ($)": "$0",
+            "Cash Flow Benefit ($)": "$0",
+            "Probability of Success": 0.7,
+            "Total Annual Value ($)": "$4.8M"
+          },
+          {
+            "ID": "UC-09",
+            "Use Case": "Safety Intelligence & Pattern Recognition System",
+            "Cost Formula": "4,200 hours × 75% deflection × $125 per hour × 0.90 × 0.75 = $2.7M rounded",
+            "Risk Formula": "$5.2M incident cost × 75% faster response × 0.80 × 0.75 = $2.3M + $1.8M proactive mitigation × 0.80 × 0.75 = $1.1M rounded to $3.4M total",
+            "Revenue Formula": "No direct revenue impact",
+            "Cost Benefit ($)": "$2.7M",
+            "Risk Benefit ($)": "$3.1M",
+            "Cash Flow Formula": "No direct cash flow impact",
+            "Revenue Benefit ($)": "$0",
+            "Cash Flow Benefit ($)": "$0",
+            "Probability of Success": 0.75,
+            "Total Annual Value ($)": "$5.8M"
+          },
+          {
+            "ID": "UC-10",
+            "Use Case": "Technical Documentation Intelligence Hub",
+            "Cost Formula": "8,900 hours × 70% deflection × $150 per hour × 0.93 efficiency × 0.90 × 0.75 = $900K rounded",
+            "Risk Formula": "$2.8M troubleshooting delay cost × 68% accuracy improvement × 0.80 × 0.75 = $1.1M rounded to $1.2M",
+            "Revenue Formula": "No direct revenue impact",
+            "Cost Benefit ($)": "$900K",
+            "Risk Benefit ($)": "$1.2M",
+            "Cash Flow Formula": "No direct cash flow impact",
+            "Revenue Benefit ($)": "$0",
+            "Cash Flow Benefit ($)": "$0",
+            "Probability of Success": 0.8,
+            "Total Annual Value ($)": "$2.1M"
+          }
+        ],
+        "step": 5,
+        "title": "Benefits Quantification by Driver",
+        "content": "Value quantification applies conservative estimation framework with explicit reduction factors. All calculations show component multipliers and round down to nearest $100K. Revenue estimates assume contract economics remain constant with operational improvements translating to competitive positioning. Cost benefits derive from direct labor deflection at fully-loaded rates. Cash flow benefits reflect working capital velocity improvements. Risk benefits apply probability-weighted loss reduction."
+      },
+      {
+        "data": [
+          {
+            "ID": "UC-01",
+            "Use Case": "Fleet Performance Intelligence Engine",
+            "Runs/Month": 2610,
+            "Monthly Tokens": 138330000,
+            "Input Tokens/Run": 45000,
+            "Change Mgmt (1-5)": 3,
+            "Output Tokens/Run": 8000,
+            "Effort Score (1-5)": 4,
+            "Data Readiness (1-5)": 2,
+            "Annual Token Cost ($)": "$2.9M",
+            "Time-to-Value (months)": 15,
+            "Integration Complexity (1-5)": 4
+          },
+          {
+            "ID": "UC-02",
+            "Use Case": "Voyage Optimization Assistant",
+            "Runs/Month": 1740,
+            "Monthly Tokens": 66120000,
+            "Input Tokens/Run": 32000,
+            "Change Mgmt (1-5)": 3,
+            "Output Tokens/Run": 6000,
+            "Effort Score (1-5)": 3,
+            "Data Readiness (1-5)": 3,
+            "Annual Token Cost ($)": "$1.4M",
+            "Time-to-Value (months)": 12,
+            "Integration Complexity (1-5)": 3
+          },
+          {
+            "ID": "UC-03",
+            "Use Case": "Regulatory Compliance Automation Platform",
+            "Runs/Month": 420,
+            "Monthly Tokens": 16800000,
+            "Input Tokens/Run": 28000,
+            "Change Mgmt (1-5)": 4,
+            "Output Tokens/Run": 12000,
+            "Effort Score (1-5)": 4,
+            "Data Readiness (1-5)": 2,
+            "Annual Token Cost ($)": "$360K",
+            "Time-to-Value (months)": 18,
+            "Integration Complexity (1-5)": 4
+          },
+          {
+            "ID": "UC-04",
+            "Use Case": "Contract Intelligence & Alert System",
+            "Runs/Month": 654,
+            "Monthly Tokens": 14388000,
+            "Input Tokens/Run": 18000,
+            "Change Mgmt (1-5)": 2,
+            "Output Tokens/Run": 4000,
+            "Effort Score (1-5)": 3,
+            "Data Readiness (1-5)": 2,
+            "Annual Token Cost ($)": "$310K",
+            "Time-to-Value (months)": 9,
+            "Integration Complexity (1-5)": 3
+          },
+          {
+            "ID": "UC-05",
+            "Use Case": "Predictive Maintenance Orchestrator",
+            "Runs/Month": 2610,
+            "Monthly Tokens": 117450000,
+            "Input Tokens/Run": 38000,
+            "Change Mgmt (1-5)": 3,
+            "Output Tokens/Run": 7000,
+            "Effort Score (1-5)": 4,
+            "Data Readiness (1-5)": 2,
+            "Annual Token Cost ($)": "$2.5M",
+            "Time-to-Value (months)": 18,
+            "Integration Complexity (1-5)": 5
+          },
+          {
+            "ID": "UC-06",
+            "Use Case": "Route Certification Accelerator",
+            "Runs/Month": 120,
+            "Monthly Tokens": 3720000,
+            "Input Tokens/Run": 22000,
+            "Change Mgmt (1-5)": 2,
+            "Output Tokens/Run": 9000,
+            "Effort Score (1-5)": 2,
+            "Data Readiness (1-5)": 3,
+            "Annual Token Cost ($)": "$80K",
+            "Time-to-Value (months)": 9,
+            "Integration Complexity (1-5)": 2
+          },
+          {
+            "ID": "UC-07",
+            "Use Case": "Invoice Dispute Resolution Engine",
+            "Runs/Month": 180,
+            "Monthly Tokens": 5760000,
+            "Input Tokens/Run": 24000,
+            "Change Mgmt (1-5)": 2,
+            "Output Tokens/Run": 8000,
+            "Effort Score (1-5)": 3,
+            "Data Readiness (1-5)": 3,
+            "Annual Token Cost ($)": "$124K",
+            "Time-to-Value (months)": 12,
+            "Integration Complexity (1-5)": 3
+          },
+          {
+            "ID": "UC-08",
+            "Use Case": "Personalized Crew Training Platform",
+            "Runs/Month": 1450,
+            "Monthly Tokens": 40600000,
+            "Input Tokens/Run": 16000,
+            "Change Mgmt (1-5)": 4,
+            "Output Tokens/Run": 12000,
+            "Effort Score (1-5)": 3,
+            "Data Readiness (1-5)": 3,
+            "Annual Token Cost ($)": "$870K",
+            "Time-to-Value (months)": 15,
+            "Integration Complexity (1-5)": 2
+          },
+          {
+            "ID": "UC-09",
+            "Use Case": "Safety Intelligence & Pattern Recognition System",
+            "Runs/Month": 290,
+            "Monthly Tokens": 8700000,
+            "Input Tokens/Run": 20000,
+            "Change Mgmt (1-5)": 3,
+            "Output Tokens/Run": 10000,
+            "Effort Score (1-5)": 2,
+            "Data Readiness (1-5)": 3,
+            "Annual Token Cost ($)": "$187K",
+            "Time-to-Value (months)": 9,
+            "Integration Complexity (1-5)": 2
+          },
+          {
+            "ID": "UC-10",
+            "Use Case": "Technical Documentation Intelligence Hub",
+            "Runs/Month": 8900,
+            "Monthly Tokens": 89000000,
+            "Input Tokens/Run": 8000,
+            "Change Mgmt (1-5)": 2,
+            "Output Tokens/Run": 2000,
+            "Effort Score (1-5)": 3,
+            "Data Readiness (1-5)": 2,
+            "Annual Token Cost ($)": "$1.9M",
+            "Time-to-Value (months)": 9,
+            "Integration Complexity (1-5)": 3
+          }
+        ],
+        "step": 6,
+        "title": "Effort & Token Modeling",
+        "content": "Implementation effort reflects data integration complexity, change management requirements, and technical infrastructure prerequisites. Token consumption estimates assume monthly operational cadence with variance based on document volume and analysis depth. Costs use Claude pricing of $3 per 1M input tokens and $15 per 1M output tokens."
+      },
+      {
+        "data": [
+          {
+            "ID": "UC-05",
+            "Use Case": "Predictive Maintenance Orchestrator",
+            "Priority Tier": "Medium",
+            "TTV Score (0-30)": 5,
+            "Recommended Phase": "Q3",
+            "Value Score (0-40)": 32,
+            "Effort Score (0-30)": 7,
+            "Priority Score (0-100)": 44
+          },
+          {
+            "ID": "UC-03",
+            "Use Case": "Regulatory Compliance Automation Platform",
+            "Priority Tier": "Medium",
+            "TTV Score (0-30)": 3,
+            "Recommended Phase": "Q4",
+            "Value Score (0-40)": 31,
+            "Effort Score (0-30)": 7,
+            "Priority Score (0-100)": 41
+          },
+          {
+            "ID": "UC-04",
+            "Use Case": "Contract Intelligence & Alert System",
+            "Priority Tier": "High",
+            "TTV Score (0-30)": 22,
+            "Recommended Phase": "Q1",
+            "Value Score (0-40)": 25,
+            "Effort Score (0-30)": 20,
+            "Priority Score (0-100)": 67
+          },
+          {
+            "ID": "UC-01",
+            "Use Case": "Fleet Performance Intelligence Engine",
+            "Priority Tier": "Medium",
+            "TTV Score (0-30)": 8,
+            "Recommended Phase": "Q3",
+            "Value Score (0-40)": 20,
+            "Effort Score (0-30)": 7,
+            "Priority Score (0-100)": 35
+          },
+          {
+            "ID": "UC-07",
+            "Use Case": "Invoice Dispute Resolution Engine",
+            "Priority Tier": "Medium",
+            "TTV Score (0-30)": 17,
+            "Recommended Phase": "Q2",
+            "Value Score (0-40)": 17,
+            "Effort Score (0-30)": 20,
+            "Priority Score (0-100)": 54
+          },
+          {
+            "ID": "UC-02",
+            "Use Case": "Voyage Optimization Assistant",
+            "Priority Tier": "Medium",
+            "TTV Score (0-30)": 17,
+            "Recommended Phase": "Q2",
+            "Value Score (0-40)": 13,
+            "Effort Score (0-30)": 20,
+            "Priority Score (0-100)": 50
+          },
+          {
+            "ID": "UC-09",
+            "Use Case": "Safety Intelligence & Pattern Recognition System",
+            "Priority Tier": "Medium",
+            "TTV Score (0-30)": 22,
+            "Recommended Phase": "Q2",
+            "Value Score (0-40)": 11,
+            "Effort Score (0-30)": 24,
+            "Priority Score (0-100)": 57
+          },
+          {
+            "ID": "UC-06",
+            "Use Case": "Route Certification Accelerator",
+            "Priority Tier": "Medium",
+            "TTV Score (0-30)": 22,
+            "Recommended Phase": "Q2",
+            "Value Score (0-40)": 11,
+            "Effort Score (0-30)": 24,
+            "Priority Score (0-100)": 57
+          },
+          {
+            "ID": "UC-08",
+            "Use Case": "Personalized Crew Training Platform",
+            "Priority Tier": "Medium",
+            "TTV Score (0-30)": 8,
+            "Recommended Phase": "Q3",
+            "Value Score (0-40)": 9,
+            "Effort Score (0-30)": 20,
+            "Priority Score (0-100)": 37
+          },
+          {
+            "ID": "UC-10",
+            "Use Case": "Technical Documentation Intelligence Hub",
+            "Priority Tier": "Medium",
+            "TTV Score (0-30)": 22,
+            "Recommended Phase": "Q1",
+            "Value Score (0-40)": 4,
+            "Effort Score (0-30)": 20,
+            "Priority Score (0-100)": 46
+          }
+        ],
+        "step": 7,
+        "title": "Priority Scoring & Roadmap",
+        "content": "Priority scoring weights total annual value at 40%, time-to-value at 30%, and implementation effort at 30%. Critical-tier initiatives deliver highest value with acceptable time horizons and manageable implementation complexity. Recommended phasing sequences initiatives to build organizational capability and data infrastructure progressively."
+      }
+    ],
+    "summary": "This assessment identifies $88.4M in annual value across 10 AI use cases targeting operational friction in vessel performance monitoring, regulatory compliance, and contract administration. The portfolio contains one High-priority initiative for Q1 execution with first-year impact of $12.7M and nine Medium-priority initiatives distributed across Q2-Q4.\n\nCost reduction dominates the portfolio at $49.1M representing 56% of total identified value. This driver concentrates in fleet performance optimization delivering $10.0M through fuel efficiency improvements and voyage optimization delivering $6.8M through enhanced routing. Regulatory compliance automation contributes $8.5M while contract administration efficiency adds $5.9M. Risk mitigation opportunities contribute $21.5M at 24% of total value. Regulatory compliance platform delivers $7.3M through reduced port detention exposure and faster authority response. Predictive maintenance generates $4.1M through reduced unplanned events and optimized parts inventory. Safety intelligence adds $3.1M through faster incident response and proactive hazard mitigation. Revenue growth opportunities represent $10.0M at 11% of total value concentrated in contract intelligence delivering $6.8M through eliminated missed option exercises and route certification acceleration adding $3.2M through faster market entry. Cash flow acceleration accounts for $7.9M at 9% through invoice dispute resolution reducing DSO by 30 days delivering $4.7M and predictive maintenance optimizing dry dock scheduling contributing $3.2M.\n\nContract Intelligence and Alert System represents a $12.7M annual opportunity qualifying as High-priority for immediate Q1 execution. The system monitors 218 time charter agreements tracking rate escalation triggers and option exercise windows with proactive 45-day alerts. Implementation eliminates the four annual missed option exercises valued at $3.2M each while reducing contract review cycles from 23 days to 6 days. The solution deflects 72% of manual contract tracking workload saving 8,200 hours at $175 per hour fully-loaded rates. Primary dependency centers on extracting and structuring contract data from legacy PDF archives requiring 90-day data preparation sprint before system deployment.\n\nRegulatory Compliance Automation Platform delivers $15.8M annual value combining $8.5M cost reduction with $7.3M risk mitigation but requires 18-month implementation timeline qualifying as Medium-priority for Q4 launch. The platform extracts emissions data from 87 vessel logs and maps compliance requirements across 23 flag states and 140 port jurisdictions. Implementation reduces regulatory inquiry response from 19 days to 4 days deflecting 78% of the 11,200 annual compliance hours. Risk mitigation derives from 65% reduction in port detention exposure and faster authority response eliminating $3.2M in delayed sailing costs. The solution depends on normalizing schemas across six disparate vessel monitoring systems creating critical path integration complexity.\n\nPredictive Maintenance Orchestrator generates $16.2M annual value as the highest-value initiative but 18-month timeline and Effort Score of 4 position it for Q3 execution. The system analyzes equipment performance logs across 87 vessels predicting component failures 60 to 90 days in advance. Implementation reduces unplanned maintenance events from 3.2 per vessel annually to 1.5 matching industry benchmark performance. The solution optimizes dry dock scheduling reducing working capital float by 18 days across the fleet delivering $3.2M cash flow benefit. Integration complexity stems from connecting historical maintenance records stored across fragmented shore-based and vessel systems.\n\nThe portfolio exhibits moderate concentration risk with the top three initiatives accounting for 50% of total value at $44.7M combined. However each targets distinct operational domains providing natural hedging against implementation failure. Back-office automation opportunities outnumber customer-facing initiatives 9 to 1 reducing regulatory approval dependencies and enabling faster deployment cycles. Token consumption totals 500.9M monthly across all use cases generating $10.8M annual AI infrastructure costs representing 12% of total identified value.\n\nImplementation hinges on data schema normalization across six vessel monitoring platforms consuming 120 days before deployment of performance and compliance initiatives can begin. Current data maturity assessed at Level 2 based on limited integration between vessel monitoring systems and shore-based analytics creating 25% reduction in projected Year 1 value realization. Data preparation must precede all Critical and High-priority initiatives. Failure to address schema inconsistencies within Q1 delays the entire portfolio by one quarter reducing NPV by $14.3M through lost time value and competitive positioning erosion.",
+    "executiveDashboard": {
+      "topUseCases": [
+        {
+          "rank": 1,
+          "useCase": "Contract Intelligence & Alert System",
+          "annualValue": 12700000,
+          "monthlyTokens": 14388000,
+          "priorityScore": 67
+        },
+        {
+          "rank": 2,
+          "useCase": "Safety Intelligence & Pattern Recognition System",
+          "annualValue": 5800000,
+          "monthlyTokens": 8700000,
+          "priorityScore": 57
+        },
+        {
+          "rank": 3,
+          "useCase": "Route Certification Accelerator",
+          "annualValue": 5600000,
+          "monthlyTokens": 3720000,
+          "priorityScore": 57
+        },
+        {
+          "rank": 4,
+          "useCase": "Invoice Dispute Resolution Engine",
+          "annualValue": 8600000,
+          "monthlyTokens": 5760000,
+          "priorityScore": 54
+        },
+        {
+          "rank": 5,
+          "useCase": "Voyage Optimization Assistant",
+          "annualValue": 6800000,
+          "monthlyTokens": 66120000,
+          "priorityScore": 50
+        }
+      ],
+      "totalAnnualValue": 88400000,
+      "totalCostBenefit": 49100000,
+      "totalRiskBenefit": 21500000,
+      "totalMonthlyTokens": 500868000,
+      "totalRevenueBenefit": 10000000,
+      "totalCashFlowBenefit": 7900000,
+      "valuePerMillionTokens": 176.52
+    }
+  }
+}

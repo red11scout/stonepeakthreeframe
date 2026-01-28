@@ -1,4 +1,4 @@
-// StonePeak Portfolio Intelligence Platform - Shared Types
+// BlueAlly Portfolio Intelligence Platform - Shared Types
 
 // Investment Categories
 export const INVESTMENT_CATEGORIES = [
@@ -10,10 +10,6 @@ export const INVESTMENT_CATEGORIES = [
 ] as const;
 
 export type InvestmentCategory = typeof INVESTMENT_CATEGORIES[number];
-
-// Value Themes
-export const VALUE_THEMES = ['Revenue Growth', 'Margin Expansion', 'Cost Cutting'] as const;
-export type ValueTheme = typeof VALUE_THEMES[number];
 
 // Hold Period Tracks
 export const HOLD_PERIOD_TRACKS = ['EBITDA Accelerator', 'Growth Enabler', 'Exit Multiplier'] as const;
@@ -35,13 +31,6 @@ export const BRAND_COLORS = {
   darkCharcoal: '#2C2C2C',     // Body text
   lightGray: '#F5F5F5',        // Backgrounds
   mediumGray: '#999999',       // Secondary text
-} as const;
-
-// Theme Colors (for Value Themes)
-export const THEME_COLORS: Record<ValueTheme, string> = {
-  'Revenue Growth': '#00B34A',    // Green
-  'Margin Expansion': '#00A3E0',  // Light Blue
-  'Cost Cutting': '#003B73',      // Dark Blue
 } as const;
 
 // Category Colors
@@ -118,7 +107,6 @@ export interface CalculatedScores {
 
 // Company Assignments
 export interface CompanyAssignments {
-  theme: ValueTheme | null;
   track: HoldPeriodTrack | null;
   replicationPotential: number;  // 1-10
   platformClassification: PlatformClassification | null;
@@ -172,14 +160,12 @@ export interface PortfolioMetrics {
   strategicCount: number;
   foundationsCount: number;
   byCategory: Record<InvestmentCategory, number>;
-  byTheme: Record<ValueTheme, number>;
   byTrack: Record<HoldPeriodTrack, number>;
 }
 
 // Filter State
 export interface FilterState {
   categories: InvestmentCategory[];
-  themes: ValueTheme[];
   tracks: HoldPeriodTrack[];
   quadrants: Quadrant[];
   valueScoreRange: [number, number];
@@ -193,7 +179,7 @@ export const BUBBLE_SIZE_OPTIONS = ['Adjusted EBITDA', 'Adjusted Priority', 'Rev
 export type BubbleSizeOption = typeof BUBBLE_SIZE_OPTIONS[number];
 
 // Color By Options
-export const COLOR_BY_OPTIONS = ['Category', 'Theme', 'Track'] as const;
+export const COLOR_BY_OPTIONS = ['Category', 'Track'] as const;
 export type ColorByOption = typeof COLOR_BY_OPTIONS[number];
 
 // AI Insight

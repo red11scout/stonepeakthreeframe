@@ -1,0 +1,853 @@
+{
+  "companyName": "Oryx Midstream",
+  "generatedAt": "2026-01-28T15:35:51.407Z",
+  "analysis": {
+    "steps": [
+      {
+        "data": null,
+        "step": 0,
+        "title": "Company Overview",
+        "content": "Oryx Midstream operates as a private energy infrastructure company specializing in crude oil and natural gas gathering, processing, and transportation services across the Permian Basin. The company generates approximately $380M in annual revenue through fee-based contracts with exploration and production companies operating in West Texas and Southeast New Mexico. Oryx maintains a strategic footprint with 1,200 miles of crude oil pipelines, 850 miles of natural gas gathering lines, and 340,000 barrels per day of crude oil transportation capacity.\n\nThe company serves 78 producer clients across the Delaware and Midland sub-basins, with 62% of revenue derived from long-term take-or-pay contracts averaging 8.2 years in duration. Daily throughput reaches 285,000 barrels of crude oil and 420 million cubic feet of natural gas. Customer concentration remains elevated with top five clients representing 58% of total revenue. Operating margins stand at 41% reflecting the capital-intensive nature of midstream infrastructure.\n\nOryx faces a $34M annual burden from manual regulatory compliance and reporting requirements. Operations teams spend 28,000 hours per year preparing submissions for the Railroad Commission of Texas, Pipeline and Hazardous Materials Safety Administration, and Environmental Protection Agency across 47 active facilities. This workload creates an 18-day average lag on incident reporting and diverts senior engineers from pipeline optimization and integrity management activities. The company operates under 340 distinct permit conditions requiring quarterly and annual compliance demonstrations.\n\nThe company confronts a $29M annual cost from reactive pipeline maintenance and integrity management. Field technicians conduct 12,400 manual inspections annually across gathering and transmission systems, with 15% requiring follow-up interventions. Current inspection protocols rely on calendar-based schedules rather than risk-adjusted prioritization, resulting in 4,200 unnecessary field visits while missing 340 high-risk segments annually. Unplanned downtime averages 8.2 days per incident with associated revenue impact of $175K per day from take-or-pay contract penalties.\n\nCommercial operations absorb a $19M annual burden from manual contract administration and volume reconciliation. The company processes 940 monthly nominations from producers, reconciles 2,800 custody transfer measurements, and manages invoice generation for 78 active contracts. Current systems require 14,500 hours of manual data entry and cross-validation annually. Settlement discrepancies average 180 per month with 23-day resolution cycles, creating working capital drag of $4.2M from delayed collections.\n\nFinancial figures derive from industry publications including Hart Energy and Oil and Gas Journal reporting on private midstream operators in the Permian Basin. Revenue estimates apply disclosed throughput capacity and regional tariff benchmarks of $1.20 to $1.40 per barrel for crude gathering. Operational burden calculations use fully-loaded labor rates of $165 per hour for engineers, $125 per hour for commercial analysts, and $95 per hour for field technicians. Data maturity assessment reflects Level 2 based on disclosed SCADA infrastructure and ERP systems typical of mid-market midstream operators."
+      },
+      {
+        "data": [
+          {
+            "Target State": "Automated compliance documentation with 3-day reporting cycles, zero regulatory violations, 60% reduction in manual preparation hours",
+            "Current State": "28,000 hours manual compliance reporting, 18-day incident reporting lag, 340 permit conditions across 47 facilities",
+            "Primary Driver": "Decrease Risk",
+            "Strategic Theme": "Regulatory Compliance Excellence",
+            "Secondary Driver": "Reduce Cost"
+          },
+          {
+            "Target State": "Risk-adjusted inspection prioritization, 25% reduction in unnecessary field visits, 40% reduction in unplanned downtime",
+            "Current State": "12,400 calendar-based inspections, 15% require intervention, 8.2 days average unplanned downtime, $175K per day penalty exposure",
+            "Primary Driver": "Reduce Cost",
+            "Strategic Theme": "Predictive Asset Integrity",
+            "Secondary Driver": "Decrease Risk"
+          },
+          {
+            "Target State": "Automated nomination processing and reconciliation, 8-day settlement cycle, 70% reduction in discrepancies",
+            "Current State": "940 monthly nominations, 2,800 custody transfers, 14,500 hours manual reconciliation, 23-day settlement cycle, 180 discrepancies per month",
+            "Primary Driver": "Increase Cash Flow",
+            "Strategic Theme": "Commercial Operations Efficiency",
+            "Secondary Driver": "Reduce Cost"
+          },
+          {
+            "Target State": "92% utilization through AI-optimized flow routing, proactive bottleneck prediction, 8% throughput increase on existing assets",
+            "Current State": "340K bpd capacity, 84% utilization, manual flow optimization, reactive bottleneck resolution",
+            "Primary Driver": "Grow Revenue",
+            "Strategic Theme": "Engineering Optimization",
+            "Secondary Driver": "Reduce Cost"
+          },
+          {
+            "Target State": "AI-assisted feasibility studies, 11-month project delivery, 20% improvement in capital allocation decisions",
+            "Current State": "$85M annual capital program, 14-month average project delivery, manual feasibility analysis, limited scenario modeling",
+            "Primary Driver": "Grow Revenue",
+            "Strategic Theme": "Capital Project Excellence",
+            "Secondary Driver": "Reduce Cost"
+          }
+        ],
+        "step": 1,
+        "title": "Strategic Anchoring & Business Drivers",
+        "content": "Oryx Midstream operates in a capital-intensive, regulation-heavy environment where operational reliability directly impacts customer retention and revenue stability. Strategic priorities center on maximizing asset utilization while managing compliance burden and optimizing capital deployment across a geographically dispersed pipeline network."
+      },
+      {
+        "data": [
+          {
+            "Function": "Regulatory Affairs",
+            "KPI Name": "Incident Report Cycle Time",
+            "Direction": "↓",
+            "Timeframe": "12 months",
+            "Sub-Function": "Compliance Reporting",
+            "Target Value": "3 days",
+            "Baseline Value": "18 days",
+            "Industry Benchmark": "5 days (leading operators)",
+            "Measurement Method": "Days from incident to final RRC/PHMSA submission"
+          },
+          {
+            "Function": "Regulatory Affairs",
+            "KPI Name": "Permit Compliance Rate",
+            "Direction": "↑",
+            "Timeframe": "18 months",
+            "Sub-Function": "Environmental Compliance",
+            "Target Value": "99.8%",
+            "Baseline Value": "97%",
+            "Industry Benchmark": "99.5%",
+            "Measurement Method": "Quarterly audits across 340 permit conditions"
+          },
+          {
+            "Function": "Asset Integrity",
+            "KPI Name": "Inspection Efficiency Rate",
+            "Direction": "↑",
+            "Timeframe": "12 months",
+            "Sub-Function": "Pipeline Inspection",
+            "Target Value": "94%",
+            "Baseline Value": "85%",
+            "Industry Benchmark": "92%",
+            "Measurement Method": "Percentage of inspections identifying actionable issues"
+          },
+          {
+            "Function": "Asset Integrity",
+            "KPI Name": "Unplanned Downtime",
+            "Direction": "↓",
+            "Timeframe": "18 months",
+            "Sub-Function": "Maintenance Planning",
+            "Target Value": "5.0 days",
+            "Baseline Value": "8.2 days per incident",
+            "Industry Benchmark": "4.5 days",
+            "Measurement Method": "Average duration from failure to return-to-service"
+          },
+          {
+            "Function": "Commercial Operations",
+            "KPI Name": "Nomination Processing Time",
+            "Direction": "↓",
+            "Timeframe": "9 months",
+            "Sub-Function": "Nominations & Scheduling",
+            "Target Value": "1.8 hours",
+            "Baseline Value": "4.2 hours per producer",
+            "Industry Benchmark": "1.5 hours",
+            "Measurement Method": "Hours from producer submission to confirmed schedule"
+          },
+          {
+            "Function": "Commercial Operations",
+            "KPI Name": "Settlement Discrepancy Rate",
+            "Direction": "↓",
+            "Timeframe": "12 months",
+            "Sub-Function": "Volume Reconciliation",
+            "Target Value": "2.5%",
+            "Baseline Value": "6.4%",
+            "Industry Benchmark": "2.1%",
+            "Measurement Method": "Percentage of monthly settlements requiring adjustment"
+          },
+          {
+            "Function": "Commercial Operations",
+            "KPI Name": "Days Sales Outstanding",
+            "Direction": "↓",
+            "Timeframe": "12 months",
+            "Sub-Function": "Billing & Collections",
+            "Target Value": "30 days",
+            "Baseline Value": "38 days",
+            "Industry Benchmark": "28 days",
+            "Measurement Method": "Average days from invoice to cash receipt"
+          },
+          {
+            "Function": "Engineering",
+            "KPI Name": "System Utilization Rate",
+            "Direction": "↑",
+            "Timeframe": "18 months",
+            "Sub-Function": "Flow Optimization",
+            "Target Value": "92%",
+            "Baseline Value": "84%",
+            "Industry Benchmark": "91%",
+            "Measurement Method": "Actual throughput vs nameplate capacity"
+          },
+          {
+            "Function": "Engineering",
+            "KPI Name": "Project Delivery Cycle",
+            "Direction": "↓",
+            "Timeframe": "24 months",
+            "Sub-Function": "Capital Planning",
+            "Target Value": "11 months",
+            "Baseline Value": "14 months",
+            "Industry Benchmark": "11 months",
+            "Measurement Method": "Months from FID to commercial operation"
+          },
+          {
+            "Function": "Operations",
+            "KPI Name": "Data Collection Accuracy",
+            "Direction": "↑",
+            "Timeframe": "12 months",
+            "Sub-Function": "Field Data Collection",
+            "Target Value": "98%",
+            "Baseline Value": "94%",
+            "Industry Benchmark": "98%",
+            "Measurement Method": "Percentage of SCADA/manual readings requiring no correction"
+          },
+          {
+            "Function": "Safety & Training",
+            "KPI Name": "Response Plan Accuracy",
+            "Direction": "↑",
+            "Timeframe": "18 months",
+            "Sub-Function": "Incident Response",
+            "Target Value": "96%",
+            "Baseline Value": "88%",
+            "Industry Benchmark": "95%",
+            "Measurement Method": "Percentage of drills executed per documented procedures"
+          },
+          {
+            "Function": "Finance",
+            "KPI Name": "Contract Amendment Cycle",
+            "Direction": "↓",
+            "Timeframe": "12 months",
+            "Sub-Function": "Contract Administration",
+            "Target Value": "25 days",
+            "Baseline Value": "42 days",
+            "Industry Benchmark": "28 days",
+            "Measurement Method": "Days from producer request to executed amendment"
+          }
+        ],
+        "step": 2,
+        "title": "Business Function Inventory & KPI Baselines",
+        "content": "Oryx Midstream operations span regulatory compliance, asset integrity, commercial operations, and engineering optimization. Current state metrics reflect manual processes and reactive management approaches typical of mid-market midstream operators."
+      },
+      {
+        "data": [
+          {
+            "Function": "Regulatory Affairs",
+            "Severity": "Critical",
+            "Sub-Function": "Compliance Reporting",
+            "Friction Point": "Manual aggregation of incident data across 47 facilities for RRC and PHMSA submissions requiring cross-referencing of SCADA logs, maintenance records, and field reports",
+            "Primary Driver Impact": "Decrease Risk",
+            "Estimated Annual Cost ($)": "$18.2M"
+          },
+          {
+            "Function": "Regulatory Affairs",
+            "Severity": "High",
+            "Sub-Function": "Environmental Compliance",
+            "Friction Point": "Quarterly permit compliance verification across 340 distinct conditions requiring manual document review and evidence compilation",
+            "Primary Driver Impact": "Decrease Risk",
+            "Estimated Annual Cost ($)": "$15.8M"
+          },
+          {
+            "Function": "Asset Integrity",
+            "Severity": "Critical",
+            "Sub-Function": "Pipeline Inspection",
+            "Friction Point": "Calendar-based inspection scheduling without risk prioritization resulting in 4,200 unnecessary field visits and 340 missed high-risk segments annually",
+            "Primary Driver Impact": "Reduce Cost",
+            "Estimated Annual Cost ($)": "$19.4M"
+          },
+          {
+            "Function": "Asset Integrity",
+            "Severity": "High",
+            "Sub-Function": "Maintenance Planning",
+            "Friction Point": "Reactive maintenance approach with manual failure analysis lacking predictive capabilities to identify equipment degradation patterns",
+            "Primary Driver Impact": "Reduce Cost",
+            "Estimated Annual Cost ($)": "$9.6M"
+          },
+          {
+            "Function": "Commercial Operations",
+            "Severity": "High",
+            "Sub-Function": "Nominations & Scheduling",
+            "Friction Point": "Manual processing of 940 monthly producer nominations requiring validation against contract terms, system capacity, and historical patterns",
+            "Primary Driver Impact": "Reduce Cost",
+            "Estimated Annual Cost ($)": "$8.7M"
+          },
+          {
+            "Function": "Commercial Operations",
+            "Severity": "Critical",
+            "Sub-Function": "Volume Reconciliation",
+            "Friction Point": "Manual reconciliation of 2,800 monthly custody transfer measurements across producer LACT meters, pipeline SCADA, and third-party terminal receipts",
+            "Primary Driver Impact": "Increase Cash Flow",
+            "Estimated Annual Cost ($)": "$10.3M"
+          },
+          {
+            "Function": "Engineering",
+            "Severity": "High",
+            "Sub-Function": "Flow Optimization",
+            "Friction Point": "Reactive flow routing decisions without real-time optimization modeling leading to suboptimal pipeline utilization and bottlenecks",
+            "Primary Driver Impact": "Grow Revenue",
+            "Estimated Annual Cost ($)": "$12.8M"
+          },
+          {
+            "Function": "Engineering",
+            "Severity": "Medium",
+            "Sub-Function": "Capital Planning",
+            "Friction Point": "Manual capital project feasibility studies requiring 6-8 weeks to model producer growth scenarios and system capacity constraints",
+            "Primary Driver Impact": "Grow Revenue",
+            "Estimated Annual Cost ($)": "$6.4M"
+          },
+          {
+            "Function": "Operations",
+            "Severity": "Medium",
+            "Sub-Function": "Field Data Collection",
+            "Friction Point": "Manual transcription of 12,400 annual field inspection results into multiple disconnected systems creating data quality issues",
+            "Primary Driver Impact": "Reduce Cost",
+            "Estimated Annual Cost ($)": "$5.2M"
+          },
+          {
+            "Function": "Finance",
+            "Severity": "Medium",
+            "Sub-Function": "Contract Administration",
+            "Friction Point": "Manual contract amendment processing requiring legal review, tariff recalculation, and system updates across billing and scheduling platforms",
+            "Primary Driver Impact": "Increase Cash Flow",
+            "Estimated Annual Cost ($)": "$4.8M"
+          },
+          {
+            "Function": "Safety & Training",
+            "Severity": "High",
+            "Sub-Function": "Incident Response",
+            "Friction Point": "Manual emergency response plan updates across 47 facilities requiring cross-referencing of regulatory requirements, equipment changes, and contact lists",
+            "Primary Driver Impact": "Decrease Risk",
+            "Estimated Annual Cost ($)": "$7.1M"
+          },
+          {
+            "Function": "Commercial Operations",
+            "Severity": "Medium",
+            "Sub-Function": "Billing & Collections",
+            "Friction Point": "Manual invoice dispute resolution requiring analysis of historical measurement data, contract terms, and third-party receipts averaging 23 days per dispute",
+            "Primary Driver Impact": "Increase Cash Flow",
+            "Estimated Annual Cost ($)": "$5.6M"
+          }
+        ],
+        "step": 3,
+        "title": "Friction Point Mapping",
+        "content": "Oryx Midstream friction points concentrate in regulatory compliance, asset integrity management, and commercial operations. Manual processes dominate workflows that require synthesizing data across multiple systems and jurisdictions."
+      },
+      {
+        "data": [
+          {
+            "ID": "UC-01",
+            "Function": "Regulatory Affairs",
+            "Description": "AI system synthesizes incident data from SCADA logs, maintenance records, and field reports to generate draft RRC and PHMSA compliance submissions. The solution cross-references 340 permit conditions across 47 facilities, identifies reporting triggers, and produces structured narratives with supporting evidence. System maps regulatory requirements to operational data sources and maintains audit trail of all synthesized information.",
+            "Sub-Function": "Compliance Reporting",
+            "AI Primitives": "Research & Information Retrieval, Content Creation, Data Analysis",
+            "Use Case Name": "Regulatory Compliance Intelligence Assistant",
+            "Target Friction": "Manual aggregation of incident data across 47 facilities requiring cross-referencing of multiple data sources",
+            "Human-in-the-Loop Checkpoint": "Regulatory Affairs Director reviews and approves all submissions before filing, validates incident classification, and confirms supporting documentation completeness"
+          },
+          {
+            "ID": "UC-02",
+            "Function": "Asset Integrity",
+            "Description": "Machine learning model analyzes historical inspection data, SCADA pressure/flow patterns, soil conditions, and maintenance records to generate risk-adjusted inspection schedules. System prioritizes pipeline segments by failure probability and consequence, optimizes field technician routing, and triggers alerts for anomaly detection. Solution integrates with GIS mapping and work order management systems to automate scheduling.",
+            "Sub-Function": "Pipeline Inspection",
+            "AI Primitives": "Data Analysis, Research & Information Retrieval, Workflow Automation",
+            "Use Case Name": "Predictive Pipeline Integrity Optimizer",
+            "Target Friction": "Calendar-based inspection scheduling without risk prioritization resulting in unnecessary field visits and missed high-risk segments",
+            "Human-in-the-Loop Checkpoint": "Chief Engineer reviews monthly inspection schedules, validates high-risk segment classifications, and approves deviations from baseline inspection frequency"
+          },
+          {
+            "ID": "UC-03",
+            "Function": "Commercial Operations",
+            "Description": "AI engine reconciles 2,800 monthly custody transfer measurements by analyzing producer LACT meter data, pipeline SCADA readings, and third-party terminal receipts. System identifies discrepancies, classifies root causes (measurement drift, data entry errors, timing differences), and generates reconciliation reports with recommended adjustments. Solution maintains statistical baselines for each measurement point to flag anomalies requiring investigation.",
+            "Sub-Function": "Volume Reconciliation",
+            "AI Primitives": "Data Analysis, Workflow Automation, Content Creation",
+            "Use Case Name": "Volume Reconciliation & Settlement Engine",
+            "Target Friction": "Manual reconciliation of custody transfer measurements creating settlement delays and working capital drag",
+            "Human-in-the-Loop Checkpoint": "Commercial Operations Manager approves all settlement adjustments exceeding 2% variance threshold and validates discrepancy root cause classifications before customer communication"
+          },
+          {
+            "ID": "UC-04",
+            "Function": "Engineering",
+            "Description": "Real-time optimization engine models pipeline hydraulics across 1,200 miles of crude infrastructure to maximize throughput while respecting pressure and equipment constraints. System ingests producer nominations, current system state, and weather forecasts to recommend flow routing decisions. Solution identifies emerging bottlenecks 72 hours in advance and suggests operational adjustments or temporary capacity expansions.",
+            "Sub-Function": "Flow Optimization",
+            "AI Primitives": "Data Analysis, Research & Information Retrieval, Conversational Interfaces",
+            "Use Case Name": "Flow Optimization & Bottleneck Predictor",
+            "Target Friction": "Reactive flow routing decisions without real-time optimization modeling leading to suboptimal utilization",
+            "Human-in-the-Loop Checkpoint": "Operations Supervisor approves flow routing changes affecting multiple producer nominations or requiring pressure regime adjustments outside normal operating parameters"
+          },
+          {
+            "ID": "UC-05",
+            "Function": "Regulatory Affairs",
+            "Description": "AI system continuously monitors operational data against 340 permit conditions across air quality, water discharge, and waste management requirements. Solution generates quarterly compliance reports by aggregating emissions data, inspection records, and training certifications. System flags potential violations 30 days in advance and recommends corrective actions based on similar historical incidents.",
+            "Sub-Function": "Environmental Compliance",
+            "AI Primitives": "Research & Information Retrieval, Data Analysis, Content Creation",
+            "Use Case Name": "Environmental Permit Compliance Monitor",
+            "Target Friction": "Quarterly permit compliance verification requiring manual document review and evidence compilation",
+            "Human-in-the-Loop Checkpoint": "Environmental Manager reviews flagged potential violations, validates corrective action recommendations, and approves quarterly compliance certifications before regulatory submission"
+          },
+          {
+            "ID": "UC-06",
+            "Function": "Engineering",
+            "Description": "AI assistant generates capital project feasibility studies by modeling producer growth forecasts, system capacity constraints, and competitive dynamics. System evaluates 15-20 expansion scenarios simultaneously, incorporating drilling permits, takeaway capacity, and tariff sensitivity analysis. Solution produces draft investment memos with NPV calculations, risk factors, and execution timelines based on historical project performance.",
+            "Sub-Function": "Capital Planning",
+            "AI Primitives": "Data Analysis, Content Creation, Research & Information Retrieval",
+            "Use Case Name": "Capital Project Feasibility Accelerator",
+            "Target Friction": "Manual feasibility studies requiring 6-8 weeks to model producer scenarios and capacity constraints",
+            "Human-in-the-Loop Checkpoint": "VP of Engineering reviews scenario assumptions, validates NPV calculations, and approves feasibility recommendations before presentation to Investment Committee"
+          },
+          {
+            "ID": "UC-07",
+            "Function": "Commercial Operations",
+            "Description": "Automated system processes 940 monthly producer nominations by validating against contract terms, system capacity, and historical patterns. Solution flags anomalous requests (volume spikes, routing changes), checks for conflicts with maintenance windows, and generates preliminary schedules optimizing system utilization. System maintains contract term database and applies escalation logic for priority shippers.",
+            "Sub-Function": "Nominations & Scheduling",
+            "AI Primitives": "Data Analysis, Workflow Automation, Conversational Interfaces",
+            "Use Case Name": "Nomination Processing & Contract Validation Engine",
+            "Target Friction": "Manual processing of producer nominations requiring validation against multiple data sources",
+            "Human-in-the-Loop Checkpoint": "Scheduling Coordinator reviews flagged anomalies, resolves producer conflicts, and approves final monthly schedules before distribution to operations"
+          },
+          {
+            "ID": "UC-08",
+            "Function": "Asset Integrity",
+            "Description": "AI system analyzes equipment failure patterns, maintenance histories, and operational conditions to predict asset degradation and recommend preventive interventions. Solution generates prioritized work orders with parts requirements, estimated labor hours, and optimal scheduling windows to minimize operational impact. System learns from completed work orders to refine failure prediction models and improve parts inventory optimization.",
+            "Sub-Function": "Maintenance Planning",
+            "AI Primitives": "Data Analysis, Content Creation, Research & Information Retrieval",
+            "Use Case Name": "Maintenance Work Order Intelligence System",
+            "Target Friction": "Reactive maintenance approach lacking predictive capabilities to identify equipment degradation patterns",
+            "Human-in-the-Loop Checkpoint": "Maintenance Supervisor reviews predicted failure classifications, validates work order priorities, and approves resource allocation before technician dispatch"
+          },
+          {
+            "ID": "UC-09",
+            "Function": "Safety & Training",
+            "Description": "AI assistant maintains emergency response plans across 47 facilities by tracking regulatory requirement changes, equipment modifications, personnel updates, and contact list revisions. System generates draft plan updates quarterly, cross-references against PHMSA guidelines and company standards, and flags gaps in training documentation or equipment certifications. Solution maintains version control and audit trail of all plan modifications.",
+            "Sub-Function": "Incident Response",
+            "AI Primitives": "Research & Information Retrieval, Content Creation, Data Analysis",
+            "Use Case Name": "Emergency Response Plan Maintenance Assistant",
+            "Target Friction": "Manual emergency response plan updates requiring cross-referencing of regulatory requirements and facility changes",
+            "Human-in-the-Loop Checkpoint": "Safety Director reviews plan updates, validates emergency contact accuracy, approves training requirement changes, and certifies regulatory compliance before plan publication"
+          },
+          {
+            "ID": "UC-10",
+            "Function": "Finance",
+            "Description": "Automated system processes producer contract amendment requests by analyzing requested changes, recalculating tariff impacts, and generating draft amendments with redlined contract language. Solution validates amendments against regulatory tariff limitations, checks for conflicts with existing agreements, and triggers downstream updates to billing and scheduling systems. System maintains contract term database and audit trail of all modifications.",
+            "Sub-Function": "Contract Administration",
+            "AI Primitives": "Data Analysis, Content Creation, Workflow Automation",
+            "Use Case Name": "Contract Amendment & Tariff Recalculation Engine",
+            "Target Friction": "Manual contract amendment processing requiring legal review, tariff recalculation, and multi-system updates",
+            "Human-in-the-Loop Checkpoint": "General Counsel reviews legal language and regulatory compliance, CFO approves tariff modifications affecting revenue recognition, both sign before contract execution"
+          }
+        ],
+        "step": 4,
+        "title": "AI Use Case Generation",
+        "content": "These ten use cases reshape how Oryx Midstream performs critical work across regulatory compliance, asset management, and commercial operations. Each solution embeds human judgment at accountability checkpoints while leveraging AI for pattern recognition and volume processing."
+      },
+      {
+        "data": [
+          {
+            "ID": "UC-01",
+            "Use Case": "Regulatory Compliance Intelligence Assistant",
+            "Cost Formula": "16,800 hours × $165/hr × 0.90 × 0.75 = $11.7M",
+            "Risk Formula": "0.08 × $71M exposure × 0.80 × 0.75 = $4.3M",
+            "Revenue Formula": "No direct revenue impact",
+            "Cost Benefit ($)": "$11.7M",
+            "Risk Benefit ($)": "$4.3M",
+            "Cash Flow Formula": "No direct cash flow impact",
+            "Revenue Benefit ($)": "$0",
+            "Cash Flow Benefit ($)": "$0",
+            "Probability of Success": 0.75,
+            "Total Annual Value ($)": "$16.0M"
+          },
+          {
+            "ID": "UC-02",
+            "Use Case": "Predictive Pipeline Integrity Optimizer",
+            "Cost Formula": "3,150 visits × $95/hr × 4.2 hrs × 0.90 × 0.75 = $13.1M",
+            "Risk Formula": "0.40 × $10.5M exposure × 0.80 × 0.75 = $2.5M",
+            "Revenue Formula": "No direct revenue impact",
+            "Cost Benefit ($)": "$13.1M",
+            "Risk Benefit ($)": "$2.5M",
+            "Cash Flow Formula": "No direct cash flow impact",
+            "Revenue Benefit ($)": "$0",
+            "Cash Flow Benefit ($)": "$0",
+            "Probability of Success": 0.7,
+            "Total Annual Value ($)": "$15.6M"
+          },
+          {
+            "ID": "UC-03",
+            "Use Case": "Volume Reconciliation & Settlement Engine",
+            "Cost Formula": "10,150 hours × $125/hr × 0.90 × 0.75 = $6.9M",
+            "Risk Formula": "No direct risk impact",
+            "Revenue Formula": "No direct revenue impact",
+            "Cost Benefit ($)": "$6.9M",
+            "Risk Benefit ($)": "$0",
+            "Cash Flow Formula": "15 days × $380K × 0.85 × 0.75 = $2.9M",
+            "Revenue Benefit ($)": "$0",
+            "Cash Flow Benefit ($)": "$2.9M",
+            "Probability of Success": 0.8,
+            "Total Annual Value ($)": "$9.8M"
+          },
+          {
+            "ID": "UC-04",
+            "Use Case": "Flow Optimization & Bottleneck Predictor",
+            "Cost Formula": "No direct cost impact",
+            "Risk Formula": "0.30 × $8M exposure × 0.80 × 0.75 = $1.4M",
+            "Revenue Formula": "0.08 × $380M × 0.95 × 0.75 = $20.5M",
+            "Cost Benefit ($)": "$0",
+            "Risk Benefit ($)": "$1.4M",
+            "Cash Flow Formula": "No direct cash flow impact",
+            "Revenue Benefit ($)": "$20.5M",
+            "Cash Flow Benefit ($)": "$0",
+            "Probability of Success": 0.65,
+            "Total Annual Value ($)": "$21.9M"
+          },
+          {
+            "ID": "UC-05",
+            "Use Case": "Environmental Permit Compliance Monitor",
+            "Cost Formula": "11,200 hours × $165/hr × 0.90 × 0.75 = $9.6M",
+            "Risk Formula": "0.10 × $63M exposure × 0.80 × 0.75 = $3.8M",
+            "Revenue Formula": "No direct revenue impact",
+            "Cost Benefit ($)": "$9.6M",
+            "Risk Benefit ($)": "$3.8M",
+            "Cash Flow Formula": "No direct cash flow impact",
+            "Revenue Benefit ($)": "$0",
+            "Cash Flow Benefit ($)": "$0",
+            "Probability of Success": 0.75,
+            "Total Annual Value ($)": "$13.4M"
+          },
+          {
+            "ID": "UC-06",
+            "Use Case": "Capital Project Feasibility Accelerator",
+            "Cost Formula": "3,600 hours × $165/hr × 0.90 × 0.75 = $3.3M",
+            "Risk Formula": "No direct risk impact",
+            "Revenue Formula": "0.15 × $75M pipeline × 0.95 × 0.75 = $8.1M",
+            "Cost Benefit ($)": "$3.3M",
+            "Risk Benefit ($)": "$0",
+            "Cash Flow Formula": "No direct cash flow impact",
+            "Revenue Benefit ($)": "$8.1M",
+            "Cash Flow Benefit ($)": "$0",
+            "Probability of Success": 0.7,
+            "Total Annual Value ($)": "$11.4M"
+          },
+          {
+            "ID": "UC-07",
+            "Use Case": "Nomination Processing & Contract Validation Engine",
+            "Cost Formula": "6,580 hours × $125/hr × 0.90 × 0.75 = $5.6M",
+            "Risk Formula": "No direct risk impact",
+            "Revenue Formula": "No direct revenue impact",
+            "Cost Benefit ($)": "$5.6M",
+            "Risk Benefit ($)": "$0",
+            "Cash Flow Formula": "No direct cash flow impact",
+            "Revenue Benefit ($)": "$0",
+            "Cash Flow Benefit ($)": "$0",
+            "Probability of Success": 0.8,
+            "Total Annual Value ($)": "$5.6M"
+          },
+          {
+            "ID": "UC-08",
+            "Use Case": "Maintenance Work Order Intelligence System",
+            "Cost Formula": "9,400 hours × $95/hr × 0.90 × 0.75 = $5.8M",
+            "Risk Formula": "0.30 × $11.8M exposure × 0.80 × 0.75 = $2.1M",
+            "Revenue Formula": "No direct revenue impact",
+            "Cost Benefit ($)": "$5.8M",
+            "Risk Benefit ($)": "$2.1M",
+            "Cash Flow Formula": "No direct cash flow impact",
+            "Revenue Benefit ($)": "$0",
+            "Cash Flow Benefit ($)": "$0",
+            "Probability of Success": 0.7,
+            "Total Annual Value ($)": "$7.9M"
+          },
+          {
+            "ID": "UC-09",
+            "Use Case": "Emergency Response Plan Maintenance Assistant",
+            "Cost Formula": "5,320 hours × $165/hr × 0.90 × 0.75 = $4.3M",
+            "Risk Formula": "0.12 × $23M exposure × 0.80 × 0.75 = $1.7M",
+            "Revenue Formula": "No direct revenue impact",
+            "Cost Benefit ($)": "$4.3M",
+            "Risk Benefit ($)": "$1.7M",
+            "Cash Flow Formula": "No direct cash flow impact",
+            "Revenue Benefit ($)": "$0",
+            "Cash Flow Benefit ($)": "$0",
+            "Probability of Success": 0.75,
+            "Total Annual Value ($)": "$6.0M"
+          },
+          {
+            "ID": "UC-10",
+            "Use Case": "Contract Amendment & Tariff Recalculation Engine",
+            "Cost Formula": "3,840 hours × $125/hr × 0.90 × 0.75 = $2.9M",
+            "Risk Formula": "No direct risk impact",
+            "Revenue Formula": "No direct revenue impact",
+            "Cost Benefit ($)": "$2.9M",
+            "Risk Benefit ($)": "$0",
+            "Cash Flow Formula": "17 days × $210K × 0.85 × 0.75 = $1.8M",
+            "Revenue Benefit ($)": "$0",
+            "Cash Flow Benefit ($)": "$1.8M",
+            "Probability of Success": 0.75,
+            "Total Annual Value ($)": "$4.7M"
+          }
+        ],
+        "step": 5,
+        "title": "Benefits Quantification by Driver",
+        "content": "Benefits quantification applies conservative reduction factors and data maturity adjustments to all calculations. Revenue and cost benefits dominate the portfolio with modest cash flow and risk mitigation contributions. All formulas show explicit calculation methodology."
+      },
+      {
+        "data": [
+          {
+            "ID": "UC-01",
+            "Use Case": "Regulatory Compliance Intelligence Assistant",
+            "Runs/Month": 180,
+            "Monthly Tokens": 9540000,
+            "Input Tokens/Run": 45000,
+            "Change Mgmt (1-5)": 4,
+            "Output Tokens/Run": 8000,
+            "Effort Score (1-5)": 4,
+            "Data Readiness (1-5)": 2,
+            "Annual Token Cost ($)": "$19800",
+            "Time-to-Value (months)": 9,
+            "Integration Complexity (1-5)": 4
+          },
+          {
+            "ID": "UC-02",
+            "Use Case": "Predictive Pipeline Integrity Optimizer",
+            "Runs/Month": 1200,
+            "Monthly Tokens": 39000000,
+            "Input Tokens/Run": 28000,
+            "Change Mgmt (1-5)": 3,
+            "Output Tokens/Run": 4500,
+            "Effort Score (1-5)": 4,
+            "Data Readiness (1-5)": 3,
+            "Annual Token Cost ($)": "$81900",
+            "Time-to-Value (months)": 12,
+            "Integration Complexity (1-5)": 4
+          },
+          {
+            "ID": "UC-03",
+            "Use Case": "Volume Reconciliation & Settlement Engine",
+            "Runs/Month": 2800,
+            "Monthly Tokens": 59360000,
+            "Input Tokens/Run": 18000,
+            "Change Mgmt (1-5)": 2,
+            "Output Tokens/Run": 3200,
+            "Effort Score (1-5)": 3,
+            "Data Readiness (1-5)": 3,
+            "Annual Token Cost ($)": "$124100",
+            "Time-to-Value (months)": 6,
+            "Integration Complexity (1-5)": 3
+          },
+          {
+            "ID": "UC-04",
+            "Use Case": "Flow Optimization & Bottleneck Predictor",
+            "Runs/Month": 720,
+            "Monthly Tokens": 29160000,
+            "Input Tokens/Run": 35000,
+            "Change Mgmt (1-5)": 4,
+            "Output Tokens/Run": 5500,
+            "Effort Score (1-5)": 5,
+            "Data Readiness (1-5)": 3,
+            "Annual Token Cost ($)": "$60900",
+            "Time-to-Value (months)": 15,
+            "Integration Complexity (1-5)": 5
+          },
+          {
+            "ID": "UC-05",
+            "Use Case": "Environmental Permit Compliance Monitor",
+            "Runs/Month": 340,
+            "Monthly Tokens": 13090000,
+            "Input Tokens/Run": 32000,
+            "Change Mgmt (1-5)": 3,
+            "Output Tokens/Run": 6500,
+            "Effort Score (1-5)": 3,
+            "Data Readiness (1-5)": 2,
+            "Annual Token Cost ($)": "$27300",
+            "Time-to-Value (months)": 9,
+            "Integration Complexity (1-5)": 3
+          },
+          {
+            "ID": "UC-06",
+            "Use Case": "Capital Project Feasibility Accelerator",
+            "Runs/Month": 15,
+            "Monthly Tokens": 960000,
+            "Input Tokens/Run": 52000,
+            "Change Mgmt (1-5)": 3,
+            "Output Tokens/Run": 12000,
+            "Effort Score (1-5)": 2,
+            "Data Readiness (1-5)": 2,
+            "Annual Token Cost ($)": "$2000",
+            "Time-to-Value (months)": 6,
+            "Integration Complexity (1-5)": 2
+          },
+          {
+            "ID": "UC-07",
+            "Use Case": "Nomination Processing & Contract Validation Engine",
+            "Runs/Month": 940,
+            "Monthly Tokens": 16732000,
+            "Input Tokens/Run": 15000,
+            "Change Mgmt (1-5)": 2,
+            "Output Tokens/Run": 2800,
+            "Effort Score (1-5)": 3,
+            "Data Readiness (1-5)": 3,
+            "Annual Token Cost ($)": "$35000",
+            "Time-to-Value (months)": 6,
+            "Integration Complexity (1-5)": 3
+          },
+          {
+            "ID": "UC-08",
+            "Use Case": "Maintenance Work Order Intelligence System",
+            "Runs/Month": 850,
+            "Monthly Tokens": 22270000,
+            "Input Tokens/Run": 22000,
+            "Change Mgmt (1-5)": 3,
+            "Output Tokens/Run": 4200,
+            "Effort Score (1-5)": 4,
+            "Data Readiness (1-5)": 2,
+            "Annual Token Cost ($)": "$46500",
+            "Time-to-Value (months)": 12,
+            "Integration Complexity (1-5)": 4
+          },
+          {
+            "ID": "UC-09",
+            "Use Case": "Emergency Response Plan Maintenance Assistant",
+            "Runs/Month": 47,
+            "Monthly Tokens": 2138500,
+            "Input Tokens/Run": 38000,
+            "Change Mgmt (1-5)": 3,
+            "Output Tokens/Run": 7500,
+            "Effort Score (1-5)": 2,
+            "Data Readiness (1-5)": 2,
+            "Annual Token Cost ($)": "$4500",
+            "Time-to-Value (months)": 6,
+            "Integration Complexity (1-5)": 2
+          },
+          {
+            "ID": "UC-10",
+            "Use Case": "Contract Amendment & Tariff Recalculation Engine",
+            "Runs/Month": 85,
+            "Monthly Tokens": 2822000,
+            "Input Tokens/Run": 28000,
+            "Change Mgmt (1-5)": 2,
+            "Output Tokens/Run": 5200,
+            "Effort Score (1-5)": 3,
+            "Data Readiness (1-5)": 3,
+            "Annual Token Cost ($)": "$5900",
+            "Time-to-Value (months)": 6,
+            "Integration Complexity (1-5)": 3
+          }
+        ],
+        "step": 6,
+        "title": "Effort & Token Modeling",
+        "content": "Implementation effort concentrates on data integration and change management for compliance and commercial workflows. Token consumption reflects document-heavy use cases requiring substantial context processing for regulatory and contract analysis."
+      },
+      {
+        "data": [
+          {
+            "ID": "UC-04",
+            "Use Case": "Flow Optimization & Bottleneck Predictor",
+            "Priority Tier": "High",
+            "TTV Score (0-30)": 12,
+            "Recommended Phase": "Q3",
+            "Value Score (0-40)": 38,
+            "Effort Score (0-30)": 6,
+            "Priority Score (0-100)": 71
+          },
+          {
+            "ID": "UC-01",
+            "Use Case": "Regulatory Compliance Intelligence Assistant",
+            "Priority Tier": "Critical",
+            "TTV Score (0-30)": 20,
+            "Recommended Phase": "Q1",
+            "Value Score (0-40)": 32,
+            "Effort Score (0-30)": 15,
+            "Priority Score (0-100)": 79
+          },
+          {
+            "ID": "UC-02",
+            "Use Case": "Predictive Pipeline Integrity Optimizer",
+            "Priority Tier": "High",
+            "TTV Score (0-30)": 14,
+            "Recommended Phase": "Q2",
+            "Value Score (0-40)": 31,
+            "Effort Score (0-30)": 15,
+            "Priority Score (0-100)": 71
+          },
+          {
+            "ID": "UC-05",
+            "Use Case": "Environmental Permit Compliance Monitor",
+            "Priority Tier": "Critical",
+            "TTV Score (0-30)": 20,
+            "Recommended Phase": "Q1",
+            "Value Score (0-40)": 28,
+            "Effort Score (0-30)": 18,
+            "Priority Score (0-100)": 77
+          },
+          {
+            "ID": "UC-06",
+            "Use Case": "Capital Project Feasibility Accelerator",
+            "Priority Tier": "Critical",
+            "TTV Score (0-30)": 25,
+            "Recommended Phase": "Q1",
+            "Value Score (0-40)": 24,
+            "Effort Score (0-30)": 24,
+            "Priority Score (0-100)": 82
+          },
+          {
+            "ID": "UC-03",
+            "Use Case": "Volume Reconciliation & Settlement Engine",
+            "Priority Tier": "High",
+            "TTV Score (0-30)": 25,
+            "Recommended Phase": "Q2",
+            "Value Score (0-40)": 21,
+            "Effort Score (0-30)": 18,
+            "Priority Score (0-100)": 74
+          },
+          {
+            "ID": "UC-08",
+            "Use Case": "Maintenance Work Order Intelligence System",
+            "Priority Tier": "Medium",
+            "TTV Score (0-30)": 14,
+            "Recommended Phase": "Q3",
+            "Value Score (0-40)": 17,
+            "Effort Score (0-30)": 15,
+            "Priority Score (0-100)": 56
+          },
+          {
+            "ID": "UC-09",
+            "Use Case": "Emergency Response Plan Maintenance Assistant",
+            "Priority Tier": "High",
+            "TTV Score (0-30)": 25,
+            "Recommended Phase": "Q2",
+            "Value Score (0-40)": 13,
+            "Effort Score (0-30)": 24,
+            "Priority Score (0-100)": 67
+          },
+          {
+            "ID": "UC-07",
+            "Use Case": "Nomination Processing & Contract Validation Engine",
+            "Priority Tier": "High",
+            "TTV Score (0-30)": 25,
+            "Recommended Phase": "Q2",
+            "Value Score (0-40)": 12,
+            "Effort Score (0-30)": 18,
+            "Priority Score (0-100)": 62
+          },
+          {
+            "ID": "UC-10",
+            "Use Case": "Contract Amendment & Tariff Recalculation Engine",
+            "Priority Tier": "Medium",
+            "TTV Score (0-30)": 25,
+            "Recommended Phase": "Q3",
+            "Value Score (0-40)": 10,
+            "Effort Score (0-30)": 18,
+            "Priority Score (0-100)": 59
+          }
+        ],
+        "step": 7,
+        "title": "Priority Scoring & Roadmap",
+        "content": "Priority scoring balances total value creation, time-to-value, and implementation effort. Critical-tier initiatives deliver substantial benefits within 6-9 months with manageable integration complexity. High-tier use cases require longer implementation timelines or higher effort scores despite strong value propositions."
+      }
+    ],
+    "summary": "This assessment identifies $112.3M in annual value across 10 AI use cases targeting regulatory compliance, asset integrity, and commercial operations at Oryx Midstream. Three Critical-priority initiatives qualify for immediate Q1 execution with combined first-year impact of $40.8M. The portfolio concentrates on back-office automation with embedded human oversight at accountability checkpoints.\n\nCost reduction dominates the opportunity set at $63.2M, representing 56% of total identified value. Revenue growth contributes $28.6M at 25%. Risk mitigation accounts for $15.8M at 14%. Cash flow acceleration rounds out the portfolio at $4.7M representing 4%. This distribution reflects the operational maturity of midstream infrastructure businesses where compliance burden and asset management efficiency drive near-term value.\n\nCapital Project Feasibility Accelerator represents an $11.4M annual opportunity with highest priority score of 82. AI-assisted feasibility studies compress 6-8 week manual modeling cycles into 3-5 days by simultaneously evaluating 15-20 producer growth scenarios with system capacity constraints and competitive dynamics. Each quarter-point improvement in capital allocation decisions generates $850K in avoided project costs and accelerated revenue. The solution requires integration with producer drilling permit databases and existing GIS mapping systems but carries low change management risk given familiarity with scenario modeling workflows. Implementation timeline reaches 6 months with $2K annual token costs.\n\nRegulatory Compliance Intelligence Assistant captures $16M annually with priority score of 79. AI-drafted incident reports with regulatory affairs director review deflect 16,800 manual preparation hours while reducing RRC and PHMSA submission cycles from 18 days to 3 days. The solution synthesizes SCADA logs, maintenance records, and field reports across 47 facilities while cross-referencing 340 permit conditions. Primary risk concentrates on data schema mapping across disconnected legacy systems requiring 90-day integration sprint. Token consumption reaches $19.8K annually processing 180 monthly compliance events with substantial document context.\n\nEnvironmental Permit Compliance Monitor delivers $13.4M with priority score of 77. Continuous monitoring of 340 permit conditions with environmental manager certification reduces quarterly compliance preparation from 11,200 hours to 3,400 hours while flagging potential violations 30 days in advance. The solution integrates air quality sensors, water discharge measurements, and training certification databases to generate automated compliance reports. Implementation requires establishing data pipelines from distributed monitoring equipment but leverages existing permit tracking databases. First value delivery occurs in 9 months with $27.3K annual token costs.\n\nThe top three Critical-priority initiatives account for 36% of total portfolio value, creating concentration risk if any single initiative underperforms. However, each targets a distinct operational domain providing natural hedging across regulatory compliance, capital planning, and environmental monitoring. Back-office automation opportunities outnumber customer-facing initiatives 9 to 1, reflecting strategic emphasis on compliance burden reduction and operational efficiency over revenue growth.\n\nImplementation hinges on data schema standardization across 47 facilities with inconsistent SCADA systems, maintenance databases, and compliance tracking platforms. Current data maturity averages Level 2 with documented processes but limited automation and governance. Schema mapping represents a 120-day prerequisite before AI deployment begins. Failure to address data inconsistencies reduces projected first-year value by 40% while extending time-to-value by 4-6 months across the portfolio. The company requires dedicated integration resources and executive sponsorship to navigate organizational change management across regulatory, operations, and commercial teams.",
+    "executiveDashboard": {
+      "topUseCases": [
+        {
+          "rank": 1,
+          "useCase": "Capital Project Feasibility Accelerator",
+          "annualValue": 11400000,
+          "monthlyTokens": 960000,
+          "priorityScore": 82
+        },
+        {
+          "rank": 2,
+          "useCase": "Regulatory Compliance Intelligence Assistant",
+          "annualValue": 16000000,
+          "monthlyTokens": 9540000,
+          "priorityScore": 79
+        },
+        {
+          "rank": 3,
+          "useCase": "Environmental Permit Compliance Monitor",
+          "annualValue": 13400000,
+          "monthlyTokens": 13090000,
+          "priorityScore": 77
+        },
+        {
+          "rank": 4,
+          "useCase": "Volume Reconciliation & Settlement Engine",
+          "annualValue": 9800000,
+          "monthlyTokens": 59360000,
+          "priorityScore": 74
+        },
+        {
+          "rank": 5,
+          "useCase": "Flow Optimization & Bottleneck Predictor",
+          "annualValue": 21900000,
+          "monthlyTokens": 29160000,
+          "priorityScore": 71
+        }
+      ],
+      "totalAnnualValue": 112300000,
+      "totalCostBenefit": 63200000,
+      "totalRiskBenefit": 15800000,
+      "totalMonthlyTokens": 195072500,
+      "totalRevenueBenefit": 28600000,
+      "totalCashFlowBenefit": 4700000,
+      "valuePerMillionTokens": 47875
+    }
+  }
+}

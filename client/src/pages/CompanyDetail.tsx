@@ -42,7 +42,6 @@ const QUADRANT_COLORS: Record<string, string> = {
   Foundations: "#999999",
 };
 
-const THEMES = ["Revenue Growth", "Margin Expansion", "Cost Cutting"];
 const TRACKS = ["EBITDA Accelerator", "Growth Enabler", "Exit Multiplier"];
 
 function formatCurrency(value: number): string {
@@ -139,7 +138,6 @@ export default function CompanyDetail() {
     timelineFit: 5,
     replicationPotential: 5,
   });
-  const [editedTheme, setEditedTheme] = useState<string | null>(null);
   const [editedTrack, setEditedTrack] = useState<string | null>(null);
   const [hasChanges, setHasChanges] = useState(false);
 
@@ -156,7 +154,6 @@ export default function CompanyDetail() {
         timelineFit: Number(company.timelineFit) || 5,
         replicationPotential: Number(company.replicationPotential) || 5,
       });
-      setEditedTheme(company.theme);
       setEditedTrack(company.track);
       setHasChanges(false);
     }
@@ -179,7 +176,6 @@ export default function CompanyDetail() {
         techInfrastructure: String(editedScores.techInfrastructure),
         timelineFit: String(editedScores.timelineFit),
         replicationPotential: String(editedScores.replicationPotential),
-        theme: editedTheme,
         track: editedTrack,
       },
     });
@@ -197,7 +193,6 @@ export default function CompanyDetail() {
         timelineFit: Number(company.timelineFit) || 5,
         replicationPotential: Number(company.replicationPotential) || 5,
       });
-      setEditedTheme(company.theme);
       setEditedTrack(company.track);
       setHasChanges(false);
     }
@@ -490,35 +485,6 @@ export default function CompanyDetail() {
 
         <TabsContent value="assignments">
           <div className="grid md:grid-cols-2 gap-6">
-            <Card>
-              <CardHeader>
-                <CardTitle className="text-lg">Value Theme</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <Select
-                  value={editedTheme || ""}
-                  onValueChange={(v) => {
-                    setEditedTheme(v || null);
-                    setHasChanges(true);
-                  }}
-                >
-                  <SelectTrigger>
-                    <SelectValue placeholder="Select theme" />
-                  </SelectTrigger>
-                  <SelectContent>
-                    {THEMES.map((theme) => (
-                      <SelectItem key={theme} value={theme}>
-                        {theme}
-                      </SelectItem>
-                    ))}
-                  </SelectContent>
-                </Select>
-                <p className="text-sm text-muted-foreground mt-2">
-                  Primary value creation focus for AI initiatives
-                </p>
-              </CardContent>
-            </Card>
-
             <Card>
               <CardHeader>
                 <CardTitle className="text-lg">Hold Period Track</CardTitle>

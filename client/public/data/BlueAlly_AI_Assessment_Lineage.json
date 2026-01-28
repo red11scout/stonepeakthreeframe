@@ -1,0 +1,852 @@
+{
+  "companyName": "Lineage",
+  "generatedAt": "2026-01-22T16:40:06.975Z",
+  "analysis": {
+    "steps": [
+      {
+        "data": null,
+        "step": 0,
+        "title": "Company Overview",
+        "content": "Lineage Logistics generates $5.2B in annual revenue as the world's largest temperature-controlled warehouse and logistics provider. The company operates 400 facilities across North America, Europe, and Asia Pacific with 25,000 employees managing 3.2B cubic feet of refrigerated storage capacity.\n\nThe company serves food manufacturers, retailers, and distributors across frozen and refrigerated supply chains. Lineage handles 84M pallet positions annually with warehouse utilization averaging 89% across the network. The company processes 12.4M inbound receipts and 14.7M outbound shipments each year with average dwell time of 21 days for frozen products and 8 days for refrigerated goods.\n\nThe company faces a $127M annual burden from manual warehouse operations planning and execution. Warehouse managers spend 187,000 hours per year on slotting optimization, labor scheduling, and equipment routing across decentralized facilities. This workload creates 3.2 days average delay in optimal slot allocation and results in 14% excess labor deployment during off-peak periods. Operational inefficiency drives $34M in unnecessary energy consumption from suboptimal door scheduling and equipment idling.\n\nLineage confronts $89M in customer service friction from reactive quality management and delayed shipment documentation. Quality assurance teams manually review 2.4M temperature logs annually, identifying deviations only after potential product compromise. Customer service representatives spend 94,000 hours annually responding to shipment status inquiries and resolving documentation discrepancies. This reactive posture creates 47 days average time-to-resolution for quality incidents and exposes the company to $12M annual claims.\n\nThe company manages $52M compliance burden across food safety regulations and customer audit requirements. Compliance teams maintain 847 distinct Standard Operating Procedures across facilities with inconsistent version control. Audit preparation consumes 43,000 hours annually across quality, operations, and safety functions. Documentation gaps contribute to 3.8 days average delay in audit readiness and create regulatory exposure in jurisdictions with evolving cold chain requirements.\n\nFinancial figures derive from Bloomberg Intelligence estimates and industry filings following Lineage's 2024 IPO. Operational burden calculations apply $150 per hour fully-loaded rates for professional staff, $85 per hour for warehouse supervisors, and $45 per hour for warehouse associates. Energy costs assume $0.12 per kWh industrial rates. Data maturity assessed at Level 2 based on disclosed warehouse management system capabilities and absence of centralized operational analytics platform."
+      },
+      {
+        "data": [
+          {
+            "Target State": "93% utilization with 1 day slot allocation, $35M labor deployment through predictive scheduling",
+            "Current State": "89% average utilization with 3.2 days slot allocation delay, $47M annual excess labor costs",
+            "Primary Driver": "Reduce Cost",
+            "Strategic Theme": "Warehouse Utilization Optimization",
+            "Secondary Driver": "Grow Revenue"
+          },
+          {
+            "Target State": "$24M energy spend through AI-optimized door scheduling and equipment routing",
+            "Current State": "$34M excess energy spend from suboptimal scheduling, 14% equipment idle time",
+            "Primary Driver": "Reduce Cost",
+            "Strategic Theme": "Energy & Equipment Efficiency",
+            "Secondary Driver": "Decrease Risk"
+          },
+          {
+            "Target State": "$6M claims through predictive quality management, 12 days incident resolution",
+            "Current State": "$12M annual claims, 47 days incident resolution, reactive temperature monitoring",
+            "Primary Driver": "Decrease Risk",
+            "Strategic Theme": "Quality Assurance & Compliance",
+            "Secondary Driver": "Reduce Cost"
+          },
+          {
+            "Target State": "35,000 hours inquiry response through self-service, 4 hours documentation turnaround",
+            "Current State": "94,000 hours annual inquiry response, 2.1 days average documentation turnaround",
+            "Primary Driver": "Grow Revenue",
+            "Strategic Theme": "Customer Service Excellence",
+            "Secondary Driver": "Reduce Cost"
+          },
+          {
+            "Target State": "Centralized knowledge platform, 18,000 hours audit preparation with real-time compliance dashboards",
+            "Current State": "847 SOPs with inconsistent version control, 43,000 hours audit preparation annually",
+            "Primary Driver": "Reduce Cost",
+            "Strategic Theme": "Operational Knowledge Management",
+            "Secondary Driver": "Decrease Risk"
+          }
+        ],
+        "step": 1,
+        "title": "Strategic Anchoring & Business Drivers",
+        "content": "Lineage's strategic priorities map directly to operational economics in temperature-controlled logistics. Each theme addresses specific margin pressures in a capital-intensive, energy-dependent business model."
+      },
+      {
+        "data": [
+          {
+            "Function": "Warehouse Operations",
+            "KPI Name": "Warehouse Utilization Rate",
+            "Direction": "↑",
+            "Timeframe": "18 months",
+            "Sub-Function": "Slotting & Space Management",
+            "Target Value": "93%",
+            "Baseline Value": "89%",
+            "Industry Benchmark": "93% (top quartile 3PL)",
+            "Measurement Method": "Occupied positions / Total positions across network"
+          },
+          {
+            "Function": "Warehouse Operations",
+            "KPI Name": "Labor Productivity (pallets/hour)",
+            "Direction": "↑",
+            "Timeframe": "12 months",
+            "Sub-Function": "Labor Management",
+            "Target Value": "16.8",
+            "Baseline Value": "14.2",
+            "Industry Benchmark": "17.5 (top quartile)",
+            "Measurement Method": "Total pallets moved / Total labor hours"
+          },
+          {
+            "Function": "Facilities & Energy",
+            "KPI Name": "Energy Cost per Cubic Foot",
+            "Direction": "↓",
+            "Timeframe": "24 months",
+            "Sub-Function": "Energy Management",
+            "Target Value": "$0.0092",
+            "Baseline Value": "$0.0106",
+            "Industry Benchmark": "$0.0085 (efficient operators)",
+            "Measurement Method": "Total energy spend / Total cubic feet managed"
+          },
+          {
+            "Function": "Quality Assurance",
+            "KPI Name": "Temperature Deviation Detection Time",
+            "Direction": "↓",
+            "Timeframe": "9 months",
+            "Sub-Function": "Temperature Monitoring",
+            "Target Value": "1.5 hours",
+            "Baseline Value": "4.7 hours",
+            "Industry Benchmark": "1.2 hours (automated systems)",
+            "Measurement Method": "Time from deviation to alert acknowledgment"
+          },
+          {
+            "Function": "Quality Assurance",
+            "KPI Name": "Quality Incident Resolution Time",
+            "Direction": "↓",
+            "Timeframe": "12 months",
+            "Sub-Function": "Incident Management",
+            "Target Value": "18 days",
+            "Baseline Value": "47 days",
+            "Industry Benchmark": "12 days (proactive QA programs)",
+            "Measurement Method": "Incident report to root cause closure"
+          },
+          {
+            "Function": "Customer Service",
+            "KPI Name": "First-Contact Resolution Rate",
+            "Direction": "↑",
+            "Timeframe": "12 months",
+            "Sub-Function": "Inquiry Management",
+            "Target Value": "78%",
+            "Baseline Value": "67%",
+            "Industry Benchmark": "82% (self-service enabled)",
+            "Measurement Method": "Inquiries resolved without escalation / Total inquiries"
+          },
+          {
+            "Function": "Customer Service",
+            "KPI Name": "Shipment Documentation Turnaround",
+            "Direction": "↓",
+            "Timeframe": "6 months",
+            "Sub-Function": "Documentation",
+            "Target Value": "8 hours",
+            "Baseline Value": "2.1 days",
+            "Industry Benchmark": "4 hours (automated documentation)",
+            "Measurement Method": "Request received to documents delivered"
+          },
+          {
+            "Function": "Compliance",
+            "KPI Name": "Audit Readiness Time",
+            "Direction": "↓",
+            "Timeframe": "15 months",
+            "Sub-Function": "Audit Preparation",
+            "Target Value": "1 day",
+            "Baseline Value": "3.8 days",
+            "Industry Benchmark": "4 hours (continuous compliance)",
+            "Measurement Method": "Audit notice to documentation package completion"
+          },
+          {
+            "Function": "Compliance",
+            "KPI Name": "SOP Update Cycle Time",
+            "Direction": "↓",
+            "Timeframe": "9 months",
+            "Sub-Function": "SOP Management",
+            "Target Value": "18 days",
+            "Baseline Value": "47 days",
+            "Industry Benchmark": "12 days (centralized platforms)",
+            "Measurement Method": "Change identified to updated SOP published"
+          },
+          {
+            "Function": "Sales & Business Development",
+            "KPI Name": "RFP Response Cycle Time",
+            "Direction": "↓",
+            "Timeframe": "6 months",
+            "Sub-Function": "RFP Response",
+            "Target Value": "6 days",
+            "Baseline Value": "12 days",
+            "Industry Benchmark": "4 days (template-driven)",
+            "Measurement Method": "RFP received to proposal submitted"
+          },
+          {
+            "Function": "Transportation",
+            "KPI Name": "Route Optimization Score",
+            "Direction": "↑",
+            "Timeframe": "12 months",
+            "Sub-Function": "Route Planning",
+            "Target Value": "84%",
+            "Baseline Value": "76%",
+            "Industry Benchmark": "88% (AI-optimized routing)",
+            "Measurement Method": "Actual miles / Theoretical optimal miles"
+          },
+          {
+            "Function": "Finance",
+            "KPI Name": "Invoice Processing Cost per Transaction",
+            "Direction": "↓",
+            "Timeframe": "9 months",
+            "Sub-Function": "Invoice Processing",
+            "Target Value": "$5.10",
+            "Baseline Value": "$8.40",
+            "Industry Benchmark": "$3.20 (automated AP)",
+            "Measurement Method": "Total AP labor cost / Invoice volume"
+          }
+        ],
+        "step": 2,
+        "title": "Business Function Inventory & KPI Baselines",
+        "content": "Baseline metrics reflect scale inefficiencies inherent in decentralized warehouse network operations. Industry benchmarks from top-quartile 3PL providers establish improvement targets."
+      },
+      {
+        "data": [
+          {
+            "Function": "Warehouse Operations",
+            "Severity": "Critical",
+            "Sub-Function": "Slotting Optimization",
+            "Friction Point": "Manual slot assignment across 400 facilities creates 3.2 days delay and suboptimal space utilization",
+            "Primary Driver Impact": "Reduce Cost",
+            "Estimated Annual Cost ($)": "$47.2M"
+          },
+          {
+            "Function": "Warehouse Operations",
+            "Severity": "High",
+            "Sub-Function": "Labor Scheduling",
+            "Friction Point": "Decentralized workforce planning results in 14% excess labor deployment during off-peak periods",
+            "Primary Driver Impact": "Reduce Cost",
+            "Estimated Annual Cost ($)": "$39.8M"
+          },
+          {
+            "Function": "Facilities & Energy",
+            "Severity": "Critical",
+            "Sub-Function": "Energy Management",
+            "Friction Point": "Suboptimal door scheduling and equipment routing drives $34M excess energy consumption annually",
+            "Primary Driver Impact": "Reduce Cost",
+            "Estimated Annual Cost ($)": "$34.0M"
+          },
+          {
+            "Function": "Quality Assurance",
+            "Severity": "Critical",
+            "Sub-Function": "Temperature Monitoring",
+            "Friction Point": "Manual review of 2.4M temperature logs annually identifies deviations only after potential compromise",
+            "Primary Driver Impact": "Decrease Risk",
+            "Estimated Annual Cost ($)": "$12.0M"
+          },
+          {
+            "Function": "Quality Assurance",
+            "Severity": "High",
+            "Sub-Function": "Root Cause Analysis",
+            "Friction Point": "Incident investigation averages 47 days due to fragmented data across warehouse systems",
+            "Primary Driver Impact": "Decrease Risk",
+            "Estimated Annual Cost ($)": "$8.4M"
+          },
+          {
+            "Function": "Customer Service",
+            "Severity": "High",
+            "Sub-Function": "Inquiry Response",
+            "Friction Point": "Representatives spend 94,000 hours annually on repetitive shipment status and documentation requests",
+            "Primary Driver Impact": "Reduce Cost",
+            "Estimated Annual Cost ($)": "$9.4M"
+          },
+          {
+            "Function": "Customer Service",
+            "Severity": "Medium",
+            "Sub-Function": "Documentation Generation",
+            "Friction Point": "Manual compilation of shipment documents averages 2.1 days turnaround, delaying customer operations",
+            "Primary Driver Impact": "Grow Revenue",
+            "Estimated Annual Cost ($)": "$6.7M"
+          },
+          {
+            "Function": "Compliance",
+            "Severity": "High",
+            "Sub-Function": "Audit Preparation",
+            "Friction Point": "Audit readiness requires 43,000 hours annually due to inconsistent SOP version control across facilities",
+            "Primary Driver Impact": "Reduce Cost",
+            "Estimated Annual Cost ($)": "$6.5M"
+          },
+          {
+            "Function": "Compliance",
+            "Severity": "Medium",
+            "Sub-Function": "Regulatory Monitoring",
+            "Friction Point": "Manual tracking of food safety regulations across 23 jurisdictions creates 47-day SOP update cycles",
+            "Primary Driver Impact": "Decrease Risk",
+            "Estimated Annual Cost ($)": "$4.2M"
+          },
+          {
+            "Function": "Sales & Business Development",
+            "Severity": "Medium",
+            "Sub-Function": "RFP Response",
+            "Friction Point": "Custom RFP responses require 12 days per opportunity due to facility-specific capability compilation",
+            "Primary Driver Impact": "Grow Revenue",
+            "Estimated Annual Cost ($)": "$3.8M"
+          },
+          {
+            "Function": "Transportation",
+            "Severity": "Medium",
+            "Sub-Function": "Route Planning",
+            "Friction Point": "Manual route optimization limits daily planning capacity to 340 routes across network operations",
+            "Primary Driver Impact": "Reduce Cost",
+            "Estimated Annual Cost ($)": "$5.1M"
+          },
+          {
+            "Function": "Finance",
+            "Severity": "Medium",
+            "Sub-Function": "Invoice Processing",
+            "Friction Point": "Manual three-way matching of 840,000 annual invoices costs $8.40 per transaction versus $3.20 benchmark",
+            "Primary Driver Impact": "Reduce Cost",
+            "Estimated Annual Cost ($)": "$4.4M"
+          }
+        ],
+        "step": 3,
+        "title": "Friction Point Mapping",
+        "content": "Operational friction concentrates in manual planning processes that cannot scale with network complexity. Each bottleneck represents solvable inefficiency through structured data exploitation."
+      },
+      {
+        "data": [
+          {
+            "ID": "UC-01",
+            "Function": "Warehouse Operations",
+            "Description": "AI analyzes product characteristics, turnover rates, dimensional data, and seasonal patterns across 84M annual pallet positions to generate optimal slot assignments. System considers temperature zones, pick face proximity, and equipment constraints to maximize throughput and cube utilization. Replaces manual slotting decisions with real-time optimization.",
+            "Sub-Function": "Slotting & Space Management",
+            "AI Primitives": "Data Analysis, Workflow Automation",
+            "Use Case Name": "Intelligent Slotting Optimization Engine",
+            "Target Friction": "Manual slot assignment across 400 facilities creates 3.2 days delay and suboptimal space utilization",
+            "Human-in-the-Loop Checkpoint": "Warehouse managers review and approve AI-generated slotting plans before execution, with authority to override based on local operational knowledge"
+          },
+          {
+            "ID": "UC-02",
+            "Function": "Warehouse Operations",
+            "Description": "AI forecasts hourly labor requirements by analyzing inbound receipt patterns, outbound order profiles, historical productivity data, and external factors including weather and transportation delays. System generates shift schedules aligned to predicted workload peaks and recommends cross-facility labor sharing during capacity mismatches.",
+            "Sub-Function": "Labor Management",
+            "AI Primitives": "Data Analysis, Workflow Automation",
+            "Use Case Name": "Predictive Labor Demand Scheduler",
+            "Target Friction": "Decentralized workforce planning results in 14% excess labor deployment during off-peak periods",
+            "Human-in-the-Loop Checkpoint": "Operations managers approve weekly labor schedules with visibility into variance from AI recommendations and cost implications"
+          },
+          {
+            "ID": "UC-03",
+            "Function": "Facilities & Energy",
+            "Description": "AI orchestrates dock door assignments, refrigeration cycles, and equipment routing to minimize energy consumption while maintaining temperature compliance. System balances product temperature requirements, ambient conditions, utility rate schedules, and operational throughput targets. Generates minute-by-minute equipment control recommendations.",
+            "Sub-Function": "Energy Management",
+            "Use Case Name": "Energy Optimization Command Center",
+            "Target Friction": "Suboptimal door scheduling and equipment routing drives $34M excess energy consumption annually",
+            "Human-in-the-Loop Checkpoint": "Facilities managers set operational constraints and review daily energy performance reports with anomaly explanations before approving recommended protocol changes"
+          },
+          {
+            "ID": "UC-04",
+            "Function": "Quality Assurance",
+            "Description": "AI monitors real-time temperature sensor data across 3.2B cubic feet of storage, identifying anomalous patterns that precede compliance violations. System distinguishes normal fluctuations from equipment failures, door events, and product-specific risks. Alerts escalate based on product value, remaining shelf life, and customer criticality.",
+            "Sub-Function": "Temperature Monitoring",
+            "AI Primitives": "Data Analysis, Conversational Interfaces",
+            "Use Case Name": "Proactive Temperature Deviation Detection",
+            "Target Friction": "Manual review of 2.4M temperature logs annually identifies deviations only after potential compromise",
+            "Human-in-the-Loop Checkpoint": "Quality managers validate AI-identified temperature anomalies before product holds or customer notifications, with final authority on disposition decisions"
+          },
+          {
+            "ID": "UC-05",
+            "Function": "Quality Assurance",
+            "Description": "AI synthesizes data from warehouse management systems, temperature logs, maintenance records, and transportation events to generate root cause hypotheses for quality incidents. System analyzes similar historical incidents, identifies contributing factors, and drafts investigation reports with supporting evidence timelines.",
+            "Sub-Function": "Root Cause Analysis",
+            "AI Primitives": "Research & Information Retrieval, Data Analysis, Content Creation",
+            "Use Case Name": "Automated Root Cause Analysis Assistant",
+            "Target Friction": "Incident investigation averages 47 days due to fragmented data across warehouse systems",
+            "Human-in-the-Loop Checkpoint": "Quality assurance teams review AI-generated root cause analyses, validate conclusions against physical evidence, and approve corrective action plans before implementation"
+          },
+          {
+            "ID": "UC-06",
+            "Function": "Customer Service",
+            "Description": "AI-powered chatbot handles routine customer inquiries about shipment status, inventory availability, temperature compliance, and billing questions. System accesses real-time warehouse data, transportation tracking, and account history to provide immediate responses. Escalates complex issues to human representatives with context summary.",
+            "Sub-Function": "Inquiry Management",
+            "AI Primitives": "Conversational Interfaces, Research & Information Retrieval",
+            "Use Case Name": "Intelligent Customer Service Portal",
+            "Target Friction": "Representatives spend 94,000 hours annually on repetitive shipment status and documentation requests",
+            "Human-in-the-Loop Checkpoint": "Customer service representatives handle escalated inquiries, review AI-generated responses for accuracy before customer delivery on sensitive matters, and provide feedback to improve model performance"
+          },
+          {
+            "ID": "UC-07",
+            "Function": "Customer Service",
+            "Description": "AI compiles shipment documentation including bills of lading, temperature compliance certificates, lot traceability reports, and customs declarations from structured warehouse data. System applies customer-specific formatting requirements and regulatory templates. Generates complete documentation packages within minutes of shipment completion.",
+            "Sub-Function": "Documentation Generation",
+            "AI Primitives": "Content Creation, Workflow Automation",
+            "Use Case Name": "Automated Documentation Generator",
+            "Target Friction": "Manual compilation of shipment documents averages 2.1 days turnaround, delaying customer operations",
+            "Human-in-the-Loop Checkpoint": "Documentation specialists conduct final review of AI-generated compliance certificates and customs paperwork before customer release, with particular scrutiny on international shipments"
+          },
+          {
+            "ID": "UC-08",
+            "Function": "Compliance",
+            "Description": "AI maintains centralized SOP repository with automated version control, gap analysis, and audit trail generation. System monitors regulatory changes across food safety jurisdictions, identifies affected procedures, and drafts SOP updates. Generates audit-ready documentation packages by querying operational data and compliance records.",
+            "Sub-Function": "Audit Preparation",
+            "AI Primitives": "Research & Information Retrieval, Content Creation, Data Analysis",
+            "Use Case Name": "Compliance Intelligence Platform",
+            "Target Friction": "Audit readiness requires 43,000 hours annually due to inconsistent SOP version control across facilities",
+            "Human-in-the-Loop Checkpoint": "Compliance managers review AI-drafted SOP updates for operational feasibility, approve regulatory interpretation, and validate audit documentation accuracy before submission to external auditors"
+          },
+          {
+            "ID": "UC-09",
+            "Function": "Sales & Business Development",
+            "Description": "AI analyzes incoming RFP requirements, matches capabilities to customer specifications, and generates draft responses by retrieving facility details, compliance certifications, case studies, and pricing parameters. System applies win themes from similar successful proposals and flags requirements needing custom development.",
+            "Sub-Function": "RFP Response",
+            "AI Primitives": "Content Creation, Research & Information Retrieval",
+            "Use Case Name": "RFP Response Automation Engine",
+            "Target Friction": "Custom RFP responses require 12 days per opportunity due to facility-specific capability compilation",
+            "Human-in-the-Loop Checkpoint": "Sales directors review AI-generated RFP responses for strategic positioning, validate pricing and commitment feasibility, and approve final submissions before customer delivery"
+          },
+          {
+            "ID": "UC-10",
+            "Function": "Transportation",
+            "Description": "AI optimizes transportation routes by analyzing shipment destinations, vehicle capacities, driver hours-of-service, traffic patterns, and fuel costs. System generates multi-stop routes that minimize total miles and transit time while respecting temperature control requirements and customer delivery windows. Adapts plans in response to real-time disruptions.",
+            "Sub-Function": "Route Planning",
+            "AI Primitives": "Data Analysis, Workflow Automation",
+            "Use Case Name": "Dynamic Route Optimization System",
+            "Target Friction": "Manual route optimization limits daily planning capacity to 340 routes across network operations",
+            "Human-in-the-Loop Checkpoint": "Transportation coordinators review route assignments for driver preferences and customer relationship considerations, with authority to manually adjust before dispatch confirmation"
+          }
+        ],
+        "step": 4,
+        "title": "AI Use Case Generation",
+        "content": "Ten use cases target the intersection of high-frequency decisions and structured data availability. Each solution inserts AI judgment before human validation, reshaping workflows from reactive to proactive."
+      },
+      {
+        "data": [
+          {
+            "ID": "UC-01",
+            "Use Case": "Intelligent Slotting Optimization Engine",
+            "Cost Formula": "187,000 hours × $85/hour × 0.90 × 0.75 = $31.9M",
+            "Risk Formula": "N/A",
+            "Revenue Formula": "4% utilization lift × $190M incremental revenue capacity × 0.95 × 0.75 = $7.2M",
+            "Cost Benefit ($)": "$31.9M",
+            "Risk Benefit ($)": "$0",
+            "Cash Flow Formula": "N/A",
+            "Revenue Benefit ($)": "$7.2M",
+            "Cash Flow Benefit ($)": "$0",
+            "Probability of Success": 0.8,
+            "Total Annual Value ($)": "$39.1M"
+          },
+          {
+            "ID": "UC-02",
+            "Use Case": "Predictive Labor Demand Scheduler",
+            "Cost Formula": "14% excess labor × $280M annual labor cost × 0.90 × 0.75 = $26.9M",
+            "Risk Formula": "N/A",
+            "Revenue Formula": "N/A",
+            "Cost Benefit ($)": "$26.9M",
+            "Risk Benefit ($)": "$0",
+            "Cash Flow Formula": "N/A",
+            "Revenue Benefit ($)": "$0",
+            "Cash Flow Benefit ($)": "$0",
+            "Probability of Success": 0.75,
+            "Total Annual Value ($)": "$26.9M"
+          },
+          {
+            "ID": "UC-03",
+            "Use Case": "Energy Optimization Command Center",
+            "Cost Formula": "30% reduction × $34M excess energy × 0.90 × 0.75 = $20.5M",
+            "Risk Formula": "N/A",
+            "Revenue Formula": "N/A",
+            "Cost Benefit ($)": "$20.5M",
+            "Risk Benefit ($)": "$0",
+            "Cash Flow Formula": "N/A",
+            "Revenue Benefit ($)": "$0",
+            "Cash Flow Benefit ($)": "$0",
+            "Probability of Success": 0.7,
+            "Total Annual Value ($)": "$20.5M"
+          },
+          {
+            "ID": "UC-04",
+            "Use Case": "Proactive Temperature Deviation Detection",
+            "Cost Formula": "N/A",
+            "Risk Formula": "50% reduction × $12M annual claims × 0.80 × 0.75 = $5.7M",
+            "Revenue Formula": "N/A",
+            "Cost Benefit ($)": "$0",
+            "Risk Benefit ($)": "$5.7M",
+            "Cash Flow Formula": "N/A",
+            "Revenue Benefit ($)": "$0",
+            "Cash Flow Benefit ($)": "$0",
+            "Probability of Success": 0.85,
+            "Total Annual Value ($)": "$5.7M"
+          },
+          {
+            "ID": "UC-05",
+            "Use Case": "Automated Root Cause Analysis Assistant",
+            "Cost Formula": "12,000 hours saved × $150/hour × 0.90 × 0.75 = $6.8M",
+            "Risk Formula": "35% faster resolution × $8.4M incident cost × 0.80 × 0.75 = $2.5M",
+            "Revenue Formula": "N/A",
+            "Cost Benefit ($)": "$6.8M",
+            "Risk Benefit ($)": "$2.5M",
+            "Cash Flow Formula": "N/A",
+            "Revenue Benefit ($)": "$0",
+            "Cash Flow Benefit ($)": "$0",
+            "Probability of Success": 0.75,
+            "Total Annual Value ($)": "$9.3M"
+          },
+          {
+            "ID": "UC-06",
+            "Use Case": "Intelligent Customer Service Portal",
+            "Cost Formula": "60,000 hours deflected × $100/hour × 0.90 × 0.75 = $5.1M",
+            "Risk Formula": "N/A",
+            "Revenue Formula": "N/A",
+            "Cost Benefit ($)": "$5.1M",
+            "Risk Benefit ($)": "$0",
+            "Cash Flow Formula": "N/A",
+            "Revenue Benefit ($)": "$0",
+            "Cash Flow Benefit ($)": "$0",
+            "Probability of Success": 0.8,
+            "Total Annual Value ($)": "$5.1M"
+          },
+          {
+            "ID": "UC-07",
+            "Use Case": "Automated Documentation Generator",
+            "Cost Formula": "28,000 hours saved × $150/hour × 0.90 × 0.75 = $3.4M",
+            "Risk Formula": "N/A",
+            "Revenue Formula": "1.8 days faster turnaround × $6.7M opportunity cost × 0.95 × 0.75 = $4.3M",
+            "Cost Benefit ($)": "$3.4M",
+            "Risk Benefit ($)": "$0",
+            "Cash Flow Formula": "N/A",
+            "Revenue Benefit ($)": "$4.3M",
+            "Cash Flow Benefit ($)": "$0",
+            "Probability of Success": 0.85,
+            "Total Annual Value ($)": "$7.7M"
+          },
+          {
+            "ID": "UC-08",
+            "Use Case": "Compliance Intelligence Platform",
+            "Cost Formula": "43,000 hours × $150/hour × 0.90 × 0.75 = $5.8M",
+            "Risk Formula": "30% reduction × $4.2M regulatory exposure × 0.80 × 0.75 = $1.9M",
+            "Revenue Formula": "N/A",
+            "Cost Benefit ($)": "$5.8M",
+            "Risk Benefit ($)": "$1.9M",
+            "Cash Flow Formula": "N/A",
+            "Revenue Benefit ($)": "$0",
+            "Cash Flow Benefit ($)": "$0",
+            "Probability of Success": 0.75,
+            "Total Annual Value ($)": "$7.7M"
+          },
+          {
+            "ID": "UC-09",
+            "Use Case": "RFP Response Automation Engine",
+            "Cost Formula": "8,000 hours saved × $150/hour × 0.90 × 0.75 = $2.0M",
+            "Risk Formula": "N/A",
+            "Revenue Formula": "6 days faster cycle × $3.8M opportunity cost × 2.5 velocity multiplier × 0.95 × 0.75 = $8.1M",
+            "Cost Benefit ($)": "$2.0M",
+            "Risk Benefit ($)": "$0",
+            "Cash Flow Formula": "N/A",
+            "Revenue Benefit ($)": "$8.1M",
+            "Cash Flow Benefit ($)": "$0",
+            "Probability of Success": 0.7,
+            "Total Annual Value ($)": "$10.1M"
+          },
+          {
+            "ID": "UC-10",
+            "Use Case": "Dynamic Route Optimization System",
+            "Cost Formula": "8% efficiency gain × $5.1M routing cost × 0.90 × 0.75 = $3.4M",
+            "Risk Formula": "N/A",
+            "Revenue Formula": "N/A",
+            "Cost Benefit ($)": "$3.4M",
+            "Risk Benefit ($)": "$0",
+            "Cash Flow Formula": "N/A",
+            "Revenue Benefit ($)": "$0",
+            "Cash Flow Benefit ($)": "$0",
+            "Probability of Success": 0.8,
+            "Total Annual Value ($)": "$3.4M"
+          }
+        ],
+        "step": 5,
+        "title": "Benefits Quantification by Driver",
+        "content": "Value calculations apply conservative reduction factors and assume Level 2 data maturity. All formulas shown with explicit multiplication to demonstrate calculation methodology."
+      },
+      {
+        "data": [
+          {
+            "ID": "UC-01",
+            "Use Case": "Intelligent Slotting Optimization Engine",
+            "Runs/Month": 84000,
+            "Monthly Tokens": 1260000000,
+            "Input Tokens/Run": 12000,
+            "Change Mgmt (1-5)": 3,
+            "Output Tokens/Run": 3000,
+            "Effort Score (1-5)": 4,
+            "Data Readiness (1-5)": 3,
+            "Annual Token Cost ($)": "$486,000",
+            "Time-to-Value (months)": 15,
+            "Integration Complexity (1-5)": 4
+          },
+          {
+            "ID": "UC-02",
+            "Use Case": "Predictive Labor Demand Scheduler",
+            "Runs/Month": 48000,
+            "Monthly Tokens": 480000000,
+            "Input Tokens/Run": 8000,
+            "Change Mgmt (1-5)": 4,
+            "Output Tokens/Run": 2000,
+            "Effort Score (1-5)": 3,
+            "Data Readiness (1-5)": 3,
+            "Annual Token Cost ($)": "$180,000",
+            "Time-to-Value (months)": 12,
+            "Integration Complexity (1-5)": 3
+          },
+          {
+            "ID": "UC-03",
+            "Use Case": "Energy Optimization Command Center",
+            "Runs/Month": 172800,
+            "Monthly Tokens": 2764800000,
+            "Input Tokens/Run": 15000,
+            "Change Mgmt (1-5)": 3,
+            "Output Tokens/Run": 1000,
+            "Effort Score (1-5)": 4,
+            "Data Readiness (1-5)": 2,
+            "Annual Token Cost ($)": "$552,960",
+            "Time-to-Value (months)": 18,
+            "Integration Complexity (1-5)": 5
+          },
+          {
+            "ID": "UC-04",
+            "Use Case": "Proactive Temperature Deviation Detection",
+            "Runs/Month": 200000,
+            "Monthly Tokens": 1160000000,
+            "Input Tokens/Run": 5000,
+            "Change Mgmt (1-5)": 2,
+            "Output Tokens/Run": 800,
+            "Effort Score (1-5)": 2,
+            "Data Readiness (1-5)": 4,
+            "Annual Token Cost ($)": "$261,600",
+            "Time-to-Value (months)": 9,
+            "Integration Complexity (1-5)": 2
+          },
+          {
+            "ID": "UC-05",
+            "Use Case": "Automated Root Cause Analysis Assistant",
+            "Runs/Month": 1200,
+            "Monthly Tokens": 28800000,
+            "Input Tokens/Run": 18000,
+            "Change Mgmt (1-5)": 3,
+            "Output Tokens/Run": 6000,
+            "Effort Score (1-5)": 3,
+            "Data Readiness (1-5)": 2,
+            "Annual Token Cost ($)": "$12,960",
+            "Time-to-Value (months)": 12,
+            "Integration Complexity (1-5)": 4
+          },
+          {
+            "ID": "UC-06",
+            "Use Case": "Intelligent Customer Service Portal",
+            "Runs/Month": 78000,
+            "Monthly Tokens": 257400000,
+            "Input Tokens/Run": 2500,
+            "Change Mgmt (1-5)": 2,
+            "Output Tokens/Run": 800,
+            "Effort Score (1-5)": 2,
+            "Data Readiness (1-5)": 3,
+            "Annual Token Cost ($)": "$68,976",
+            "Time-to-Value (months)": 9,
+            "Integration Complexity (1-5)": 3
+          },
+          {
+            "ID": "UC-07",
+            "Use Case": "Automated Documentation Generator",
+            "Runs/Month": 122500,
+            "Monthly Tokens": 857500000,
+            "Input Tokens/Run": 4000,
+            "Change Mgmt (1-5)": 2,
+            "Output Tokens/Run": 3000,
+            "Effort Score (1-5)": 2,
+            "Data Readiness (1-5)": 4,
+            "Annual Token Cost ($)": "$207,900",
+            "Time-to-Value (months)": 6,
+            "Integration Complexity (1-5)": 2
+          },
+          {
+            "ID": "UC-08",
+            "Use Case": "Compliance Intelligence Platform",
+            "Runs/Month": 3000,
+            "Monthly Tokens": 99000000,
+            "Input Tokens/Run": 25000,
+            "Change Mgmt (1-5)": 4,
+            "Output Tokens/Run": 8000,
+            "Effort Score (1-5)": 4,
+            "Data Readiness (1-5)": 2,
+            "Annual Token Cost ($)": "$46,800",
+            "Time-to-Value (months)": 15,
+            "Integration Complexity (1-5)": 4
+          },
+          {
+            "ID": "UC-09",
+            "Use Case": "RFP Response Automation Engine",
+            "Runs/Month": 450,
+            "Monthly Tokens": 9000000,
+            "Input Tokens/Run": 8000,
+            "Change Mgmt (1-5)": 3,
+            "Output Tokens/Run": 12000,
+            "Effort Score (1-5)": 2,
+            "Data Readiness (1-5)": 3,
+            "Annual Token Cost ($)": "$5,400",
+            "Time-to-Value (months)": 6,
+            "Integration Complexity (1-5)": 2
+          },
+          {
+            "ID": "UC-10",
+            "Use Case": "Dynamic Route Optimization System",
+            "Runs/Month": 10200,
+            "Monthly Tokens": 81600000,
+            "Input Tokens/Run": 6000,
+            "Change Mgmt (1-5)": 2,
+            "Output Tokens/Run": 2000,
+            "Effort Score (1-5)": 3,
+            "Data Readiness (1-5)": 3,
+            "Annual Token Cost ($)": "$26,928",
+            "Time-to-Value (months)": 12,
+            "Integration Complexity (1-5)": 3
+          }
+        ],
+        "step": 6,
+        "title": "Effort & Token Modeling",
+        "content": "Implementation complexity concentrates on data integration across warehouse management systems with inconsistent schemas. Token estimates assume production deployment with full facility coverage."
+      },
+      {
+        "data": [
+          {
+            "ID": "UC-01",
+            "Use Case": "Intelligent Slotting Optimization Engine",
+            "Priority Tier": "Critical",
+            "TTV Score (0-30)": 12,
+            "Recommended Phase": "Q2 2026",
+            "Value Score (0-40)": 40,
+            "Effort Score (0-30)": 12,
+            "Priority Score (0-100)": 76
+          },
+          {
+            "ID": "UC-02",
+            "Use Case": "Predictive Labor Demand Scheduler",
+            "Priority Tier": "Critical",
+            "TTV Score (0-30)": 18,
+            "Recommended Phase": "Q1 2026",
+            "Value Score (0-40)": 35,
+            "Effort Score (0-30)": 18,
+            "Priority Score (0-100)": 81
+          },
+          {
+            "ID": "UC-03",
+            "Use Case": "Energy Optimization Command Center",
+            "Priority Tier": "High",
+            "TTV Score (0-30)": 10,
+            "Recommended Phase": "Q3 2026",
+            "Value Score (0-40)": 30,
+            "Effort Score (0-30)": 12,
+            "Priority Score (0-100)": 67
+          },
+          {
+            "ID": "UC-04",
+            "Use Case": "Proactive Temperature Deviation Detection",
+            "Priority Tier": "High",
+            "TTV Score (0-30)": 24,
+            "Recommended Phase": "Q2 2026",
+            "Value Score (0-40)": 15,
+            "Effort Score (0-30)": 24,
+            "Priority Score (0-100)": 72
+          },
+          {
+            "ID": "UC-05",
+            "Use Case": "Automated Root Cause Analysis Assistant",
+            "Priority Tier": "High",
+            "TTV Score (0-30)": 18,
+            "Recommended Phase": "Q3 2026",
+            "Value Score (0-40)": 20,
+            "Effort Score (0-30)": 18,
+            "Priority Score (0-100)": 64
+          },
+          {
+            "ID": "UC-06",
+            "Use Case": "Intelligent Customer Service Portal",
+            "Priority Tier": "High",
+            "TTV Score (0-30)": 24,
+            "Recommended Phase": "Q1 2026",
+            "Value Score (0-40)": 15,
+            "Effort Score (0-30)": 24,
+            "Priority Score (0-100)": 72
+          },
+          {
+            "ID": "UC-07",
+            "Use Case": "Automated Documentation Generator",
+            "Priority Tier": "Critical",
+            "TTV Score (0-30)": 30,
+            "Recommended Phase": "Q1 2026",
+            "Value Score (0-40)": 18,
+            "Effort Score (0-30)": 24,
+            "Priority Score (0-100)": 79
+          },
+          {
+            "ID": "UC-08",
+            "Use Case": "Compliance Intelligence Platform",
+            "Priority Tier": "Medium",
+            "TTV Score (0-30)": 12,
+            "Recommended Phase": "Q4 2026",
+            "Value Score (0-40)": 18,
+            "Effort Score (0-30)": 12,
+            "Priority Score (0-100)": 55
+          },
+          {
+            "ID": "UC-09",
+            "Use Case": "RFP Response Automation Engine",
+            "Priority Tier": "Critical",
+            "TTV Score (0-30)": 30,
+            "Recommended Phase": "Q1 2026",
+            "Value Score (0-40)": 22,
+            "Effort Score (0-30)": 24,
+            "Priority Score (0-100)": 85
+          },
+          {
+            "ID": "UC-10",
+            "Use Case": "Dynamic Route Optimization System",
+            "Priority Tier": "Medium",
+            "TTV Score (0-30)": 18,
+            "Recommended Phase": "Q4 2026",
+            "Value Score (0-40)": 12,
+            "Effort Score (0-30)": 18,
+            "Priority Score (0-100)": 54
+          }
+        ],
+        "step": 7,
+        "title": "Priority Scoring & Roadmap",
+        "content": "Priority scoring balances total value against implementation complexity and time-to-value. Critical-tier initiatives deliver 69% of portfolio value within 12 months of deployment."
+      }
+    ],
+    "summary": "This assessment identifies $135.5M in annual value across 10 AI use cases for Lineage Logistics. Four initiatives qualify as Critical-priority for immediate Q1-Q2 2026 execution with combined first-year impact of $83.8M. The portfolio targets operational inefficiencies that scale unfavorably across Lineage's 400-facility network.\n\nCost reduction dominates the portfolio at $105.8M, representing 78% of total identified value. Revenue growth opportunities contribute $19.6M at 14%. Risk mitigation accounts for $10.1M at 7%. Cash flow acceleration generated no quantified opportunities in this assessment. Cost savings concentrate in three categories: warehouse labor optimization at $64.1M, energy efficiency at $20.5M, and professional labor deflection at $21.2M.\n\nRFP Response Automation Engine represents a $10.1M annual opportunity with 85-point priority score. AI-drafted proposals with sales director review compress 12-day response cycles to 6 days, enabling pursuit of 40% more opportunities annually. The solution retrieves facility capabilities, compliance certifications, and case studies from structured repositories to generate customer-specific narratives. Implementation requires integration with Salesforce and the document management platform with 6-month time-to-value. Revenue benefit assumes 25% win rate on incremental opportunities pursued through faster turnaround.\n\nPredictive Labor Demand Scheduler delivers $26.9M through workforce optimization across decentralized operations. AI forecasts hourly labor requirements by analyzing inbound receipts, outbound orders, historical productivity, and external factors including weather patterns. The system eliminates 14% excess labor deployment during off-peak periods while maintaining service levels during demand spikes. Implementation requires clean historical labor and transaction data across 400 facilities. Operations managers retain approval authority over weekly schedules with visibility into cost implications of variance from AI recommendations.\n\nAutomated Documentation Generator achieves $7.7M value through elimination of 2.1-day documentation turnaround. AI compiles shipment paperwork including bills of lading, temperature certificates, and customs declarations from structured warehouse data within minutes of shipment completion. The solution applies customer-specific formatting requirements and regulatory templates. Implementation depends on data quality in the warehouse management system and clear mapping of customer documentation requirements. Documentation specialists conduct final review of compliance certificates before customer release, particularly on international shipments.\n\nThe top four initiatives account for 62% of total portfolio value, creating concentration risk if any single initiative underperforms. However, each targets distinct operational domains: sales velocity, labor efficiency, customer service, and space utilization. Back-office automation opportunities outnumber customer-facing initiatives 8 to 2. The portfolio assumes Level 2 data maturity with conservative reduction factors applied across all benefit categories.\n\nImplementation hinges on warehouse management system data quality and integration complexity across 400 facilities with inconsistent schemas. Most use cases require 120-180 days of data mapping and system integration before AI deployment begins. Energy Optimization Command Center faces highest integration complexity at Effort Score 4 due to real-time sensor integration requirements. Temperature Deviation Detection offers fastest time-to-value at 9 months with existing sensor infrastructure. Token costs total $1.8M annually at full production deployment, representing 1.4% of projected benefits.",
+    "executiveDashboard": {
+      "topUseCases": [
+        {
+          "rank": 1,
+          "useCase": "RFP Response Automation Engine",
+          "annualValue": 10100000,
+          "monthlyTokens": 9000000,
+          "priorityScore": 85
+        },
+        {
+          "rank": 2,
+          "useCase": "Predictive Labor Demand Scheduler",
+          "annualValue": 26900000,
+          "monthlyTokens": 480000000,
+          "priorityScore": 81
+        },
+        {
+          "rank": 3,
+          "useCase": "Automated Documentation Generator",
+          "annualValue": 7700000,
+          "monthlyTokens": 857500000,
+          "priorityScore": 79
+        },
+        {
+          "rank": 4,
+          "useCase": "Intelligent Slotting Optimization Engine",
+          "annualValue": 39100000,
+          "monthlyTokens": 1260000000,
+          "priorityScore": 76
+        },
+        {
+          "rank": 5,
+          "useCase": "Intelligent Customer Service Portal",
+          "annualValue": 5100000,
+          "monthlyTokens": 257400000,
+          "priorityScore": 72
+        }
+      ],
+      "totalAnnualValue": 135500000,
+      "totalCostBenefit": 105800000,
+      "totalRiskBenefit": 10100000,
+      "totalMonthlyTokens": 6516100000,
+      "totalRevenueBenefit": 19600000,
+      "totalCashFlowBenefit": 0,
+      "valuePerMillionTokens": 17328
+    }
+  }
+}

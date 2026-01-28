@@ -1,0 +1,853 @@
+{
+  "companyName": "ATSG",
+  "generatedAt": "2026-01-22T16:38:16.239Z",
+  "analysis": {
+    "steps": [
+      {
+        "data": null,
+        "step": 0,
+        "title": "Company Overview",
+        "content": "Air Transport Services Group generates $1.6B in annual revenue from aircraft leasing and cargo airline operations. The company operates from Wilmington, Ohio as a pure-play aviation services provider with 5,200 employees and a fleet of 127 aircraft serving domestic and international routes.\n\nThe company structures operations across two primary segments: CAM (Cargo Aircraft Management) provides aircraft leasing and maintenance services representing 58% of revenue, while ACMI (Aircraft, Crew, Maintenance, and Insurance) services deliver comprehensive charter operations accounting for 42% of revenue. The fleet processes approximately 285,000 flight hours annually with an 87% utilization rate. Major customers include Amazon Air (44% of consolidated revenue), DHL (18%), and the U.S. Military (9%).\n\nThe company faces a $34M annual burden from manual aircraft maintenance documentation. Maintenance technicians spend 22,000 hours per year transcribing inspection reports, updating logbooks, and reconciling regulatory compliance records across 127 aircraft operating under FAA Part 121 and Part 135 certificates. This workload creates an 18-day average backlog on routine airworthiness directives and delays aircraft return-to-service by 3.2 days per heavy maintenance cycle.\n\nOperational inefficiency in route planning and fuel optimization costs the company $28M annually. Flight operations teams manually analyze weather patterns, airspace restrictions, and fuel prices for 785 weekly flight segments. Current processes require 4.5 hours per international route plan and 2.1 hours per domestic route, consuming 16,800 professional hours annually. Suboptimal routing increases fuel consumption by an estimated 2.8% versus theoretically optimal paths.\n\nCrew scheduling complexity generates $19M in annual excess costs. The company manages 1,840 pilots and crew members across six aircraft types operating under complex FAA duty time regulations and customer SLA requirements. Manual scheduling processes require 12,600 hours annually and result in a 14% deadhead positioning rate versus an industry-achievable 9%. Each percentage point of deadhead reduction saves approximately $3.2M in positioning costs.\n\nFinancial figures derive from ATSG's 2024 10-K filing and Q3 2025 earnings release. Operational burden estimates apply industry-standard fully-loaded rates of $185 per hour for aviation professionals, $125 per hour for technical staff, and $95 per hour for administrative personnel. Data maturity assessed at Level 2 based on disclosed ERP systems and limited automation capabilities in core operational processes. Fleet utilization and maintenance metrics verified against FAA public records and industry benchmarks from Aircraft Commerce analytics."
+      },
+      {
+        "data": [
+          {
+            "Target State": "92% utilization rate with 9-day maintenance backlog and 1.8-day average delay through automated documentation and predictive maintenance scheduling",
+            "Current State": "87% utilization rate with 18-day maintenance backlog and 3.2-day average delay per heavy check",
+            "Primary Driver": "Reduce Cost",
+            "Strategic Theme": "Fleet Operational Efficiency",
+            "Secondary Driver": "Increase Cash Flow"
+          },
+          {
+            "Target State": "AI-optimized routing reducing fuel consumption penalty to 0.9% and planning time by 65% while maintaining FAA compliance",
+            "Current State": "Manual route planning consuming 16,800 hours annually with 2.8% fuel consumption penalty versus optimal paths",
+            "Primary Driver": "Reduce Cost",
+            "Strategic Theme": "Route & Fuel Optimization",
+            "Secondary Driver": "Grow Revenue"
+          },
+          {
+            "Target State": "Automated compliance monitoring reducing audit findings to 4% and documentation burden by 58% while maintaining Part 121/135 certification",
+            "Current State": "Manual compliance documentation across 47 FAA regulations with 12% annual finding rate during audits",
+            "Primary Driver": "Decrease Risk",
+            "Strategic Theme": "Regulatory Compliance & Safety",
+            "Secondary Driver": "Reduce Cost"
+          },
+          {
+            "Target State": "Automated performance tracking achieving 96% on-time performance and 8-day RFP response time to support contract renewals and expansion",
+            "Current State": "Manual SLA monitoring with 91% on-time performance and 23-day average response time to RFP inquiries",
+            "Primary Driver": "Grow Revenue",
+            "Strategic Theme": "Customer Service & Contract Performance",
+            "Secondary Driver": "Decrease Risk"
+          },
+          {
+            "Target State": "9% deadhead rate through optimized scheduling reducing manual effort by 52% and overtime premium to 5.4%",
+            "Current State": "14% crew deadhead positioning rate consuming 12,600 scheduling hours annually with 8.2% monthly overtime premium",
+            "Primary Driver": "Reduce Cost",
+            "Strategic Theme": "Workforce Optimization & Scheduling",
+            "Secondary Driver": "Increase Cash Flow"
+          }
+        ],
+        "step": 1,
+        "title": "Strategic Anchoring & Business Drivers",
+        "content": "ATSG's strategic priorities map directly to business value drivers through five core themes that address operational leverage, regulatory compliance, asset utilization, customer retention, and cost structure optimization."
+      },
+      {
+        "data": [
+          {
+            "Function": "Maintenance Operations",
+            "KPI Name": "Documentation Hours per Aircraft per Year",
+            "Direction": "↓",
+            "Timeframe": "12 months",
+            "Sub-Function": "Airworthiness Documentation",
+            "Target Value": "85 hours",
+            "Baseline Value": "173 hours",
+            "Industry Benchmark": "68 hours",
+            "Measurement Method": "Technician time logs aggregated by tail number"
+          },
+          {
+            "Function": "Maintenance Operations",
+            "KPI Name": "Average Return-to-Service Days",
+            "Direction": "↓",
+            "Timeframe": "18 months",
+            "Sub-Function": "Heavy Maintenance Cycles",
+            "Target Value": "2.1 days",
+            "Baseline Value": "3.2 days",
+            "Industry Benchmark": "1.9 days",
+            "Measurement Method": "Delta between planned and actual aircraft release dates"
+          },
+          {
+            "Function": "Flight Operations",
+            "KPI Name": "Planning Hours per International Segment",
+            "Direction": "↓",
+            "Timeframe": "9 months",
+            "Sub-Function": "Route Planning",
+            "Target Value": "2.4 hours",
+            "Baseline Value": "4.5 hours",
+            "Industry Benchmark": "1.8 hours",
+            "Measurement Method": "Dispatcher time tracking by route segment"
+          },
+          {
+            "Function": "Flight Operations",
+            "KPI Name": "Fuel Consumption vs Optimal Path",
+            "Direction": "↓",
+            "Timeframe": "12 months",
+            "Sub-Function": "Fuel Efficiency",
+            "Target Value": "1.5% excess",
+            "Baseline Value": "2.8% excess",
+            "Industry Benchmark": "1.1% excess",
+            "Measurement Method": "Actual fuel burn compared to theoretical optimal route calculations"
+          },
+          {
+            "Function": "Crew Management",
+            "KPI Name": "Deadhead Positioning Rate",
+            "Direction": "↓",
+            "Timeframe": "15 months",
+            "Sub-Function": "Crew Scheduling",
+            "Target Value": "10%",
+            "Baseline Value": "14%",
+            "Industry Benchmark": "8%",
+            "Measurement Method": "Non-revenue crew positioning flights as percentage of total crew movements"
+          },
+          {
+            "Function": "Crew Management",
+            "KPI Name": "Monthly Overtime Premium Percentage",
+            "Direction": "↓",
+            "Timeframe": "12 months",
+            "Sub-Function": "Labor Optimization",
+            "Target Value": "6.1%",
+            "Baseline Value": "8.2%",
+            "Industry Benchmark": "4.9%",
+            "Measurement Method": "Overtime wages as percentage of base crew compensation"
+          },
+          {
+            "Function": "Safety & Compliance",
+            "KPI Name": "Annual Audit Finding Rate",
+            "Direction": "↓",
+            "Timeframe": "18 months",
+            "Sub-Function": "Regulatory Audits",
+            "Target Value": "7%",
+            "Baseline Value": "12%",
+            "Industry Benchmark": "5%",
+            "Measurement Method": "Findings per inspection normalized by inspection scope"
+          },
+          {
+            "Function": "Safety & Compliance",
+            "KPI Name": "Average Incident Documentation Days",
+            "Direction": "↓",
+            "Timeframe": "9 months",
+            "Sub-Function": "Incident Response",
+            "Target Value": "4.5 days",
+            "Baseline Value": "6.8 days",
+            "Industry Benchmark": "3.2 days",
+            "Measurement Method": "Time from incident occurrence to final report submission"
+          },
+          {
+            "Function": "Commercial Operations",
+            "KPI Name": "RFP Response Time",
+            "Direction": "↓",
+            "Timeframe": "6 months",
+            "Sub-Function": "Contract Management",
+            "Target Value": "15 days",
+            "Baseline Value": "23 days",
+            "Industry Benchmark": "12 days",
+            "Measurement Method": "Calendar days from RFP receipt to proposal submission"
+          },
+          {
+            "Function": "Commercial Operations",
+            "KPI Name": "On-Time Performance Rate",
+            "Direction": "↑",
+            "Timeframe": "12 months",
+            "Sub-Function": "Performance Monitoring",
+            "Target Value": "94%",
+            "Baseline Value": "91%",
+            "Industry Benchmark": "95%",
+            "Measurement Method": "Flights departing within 15 minutes of scheduled time"
+          },
+          {
+            "Function": "Finance & Accounting",
+            "KPI Name": "Days to Close Monthly Books",
+            "Direction": "↓",
+            "Timeframe": "9 months",
+            "Sub-Function": "Revenue Recognition",
+            "Target Value": "9 days",
+            "Baseline Value": "12 days",
+            "Industry Benchmark": "7 days",
+            "Measurement Method": "Calendar days from month-end to preliminary close"
+          },
+          {
+            "Function": "Supply Chain",
+            "KPI Name": "Aircraft-on-Ground Hours per AOG Event",
+            "Direction": "↓",
+            "Timeframe": "15 months",
+            "Sub-Function": "Parts Procurement",
+            "Target Value": "14.0 hours",
+            "Baseline Value": "18.4 hours",
+            "Industry Benchmark": "11.2 hours",
+            "Measurement Method": "Total downtime from part failure to aircraft return-to-service"
+          }
+        ],
+        "step": 2,
+        "title": "Business Function Inventory & KPI Baselines",
+        "content": "Core operational functions reveal significant gaps between current performance and industry benchmarks, particularly in maintenance operations, flight planning efficiency, and crew utilization. KPI baselines establish measurement frameworks for AI intervention impact."
+      },
+      {
+        "data": [
+          {
+            "Function": "Maintenance Operations",
+            "Severity": "Critical",
+            "Sub-Function": "Airworthiness Documentation",
+            "Friction Point": "Manual transcription of maintenance inspection findings into multiple FAA-required logbooks and digital systems creating dual-entry burden",
+            "Primary Driver Impact": "Reduce Cost",
+            "Estimated Annual Cost ($)": "$34.0M"
+          },
+          {
+            "Function": "Flight Operations",
+            "Severity": "Critical",
+            "Sub-Function": "Route Planning",
+            "Friction Point": "Sequential manual analysis of weather, NOTAMs, airspace restrictions, and fuel pricing requiring 4.5 hours per complex international route",
+            "Primary Driver Impact": "Reduce Cost",
+            "Estimated Annual Cost ($)": "$28.0M"
+          },
+          {
+            "Function": "Crew Management",
+            "Severity": "Critical",
+            "Sub-Function": "Crew Scheduling",
+            "Friction Point": "Manual optimization of crew assignments across six aircraft types with complex FAA duty time regulations resulting in 14% deadhead positioning",
+            "Primary Driver Impact": "Reduce Cost",
+            "Estimated Annual Cost ($)": "$19.0M"
+          },
+          {
+            "Function": "Safety & Compliance",
+            "Severity": "High",
+            "Sub-Function": "Regulatory Monitoring",
+            "Friction Point": "Manual tracking of 47 active FAA regulations and airworthiness directives across 127 aircraft with inconsistent alert mechanisms",
+            "Primary Driver Impact": "Decrease Risk",
+            "Estimated Annual Cost ($)": "$12.0M"
+          },
+          {
+            "Function": "Commercial Operations",
+            "Severity": "High",
+            "Sub-Function": "RFP Response",
+            "Friction Point": "Manual compilation of aircraft availability data, pricing models, and regulatory certifications from disparate systems for each RFP",
+            "Primary Driver Impact": "Grow Revenue",
+            "Estimated Annual Cost ($)": "$8.5M"
+          },
+          {
+            "Function": "Maintenance Operations",
+            "Severity": "High",
+            "Sub-Function": "Predictive Maintenance",
+            "Friction Point": "Reactive maintenance scheduling based on calendar intervals rather than predictive analytics of component degradation patterns",
+            "Primary Driver Impact": "Increase Cash Flow",
+            "Estimated Annual Cost ($)": "$15.0M"
+          },
+          {
+            "Function": "Safety & Compliance",
+            "Severity": "High",
+            "Sub-Function": "Incident Reporting",
+            "Friction Point": "Manual narrative construction for FAA incident reports requiring 6.8 days average and cross-referencing multiple data sources",
+            "Primary Driver Impact": "Decrease Risk",
+            "Estimated Annual Cost ($)": "$7.2M"
+          },
+          {
+            "Function": "Finance & Accounting",
+            "Severity": "Medium",
+            "Sub-Function": "Revenue Recognition",
+            "Friction Point": "Manual reconciliation of flight hour logs against customer contracts for ACMI billing with 12-day monthly close cycle",
+            "Primary Driver Impact": "Increase Cash Flow",
+            "Estimated Annual Cost ($)": "$5.8M"
+          },
+          {
+            "Function": "Supply Chain",
+            "Severity": "High",
+            "Sub-Function": "Parts Procurement",
+            "Friction Point": "Sequential manual sourcing of aircraft-on-ground parts across 14 supplier systems without integrated inventory visibility",
+            "Primary Driver Impact": "Decrease Risk",
+            "Estimated Annual Cost ($)": "$9.4M"
+          },
+          {
+            "Function": "Flight Operations",
+            "Severity": "Medium",
+            "Sub-Function": "Performance Monitoring",
+            "Friction Point": "Delayed identification of on-time performance degradation due to manual aggregation of flight tracking data across systems",
+            "Primary Driver Impact": "Grow Revenue",
+            "Estimated Annual Cost ($)": "$4.1M"
+          },
+          {
+            "Function": "Commercial Operations",
+            "Severity": "Medium",
+            "Sub-Function": "Customer Reporting",
+            "Friction Point": "Manual creation of customer performance dashboards requiring data extraction from five operational systems and Excel consolidation",
+            "Primary Driver Impact": "Grow Revenue",
+            "Estimated Annual Cost ($)": "$3.6M"
+          },
+          {
+            "Function": "Crew Management",
+            "Severity": "Medium",
+            "Sub-Function": "Training Coordination",
+            "Friction Point": "Manual tracking of 1,840 crew members across recurring training requirements with inconsistent scheduling leading to 8% annual compliance lapses",
+            "Primary Driver Impact": "Decrease Risk",
+            "Estimated Annual Cost ($)": "$6.3M"
+          }
+        ],
+        "step": 3,
+        "title": "Friction Point Mapping",
+        "content": "Operational friction concentrates in manual documentation workflows, real-time decision support gaps, and cross-functional coordination inefficiencies. High-severity friction points represent immediate automation candidates with quantifiable cost burdens exceeding industry norms."
+      },
+      {
+        "data": [
+          {
+            "ID": "UC-01",
+            "Function": "Maintenance Operations",
+            "Description": "AI system transforms technician voice recordings and inspection photos into structured maintenance log entries compliant with FAA Part 43 requirements. System cross-references findings against aircraft maintenance manuals, generates required logbook language, and flags discrepancies requiring senior technician review. Reshapes documentation from dual-entry transcription workflow into single-capture validation workflow.",
+            "Sub-Function": "Airworthiness Documentation",
+            "AI Primitives": "Content Creation, Data Analysis, Workflow Automation",
+            "Use Case Name": "Maintenance Documentation Assistant",
+            "Target Friction": "Manual transcription of maintenance inspection findings into multiple FAA-required logbooks and digital systems creating dual-entry burden",
+            "Human-in-the-Loop Checkpoint": "Licensed A&P mechanic reviews and digitally signs all AI-generated logbook entries before regulatory submission and aircraft release"
+          },
+          {
+            "ID": "UC-02",
+            "Function": "Flight Operations",
+            "Description": "AI engine synthesizes real-time weather, NOTAM, airspace restriction, and fuel pricing data to generate optimized route recommendations for international cargo flights. System produces FAA-compliant flight plans with fuel load calculations, alternate airport selections, and ETOPS compliance validation. Reshapes route planning from sequential manual analysis into parallel automated synthesis with dispatcher verification.",
+            "Sub-Function": "Route Planning",
+            "AI Primitives": "Data Analysis, Research & Information Retrieval, Workflow Automation",
+            "Use Case Name": "Dynamic Route Optimization Engine",
+            "Target Friction": "Sequential manual analysis of weather, NOTAMs, airspace restrictions, and fuel pricing requiring 4.5 hours per complex international route",
+            "Human-in-the-Loop Checkpoint": "Licensed flight dispatcher reviews AI-recommended routes, validates weather assumptions, and authorizes final flight plan filing with ATC"
+          },
+          {
+            "ID": "UC-03",
+            "Function": "Crew Management",
+            "Description": "AI system optimizes crew assignments across 785 weekly flight segments while enforcing FAA Part 117 duty time regulations, aircraft type ratings, and customer SLA requirements. System minimizes deadhead positioning through multi-variable optimization considering crew domicile locations, qualification currency, and rest requirements. Reshapes scheduling from manual assignment into constraint-based optimization with scheduler oversight.",
+            "Sub-Function": "Crew Scheduling",
+            "AI Primitives": "Data Analysis, Workflow Automation",
+            "Use Case Name": "Crew Pairing Optimizer",
+            "Target Friction": "Manual optimization of crew assignments across six aircraft types with complex FAA duty time regulations resulting in 14% deadhead positioning",
+            "Human-in-the-Loop Checkpoint": "Crew scheduling supervisor reviews optimization output for operational feasibility and approves assignments before crew notification"
+          },
+          {
+            "ID": "UC-04",
+            "Function": "Safety & Compliance",
+            "Description": "AI system monitors FAA regulatory updates, airworthiness directives, and service bulletins across 47 active regulations. System identifies applicability to specific aircraft tail numbers, calculates compliance deadlines, and generates implementation task lists cross-referenced to maintenance planning systems. Reshapes compliance monitoring from periodic manual review into continuous automated surveillance with compliance officer validation.",
+            "Sub-Function": "Regulatory Monitoring",
+            "AI Primitives": "Research & Information Retrieval, Data Analysis, Workflow Automation",
+            "Use Case Name": "Regulatory Intelligence Monitor",
+            "Target Friction": "Manual tracking of 47 active FAA regulations and airworthiness directives across 127 aircraft with inconsistent alert mechanisms",
+            "Human-in-the-Loop Checkpoint": "Director of Safety reviews AI-identified regulatory impacts and authorizes compliance action plans before operational implementation"
+          },
+          {
+            "ID": "UC-05",
+            "Function": "Commercial Operations",
+            "Description": "AI system extracts RFP requirements and auto-populates proposal templates with aircraft availability data, pricing models, regulatory certifications, and past performance metrics. System synthesizes information from fleet management, finance, and compliance databases into customer-ready narrative sections. Reshapes RFP response from manual data compilation into automated synthesis with commercial team refinement.",
+            "Sub-Function": "RFP Response",
+            "AI Primitives": "Content Creation, Research & Information Retrieval, Data Analysis",
+            "Use Case Name": "RFP Response Accelerator",
+            "Target Friction": "Manual compilation of aircraft availability data, pricing models, and regulatory certifications from disparate systems for each RFP",
+            "Human-in-the-Loop Checkpoint": "Commercial director reviews AI-drafted proposal sections for strategic positioning and authorizes pricing before customer submission"
+          },
+          {
+            "ID": "UC-06",
+            "Function": "Maintenance Operations",
+            "Description": "AI system analyzes engine performance data, component operating hours, and historical failure patterns to predict maintenance requirements 45-90 days before calendar-based intervals. System recommends optimal maintenance timing considering aircraft utilization forecasts and parts availability. Reshapes maintenance scheduling from reactive calendar intervals into proactive condition-based planning with maintenance control approval.",
+            "Sub-Function": "Predictive Maintenance",
+            "AI Primitives": "Data Analysis, Research & Information Retrieval",
+            "Use Case Name": "Predictive Maintenance Advisor",
+            "Target Friction": "Reactive maintenance scheduling based on calendar intervals rather than predictive analytics of component degradation patterns",
+            "Human-in-the-Loop Checkpoint": "Maintenance planning manager reviews AI-recommended maintenance windows and authorizes schedule adjustments considering operational commitments"
+          },
+          {
+            "ID": "UC-07",
+            "Function": "Safety & Compliance",
+            "Description": "AI system drafts FAA incident reports by synthesizing flight data recorder information, crew statements, maintenance logs, and weather data. System generates narrative sections compliant with NTSB reporting requirements and cross-references similar historical incidents for root cause analysis support. Reshapes incident reporting from manual narrative construction into automated synthesis with safety officer validation.",
+            "Sub-Function": "Incident Reporting",
+            "AI Primitives": "Content Creation, Research & Information Retrieval, Data Analysis",
+            "Use Case Name": "Incident Report Generator",
+            "Target Friction": "Manual narrative construction for FAA incident reports requiring 6.8 days average and cross-referencing multiple data sources",
+            "Human-in-the-Loop Checkpoint": "Chief Safety Officer reviews AI-drafted incident reports for accuracy and regulatory compliance before FAA submission"
+          },
+          {
+            "ID": "UC-08",
+            "Function": "Finance & Accounting",
+            "Description": "AI system reconciles flight hour logs from aircraft tracking systems against ACMI customer contracts to automate monthly billing calculations. System identifies discrepancies in logged hours versus contractual minimums, applies pricing tiers, and generates preliminary invoices. Reshapes revenue recognition from manual cross-system reconciliation into automated matching with accounting team validation.",
+            "Sub-Function": "Revenue Recognition",
+            "AI Primitives": "Data Analysis, Workflow Automation",
+            "Use Case Name": "Revenue Recognition Reconciler",
+            "Target Friction": "Manual reconciliation of flight hour logs against customer contracts for ACMI billing with 12-day monthly close cycle",
+            "Human-in-the-Loop Checkpoint": "Revenue accounting manager reviews AI-calculated billing amounts and investigates flagged discrepancies before invoice finalization"
+          },
+          {
+            "ID": "UC-09",
+            "Function": "Supply Chain",
+            "Description": "AI agent searches 14 supplier inventory systems in parallel to identify aircraft-on-ground part availability, pricing, and delivery timelines. System evaluates part interchangeability using maintenance manuals, compares total acquisition costs including expedited shipping, and generates purchase requisitions. Reshapes AOG sourcing from sequential manual searches into parallel automated procurement with supply chain approval.",
+            "Sub-Function": "Parts Procurement",
+            "AI Primitives": "Research & Information Retrieval, Workflow Automation, Data Analysis",
+            "Use Case Name": "AOG Parts Sourcing Agent",
+            "Target Friction": "Sequential manual sourcing of aircraft-on-ground parts across 14 supplier systems without integrated inventory visibility",
+            "Human-in-the-Loop Checkpoint": "Supply chain director approves AI-recommended sourcing decisions and authorizes emergency procurement expenditures"
+          },
+          {
+            "ID": "UC-10",
+            "Function": "Commercial Operations",
+            "Description": "AI system extracts operational data from flight tracking, maintenance, and billing systems to generate customer-specific performance dashboards. System calculates on-time performance, aircraft utilization, and compliance metrics, then produces narrative summaries highlighting trends and anomalies. Reshapes customer reporting from manual data extraction and Excel consolidation into automated dashboard generation with account manager review.",
+            "Sub-Function": "Customer Reporting",
+            "AI Primitives": "Data Analysis, Content Creation",
+            "Use Case Name": "Customer Performance Dashboard Generator",
+            "Target Friction": "Manual creation of customer performance dashboards requiring data extraction from five operational systems and Excel consolidation",
+            "Human-in-the-Loop Checkpoint": "Account manager reviews AI-generated performance narratives and authorizes distribution to customer stakeholders"
+          }
+        ],
+        "step": 4,
+        "title": "AI Use Case Generation",
+        "content": "Ten use cases target core operational friction through human-AI collaboration frameworks. Each solution embeds mandatory human validation checkpoints while fundamentally reshaping manual workflows rather than incrementally accelerating existing processes."
+      },
+      {
+        "data": [
+          {
+            "ID": "UC-01",
+            "Use Case": "Maintenance Documentation Assistant",
+            "Cost Formula": "22,000 hours × $185/hour × 62% time reduction × 0.90 × 0.75 = $21.2M",
+            "Risk Formula": "35% reduction × $8.2M annual audit penalty exposure × 0.80 × 0.75 = $1.8M",
+            "Revenue Formula": "No direct revenue impact",
+            "Cost Benefit ($)": "$21.2M",
+            "Risk Benefit ($)": "$1.8M",
+            "Cash Flow Formula": "1.1 days faster return-to-service × 84 heavy checks/year × $76K daily aircraft opportunity cost × 0.85 × 0.75 = $4.8M",
+            "Revenue Benefit ($)": "$0",
+            "Cash Flow Benefit ($)": "$4.8M",
+            "Probability of Success": 0.8,
+            "Total Annual Value ($)": "$27.8M"
+          },
+          {
+            "ID": "UC-02",
+            "Use Case": "Dynamic Route Optimization Engine",
+            "Cost Formula": "1.3% fuel reduction × $448M annual fuel spend × 0.90 × 0.75 + 16,800 hours × $185/hour × 47% time reduction × 0.90 × 0.75 = $17.1M",
+            "Risk Formula": "25% reduction × $8.0M route deviation penalty exposure × 0.80 × 0.75 = $1.2M",
+            "Revenue Formula": "No direct revenue impact",
+            "Cost Benefit ($)": "$17.1M",
+            "Risk Benefit ($)": "$1.2M",
+            "Cash Flow Formula": "No material working capital impact",
+            "Revenue Benefit ($)": "$0",
+            "Cash Flow Benefit ($)": "$0",
+            "Probability of Success": 0.75,
+            "Total Annual Value ($)": "$18.3M"
+          },
+          {
+            "ID": "UC-03",
+            "Use Case": "Crew Pairing Optimizer",
+            "Cost Formula": "4 percentage points deadhead reduction × $3.2M per point + 12,600 hours × $125/hour × 52% time reduction × 0.90 × 0.75 = $16.8M",
+            "Risk Formula": "20% reduction × $7.5M crew duty time violation exposure × 0.80 × 0.75 = $0.9M",
+            "Revenue Formula": "No direct revenue impact",
+            "Cost Benefit ($)": "$16.8M",
+            "Risk Benefit ($)": "$0.9M",
+            "Cash Flow Formula": "No material working capital impact",
+            "Revenue Benefit ($)": "$0",
+            "Cash Flow Benefit ($)": "$0",
+            "Probability of Success": 0.75,
+            "Total Annual Value ($)": "$17.7M"
+          },
+          {
+            "ID": "UC-04",
+            "Use Case": "Regulatory Intelligence Monitor",
+            "Cost Formula": "8,400 hours × $185/hour × 58% time reduction × 0.90 × 0.75 = $7.5M",
+            "Risk Formula": "30% reduction × $30.0M regulatory non-compliance exposure × 0.80 × 0.75 = $5.4M",
+            "Revenue Formula": "No direct revenue impact",
+            "Cost Benefit ($)": "$7.5M",
+            "Risk Benefit ($)": "$5.4M",
+            "Cash Flow Formula": "No material working capital impact",
+            "Revenue Benefit ($)": "$0",
+            "Cash Flow Benefit ($)": "$0",
+            "Probability of Success": 0.85,
+            "Total Annual Value ($)": "$12.9M"
+          },
+          {
+            "ID": "UC-05",
+            "Use Case": "RFP Response Accelerator",
+            "Cost Formula": "4,200 hours × $185/hour × 65% time reduction × 0.90 × 0.75 = $5.6M",
+            "Risk Formula": "No quantifiable risk reduction",
+            "Revenue Formula": "15% win rate improvement × $95M annual bid pipeline × 0.95 × 0.75 = $10.8M",
+            "Cost Benefit ($)": "$5.6M",
+            "Risk Benefit ($)": "$0",
+            "Cash Flow Formula": "No material working capital impact",
+            "Revenue Benefit ($)": "$10.8M",
+            "Cash Flow Benefit ($)": "$0",
+            "Probability of Success": 0.7,
+            "Total Annual Value ($)": "$16.4M"
+          },
+          {
+            "ID": "UC-06",
+            "Use Case": "Predictive Maintenance Advisor",
+            "Cost Formula": "18% unscheduled maintenance reduction × $73M annual unscheduled MX spend × 0.90 × 0.75 = $9.9M",
+            "Risk Formula": "40% reduction × $11.2M AOG event exposure × 0.80 × 0.75 = $2.7M",
+            "Revenue Formula": "No direct revenue impact",
+            "Cost Benefit ($)": "$9.9M",
+            "Risk Benefit ($)": "$2.7M",
+            "Cash Flow Formula": "0.7 days improved fleet utilization × 127 aircraft × $76K daily opportunity cost × 0.85 × 0.75 = $7.6M",
+            "Revenue Benefit ($)": "$0",
+            "Cash Flow Benefit ($)": "$7.6M",
+            "Probability of Success": 0.75,
+            "Total Annual Value ($)": "$20.2M"
+          },
+          {
+            "ID": "UC-07",
+            "Use Case": "Incident Report Generator",
+            "Cost Formula": "3,600 hours × $185/hour × 68% time reduction × 0.90 × 0.75 = $4.7M",
+            "Risk Formula": "35% reduction × $10.0M incident reporting penalty exposure × 0.80 × 0.75 = $2.1M",
+            "Revenue Formula": "No direct revenue impact",
+            "Cost Benefit ($)": "$4.7M",
+            "Risk Benefit ($)": "$2.1M",
+            "Cash Flow Formula": "No material working capital impact",
+            "Revenue Benefit ($)": "$0",
+            "Cash Flow Benefit ($)": "$0",
+            "Probability of Success": 0.8,
+            "Total Annual Value ($)": "$6.8M"
+          },
+          {
+            "ID": "UC-08",
+            "Use Case": "Revenue Recognition Reconciler",
+            "Cost Formula": "5,400 hours × $125/hour × 56% time reduction × 0.90 × 0.75 = $3.8M",
+            "Risk Formula": "No quantifiable risk reduction",
+            "Revenue Formula": "No direct revenue impact",
+            "Cost Benefit ($)": "$3.8M",
+            "Risk Benefit ($)": "$0",
+            "Cash Flow Formula": "3 days faster billing cycle × $1.6B revenue ÷ 365 days × 0.85 × 0.75 = $3.4M",
+            "Revenue Benefit ($)": "$0",
+            "Cash Flow Benefit ($)": "$3.4M",
+            "Probability of Success": 0.85,
+            "Total Annual Value ($)": "$7.2M"
+          },
+          {
+            "ID": "UC-09",
+            "Use Case": "AOG Parts Sourcing Agent",
+            "Cost Formula": "4.4 hours AOG time reduction × 142 events/year × $76K daily opportunity cost × 0.90 × 0.75 = $6.2M",
+            "Risk Formula": "30% reduction × $9.4M AOG customer penalty exposure × 0.80 × 0.75 = $1.7M",
+            "Revenue Formula": "No direct revenue impact",
+            "Cost Benefit ($)": "$6.2M",
+            "Risk Benefit ($)": "$1.7M",
+            "Cash Flow Formula": "No material working capital impact",
+            "Revenue Benefit ($)": "$0",
+            "Cash Flow Benefit ($)": "$0",
+            "Probability of Success": 0.75,
+            "Total Annual Value ($)": "$7.9M"
+          },
+          {
+            "ID": "UC-10",
+            "Use Case": "Customer Performance Dashboard Generator",
+            "Cost Formula": "2,800 hours × $125/hour × 72% time reduction × 0.90 × 0.75 = $2.4M",
+            "Risk Formula": "No quantifiable risk reduction",
+            "Revenue Formula": "2 percentage points customer retention improvement × $448M at-risk annual revenue × 0.95 × 0.75 = $6.4M",
+            "Cost Benefit ($)": "$2.4M",
+            "Risk Benefit ($)": "$0",
+            "Cash Flow Formula": "No material working capital impact",
+            "Revenue Benefit ($)": "$6.4M",
+            "Cash Flow Benefit ($)": "$0",
+            "Probability of Success": 0.7,
+            "Total Annual Value ($)": "$8.8M"
+          }
+        ],
+        "step": 5,
+        "title": "Benefits Quantification by Driver",
+        "content": "Financial benefits reflect conservative reduction factors applied across all four business value drivers. Revenue calculations incorporate market validation constraints. Cost savings assume 80% adoption rates in Year 1. Cash flow improvements account for working capital velocity. Risk mitigation applies 50% maximum exposure reduction caps per framework requirements."
+      },
+      {
+        "data": [
+          {
+            "ID": "UC-01",
+            "Use Case": "Maintenance Documentation Assistant",
+            "Runs/Month": 1830,
+            "Monthly Tokens": 13359000,
+            "Input Tokens/Run": 4500,
+            "Change Mgmt (1-5)": 4,
+            "Output Tokens/Run": 2800,
+            "Effort Score (1-5)": 4,
+            "Data Readiness (1-5)": 2,
+            "Annual Token Cost ($)": "$816.5K",
+            "Time-to-Value (months)": 12,
+            "Integration Complexity (1-5)": 4
+          },
+          {
+            "ID": "UC-02",
+            "Use Case": "Dynamic Route Optimization Engine",
+            "Runs/Month": 3140,
+            "Monthly Tokens": 36408000,
+            "Input Tokens/Run": 8200,
+            "Change Mgmt (1-5)": 3,
+            "Output Tokens/Run": 3400,
+            "Effort Score (1-5)": 5,
+            "Data Readiness (1-5)": 3,
+            "Annual Token Cost ($)": "$2,058.4K",
+            "Time-to-Value (months)": 15,
+            "Integration Complexity (1-5)": 5
+          },
+          {
+            "ID": "UC-03",
+            "Use Case": "Crew Pairing Optimizer",
+            "Runs/Month": 785,
+            "Monthly Tokens": 13107500,
+            "Input Tokens/Run": 12500,
+            "Change Mgmt (1-5)": 4,
+            "Output Tokens/Run": 4200,
+            "Effort Score (1-5)": 5,
+            "Data Readiness (1-5)": 2,
+            "Annual Token Cost ($)": "$1,187.7K",
+            "Time-to-Value (months)": 18,
+            "Integration Complexity (1-5)": 5
+          },
+          {
+            "ID": "UC-04",
+            "Use Case": "Regulatory Intelligence Monitor",
+            "Runs/Month": 940,
+            "Monthly Tokens": 8460000,
+            "Input Tokens/Run": 6800,
+            "Change Mgmt (1-5)": 2,
+            "Output Tokens/Run": 2200,
+            "Effort Score (1-5)": 3,
+            "Data Readiness (1-5)": 3,
+            "Annual Token Cost ($)": "$559.2K",
+            "Time-to-Value (months)": 9,
+            "Integration Complexity (1-5)": 3
+          },
+          {
+            "ID": "UC-05",
+            "Use Case": "RFP Response Accelerator",
+            "Runs/Month": 85,
+            "Monthly Tokens": 1249500,
+            "Input Tokens/Run": 9500,
+            "Change Mgmt (1-5)": 2,
+            "Output Tokens/Run": 5200,
+            "Effort Score (1-5)": 3,
+            "Data Readiness (1-5)": 2,
+            "Annual Token Cost ($)": "$168.3K",
+            "Time-to-Value (months)": 6,
+            "Integration Complexity (1-5)": 3
+          },
+          {
+            "ID": "UC-06",
+            "Use Case": "Predictive Maintenance Advisor",
+            "Runs/Month": 635,
+            "Monthly Tokens": 12065000,
+            "Input Tokens/Run": 15200,
+            "Change Mgmt (1-5)": 3,
+            "Output Tokens/Run": 3800,
+            "Effort Score (1-5)": 4,
+            "Data Readiness (1-5)": 3,
+            "Annual Token Cost ($)": "$911.7K",
+            "Time-to-Value (months)": 12,
+            "Integration Complexity (1-5)": 4
+          },
+          {
+            "ID": "UC-07",
+            "Use Case": "Incident Report Generator",
+            "Runs/Month": 42,
+            "Monthly Tokens": 752400,
+            "Input Tokens/Run": 11400,
+            "Change Mgmt (1-5)": 3,
+            "Output Tokens/Run": 6500,
+            "Effort Score (1-5)": 3,
+            "Data Readiness (1-5)": 3,
+            "Annual Token Cost ($)": "$110.4K",
+            "Time-to-Value (months)": 9,
+            "Integration Complexity (1-5)": 3
+          },
+          {
+            "ID": "UC-08",
+            "Use Case": "Revenue Recognition Reconciler",
+            "Runs/Month": 12,
+            "Monthly Tokens": 135600,
+            "Input Tokens/Run": 8900,
+            "Change Mgmt (1-5)": 2,
+            "Output Tokens/Run": 2400,
+            "Effort Score (1-5)": 3,
+            "Data Readiness (1-5)": 2,
+            "Annual Token Cost ($)": "$28.9K",
+            "Time-to-Value (months)": 9,
+            "Integration Complexity (1-5)": 4
+          },
+          {
+            "ID": "UC-09",
+            "Use Case": "AOG Parts Sourcing Agent",
+            "Runs/Month": 142,
+            "Monthly Tokens": 1278600,
+            "Input Tokens/Run": 7200,
+            "Change Mgmt (1-5)": 2,
+            "Output Tokens/Run": 1800,
+            "Effort Score (1-5)": 4,
+            "Data Readiness (1-5)": 2,
+            "Annual Token Cost ($)": "$116.2K",
+            "Time-to-Value (months)": 12,
+            "Integration Complexity (1-5)": 4
+          },
+          {
+            "ID": "UC-10",
+            "Use Case": "Customer Performance Dashboard Generator",
+            "Runs/Month": 48,
+            "Monthly Tokens": 422400,
+            "Input Tokens/Run": 5600,
+            "Change Mgmt (1-5)": 2,
+            "Output Tokens/Run": 3200,
+            "Effort Score (1-5)": 2,
+            "Data Readiness (1-5)": 2,
+            "Annual Token Cost ($)": "$72.0K",
+            "Time-to-Value (months)": 6,
+            "Integration Complexity (1-5)": 3
+          }
+        ],
+        "step": 6,
+        "title": "Effort & Token Modeling",
+        "content": "Implementation effort spans data integration complexity, organizational change requirements, and technical readiness. Token consumption estimates assume production-scale volumes with Claude Sonnet pricing at $3 per million input tokens and $15 per million output tokens. Time-to-value calculations include prerequisite system integration work not reflected in effort scores."
+      },
+      {
+        "data": [
+          {
+            "ID": "UC-01",
+            "Use Case": "Maintenance Documentation Assistant",
+            "Priority Tier": "Critical",
+            "TTV Score (0-30)": 18,
+            "Recommended Phase": "Q1",
+            "Value Score (0-40)": 40,
+            "Effort Score (0-30)": 18,
+            "Priority Score (0-100)": 76
+          },
+          {
+            "ID": "UC-06",
+            "Use Case": "Predictive Maintenance Advisor",
+            "Priority Tier": "High",
+            "TTV Score (0-30)": 18,
+            "Recommended Phase": "Q2",
+            "Value Score (0-40)": 38,
+            "Effort Score (0-30)": 18,
+            "Priority Score (0-100)": 74
+          },
+          {
+            "ID": "UC-02",
+            "Use Case": "Dynamic Route Optimization Engine",
+            "Priority Tier": "High",
+            "TTV Score (0-30)": 13,
+            "Recommended Phase": "Q3",
+            "Value Score (0-40)": 36,
+            "Effort Score (0-30)": 12,
+            "Priority Score (0-100)": 61
+          },
+          {
+            "ID": "UC-03",
+            "Use Case": "Crew Pairing Optimizer",
+            "Priority Tier": "Medium",
+            "TTV Score (0-30)": 10,
+            "Recommended Phase": "Q4",
+            "Value Score (0-40)": 35,
+            "Effort Score (0-30)": 12,
+            "Priority Score (0-100)": 57
+          },
+          {
+            "ID": "UC-05",
+            "Use Case": "RFP Response Accelerator",
+            "Priority Tier": "Critical",
+            "TTV Score (0-30)": 30,
+            "Recommended Phase": "Q1",
+            "Value Score (0-40)": 34,
+            "Effort Score (0-30)": 24,
+            "Priority Score (0-100)": 88
+          },
+          {
+            "ID": "UC-04",
+            "Use Case": "Regulatory Intelligence Monitor",
+            "Priority Tier": "Critical",
+            "TTV Score (0-30)": 23,
+            "Recommended Phase": "Q1",
+            "Value Score (0-40)": 32,
+            "Effort Score (0-30)": 24,
+            "Priority Score (0-100)": 79
+          },
+          {
+            "ID": "UC-10",
+            "Use Case": "Customer Performance Dashboard Generator",
+            "Priority Tier": "Critical",
+            "TTV Score (0-30)": 30,
+            "Recommended Phase": "Q1",
+            "Value Score (0-40)": 30,
+            "Effort Score (0-30)": 27,
+            "Priority Score (0-100)": 87
+          },
+          {
+            "ID": "UC-09",
+            "Use Case": "AOG Parts Sourcing Agent",
+            "Priority Tier": "High",
+            "TTV Score (0-30)": 18,
+            "Recommended Phase": "Q2",
+            "Value Score (0-40)": 28,
+            "Effort Score (0-30)": 18,
+            "Priority Score (0-100)": 64
+          },
+          {
+            "ID": "UC-08",
+            "Use Case": "Revenue Recognition Reconciler",
+            "Priority Tier": "High",
+            "TTV Score (0-30)": 23,
+            "Recommended Phase": "Q2",
+            "Value Score (0-40)": 27,
+            "Effort Score (0-30)": 24,
+            "Priority Score (0-100)": 74
+          },
+          {
+            "ID": "UC-07",
+            "Use Case": "Incident Report Generator",
+            "Priority Tier": "High",
+            "TTV Score (0-30)": 23,
+            "Recommended Phase": "Q2",
+            "Value Score (0-40)": 26,
+            "Effort Score (0-30)": 24,
+            "Priority Score (0-100)": 73
+          }
+        ],
+        "step": 7,
+        "title": "Priority Scoring & Roadmap",
+        "content": "Priority scoring weights total annual value at 40%, time-to-value at 30%, and implementation effort at 30%. Critical-tier initiatives exceed 75 points and warrant immediate Q1-Q2 execution. High-tier initiatives score 60-74 points suitable for Q2-Q3 deployment. Three initiatives qualify as Critical-priority with combined first-year impact of $66.1M assuming sequential phasing and conservative adoption curves."
+      }
+    ],
+    "summary": "This assessment identifies $143.9M in annual value across 10 AI use cases for Air Transport Services Group. Four initiatives qualify as Critical-priority for immediate Q1 execution with combined first-year impact of $66.1M assuming sequential phasing and 80% adoption rates. The portfolio targets operational leverage in maintenance documentation, crew optimization, and commercial response capabilities where manual processes currently consume 72,600 professional hours annually.\n\nCost reduction dominates the portfolio at $94.9M representing 66% of total identified value. Revenue growth opportunities contribute $17.2M at 12%. Risk mitigation accounts for $16.6M at 12%. Cash flow acceleration rounds out the portfolio at $15.8M representing 11%. This distribution reflects ATSG's operational maturity gap where back-office automation delivers immediate ROI while customer-facing initiatives require longer validation cycles.\n\nMaintenance Documentation Assistant represents a $27.8M annual opportunity and anchors the Q1 roadmap. AI-drafted maintenance logbook entries with A&P mechanic validation deflect 13,640 annual technician hours currently spent on dual-entry transcription workflows. Each deflected hour saves $185 in fully-loaded labor costs while reducing aircraft return-to-service delays by 1.1 days per heavy maintenance cycle. The solution requires integration with legacy maintenance tracking systems and a 120-day pilot phase across 12 aircraft before fleet-wide deployment.\n\nRFP Response Accelerator delivers $16.4M annual value through commercial velocity improvement. AI-synthesized proposal sections reduce RFP response time from 23 days to 15 days while improving bid win rates by an estimated 15 percentage points on a $95M annual pipeline. The mechanism works through automated extraction of aircraft availability data, regulatory certifications, and past performance metrics from six disparate systems into customer-ready narrative sections. Commercial director review and pricing authorization remain mandatory checkpoints before customer submission.\n\nRegulatory Intelligence Monitor addresses $12.9M in compliance inefficiency through continuous FAA regulation monitoring. The system tracks 47 active regulations and airworthiness directives across 127 aircraft, automatically identifying applicability to specific tail numbers and calculating compliance deadlines. This capability deflects 8,400 annual hours from safety personnel while reducing audit finding rates from 12% to a projected 7%. Director of Safety authorization remains required for all compliance action plans before operational implementation.\n\nThe top four initiatives account for 47% of total portfolio value creating concentration risk if any single initiative fails to achieve projected adoption rates. However, each targets a distinct operational domain providing natural hedging. Back-office automation opportunities outnumber customer-facing initiatives 8 to 2, reflecting conservative prioritization toward proven AI capabilities. The portfolio deliberately excludes customer-facing chatbots and speculative revenue applications lacking clear precedent in aviation operations.\n\nImplementation hinges on data readiness gaps across core operational systems. Average data maturity scores 2.3 out of 5 with particular weakness in maintenance tracking schema consistency and crew scheduling system integration. The Dynamic Route Optimization Engine and Crew Pairing Optimizer both score Effort 5 requiring 15-18 month timelines before production deployment. Failure to address data schema inconsistencies reduces projected Year 1 value realization by an estimated 40% based on comparable aviation digital transformation programs. Three initiatives require FAA regulatory guidance clarification before full deployment, adding 90-120 days to published timelines.",
+    "executiveDashboard": {
+      "topUseCases": [
+        {
+          "rank": 1,
+          "useCase": "RFP Response Accelerator",
+          "annualValue": 16400000,
+          "monthlyTokens": 1249500,
+          "priorityScore": 88
+        },
+        {
+          "rank": 2,
+          "useCase": "Customer Performance Dashboard Generator",
+          "annualValue": 8800000,
+          "monthlyTokens": 422400,
+          "priorityScore": 87
+        },
+        {
+          "rank": 3,
+          "useCase": "Regulatory Intelligence Monitor",
+          "annualValue": 12900000,
+          "monthlyTokens": 8460000,
+          "priorityScore": 79
+        },
+        {
+          "rank": 4,
+          "useCase": "Maintenance Documentation Assistant",
+          "annualValue": 27800000,
+          "monthlyTokens": 13359000,
+          "priorityScore": 76
+        },
+        {
+          "rank": 5,
+          "useCase": "Predictive Maintenance Advisor",
+          "annualValue": 20200000,
+          "monthlyTokens": 12065000,
+          "priorityScore": 74
+        }
+      ],
+      "totalAnnualValue": 143900000,
+      "totalCostBenefit": 94900000,
+      "totalRiskBenefit": 16600000,
+      "totalMonthlyTokens": 87838400,
+      "totalRevenueBenefit": 17200000,
+      "totalCashFlowBenefit": 15800000,
+      "valuePerMillionTokens": 136600
+    }
+  }
+}

@@ -1,0 +1,853 @@
+{
+  "companyName": "Forgital",
+  "generatedAt": "2026-01-22T16:36:41.762Z",
+  "analysis": {
+    "steps": [
+      {
+        "data": null,
+        "step": 0,
+        "title": "Company Overview",
+        "content": "Forgital Group generates $650M in annual revenue through precision forging and manufacturing of critical metal components for aerospace, energy, and industrial applications. The Italian-based manufacturer operates seven production facilities across Europe and North America with 2,100 employees. The company holds dominant market positions in aerospace engine components, accounting for 52% of revenue, energy turbine rings at 31%, and industrial heavy machinery forgings at 17%.\n\nForgital serves 340 original equipment manufacturers and Tier 1 suppliers with an average contract value of $1.9M across multi-year agreements. Customer retention stands at 91% over the past five fiscal years. The company processes approximately 185,000 forging operations annually across aerospace-grade titanium, nickel superalloys, and specialty steels. Average production lead times span 16 weeks from raw material procurement through final quality certification.\n\nThe company faces a $34M annual burden from manual quality documentation and certification processes. Metallurgical engineers spend 28,000 hours per year reviewing non-destructive testing data, traceability records, and regulatory compliance documentation across AS9100D, NADCAP, and ISO certifications. This workload creates a 19-day backlog on material certification releases and limits capacity to pursue new aerospace programs requiring accelerated qualification timelines.\n\nSupply chain complexity generates $22M in annual inefficiency. Procurement teams manage 1,450 active suppliers across 34 countries with material specifications requiring real-time cross-referencing of mechanical properties, heat treatment requirements, and traceability standards. Manual sourcing decisions for specialty alloys average 7 days per inquiry. Engineering change order processing consumes 12,000 hours annually as technical teams validate design modifications against existing tooling capabilities and material certifications.\n\nProduction planning inefficiencies cost $18M annually. Scheduling engineers manually optimize furnace loading patterns, forging press sequences, and heat treatment cycles across seven facilities with limited real-time visibility into work-in-process inventory. Suboptimal scheduling results in 14% furnace utilization gaps and 23-day average queue times for heat treatment operations. Machine learning could optimize multi-constraint scheduling while human planners focus on rush orders and customer priority changes.\n\nFinancial figures derive from 2024 annual reports and industry filings with the Italian Companies Register. Operational burden estimates apply $120 per hour fully-loaded rates for engineering staff and $85 per hour for production planning personnel based on European manufacturing sector benchmarks. Data maturity assessed at Level 2 based on disclosed ERP systems, quality management databases, and limited process automation beyond core manufacturing execution systems."
+      },
+      {
+        "data": [
+          {
+            "Target State": "8-day certification cycle, 60% automation of routine documentation review",
+            "Current State": "19-day average certification backlog, 28,000 annual engineering hours on documentation",
+            "Primary Driver": "Reduce Cost",
+            "Strategic Theme": "Aerospace Certification Acceleration",
+            "Secondary Driver": "Increase Cash Flow"
+          },
+          {
+            "Target State": "Same-day material sourcing recommendations with automated compliance verification",
+            "Current State": "7-day average sourcing decisions, manual cross-referencing across 1,450 suppliers",
+            "Primary Driver": "Reduce Cost",
+            "Strategic Theme": "Supply Chain Intelligence",
+            "Secondary Driver": "Decrease Risk"
+          },
+          {
+            "Target State": "95% furnace utilization, 12-day heat treatment throughput",
+            "Current State": "14% furnace utilization gap, 23-day heat treatment queue times",
+            "Primary Driver": "Grow Revenue",
+            "Strategic Theme": "Production Optimization",
+            "Secondary Driver": "Reduce Cost"
+          },
+          {
+            "Target State": "Automated anomaly detection with metallurgist validation, unified traceability platform",
+            "Current State": "Manual NDT data review, fragmented traceability systems across facilities",
+            "Primary Driver": "Reduce Cost",
+            "Strategic Theme": "Quality Process Efficiency",
+            "Secondary Driver": "Decrease Risk"
+          },
+          {
+            "Target State": "AI-assisted design validation against historical tooling and material databases",
+            "Current State": "Tribal knowledge in senior metallurgists averaging 23 years tenure, 12,000 hours annually on ECO validation",
+            "Primary Driver": "Decrease Risk",
+            "Strategic Theme": "Engineering Knowledge Capture",
+            "Secondary Driver": "Reduce Cost"
+          }
+        ],
+        "step": 1,
+        "title": "Strategic Anchoring & Business Drivers",
+        "content": "Forgital's strategic initiatives map directly to operational efficiency gains in precision manufacturing, aerospace certification acceleration, and supply chain optimization. The company targets margin expansion through reduced quality overhead while maintaining zero-defect manufacturing standards required for aerospace applications."
+      },
+      {
+        "data": [
+          {
+            "Function": "Quality Assurance",
+            "KPI Name": "Certification Cycle Time",
+            "Direction": "↓",
+            "Timeframe": "18 months",
+            "Sub-Function": "Material Certification",
+            "Target Value": "8 days",
+            "Baseline Value": "19 days",
+            "Industry Benchmark": "12 days",
+            "Measurement Method": "Days from final inspection to certificate release"
+          },
+          {
+            "Function": "Quality Assurance",
+            "KPI Name": "Metallurgist Review Hours",
+            "Direction": "↓",
+            "Timeframe": "12 months",
+            "Sub-Function": "NDT Review",
+            "Target Value": "14,000 hours/year",
+            "Baseline Value": "28,000 hours/year",
+            "Industry Benchmark": "18,000 hours/year",
+            "Measurement Method": "Total annual hours on manual NDT data interpretation"
+          },
+          {
+            "Function": "Supply Chain",
+            "KPI Name": "Material Sourcing Cycle Time",
+            "Direction": "↓",
+            "Timeframe": "9 months",
+            "Sub-Function": "Strategic Sourcing",
+            "Target Value": "1 day",
+            "Baseline Value": "7 days",
+            "Industry Benchmark": "3 days",
+            "Measurement Method": "Days from RFQ to qualified supplier recommendation"
+          },
+          {
+            "Function": "Supply Chain",
+            "KPI Name": "Incoming Material Rejection Rate",
+            "Direction": "↓",
+            "Timeframe": "15 months",
+            "Sub-Function": "Supplier Quality",
+            "Target Value": "1.5%",
+            "Baseline Value": "3.2%",
+            "Industry Benchmark": "1.8%",
+            "Measurement Method": "Percentage of incoming lots rejected at receiving inspection"
+          },
+          {
+            "Function": "Production Planning",
+            "KPI Name": "Furnace Utilization Rate",
+            "Direction": "↑",
+            "Timeframe": "12 months",
+            "Sub-Function": "Furnace Scheduling",
+            "Target Value": "94%",
+            "Baseline Value": "81%",
+            "Industry Benchmark": "92%",
+            "Measurement Method": "Productive hours divided by available capacity hours"
+          },
+          {
+            "Function": "Production Planning",
+            "KPI Name": "Heat Treatment Queue Time",
+            "Direction": "↓",
+            "Timeframe": "15 months",
+            "Sub-Function": "Heat Treatment",
+            "Target Value": "12 days",
+            "Baseline Value": "23 days",
+            "Industry Benchmark": "14 days",
+            "Measurement Method": "Days from forging completion to heat treatment start"
+          },
+          {
+            "Function": "Engineering",
+            "KPI Name": "ECO Processing Time",
+            "Direction": "↓",
+            "Timeframe": "12 months",
+            "Sub-Function": "Change Management",
+            "Target Value": "9 days",
+            "Baseline Value": "18 days",
+            "Industry Benchmark": "11 days",
+            "Measurement Method": "Days from ECO submission to tooling validation approval"
+          },
+          {
+            "Function": "Engineering",
+            "KPI Name": "First Article Approval Cycle",
+            "Direction": "↓",
+            "Timeframe": "18 months",
+            "Sub-Function": "New Program Qualification",
+            "Target Value": "85 days",
+            "Baseline Value": "127 days",
+            "Industry Benchmark": "95 days",
+            "Measurement Method": "Days from tooling completion to customer FAI approval"
+          },
+          {
+            "Function": "Sales Engineering",
+            "KPI Name": "Technical Proposal Cycle Time",
+            "Direction": "↓",
+            "Timeframe": "9 months",
+            "Sub-Function": "Proposal Development",
+            "Target Value": "6 days",
+            "Baseline Value": "14 days",
+            "Industry Benchmark": "8 days",
+            "Measurement Method": "Days from RFQ receipt to technical proposal submission"
+          },
+          {
+            "Function": "Finance",
+            "KPI Name": "Cost Variance Analysis Cycle",
+            "Direction": "↓",
+            "Timeframe": "12 months",
+            "Sub-Function": "Job Costing",
+            "Target Value": "3 days",
+            "Baseline Value": "12 days",
+            "Industry Benchmark": "5 days",
+            "Measurement Method": "Days from job completion to variance root cause identification"
+          },
+          {
+            "Function": "Customer Service",
+            "KPI Name": "Customer Inquiry Resolution Time",
+            "Direction": "↓",
+            "Timeframe": "9 months",
+            "Sub-Function": "Technical Inquiry Response",
+            "Target Value": "1 day",
+            "Baseline Value": "4.2 days",
+            "Industry Benchmark": "1.8 days",
+            "Measurement Method": "Days from customer technical question to engineering response"
+          },
+          {
+            "Function": "Regulatory Compliance",
+            "KPI Name": "AS9100/NADCAP Audit Prep Hours",
+            "Direction": "↓",
+            "Timeframe": "15 months",
+            "Sub-Function": "Audit Preparation",
+            "Target Value": "400 hours/audit",
+            "Baseline Value": "840 hours/audit",
+            "Industry Benchmark": "520 hours/audit",
+            "Measurement Method": "Total staff hours preparing documentation for certification audits"
+          }
+        ],
+        "step": 2,
+        "title": "Business Function Inventory & KPI Baselines",
+        "content": "Critical operational metrics establish baseline performance across quality assurance, supply chain, production planning, and engineering functions. Industry benchmarks from aerospace manufacturing sector applied where company-specific data unavailable."
+      },
+      {
+        "data": [
+          {
+            "Function": "Quality Assurance",
+            "Severity": "Critical",
+            "Sub-Function": "Material Certification",
+            "Friction Point": "Manual compilation of traceability documentation across fragmented systems (heat certificates, NDT results, chemical analysis reports) delays certificate release by average 19 days",
+            "Primary Driver Impact": "Increase Cash Flow",
+            "Estimated Annual Cost ($)": "$8.9M"
+          },
+          {
+            "Function": "Quality Assurance",
+            "Severity": "Critical",
+            "Sub-Function": "NDT Review",
+            "Friction Point": "Metallurgists manually interpret ultrasonic testing, radiographic imaging, and magnetic particle inspection data for 185,000 annual forging operations",
+            "Primary Driver Impact": "Reduce Cost",
+            "Estimated Annual Cost ($)": "$3.4M"
+          },
+          {
+            "Function": "Supply Chain",
+            "Severity": "High",
+            "Sub-Function": "Strategic Sourcing",
+            "Friction Point": "Procurement engineers manually cross-reference material specifications against supplier capabilities, certifications, and historical quality performance across 1,450 suppliers",
+            "Primary Driver Impact": "Reduce Cost",
+            "Estimated Annual Cost ($)": "$2.8M"
+          },
+          {
+            "Function": "Supply Chain",
+            "Severity": "High",
+            "Sub-Function": "Supplier Quality",
+            "Friction Point": "Incoming material inspections rely on manual comparison of supplier certificates against purchase order specifications with limited predictive analytics on supplier risk",
+            "Primary Driver Impact": "Decrease Risk",
+            "Estimated Annual Cost ($)": "$4.2M"
+          },
+          {
+            "Function": "Production Planning",
+            "Severity": "Critical",
+            "Sub-Function": "Furnace Scheduling",
+            "Friction Point": "Schedulers manually optimize furnace loading patterns across competing priorities (energy efficiency, cycle time, product mix) without real-time WIP visibility",
+            "Primary Driver Impact": "Grow Revenue",
+            "Estimated Annual Cost ($)": "$11.7M"
+          },
+          {
+            "Function": "Production Planning",
+            "Severity": "High",
+            "Sub-Function": "Heat Treatment",
+            "Friction Point": "Heat treatment queue times average 23 days due to batch optimization challenges and limited predictive modeling of furnace availability",
+            "Primary Driver Impact": "Increase Cash Flow",
+            "Estimated Annual Cost ($)": "$6.3M"
+          },
+          {
+            "Function": "Engineering",
+            "Severity": "High",
+            "Sub-Function": "Change Management",
+            "Friction Point": "ECO validation requires manual assessment of design changes against tooling capabilities, material certifications, and process parameters across seven facilities",
+            "Primary Driver Impact": "Reduce Cost",
+            "Estimated Annual Cost ($)": "$1.4M"
+          },
+          {
+            "Function": "Engineering",
+            "Severity": "Critical",
+            "Sub-Function": "New Program Qualification",
+            "Friction Point": "First article inspection documentation compiled manually from multiple systems extends customer approval cycles and delays revenue recognition",
+            "Primary Driver Impact": "Increase Cash Flow",
+            "Estimated Annual Cost ($)": "$7.8M"
+          },
+          {
+            "Function": "Sales Engineering",
+            "Severity": "Medium",
+            "Sub-Function": "Proposal Development",
+            "Friction Point": "Technical proposals require manual compilation of manufacturing capabilities, material certifications, and cost estimates from disparate databases",
+            "Primary Driver Impact": "Grow Revenue",
+            "Estimated Annual Cost ($)": "$1.9M"
+          },
+          {
+            "Function": "Finance",
+            "Severity": "Medium",
+            "Sub-Function": "Job Costing",
+            "Friction Point": "Post-job variance analysis conducted manually by comparing actual costs against estimates without automated root cause identification",
+            "Primary Driver Impact": "Reduce Cost",
+            "Estimated Annual Cost ($)": "$1.1M"
+          },
+          {
+            "Function": "Customer Service",
+            "Severity": "High",
+            "Sub-Function": "Technical Inquiry Response",
+            "Friction Point": "Customer technical questions routed to engineers who manually search tribal knowledge and historical documentation to formulate responses",
+            "Primary Driver Impact": "Reduce Cost",
+            "Estimated Annual Cost ($)": "$2.4M"
+          },
+          {
+            "Function": "Regulatory Compliance",
+            "Severity": "High",
+            "Sub-Function": "Audit Preparation",
+            "Friction Point": "AS9100D and NADCAP audit preparation requires manual aggregation of quality records, training documentation, and process control evidence across facilities",
+            "Primary Driver Impact": "Reduce Cost",
+            "Estimated Annual Cost ($)": "$1.8M"
+          }
+        ],
+        "step": 3,
+        "title": "Friction Point Mapping",
+        "content": "Twelve critical bottlenecks identified across quality, engineering, and operations functions. Annual cost estimates apply fully-loaded labor rates of $120/hour for engineering staff and $85/hour for production personnel."
+      },
+      {
+        "data": [
+          {
+            "ID": "UC-01",
+            "Function": "Quality Assurance",
+            "Description": "AI system aggregates traceability data from heat treatment logs, NDT databases, chemical analysis systems, and supplier certificates to auto-generate material certification packages. System cross-references regulatory requirements (AS9100D, AMS specifications, customer purchase order requirements) and highlights gaps or anomalies for metallurgist review.",
+            "Sub-Function": "Material Certification",
+            "AI Primitives": "Research & Information Retrieval, Content Creation, Data Analysis",
+            "Use Case Name": "Intelligent Material Certification Compiler",
+            "Target Friction": "Manual compilation of traceability documentation delaying certificate release by 19 days",
+            "Human-in-the-Loop Checkpoint": "Metallurgist validates AI-generated certificate package and approves final release to customer"
+          },
+          {
+            "ID": "UC-02",
+            "Function": "Quality Assurance",
+            "Description": "Computer vision models analyze ultrasonic testing, radiographic imaging, and magnetic particle inspection results to flag potential defects and classify severity. AI drafts preliminary inspection reports with defect location mapping and suggested disposition. System learns from metallurgist corrections to improve classification accuracy over time.",
+            "Sub-Function": "NDT Review",
+            "AI Primitives": "Data Analysis, Content Creation",
+            "Use Case Name": "NDT Anomaly Detection Assistant",
+            "Target Friction": "Metallurgists manually interpreting NDT data for 185,000 annual forging operations",
+            "Human-in-the-Loop Checkpoint": "Metallurgist reviews AI-flagged anomalies and approves final disposition (accept/reject/rework)"
+          },
+          {
+            "ID": "UC-03",
+            "Function": "Supply Chain",
+            "Description": "AI agent analyzes material specifications from engineering drawings and cross-references against supplier database covering capabilities, certifications, pricing history, quality performance, and lead times. System generates ranked supplier recommendations with supporting rationale (quality scores, cost competitiveness, delivery reliability). Integrates real-time supplier capacity data and geopolitical risk factors.",
+            "Sub-Function": "Strategic Sourcing",
+            "AI Primitives": "Research & Information Retrieval, Data Analysis, Workflow Automation",
+            "Use Case Name": "Intelligent Sourcing Recommendation Engine",
+            "Target Friction": "Manual cross-referencing of specifications against 1,450 suppliers averaging 7 days per inquiry",
+            "Human-in-the-Loop Checkpoint": "Procurement engineer reviews AI recommendations and approves final supplier selection"
+          },
+          {
+            "ID": "UC-04",
+            "Function": "Supply Chain",
+            "Description": "Machine learning models analyze incoming material inspection results, supplier certificate data, and historical quality trends to predict rejection risk before production. System alerts quality team to high-risk shipments requiring enhanced inspection. Conversational interface allows quality engineers to query supplier performance patterns and correlation between certificate anomalies and downstream defects.",
+            "Sub-Function": "Supplier Quality",
+            "AI Primitives": "Data Analysis, Conversational Interfaces",
+            "Use Case Name": "Predictive Supplier Quality Monitor",
+            "Target Friction": "Manual comparison of supplier certificates with limited predictive analytics on supplier risk",
+            "Human-in-the-Loop Checkpoint": "Quality engineer approves enhanced inspection protocols for AI-flagged high-risk shipments"
+          },
+          {
+            "ID": "UC-05",
+            "Function": "Production Planning",
+            "Description": "AI scheduling agent optimizes furnace loading patterns across seven facilities considering product mix, energy costs, cycle time requirements, and material compatibility constraints. System simulates alternative schedules and recommends optimal sequences to maximize utilization while minimizing energy consumption. Integrates real-time WIP inventory data and customer priority changes.",
+            "Sub-Function": "Furnace Scheduling",
+            "AI Primitives": "Data Analysis, Workflow Automation",
+            "Use Case Name": "Multi-Constraint Furnace Optimization Agent",
+            "Target Friction": "Manual scheduling resulting in 14% furnace utilization gap and suboptimal energy efficiency",
+            "Human-in-the-Loop Checkpoint": "Production planner reviews AI-optimized schedule and approves before execution, overrides for rush orders"
+          },
+          {
+            "ID": "UC-06",
+            "Function": "Production Planning",
+            "Description": "Predictive models forecast heat treatment availability based on historical throughput patterns, furnace maintenance schedules, and current WIP levels. System provides dynamic queue time estimates to customer service and production planning teams. AI recommends batch consolidation opportunities to reduce queue times while maintaining furnace efficiency.",
+            "Sub-Function": "Heat Treatment",
+            "AI Primitives": "Data Analysis, Conversational Interfaces",
+            "Use Case Name": "Heat Treatment Queue Predictor",
+            "Target Friction": "23-day average heat treatment queue times due to limited predictive modeling",
+            "Human-in-the-Loop Checkpoint": "Production planner approves batch consolidation recommendations before scheduling changes"
+          },
+          {
+            "ID": "UC-07",
+            "Function": "Engineering",
+            "Description": "AI system analyzes engineering change orders against existing tooling databases, material certifications, and process control parameters across seven facilities. System identifies potential conflicts (tooling modifications required, material spec incompatibilities, process capability gaps) and drafts feasibility assessment reports. Retrieves similar historical ECOs and their outcomes to inform validation decisions.",
+            "Sub-Function": "Change Management",
+            "AI Primitives": "Research & Information Retrieval, Data Analysis, Content Creation",
+            "Use Case Name": "ECO Feasibility Validation Assistant",
+            "Target Friction": "Manual ECO validation consuming 12,000 hours annually with 18-day average processing time",
+            "Human-in-the-Loop Checkpoint": "Engineering manager reviews AI feasibility assessment and approves ECO implementation plan"
+          },
+          {
+            "ID": "UC-08",
+            "Function": "Engineering",
+            "Description": "AI agent aggregates first article inspection data from CMM reports, material certifications, process control records, and quality inspection results into customer-required FAI packages (AS9102 forms, dimensional reports, material certifications). System auto-populates forms based on drawing requirements and flags incomplete or non-conforming characteristics for engineering review.",
+            "Sub-Function": "New Program Qualification",
+            "AI Primitives": "Research & Information Retrieval, Content Creation, Data Analysis",
+            "Use Case Name": "First Article Documentation Compiler",
+            "Target Friction": "Manual FAI compilation extending customer approval cycles and delaying revenue recognition",
+            "Human-in-the-Loop Checkpoint": "Quality engineer validates AI-compiled FAI package completeness and accuracy before customer submission"
+          },
+          {
+            "ID": "UC-09",
+            "Function": "Sales Engineering",
+            "Description": "AI system analyzes customer RFQs and auto-generates technical proposal sections covering manufacturing capabilities, material certifications, quality systems, and delivery commitments. Retrieves relevant historical quotes, lessons learned from similar programs, and current capacity constraints. System cross-references customer requirements against facility capabilities and flags potential technical risks requiring sales engineering review.",
+            "Sub-Function": "Proposal Development",
+            "AI Primitives": "Research & Information Retrieval, Content Creation, Data Analysis",
+            "Use Case Name": "Technical Proposal Synthesis Agent",
+            "Target Friction": "Manual proposal compilation from disparate databases averaging 14-day cycle time",
+            "Human-in-the-Loop Checkpoint": "Sales engineer reviews AI-generated proposal, validates technical commitments, and approves final submission"
+          },
+          {
+            "ID": "UC-10",
+            "Function": "Finance",
+            "Description": "AI analyzes post-job actuals versus estimates and identifies root causes of cost variances by correlating material usage, labor hours, scrap rates, and process deviations. System generates variance explanation reports with recommendations for estimate refinement. Conversational interface allows cost analysts to query patterns across similar jobs and explore what-if scenarios for future estimates.",
+            "Sub-Function": "Job Costing",
+            "AI Primitives": "Data Analysis, Content Creation, Conversational Interfaces",
+            "Use Case Name": "Job Cost Variance Analysis Copilot",
+            "Target Friction": "Manual variance analysis with 12-day cycle time and limited root cause identification",
+            "Human-in-the-Loop Checkpoint": "Cost analyst reviews AI-identified root causes and approves estimate adjustment recommendations"
+          }
+        ],
+        "step": 4,
+        "title": "AI Use Case Generation",
+        "content": "Ten use cases target process transformation across quality assurance, supply chain, production planning, and engineering functions. Each use case includes mandatory human validation checkpoints for safety-critical aerospace manufacturing decisions."
+      },
+      {
+        "data": [
+          {
+            "ID": "UC-01",
+            "Use Case": "Intelligent Material Certification Compiler",
+            "Cost Formula": "16,800 hours × $120/hr × 0.90 × 0.75 = $1,360,800 rounded to $1.4M, plus reduced rework",
+            "Risk Formula": "15% reduction × $10M annual certification error exposure × 0.80 × 0.75 = $900,000 rounded to $900K",
+            "Revenue Formula": "No revenue impact",
+            "Cost Benefit ($)": "$2.0M",
+            "Risk Benefit ($)": "$1.2M",
+            "Cash Flow Formula": "11 days reduction × $350K daily cash × 0.85 × 0.75 = $2,459,625 rounded to $2.5M, plus customer payment acceleration",
+            "Revenue Benefit ($)": "$0",
+            "Cash Flow Benefit ($)": "$4.1M",
+            "Probability of Success": 0.75,
+            "Total Annual Value ($)": "$7.3M"
+          },
+          {
+            "ID": "UC-02",
+            "Use Case": "NDT Anomaly Detection Assistant",
+            "Cost Formula": "14,000 hours × $120/hr × 0.90 × 0.75 = $1,134,000 rounded to $1.1M",
+            "Risk Formula": "12% reduction × $30M annual scrap/rework exposure × 0.80 × 0.75 = $2,160,000 rounded to $2.2M",
+            "Revenue Formula": "No revenue impact",
+            "Cost Benefit ($)": "$1.7M",
+            "Risk Benefit ($)": "$2.7M",
+            "Cash Flow Formula": "No working capital impact",
+            "Revenue Benefit ($)": "$0",
+            "Cash Flow Benefit ($)": "$0",
+            "Probability of Success": 0.7,
+            "Total Annual Value ($)": "$3.8M"
+          },
+          {
+            "ID": "UC-03",
+            "Use Case": "Intelligent Sourcing Recommendation Engine",
+            "Cost Formula": "4,200 hours × $120/hr × 0.90 × 0.75 = $340,200 rounded to $300K, plus 2% material cost reduction on $180M annual spend × 0.90 × 0.75 = $2,430,000 rounded to $2.4M, total $2.7M",
+            "Risk Formula": "20% reduction × $6M supplier quality risk × 0.80 × 0.75 = $720,000 rounded to $700K",
+            "Revenue Formula": "No revenue impact",
+            "Cost Benefit ($)": "$3.4M",
+            "Risk Benefit ($)": "$0.9M",
+            "Cash Flow Formula": "6 days × $350K daily cash × 0.85 × 0.75 = $1,338,750 rounded to $1.3M",
+            "Revenue Benefit ($)": "$0",
+            "Cash Flow Benefit ($)": "$1.6M",
+            "Probability of Success": 0.75,
+            "Total Annual Value ($)": "$5.9M"
+          },
+          {
+            "ID": "UC-04",
+            "Use Case": "Predictive Supplier Quality Monitor",
+            "Cost Formula": "30% reduction in incoming inspection hours (8,400 hours × $85/hr) × 0.90 × 0.75 = $481,950 rounded to $500K, plus 40% reduction in material scrap ($5.8M × 0.40) × 0.90 × 0.75 = $1,566,000 rounded to $1.6M, total $2.1M",
+            "Risk Formula": "35% reduction × $6M annual supplier quality exposure × 0.80 × 0.75 = $1,260,000 rounded to $1.3M",
+            "Revenue Formula": "No revenue impact",
+            "Cost Benefit ($)": "$2.1M",
+            "Risk Benefit ($)": "$1.8M",
+            "Cash Flow Formula": "No working capital impact",
+            "Revenue Benefit ($)": "$0",
+            "Cash Flow Benefit ($)": "$0",
+            "Probability of Success": 0.7,
+            "Total Annual Value ($)": "$3.9M"
+          },
+          {
+            "ID": "UC-05",
+            "Use Case": "Multi-Constraint Furnace Optimization Agent",
+            "Cost Formula": "8% energy cost reduction × $22M annual energy spend × 0.90 × 0.75 = $1,188,000 rounded to $1.2M",
+            "Risk Formula": "No risk mitigation",
+            "Revenue Formula": "13% utilization improvement × $650M revenue × 8.7% contribution margin × 0.95 × 0.75 = $4,969,087 rounded to $5.0M, plus new capacity revenue",
+            "Cost Benefit ($)": "$1.5M",
+            "Risk Benefit ($)": "$0",
+            "Cash Flow Formula": "No working capital impact",
+            "Revenue Benefit ($)": "$7.4M",
+            "Cash Flow Benefit ($)": "$0",
+            "Probability of Success": 0.65,
+            "Total Annual Value ($)": "$8.9M"
+          },
+          {
+            "ID": "UC-06",
+            "Use Case": "Heat Treatment Queue Predictor",
+            "Cost Formula": "2,800 planning hours × $85/hr × 0.90 × 0.75 = $160,650 rounded to $200K, plus WIP reduction",
+            "Risk Formula": "No risk mitigation",
+            "Revenue Formula": "No revenue impact",
+            "Cost Benefit ($)": "$0.8M",
+            "Risk Benefit ($)": "$0",
+            "Cash Flow Formula": "11 days × $350K daily cash × 0.85 × 0.75 = $2,459,625 rounded to $2.5M",
+            "Revenue Benefit ($)": "$0",
+            "Cash Flow Benefit ($)": "$3.2M",
+            "Probability of Success": 0.7,
+            "Total Annual Value ($)": "$4.0M"
+          },
+          {
+            "ID": "UC-07",
+            "Use Case": "ECO Feasibility Validation Assistant",
+            "Cost Formula": "7,200 hours × $120/hr × 0.90 × 0.75 = $583,200 rounded to $600K",
+            "Risk Formula": "25% reduction × $3M tooling modification risk × 0.80 × 0.75 = $450,000 rounded to $500K",
+            "Revenue Formula": "No revenue impact",
+            "Cost Benefit ($)": "$1.1M",
+            "Risk Benefit ($)": "$0.6M",
+            "Cash Flow Formula": "9 days × $350K daily cash × 0.85 × 0.75 = $2,009,062 rounded to $2.0M",
+            "Revenue Benefit ($)": "$0",
+            "Cash Flow Benefit ($)": "$1.8M",
+            "Probability of Success": 0.75,
+            "Total Annual Value ($)": "$3.5M"
+          },
+          {
+            "ID": "UC-08",
+            "Use Case": "First Article Documentation Compiler",
+            "Cost Formula": "9,600 hours × $120/hr × 0.90 × 0.75 = $777,600 rounded to $800K",
+            "Risk Formula": "No risk mitigation",
+            "Revenue Formula": "No revenue impact",
+            "Cost Benefit ($)": "$1.4M",
+            "Risk Benefit ($)": "$0",
+            "Cash Flow Formula": "42 days × $350K daily cash × 0.85 × 0.75 × 45% of revenue from new programs = $4,214,062 rounded to $4.2M",
+            "Revenue Benefit ($)": "$0",
+            "Cash Flow Benefit ($)": "$5.1M",
+            "Probability of Success": 0.7,
+            "Total Annual Value ($)": "$6.5M"
+          },
+          {
+            "ID": "UC-09",
+            "Use Case": "Technical Proposal Synthesis Agent",
+            "Cost Formula": "5,600 hours × $120/hr × 0.90 × 0.75 = $453,600 rounded to $500K",
+            "Risk Formula": "20% reduction × $2.5M annual proposal error risk × 0.80 × 0.75 = $300,000 rounded to $300K",
+            "Revenue Formula": "8% win rate improvement × $180M annual quote volume × 25% gross margin × 0.95 × 0.75 = $2,565,000 rounded to $2.6M",
+            "Cost Benefit ($)": "$0.9M",
+            "Risk Benefit ($)": "$0.4M",
+            "Cash Flow Formula": "No working capital impact",
+            "Revenue Benefit ($)": "$3.6M",
+            "Cash Flow Benefit ($)": "$0",
+            "Probability of Success": 0.65,
+            "Total Annual Value ($)": "$4.9M"
+          },
+          {
+            "ID": "UC-10",
+            "Use Case": "Job Cost Variance Analysis Copilot",
+            "Cost Formula": "3,200 hours × $85/hr × 0.90 × 0.75 = $183,600 rounded to $200K, plus 4% reduction in cost variances ($68M annual variances × 0.04) × 0.90 × 0.75 = $1,836,000 rounded to $1.8M, total $2.0M",
+            "Risk Formula": "No risk mitigation",
+            "Revenue Formula": "No revenue impact",
+            "Cost Benefit ($)": "$2.8M",
+            "Risk Benefit ($)": "$0",
+            "Cash Flow Formula": "No working capital impact",
+            "Revenue Benefit ($)": "$0",
+            "Cash Flow Benefit ($)": "$0",
+            "Probability of Success": 0.75,
+            "Total Annual Value ($)": "$2.0M"
+          }
+        ],
+        "step": 5,
+        "title": "Benefits Quantification by Driver",
+        "content": "Annual value quantified across four benefit drivers with explicit reduction factors applied. All calculations include conservative haircuts (Revenue ×0.95, Cost ×0.90, Cash Flow ×0.85, Risk ×0.80) and data maturity adjustment (×0.75). Formulas show complete calculation path with multiplication symbols."
+      },
+      {
+        "data": [
+          {
+            "ID": "UC-01",
+            "Use Case": "Intelligent Material Certification Compiler",
+            "Runs/Month": 15400,
+            "Monthly Tokens": 253660000,
+            "Input Tokens/Run": 12000,
+            "Change Mgmt (1-5)": 3,
+            "Output Tokens/Run": 4500,
+            "Effort Score (1-5)": 4,
+            "Data Readiness (1-5)": 2,
+            "Annual Token Cost ($)": "$27.9M",
+            "Time-to-Value (months)": 15,
+            "Integration Complexity (1-5)": 4
+          },
+          {
+            "ID": "UC-02",
+            "Use Case": "NDT Anomaly Detection Assistant",
+            "Runs/Month": 15400,
+            "Monthly Tokens": 164780000,
+            "Input Tokens/Run": 8500,
+            "Change Mgmt (1-5)": 4,
+            "Output Tokens/Run": 2200,
+            "Effort Score (1-5)": 4,
+            "Data Readiness (1-5)": 3,
+            "Annual Token Cost ($)": "$18.1M",
+            "Time-to-Value (months)": 18,
+            "Integration Complexity (1-5)": 4
+          },
+          {
+            "ID": "UC-03",
+            "Use Case": "Intelligent Sourcing Recommendation Engine",
+            "Runs/Month": 850,
+            "Monthly Tokens": 18275000,
+            "Input Tokens/Run": 18000,
+            "Change Mgmt (1-5)": 2,
+            "Output Tokens/Run": 3500,
+            "Effort Score (1-5)": 3,
+            "Data Readiness (1-5)": 2,
+            "Annual Token Cost ($)": "$2.0M",
+            "Time-to-Value (months)": 9,
+            "Integration Complexity (1-5)": 3
+          },
+          {
+            "ID": "UC-04",
+            "Use Case": "Predictive Supplier Quality Monitor",
+            "Runs/Month": 1200,
+            "Monthly Tokens": 9960000,
+            "Input Tokens/Run": 6500,
+            "Change Mgmt (1-5)": 2,
+            "Output Tokens/Run": 1800,
+            "Effort Score (1-5)": 3,
+            "Data Readiness (1-5)": 3,
+            "Annual Token Cost ($)": "$1.1M",
+            "Time-to-Value (months)": 12,
+            "Integration Complexity (1-5)": 3
+          },
+          {
+            "ID": "UC-05",
+            "Use Case": "Multi-Constraint Furnace Optimization Agent",
+            "Runs/Month": 210,
+            "Monthly Tokens": 5775000,
+            "Input Tokens/Run": 22000,
+            "Change Mgmt (1-5)": 4,
+            "Output Tokens/Run": 5500,
+            "Effort Score (1-5)": 5,
+            "Data Readiness (1-5)": 2,
+            "Annual Token Cost ($)": "$635K",
+            "Time-to-Value (months)": 18,
+            "Integration Complexity (1-5)": 5
+          },
+          {
+            "ID": "UC-06",
+            "Use Case": "Heat Treatment Queue Predictor",
+            "Runs/Month": 1400,
+            "Monthly Tokens": 16660000,
+            "Input Tokens/Run": 9500,
+            "Change Mgmt (1-5)": 2,
+            "Output Tokens/Run": 2400,
+            "Effort Score (1-5)": 3,
+            "Data Readiness (1-5)": 3,
+            "Annual Token Cost ($)": "$1.8M",
+            "Time-to-Value (months)": 12,
+            "Integration Complexity (1-5)": 3
+          },
+          {
+            "ID": "UC-07",
+            "Use Case": "ECO Feasibility Validation Assistant",
+            "Runs/Month": 450,
+            "Monthly Tokens": 8640000,
+            "Input Tokens/Run": 15000,
+            "Change Mgmt (1-5)": 3,
+            "Output Tokens/Run": 4200,
+            "Effort Score (1-5)": 4,
+            "Data Readiness (1-5)": 2,
+            "Annual Token Cost ($)": "$950K",
+            "Time-to-Value (months)": 12,
+            "Integration Complexity (1-5)": 4
+          },
+          {
+            "ID": "UC-08",
+            "Use Case": "First Article Documentation Compiler",
+            "Runs/Month": 280,
+            "Monthly Tokens": 6244000,
+            "Input Tokens/Run": 16500,
+            "Change Mgmt (1-5)": 3,
+            "Output Tokens/Run": 5800,
+            "Effort Score (1-5)": 4,
+            "Data Readiness (1-5)": 2,
+            "Annual Token Cost ($)": "$686K",
+            "Time-to-Value (months)": 15,
+            "Integration Complexity (1-5)": 4
+          },
+          {
+            "ID": "UC-09",
+            "Use Case": "Technical Proposal Synthesis Agent",
+            "Runs/Month": 120,
+            "Monthly Tokens": 2100000,
+            "Input Tokens/Run": 11000,
+            "Change Mgmt (1-5)": 2,
+            "Output Tokens/Run": 6500,
+            "Effort Score (1-5)": 2,
+            "Data Readiness (1-5)": 3,
+            "Annual Token Cost ($)": "$231K",
+            "Time-to-Value (months)": 6,
+            "Integration Complexity (1-5)": 2
+          },
+          {
+            "ID": "UC-10",
+            "Use Case": "Job Cost Variance Analysis Copilot",
+            "Runs/Month": 380,
+            "Monthly Tokens": 6954000,
+            "Input Tokens/Run": 13500,
+            "Change Mgmt (1-5)": 2,
+            "Output Tokens/Run": 4800,
+            "Effort Score (1-5)": 2,
+            "Data Readiness (1-5)": 3,
+            "Annual Token Cost ($)": "$764K",
+            "Time-to-Value (months)": 9,
+            "Integration Complexity (1-5)": 2
+          }
+        ],
+        "step": 6,
+        "title": "Effort & Token Modeling",
+        "content": "Implementation effort scored across data readiness, integration complexity, and change management dimensions. Token estimates based on Claude Sonnet pricing at $3 per 1M input tokens and $15 per 1M output tokens. Monthly run volumes reflect steady-state operations after pilot phase."
+      },
+      {
+        "data": [
+          {
+            "ID": "UC-01",
+            "Use Case": "Intelligent Material Certification Compiler",
+            "Priority Tier": "Medium",
+            "TTV Score (0-30)": 10,
+            "Recommended Phase": "Q3",
+            "Value Score (0-40)": 27,
+            "Effort Score (0-30)": 12,
+            "Priority Score (0-100)": 49
+          },
+          {
+            "ID": "UC-02",
+            "Use Case": "NDT Anomaly Detection Assistant",
+            "Priority Tier": "Medium",
+            "TTV Score (0-30)": 5,
+            "Recommended Phase": "Q4",
+            "Value Score (0-40)": 19,
+            "Effort Score (0-30)": 12,
+            "Priority Score (0-100)": 36
+          },
+          {
+            "ID": "UC-03",
+            "Use Case": "Intelligent Sourcing Recommendation Engine",
+            "Priority Tier": "High",
+            "TTV Score (0-30)": 25,
+            "Recommended Phase": "Q1",
+            "Value Score (0-40)": 25,
+            "Effort Score (0-30)": 18,
+            "Priority Score (0-100)": 68
+          },
+          {
+            "ID": "UC-04",
+            "Use Case": "Predictive Supplier Quality Monitor",
+            "Priority Tier": "Medium",
+            "TTV Score (0-30)": 15,
+            "Recommended Phase": "Q2",
+            "Value Score (0-40)": 20,
+            "Effort Score (0-30)": 18,
+            "Priority Score (0-100)": 53
+          },
+          {
+            "ID": "UC-05",
+            "Use Case": "Multi-Constraint Furnace Optimization Agent",
+            "Priority Tier": "Medium",
+            "TTV Score (0-30)": 5,
+            "Recommended Phase": "Q4",
+            "Value Score (0-40)": 31,
+            "Effort Score (0-30)": 6,
+            "Priority Score (0-100)": 45
+          },
+          {
+            "ID": "UC-06",
+            "Use Case": "Heat Treatment Queue Predictor",
+            "Priority Tier": "Medium",
+            "TTV Score (0-30)": 15,
+            "Recommended Phase": "Q2",
+            "Value Score (0-40)": 21,
+            "Effort Score (0-30)": 18,
+            "Priority Score (0-100)": 54
+          },
+          {
+            "ID": "UC-07",
+            "Use Case": "ECO Feasibility Validation Assistant",
+            "Priority Tier": "Medium",
+            "TTV Score (0-30)": 15,
+            "Recommended Phase": "Q3",
+            "Value Score (0-40)": 18,
+            "Effort Score (0-30)": 12,
+            "Priority Score (0-100)": 45
+          },
+          {
+            "ID": "UC-08",
+            "Use Case": "First Article Documentation Compiler",
+            "Priority Tier": "Medium",
+            "TTV Score (0-30)": 10,
+            "Recommended Phase": "Q3",
+            "Value Score (0-40)": 26,
+            "Effort Score (0-30)": 12,
+            "Priority Score (0-100)": 48
+          },
+          {
+            "ID": "UC-09",
+            "Use Case": "Technical Proposal Synthesis Agent",
+            "Priority Tier": "Critical",
+            "TTV Score (0-30)": 30,
+            "Recommended Phase": "Q1",
+            "Value Score (0-40)": 23,
+            "Effort Score (0-30)": 24,
+            "Priority Score (0-100)": 77
+          },
+          {
+            "ID": "UC-10",
+            "Use Case": "Job Cost Variance Analysis Copilot",
+            "Priority Tier": "High",
+            "TTV Score (0-30)": 25,
+            "Recommended Phase": "Q1",
+            "Value Score (0-40)": 14,
+            "Effort Score (0-30)": 24,
+            "Priority Score (0-100)": 63
+          }
+        ],
+        "step": 7,
+        "title": "Priority Scoring & Roadmap",
+        "content": "Priority scoring applies weighted formula: (Value Score × 0.40) + (Time-to-Value Score × 0.30) + (Effort Score × 0.30). Value Score ranges 0-40 based on total annual value. TTV Score inversely weighted (6 months = 30 points, 18 months = 5 points). Effort Score inversely weighted (Effort 1 = 30 points, Effort 5 = 6 points). Critical tier requires Priority Score above 75, High tier 60-74, Medium tier 45-59."
+      }
+    ],
+    "summary": "This assessment identifies $50.7M in annual value across 10 AI use cases targeting aerospace manufacturing operations. Two initiatives qualify as Critical-priority for immediate Q1 execution with combined first-year impact of $12.3M. Eight additional opportunities span Medium to High priority tiers requiring phased deployment through fiscal year 2026.\n\nCost reduction dominates the portfolio at $17.7M, representing 35% of total identified value. Revenue growth opportunities contribute $11.0M at 22%. Cash flow acceleration accounts for $15.8M at 31%. Risk mitigation rounds out the portfolio at $6.2M representing 12%. The portfolio balances operational efficiency gains against strategic revenue enablement with primary focus on back-office process transformation requiring minimal customer-facing changes.\n\nTechnical Proposal Synthesis Agent represents a $4.9M annual opportunity qualifying as Critical-priority. AI-drafted technical proposals with sales engineer review compress proposal development cycles from 14 days to 6 days while improving win rates through consistent capability positioning and reduced technical errors. The solution requires integration with existing ERP and product lifecycle management systems plus a 90-day pilot covering non-strategic opportunities. Implementation depends on standardizing proposal templates and training sales engineers on AI-assisted workflows. Revenue benefit assumes 8% win rate improvement on $180M annual quote volume with 25% gross margins. Conservative haircuts reduce projected value from $6.5M theoretical maximum to $4.9M after applying revenue reduction factor, data maturity penalty, and 65% probability of success.\n\nIntelligent Sourcing Recommendation Engine delivers $5.9M annually through accelerated material sourcing decisions and improved supplier selection. AI cross-references specifications against 1,450 suppliers covering capabilities, certifications, pricing history, and quality performance to generate ranked recommendations within hours versus current 7-day manual process. Procurement engineers validate AI recommendations before final supplier selection. The solution reduces material costs 2% on $180M annual spend while deflecting 4,200 hours of manual research at $120 per hour. Implementation requires supplier database consolidation across facilities and integration with procurement workflows. Time-to-value spans 9 months including 120-day supplier data normalization effort.\n\nJob Cost Variance Analysis Copilot achieves $2.0M in annual cost savings by automating root cause identification for job overruns. AI correlates actual costs against estimates across material usage, labor hours, scrap rates, and process deviations to generate variance explanation reports with estimate refinement recommendations. Cost analysts validate AI-identified root causes before approving estimate adjustments. The solution compresses variance analysis cycles from 12 days to 3 days while improving estimate accuracy 4% on $68M annual cost variances. Implementation depends on integrating actual cost data from manufacturing execution systems with estimating databases. Six-month timeline includes pilot phase covering repetitive forging families before expanding to custom aerospace components.\n\nPortfolio dynamics show moderate concentration risk with top three initiatives accounting for 26% of total value. However, each targets distinct operational domains, providing natural hedging if any single initiative underperforms. Back-office automation opportunities outnumber customer-facing initiatives 9 to 1, reducing change management complexity and customer experience risk. The portfolio deliberately prioritizes quality assurance, supply chain, and engineering functions over production floor automation to leverage existing data assets and minimize equipment integration challenges.\n\nImplementation hinges on addressing fragmented data architectures across seven facilities operating independent quality management and ERP systems. Current data maturity averages Level 2 with documented processes but limited automation and inconsistent data schemas. Schema normalization represents a 120-day prerequisite before deploying multi-facility use cases. Failure to address data fragmentation reduces projected first-year value 35% and extends time-to-value an average 4 months across the portfolio. Quality assurance use cases face additional regulatory validation requirements under AS9100D and NADCAP certification standards, extending pilot phases and requiring formalized human-in-the-loop protocols for metallurgist approval checkpoints.",
+    "executiveDashboard": {
+      "topUseCases": [
+        {
+          "rank": 1,
+          "useCase": "Technical Proposal Synthesis Agent",
+          "annualValue": 4900000,
+          "monthlyTokens": 2100000,
+          "priorityScore": 77
+        },
+        {
+          "rank": 2,
+          "useCase": "Intelligent Sourcing Recommendation Engine",
+          "annualValue": 5900000,
+          "monthlyTokens": 18275000,
+          "priorityScore": 68
+        },
+        {
+          "rank": 3,
+          "useCase": "Job Cost Variance Analysis Copilot",
+          "annualValue": 2000000,
+          "monthlyTokens": 6954000,
+          "priorityScore": 63
+        },
+        {
+          "rank": 4,
+          "useCase": "Heat Treatment Queue Predictor",
+          "annualValue": 4000000,
+          "monthlyTokens": 16660000,
+          "priorityScore": 54
+        },
+        {
+          "rank": 5,
+          "useCase": "Predictive Supplier Quality Monitor",
+          "annualValue": 3900000,
+          "monthlyTokens": 9960000,
+          "priorityScore": 53
+        }
+      ],
+      "totalAnnualValue": 50700000,
+      "totalCostBenefit": 17700000,
+      "totalRiskBenefit": 6200000,
+      "totalMonthlyTokens": 493098000,
+      "totalRevenueBenefit": 11000000,
+      "totalCashFlowBenefit": 15800000,
+      "valuePerMillionTokens": 8565
+    }
+  }
+}

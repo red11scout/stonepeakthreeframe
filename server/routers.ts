@@ -7,7 +7,7 @@ import * as db from "./db";
 import { calculateAllScores, getFormulaDocumentation, type CompanyInputScores } from "./calculations";
 import { invokeLLM } from "./_core/llm";
 import { notifyOwner } from "./_core/notification";
-import { INVESTMENT_CATEGORIES, VALUE_THEMES, HOLD_PERIOD_TRACKS, QUADRANT_THRESHOLD } from "../shared/stonepeak";
+import { INVESTMENT_CATEGORIES, HOLD_PERIOD_TRACKS, QUADRANT_THRESHOLD } from "../shared/stonepeak";
 
 export const appRouter = router({
   system: systemRouter,

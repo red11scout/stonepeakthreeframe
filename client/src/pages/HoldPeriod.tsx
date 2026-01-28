@@ -1,5 +1,6 @@
 import Layout from "@/components/Layout";
 import { CompanyLogo } from "@/components/CompanyLogo";
+import { MethodologyPanel, HOLD_PERIOD_METHODOLOGY } from "@/components/MethodologyPanel";
 import { trpc } from "@/lib/trpc";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -130,6 +131,9 @@ export default function HoldPeriod() {
       title="Hold Period Planning"
       subtitle="Three-track value capture model with phase-gate timeline"
     >
+      {/* Methodology Panel */}
+      <MethodologyPanel {...HOLD_PERIOD_METHODOLOGY} />
+
       {/* Track Summary Cards */}
       <div className="grid gap-4 md:grid-cols-3 mb-8">
         {trackData.map((track) => (
@@ -353,9 +357,7 @@ export default function HoldPeriod() {
                     <th className="text-left py-2 px-2 text-sm font-medium text-muted-foreground hidden md:table-cell">
                       Category
                     </th>
-                    <th className="text-center py-2 px-2 text-sm font-medium text-muted-foreground">
-                      Theme
-                    </th>
+
                     <th className="text-right py-2 px-2 text-sm font-medium text-muted-foreground">
                       Priority
                     </th>
@@ -384,13 +386,7 @@ export default function HoldPeriod() {
                       <td className="py-3 px-2 hidden md:table-cell text-sm text-muted-foreground">
                         {company.investmentCategory?.split(" ")[0]}
                       </td>
-                      <td className="py-3 px-2 text-center">
-                        {company.theme && (
-                          <Badge variant="outline" className="text-xs">
-                            {company.theme}
-                          </Badge>
-                        )}
-                      </td>
+
                       <td className="py-3 px-2 text-right font-medium">
                         {Number(company.priorityScore).toFixed(2)}
                       </td>

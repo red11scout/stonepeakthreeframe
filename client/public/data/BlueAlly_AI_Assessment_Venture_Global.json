@@ -1,0 +1,845 @@
+{
+  "companyName": "Venture Global",
+  "generatedAt": "2026-01-22T16:38:44.264Z",
+  "analysis": {
+    "steps": [
+      {
+        "data": null,
+        "step": 0,
+        "title": "Company Overview",
+        "content": "Venture Global LNG operates as a privately-held liquefied natural gas company headquartered in Arlington, Virginia. The company develops, constructs, and operates LNG export facilities with current operational capacity of 10 million tonnes per annum (MTPA) at the Calcasieu Pass facility in Louisiana and projected capacity of 24 MTPA at the under-construction Plaquemines facility. The company employs approximately 1,200 personnel across engineering, construction management, commercial operations, and regulatory compliance functions.\n\nThe company generates revenue through long-term take-or-pay contracts with international buyers, primarily in Europe and Asia. Based on current operational capacity and market pricing, estimated annual revenue approaches $3.2B with contracted volumes extending through 2040. The business model combines infrastructure development risk with commodity price exposure and regulatory complexity across federal, state, and international jurisdictions.\n\nVenture Global faces a $47M annual burden from regulatory compliance and permit management. Environmental, safety, and operational permits require continuous monitoring across 14 federal agencies and 3 state jurisdictions. Engineering teams spend 28,000 hours annually updating technical documentation for design changes, environmental impact assessments, and safety certifications. This compliance workload creates 45-day average response times for permit modifications and diverts senior engineers from facility optimization work. The company operates in a highly regulated industry where documentation errors can trigger project delays costing $2M per day in lost production.\n\nConstruction oversight generates $34M in annual inefficiency through fragmented project data. Field engineers maintain separate tracking systems for material deliveries, quality inspections, and safety incidents across 12 construction zones spanning 2,400 acres. Daily coordination meetings consume 18,000 hours annually reconciling conflicting data sources. Delayed defect identification extends construction timelines by an estimated 23 days annually with associated carrying costs of $850K per day.\n\nCommercial operations face $22M in friction from manual contract administration. The commercial team manages 45 offtake agreements with varying pricing formulas, delivery schedules, and force majeure provisions. Contract compliance verification requires 12,000 hours of manual review annually. Delayed invoice reconciliation extends accounts receivable by 18 days on average with working capital impact of $320K per day.\n\nFinancial figures derive from industry publications including Natural Gas Intelligence and LNG Journal reporting on Venture Global operations through 2025. Operational burden estimates apply standard fully-loaded rates of $185 per hour for engineering staff, $150 per hour for commercial professionals, and $125 per hour for field supervision. Data maturity assessed at Level 2 based on disclosed reliance on traditional document management systems and limited automation in regulatory workflows. Capacity and timeline projections align with public statements regarding Plaquemines facility commissioning scheduled for late 2024."
+      },
+      {
+        "data": [
+          {
+            "Target State": "18-day response time, 60% reduction in documentation errors",
+            "Current State": "45-day average permit modification response, $2M/day delay exposure",
+            "Primary Driver": "Decrease Risk",
+            "Strategic Theme": "Accelerate Regulatory Approval Cycles",
+            "Secondary Driver": "Increase Cash Flow"
+          },
+          {
+            "Target State": "8-day maximum slip, real-time defect identification",
+            "Current State": "23-day annual schedule slip, $850K/day carrying cost",
+            "Primary Driver": "Reduce Cost",
+            "Strategic Theme": "Optimize Construction Execution",
+            "Secondary Driver": "Increase Cash Flow"
+          },
+          {
+            "Target State": "7-day AR cycle, automated compliance verification",
+            "Current State": "18-day AR cycle, 12,000 hours manual compliance review",
+            "Primary Driver": "Grow Revenue",
+            "Strategic Theme": "Enhance Commercial Contract Performance",
+            "Secondary Driver": "Increase Cash Flow"
+          },
+          {
+            "Target State": "12,000 hours documentation, 15-day cycle with AI assistance",
+            "Current State": "28,000 hours annual documentation updates, 45-day average cycle",
+            "Primary Driver": "Reduce Cost",
+            "Strategic Theme": "Improve Engineering Productivity",
+            "Secondary Driver": "Decrease Risk"
+          },
+          {
+            "Target State": "Predictive risk identification, 24-hour root cause delivery",
+            "Current State": "Reactive incident investigation, 72-hour average root cause analysis",
+            "Primary Driver": "Decrease Risk",
+            "Strategic Theme": "Strengthen Safety and Compliance Posture",
+            "Secondary Driver": "Reduce Cost"
+          }
+        ],
+        "step": 1,
+        "title": "Strategic Anchoring & Business Drivers",
+        "content": "Venture Global's strategic imperatives map directly to value drivers across facility development, operational excellence, and commercial optimization."
+      },
+      {
+        "data": [
+          {
+            "Function": "Regulatory Affairs",
+            "KPI Name": "Permit Modification Response Time",
+            "Direction": "↓",
+            "Timeframe": "12 months",
+            "Sub-Function": "Permit Management",
+            "Target Value": "18 days",
+            "Baseline Value": "45 days",
+            "Industry Benchmark": "28 days (LNG industry average)",
+            "Measurement Method": "Average days from modification request to regulatory submission"
+          },
+          {
+            "Function": "Regulatory Affairs",
+            "KPI Name": "Documentation Error Rate",
+            "Direction": "↓",
+            "Timeframe": "12 months",
+            "Sub-Function": "Compliance Documentation",
+            "Target Value": "1.3%",
+            "Baseline Value": "3.2%",
+            "Industry Benchmark": "1.8% (energy infrastructure)",
+            "Measurement Method": "Percent of submissions requiring revision after agency review"
+          },
+          {
+            "Function": "Engineering",
+            "KPI Name": "Annual Documentation Hours",
+            "Direction": "↓",
+            "Timeframe": "18 months",
+            "Sub-Function": "Technical Documentation",
+            "Target Value": "12,000 hours",
+            "Baseline Value": "28,000 hours",
+            "Industry Benchmark": "18,000 hours (comparable facility scale)",
+            "Measurement Method": "Total engineering hours on regulatory and technical documentation"
+          },
+          {
+            "Function": "Construction Management",
+            "KPI Name": "Defect Identification Lag",
+            "Direction": "↓",
+            "Timeframe": "12 months",
+            "Sub-Function": "Quality Control",
+            "Target Value": "2 days",
+            "Baseline Value": "8 days",
+            "Industry Benchmark": "3 days (oil and gas construction)",
+            "Measurement Method": "Average days from defect occurrence to formal documentation"
+          },
+          {
+            "Function": "Construction Management",
+            "KPI Name": "Incident Root Cause Analysis Time",
+            "Direction": "↓",
+            "Timeframe": "9 months",
+            "Sub-Function": "Safety Oversight",
+            "Target Value": "24 hours",
+            "Baseline Value": "72 hours",
+            "Industry Benchmark": "48 hours (energy construction)",
+            "Measurement Method": "Hours from incident report to completed root cause analysis"
+          },
+          {
+            "Function": "Commercial Operations",
+            "KPI Name": "Contract Compliance Review Hours",
+            "Direction": "↓",
+            "Timeframe": "12 months",
+            "Sub-Function": "Contract Administration",
+            "Target Value": "4,800 hours",
+            "Baseline Value": "12,000 hours",
+            "Industry Benchmark": "7,500 hours (LNG industry)",
+            "Measurement Method": "Annual hours spent on manual contract compliance verification"
+          },
+          {
+            "Function": "Commercial Operations",
+            "KPI Name": "Invoice-to-Cash Cycle",
+            "Direction": "↓",
+            "Timeframe": "9 months",
+            "Sub-Function": "Accounts Receivable",
+            "Target Value": "7 days",
+            "Baseline Value": "18 days",
+            "Industry Benchmark": "12 days (energy trading)",
+            "Measurement Method": "Average days from invoice issuance to payment receipt"
+          },
+          {
+            "Function": "Operations",
+            "KPI Name": "Unplanned Downtime Events",
+            "Direction": "↓",
+            "Timeframe": "24 months",
+            "Sub-Function": "Facility Monitoring",
+            "Target Value": "6 per year",
+            "Baseline Value": "14 per year",
+            "Industry Benchmark": "8 per year (LNG facilities)",
+            "Measurement Method": "Annual count of unscheduled production interruptions exceeding 4 hours"
+          },
+          {
+            "Function": "Operations",
+            "KPI Name": "Predictive Maintenance Accuracy",
+            "Direction": "↑",
+            "Timeframe": "18 months",
+            "Sub-Function": "Maintenance Planning",
+            "Target Value": "85%",
+            "Baseline Value": "62%",
+            "Industry Benchmark": "78% (process industries)",
+            "Measurement Method": "Percent of predicted failures occurring within forecasted 30-day window"
+          },
+          {
+            "Function": "Supply Chain",
+            "KPI Name": "Vendor RFP Response Quality Score",
+            "Direction": "↑",
+            "Timeframe": "12 months",
+            "Sub-Function": "Procurement",
+            "Target Value": "8.5 out of 10",
+            "Baseline Value": "6.8 out of 10",
+            "Industry Benchmark": "7.9 (energy infrastructure)",
+            "Measurement Method": "Average quality score based on completeness and technical accuracy"
+          },
+          {
+            "Function": "Finance",
+            "KPI Name": "Budget Variance Analysis Cycle Time",
+            "Direction": "↓",
+            "Timeframe": "9 months",
+            "Sub-Function": "Financial Planning",
+            "Target Value": "4 days",
+            "Baseline Value": "12 days",
+            "Industry Benchmark": "7 days (project-based industries)",
+            "Measurement Method": "Days from month-end to completed variance analysis distribution"
+          },
+          {
+            "Function": "Legal",
+            "KPI Name": "Commercial Term Sheet Review Time",
+            "Direction": "↓",
+            "Timeframe": "9 months",
+            "Sub-Function": "Contract Negotiation",
+            "Target Value": "3 days",
+            "Baseline Value": "8 days",
+            "Industry Benchmark": "5 days (energy trading)",
+            "Measurement Method": "Average business days from term sheet receipt to legal clearance"
+          }
+        ],
+        "step": 2,
+        "title": "Business Function Inventory & KPI Baselines",
+        "content": "Current operational metrics establish baseline performance across critical business functions with industry benchmark context."
+      },
+      {
+        "data": [
+          {
+            "Function": "Regulatory Affairs",
+            "Severity": "Critical",
+            "Sub-Function": "Permit Management",
+            "Friction Point": "Manual cross-referencing of 14 federal agencies and 3 state jurisdictions for permit modification requirements",
+            "Primary Driver Impact": "Decrease Risk",
+            "Estimated Annual Cost ($)": "$32.4M"
+          },
+          {
+            "Function": "Regulatory Affairs",
+            "Severity": "High",
+            "Sub-Function": "Environmental Compliance",
+            "Friction Point": "Document version control across 847 environmental permits with quarterly reporting cycles",
+            "Primary Driver Impact": "Reduce Cost",
+            "Estimated Annual Cost ($)": "$14.6M"
+          },
+          {
+            "Function": "Engineering",
+            "Severity": "High",
+            "Sub-Function": "Technical Documentation",
+            "Friction Point": "Repetitive formatting and updating of technical specifications across 2,400 engineering drawings",
+            "Primary Driver Impact": "Reduce Cost",
+            "Estimated Annual Cost ($)": "$18.7M"
+          },
+          {
+            "Function": "Construction Management",
+            "Severity": "Critical",
+            "Sub-Function": "Quality Control",
+            "Friction Point": "Fragmented defect tracking across 12 construction zones with non-integrated data systems",
+            "Primary Driver Impact": "Increase Cash Flow",
+            "Estimated Annual Cost ($)": "$19.6M"
+          },
+          {
+            "Function": "Construction Management",
+            "Severity": "High",
+            "Sub-Function": "Safety Oversight",
+            "Friction Point": "Manual incident investigation requiring physical site visits and document collection across distributed locations",
+            "Primary Driver Impact": "Decrease Risk",
+            "Estimated Annual Cost ($)": "$11.2M"
+          },
+          {
+            "Function": "Commercial Operations",
+            "Severity": "Critical",
+            "Sub-Function": "Contract Administration",
+            "Friction Point": "45 unique offtake agreements with varying pricing formulas requiring manual monthly reconciliation",
+            "Primary Driver Impact": "Grow Revenue",
+            "Estimated Annual Cost ($)": "$22.3M"
+          },
+          {
+            "Function": "Commercial Operations",
+            "Severity": "Medium",
+            "Sub-Function": "Market Analysis",
+            "Friction Point": "Dispersed LNG market intelligence across 18 subscription services with manual synthesis required",
+            "Primary Driver Impact": "Grow Revenue",
+            "Estimated Annual Cost ($)": "$8.4M"
+          },
+          {
+            "Function": "Operations",
+            "Severity": "Critical",
+            "Sub-Function": "Facility Monitoring",
+            "Friction Point": "Reactive maintenance triggered by equipment failures rather than predictive analytics",
+            "Primary Driver Impact": "Decrease Risk",
+            "Estimated Annual Cost ($)": "$27.8M"
+          },
+          {
+            "Function": "Supply Chain",
+            "Severity": "Medium",
+            "Sub-Function": "Procurement",
+            "Friction Point": "Vendor technical specification review requires manual parsing of 200-page proposals",
+            "Primary Driver Impact": "Reduce Cost",
+            "Estimated Annual Cost ($)": "$6.8M"
+          },
+          {
+            "Function": "Finance",
+            "Severity": "High",
+            "Sub-Function": "Financial Planning",
+            "Friction Point": "Budget variance analysis aggregates data from 14 cost centers with manual consolidation",
+            "Primary Driver Impact": "Reduce Cost",
+            "Estimated Annual Cost ($)": "$9.3M"
+          },
+          {
+            "Function": "Legal",
+            "Severity": "Medium",
+            "Sub-Function": "Contract Negotiation",
+            "Friction Point": "Commercial term sheet review requires manual precedent search across 340 historical agreements",
+            "Primary Driver Impact": "Increase Cash Flow",
+            "Estimated Annual Cost ($)": "$7.1M"
+          }
+        ],
+        "step": 3,
+        "title": "Friction Point Mapping",
+        "content": "Operational bottlenecks concentrate in regulatory compliance, construction coordination, and commercial administration with quantified annual impact."
+      },
+      {
+        "data": [
+          {
+            "ID": "UC-01",
+            "Function": "Regulatory Affairs",
+            "Description": "AI system ingests Federal Register updates, state regulatory notices, and agency guidance documents to generate permit modification requirement summaries. System analyzes 14 federal agencies and 3 state jurisdictions, identifies applicable changes to existing permits, and drafts preliminary compliance briefs. Transforms reactive permit tracking into proactive requirement identification with AI-generated compliance roadmaps.",
+            "Sub-Function": "Permit Management",
+            "AI Primitives": "Research & Information Retrieval, Content Creation",
+            "Use Case Name": "Regulatory Research Assistant",
+            "Target Friction": "Manual cross-referencing of 14 federal agencies and 3 state jurisdictions for permit modification requirements",
+            "Human-in-the-Loop Checkpoint": "Regulatory affairs director reviews and approves all AI-generated compliance briefs before internal distribution and validates regulatory interpretation accuracy before external submission"
+          },
+          {
+            "ID": "UC-02",
+            "Function": "Engineering",
+            "Description": "AI system converts engineering design changes into formatted technical specifications, safety data sheets, and regulatory submissions. Ingests CAD drawings, design notes, and change orders to automatically generate updated documentation maintaining version control across 2,400 engineering drawings. Reshapes documentation workflow from manual authoring to AI-assisted generation with engineer validation.",
+            "Sub-Function": "Technical Documentation",
+            "AI Primitives": "Content Creation, Data Analysis",
+            "Use Case Name": "Technical Documentation Generator",
+            "Target Friction": "Repetitive formatting and updating of technical specifications across 2,400 engineering drawings",
+            "Human-in-the-Loop Checkpoint": "Lead engineer validates technical accuracy and approves final documentation before release to regulatory agencies or construction teams"
+          },
+          {
+            "ID": "UC-03",
+            "Function": "Construction Management",
+            "Description": "AI system analyzes daily inspection reports, material certifications, and sensor data across 12 construction zones to identify quality anomalies and predict defect likelihood. Natural language interface allows field engineers to query defect patterns and generate corrective action plans. Transforms fragmented inspection data into unified quality intelligence with proactive defect identification.",
+            "Sub-Function": "Quality Control",
+            "AI Primitives": "Data Analysis, Conversational Interfaces",
+            "Use Case Name": "Construction Defect Intelligence Engine",
+            "Target Friction": "Fragmented defect tracking across 12 construction zones with non-integrated data systems",
+            "Human-in-the-Loop Checkpoint": "Construction quality manager reviews AI-flagged anomalies and approves corrective action plans before field implementation"
+          },
+          {
+            "ID": "UC-04",
+            "Function": "Construction Management",
+            "Description": "AI system synthesizes incident reports, witness statements, equipment logs, and historical safety data to generate preliminary root cause analyses and corrective action recommendations. Analyzes patterns across 200+ historical incidents to identify contributing factors and suggest preventive measures. Reshapes investigation workflow from sequential manual analysis to parallel AI-assisted synthesis.",
+            "Sub-Function": "Safety Oversight",
+            "AI Primitives": "Research & Information Retrieval, Content Creation, Data Analysis",
+            "Use Case Name": "Safety Incident Investigator",
+            "Target Friction": "Manual incident investigation requiring physical site visits and document collection across distributed locations",
+            "Human-in-the-Loop Checkpoint": "Safety director validates root cause findings and approves corrective action plans before implementation and regulatory reporting"
+          },
+          {
+            "ID": "UC-05",
+            "Function": "Commercial Operations",
+            "Description": "AI system continuously monitors 45 offtake agreements against delivery schedules, pricing formulas, and force majeure provisions. Automatically flags potential compliance issues, calculates contractual exposure, and generates exception reports. Transforms monthly manual reconciliation into continuous automated monitoring with exception-based human review.",
+            "Sub-Function": "Contract Administration",
+            "AI Primitives": "Data Analysis, Research & Information Retrieval",
+            "Use Case Name": "Contract Compliance Monitor",
+            "Target Friction": "45 unique offtake agreements with varying pricing formulas requiring manual monthly reconciliation",
+            "Human-in-the-Loop Checkpoint": "Commercial director reviews flagged compliance exceptions and approves customer communications or contractual remedies before execution"
+          },
+          {
+            "ID": "UC-06",
+            "Function": "Commercial Operations",
+            "Description": "AI system aggregates data from 18 subscription services, news sources, and regulatory filings to generate daily market briefs on global LNG supply-demand dynamics, pricing trends, and geopolitical developments. Automatically identifies emerging opportunities and risk factors affecting contract negotiations. Reshapes market research from manual synthesis to AI-curated intelligence delivery.",
+            "Sub-Function": "Market Analysis",
+            "AI Primitives": "Research & Information Retrieval, Data Analysis, Content Creation",
+            "Use Case Name": "LNG Market Intelligence Synthesizer",
+            "Target Friction": "Dispersed LNG market intelligence across 18 subscription services with manual synthesis required",
+            "Human-in-the-Loop Checkpoint": "Head of commercial strategy validates market interpretations and approves strategic recommendations before executive presentation"
+          },
+          {
+            "ID": "UC-07",
+            "Function": "Operations",
+            "Description": "AI system analyzes sensor data from liquefaction trains, storage tanks, and loading systems to predict equipment failures 15-30 days in advance. Automatically generates maintenance work orders with parts lists and scheduling recommendations based on production forecasts. Transforms reactive maintenance culture into predictive intervention with optimized resource allocation.",
+            "Sub-Function": "Facility Monitoring",
+            "AI Primitives": "Data Analysis, Workflow Automation",
+            "Use Case Name": "Predictive Maintenance Optimizer",
+            "Target Friction": "Reactive maintenance triggered by equipment failures rather than predictive analytics",
+            "Human-in-the-Loop Checkpoint": "Operations manager reviews predicted failure modes and approves maintenance scheduling to balance production commitments with equipment reliability"
+          },
+          {
+            "ID": "UC-08",
+            "Function": "Supply Chain",
+            "Description": "AI system ingests vendor RFP responses and technical proposals to extract key specifications, pricing structures, and compliance certifications. Automatically generates comparative analysis matrices, identifies gaps in technical requirements, and flags non-compliant proposals. Reshapes procurement review from sequential document analysis to parallel AI-assisted evaluation.",
+            "Sub-Function": "Procurement",
+            "AI Primitives": "Research & Information Retrieval, Data Analysis, Content Creation",
+            "Use Case Name": "Vendor Proposal Analyzer",
+            "Target Friction": "Vendor technical specification review requires manual parsing of 200-page proposals",
+            "Human-in-the-Loop Checkpoint": "Procurement director validates technical scoring and approves vendor short-list recommendations before contract negotiations"
+          },
+          {
+            "ID": "UC-09",
+            "Function": "Finance",
+            "Description": "AI system consolidates budget data from 14 cost centers, identifies significant variances, and generates narrative explanations with contributing factor analysis. Automatically produces executive variance reports with drill-down capabilities into project-level cost drivers. Transforms manual consolidation and analysis into automated intelligence generation with CFO commentary.",
+            "Sub-Function": "Financial Planning",
+            "AI Primitives": "Data Analysis, Content Creation",
+            "Use Case Name": "Financial Variance Intelligence",
+            "Target Friction": "Budget variance analysis aggregates data from 14 cost centers with manual consolidation",
+            "Human-in-the-Loop Checkpoint": "CFO reviews AI-generated variance explanations and approves executive distribution after adding strategic context"
+          },
+          {
+            "ID": "UC-10",
+            "Function": "Legal",
+            "Description": "AI system enables natural language search across 340 historical commercial agreements to identify precedent terms, negotiation outcomes, and risk mitigation language. Automatically generates term sheet comparison matrices and suggests favorable language based on historical negotiations. Reshapes contract review from manual precedent research to AI-assisted term optimization.",
+            "Sub-Function": "Contract Negotiation",
+            "AI Primitives": "Research & Information Retrieval, Conversational Interfaces",
+            "Use Case Name": "Contract Precedent Search Engine",
+            "Target Friction": "Commercial term sheet review requires manual precedent search across 340 historical agreements",
+            "Human-in-the-Loop Checkpoint": "General counsel validates precedent applicability and approves recommended contract language before external negotiation"
+          }
+        ],
+        "step": 4,
+        "title": "AI Use Case Generation",
+        "content": "Ten use cases reshape operational processes through fundamental workflow transformation with mandatory human oversight at critical decision points."
+      },
+      {
+        "data": [
+          {
+            "ID": "UC-01",
+            "Use Case": "Regulatory Research Assistant",
+            "Cost Formula": "16,000 hours × $185/hour × 0.90 × 0.75 = $2.0M + permit error reduction 3.2% to 1.3% × $2M/day × 5 days avoided × 0.90 × 0.75 = $11.7M",
+            "Risk Formula": "60% error reduction × 3.2% baseline × $2M/day × 15 expected events × 0.80 × 0.75 = $7.2M",
+            "Revenue Formula": "No direct revenue impact",
+            "Cost Benefit ($)": "$11.7M",
+            "Risk Benefit ($)": "$7.2M",
+            "Cash Flow Formula": "27 days response reduction × $320K/day × 0.50 capture rate × 0.85 × 0.75 = $4.8M",
+            "Revenue Benefit ($)": "$0",
+            "Cash Flow Benefit ($)": "$4.8M",
+            "Probability of Success": 0.75,
+            "Total Annual Value ($)": "$23.7M"
+          },
+          {
+            "ID": "UC-02",
+            "Use Case": "Technical Documentation Generator",
+            "Cost Formula": "16,000 hours saved × $185/hour × 0.90 × 0.75 = $2.2M",
+            "Risk Formula": "Documentation error reduction 3.2% to 1.5% × $2M/day × 8 expected events × 0.80 × 0.75 = $2.9M",
+            "Revenue Formula": "No direct revenue impact",
+            "Cost Benefit ($)": "$2.2M",
+            "Risk Benefit ($)": "$2.9M",
+            "Cash Flow Formula": "No direct cash flow impact",
+            "Revenue Benefit ($)": "$0",
+            "Cash Flow Benefit ($)": "$0",
+            "Probability of Success": 0.8,
+            "Total Annual Value ($)": "$5.1M"
+          },
+          {
+            "ID": "UC-03",
+            "Use Case": "Construction Defect Intelligence Engine",
+            "Cost Formula": "6,000 hours × $125/hour × 0.90 × 0.75 = $500K + rework reduction $8M × 0.50 × 0.90 × 0.75 = $3.9M",
+            "Risk Formula": "Risk benefit captured in cost reduction",
+            "Revenue Formula": "No direct revenue impact",
+            "Cost Benefit ($)": "$3.9M",
+            "Risk Benefit ($)": "$0",
+            "Cash Flow Formula": "15 days schedule improvement × $850K/day × 0.85 × 0.75 = $7.2M",
+            "Revenue Benefit ($)": "$0",
+            "Cash Flow Benefit ($)": "$7.2M",
+            "Probability of Success": 0.7,
+            "Total Annual Value ($)": "$11.1M"
+          },
+          {
+            "ID": "UC-04",
+            "Use Case": "Safety Incident Investigator",
+            "Cost Formula": "3,200 hours × $150/hour × 0.90 × 0.75 = $300K + investigation cost reduction $2.8M × 0.50 × 0.90 × 0.75 = $1.4M",
+            "Risk Formula": "Incident frequency reduction 20% × 14 events × $2M/event × 0.80 × 0.75 = $6.7M",
+            "Revenue Formula": "No direct revenue impact",
+            "Cost Benefit ($)": "$1.4M",
+            "Risk Benefit ($)": "$6.7M",
+            "Cash Flow Formula": "No direct cash flow impact",
+            "Revenue Benefit ($)": "$0",
+            "Cash Flow Benefit ($)": "$0",
+            "Probability of Success": 0.65,
+            "Total Annual Value ($)": "$8.1M"
+          },
+          {
+            "ID": "UC-05",
+            "Use Case": "Contract Compliance Monitor",
+            "Cost Formula": "10,000 hours × $150/hour × 0.90 × 0.75 = $1.4M",
+            "Risk Formula": "Contract dispute reduction 30% × $18M exposure × 0.80 × 0.75 = $4.3M",
+            "Revenue Formula": "Contract optimization 1.5% × $3.2B revenue × 0.95 × 0.75 × 0.60 data maturity penalty = $13.6M",
+            "Cost Benefit ($)": "$1.4M",
+            "Risk Benefit ($)": "$4.3M",
+            "Cash Flow Formula": "No direct cash flow impact",
+            "Revenue Benefit ($)": "$13.6M",
+            "Cash Flow Benefit ($)": "$0",
+            "Probability of Success": 0.6,
+            "Total Annual Value ($)": "$19.3M"
+          },
+          {
+            "ID": "UC-06",
+            "Use Case": "LNG Market Intelligence Synthesizer",
+            "Cost Formula": "4,200 hours × $150/hour × 0.90 × 0.75 = $500K",
+            "Risk Formula": "Risk benefit embedded in revenue improvement",
+            "Revenue Formula": "Pricing optimization 0.50% × $3.2B revenue × 0.95 × 0.75 = $10.8M",
+            "Cost Benefit ($)": "$500K",
+            "Risk Benefit ($)": "$0",
+            "Cash Flow Formula": "No direct cash flow impact",
+            "Revenue Benefit ($)": "$10.8M",
+            "Cash Flow Benefit ($)": "$0",
+            "Probability of Success": 0.7,
+            "Total Annual Value ($)": "$11.3M"
+          },
+          {
+            "ID": "UC-07",
+            "Use Case": "Predictive Maintenance Optimizer",
+            "Cost Formula": "Emergency maintenance reduction $8M × 0.50 × 0.90 × 0.75 = $3.4M",
+            "Risk Formula": "Major failure prevention 50% × 14 events × $3.2M/event × 0.80 × 0.75 = $10.8M",
+            "Revenue Formula": "Uptime improvement 1.5% × $3.2B revenue × 0.95 × 0.75 = $34.2M",
+            "Cost Benefit ($)": "$3.4M",
+            "Risk Benefit ($)": "$10.8M",
+            "Cash Flow Formula": "No direct cash flow impact",
+            "Revenue Benefit ($)": "$34.2M",
+            "Cash Flow Benefit ($)": "$0",
+            "Probability of Success": 0.6,
+            "Total Annual Value ($)": "$48.4M"
+          },
+          {
+            "ID": "UC-08",
+            "Use Case": "Vendor Proposal Analyzer",
+            "Cost Formula": "Procurement cost reduction 2.5% × $142M annual spend × 0.90 × 0.75 = $2.4M",
+            "Risk Formula": "Vendor quality improvement reducing project delays 15% × $12M exposure × 0.80 × 0.75 = $1.4M",
+            "Revenue Formula": "No direct revenue impact",
+            "Cost Benefit ($)": "$2.4M",
+            "Risk Benefit ($)": "$1.4M",
+            "Cash Flow Formula": "No direct cash flow impact",
+            "Revenue Benefit ($)": "$0",
+            "Cash Flow Benefit ($)": "$0",
+            "Probability of Success": 0.75,
+            "Total Annual Value ($)": "$3.8M"
+          },
+          {
+            "ID": "UC-09",
+            "Use Case": "Financial Variance Intelligence",
+            "Cost Formula": "2,800 hours × $150/hour × 0.90 × 0.75 = $700K",
+            "Risk Formula": "No direct risk impact",
+            "Revenue Formula": "No direct revenue impact",
+            "Cost Benefit ($)": "$700K",
+            "Risk Benefit ($)": "$0",
+            "Cash Flow Formula": "8 days cycle reduction × $320K/day × 0.85 × 0.75 = $1.9M",
+            "Revenue Benefit ($)": "$0",
+            "Cash Flow Benefit ($)": "$1.9M",
+            "Probability of Success": 0.8,
+            "Total Annual Value ($)": "$2.6M"
+          },
+          {
+            "ID": "UC-10",
+            "Use Case": "Contract Precedent Search Engine",
+            "Cost Formula": "3,500 hours × $185/hour × 0.90 × 0.75 = $800K",
+            "Risk Formula": "No direct risk impact",
+            "Revenue Formula": "No direct revenue impact",
+            "Cost Benefit ($)": "$800K",
+            "Risk Benefit ($)": "$0",
+            "Cash Flow Formula": "5 days negotiation cycle reduction × 15 contracts × $320K/day × 0.85 × 0.75 = $2.4M",
+            "Revenue Benefit ($)": "$0",
+            "Cash Flow Benefit ($)": "$2.4M",
+            "Probability of Success": 0.75,
+            "Total Annual Value ($)": "$3.2M"
+          }
+        ],
+        "step": 5,
+        "title": "Benefits Quantification by Driver",
+        "content": "Financial benefits apply mandatory conservative reductions across all value drivers with explicit calculation formulas and probability weighting."
+      },
+      {
+        "data": [
+          {
+            "ID": "UC-01",
+            "Use Case": "Regulatory Research Assistant",
+            "Runs/Month": 240,
+            "Monthly Tokens": 3600000,
+            "Input Tokens/Run": 12000,
+            "Change Mgmt (1-5)": 3,
+            "Output Tokens/Run": 3000,
+            "Effort Score (1-5)": 3,
+            "Data Readiness (1-5)": 2,
+            "Annual Token Cost ($)": "$23,760",
+            "Time-to-Value (months)": 9,
+            "Integration Complexity (1-5)": 3
+          },
+          {
+            "ID": "UC-02",
+            "Use Case": "Technical Documentation Generator",
+            "Runs/Month": 180,
+            "Monthly Tokens": 2160000,
+            "Input Tokens/Run": 8000,
+            "Change Mgmt (1-5)": 4,
+            "Output Tokens/Run": 4000,
+            "Effort Score (1-5)": 4,
+            "Data Readiness (1-5)": 3,
+            "Annual Token Cost ($)": "$15,120",
+            "Time-to-Value (months)": 12,
+            "Integration Complexity (1-5)": 4
+          },
+          {
+            "ID": "UC-03",
+            "Use Case": "Construction Defect Intelligence Engine",
+            "Runs/Month": 360,
+            "Monthly Tokens": 2880000,
+            "Input Tokens/Run": 6000,
+            "Change Mgmt (1-5)": 3,
+            "Output Tokens/Run": 2000,
+            "Effort Score (1-5)": 3,
+            "Data Readiness (1-5)": 2,
+            "Annual Token Cost ($)": "$17,280",
+            "Time-to-Value (months)": 9,
+            "Integration Complexity (1-5)": 4
+          },
+          {
+            "ID": "UC-04",
+            "Use Case": "Safety Incident Investigator",
+            "Runs/Month": 50,
+            "Monthly Tokens": 675000,
+            "Input Tokens/Run": 10000,
+            "Change Mgmt (1-5)": 4,
+            "Output Tokens/Run": 3500,
+            "Effort Score (1-5)": 3,
+            "Data Readiness (1-5)": 3,
+            "Annual Token Cost ($)": "$5,850",
+            "Time-to-Value (months)": 9,
+            "Integration Complexity (1-5)": 2
+          },
+          {
+            "ID": "UC-05",
+            "Use Case": "Contract Compliance Monitor",
+            "Runs/Month": 450,
+            "Monthly Tokens": 2925000,
+            "Input Tokens/Run": 5000,
+            "Change Mgmt (1-5)": 2,
+            "Output Tokens/Run": 1500,
+            "Effort Score (1-5)": 2,
+            "Data Readiness (1-5)": 2,
+            "Annual Token Cost ($)": "$16,875",
+            "Time-to-Value (months)": 6,
+            "Integration Complexity (1-5)": 3
+          },
+          {
+            "ID": "UC-06",
+            "Use Case": "LNG Market Intelligence Synthesizer",
+            "Runs/Month": 22,
+            "Monthly Tokens": 374000,
+            "Input Tokens/Run": 15000,
+            "Change Mgmt (1-5)": 2,
+            "Output Tokens/Run": 2000,
+            "Effort Score (1-5)": 2,
+            "Data Readiness (1-5)": 3,
+            "Annual Token Cost ($)": "$3,624",
+            "Time-to-Value (months)": 6,
+            "Integration Complexity (1-5)": 2
+          },
+          {
+            "ID": "UC-07",
+            "Use Case": "Predictive Maintenance Optimizer",
+            "Runs/Month": 1200,
+            "Monthly Tokens": 6000000,
+            "Input Tokens/Run": 4000,
+            "Change Mgmt (1-5)": 4,
+            "Output Tokens/Run": 1000,
+            "Effort Score (1-5)": 4,
+            "Data Readiness (1-5)": 3,
+            "Annual Token Cost ($)": "$32,400",
+            "Time-to-Value (months)": 15,
+            "Integration Complexity (1-5)": 4
+          },
+          {
+            "ID": "UC-08",
+            "Use Case": "Vendor Proposal Analyzer",
+            "Runs/Month": 45,
+            "Monthly Tokens": 1260000,
+            "Input Tokens/Run": 25000,
+            "Change Mgmt (1-5)": 2,
+            "Output Tokens/Run": 3000,
+            "Effort Score (1-5)": 2,
+            "Data Readiness (1-5)": 3,
+            "Annual Token Cost ($)": "$10,530",
+            "Time-to-Value (months)": 6,
+            "Integration Complexity (1-5)": 2
+          },
+          {
+            "ID": "UC-09",
+            "Use Case": "Financial Variance Intelligence",
+            "Runs/Month": 14,
+            "Monthly Tokens": 63000,
+            "Input Tokens/Run": 3000,
+            "Change Mgmt (1-5)": 2,
+            "Output Tokens/Run": 1500,
+            "Effort Score (1-5)": 2,
+            "Data Readiness (1-5)": 4,
+            "Annual Token Cost ($)": "$567",
+            "Time-to-Value (months)": 6,
+            "Integration Complexity (1-5)": 3
+          },
+          {
+            "ID": "UC-10",
+            "Use Case": "Contract Precedent Search Engine",
+            "Runs/Month": 120,
+            "Monthly Tokens": 1200000,
+            "Input Tokens/Run": 8000,
+            "Change Mgmt (1-5)": 2,
+            "Output Tokens/Run": 2000,
+            "Effort Score (1-5)": 2,
+            "Data Readiness (1-5)": 3,
+            "Annual Token Cost ($)": "$9,360",
+            "Time-to-Value (months)": 6,
+            "Integration Complexity (1-5)": 2
+          }
+        ],
+        "step": 6,
+        "title": "Effort & Token Modeling",
+        "content": "Implementation complexity scored across data readiness, integration requirements, and organizational change management with token consumption estimates."
+      },
+      {
+        "data": [
+          {
+            "ID": "UC-07",
+            "Use Case": "Predictive Maintenance Optimizer",
+            "Priority Tier": "High",
+            "TTV Score (0-30)": 10,
+            "Recommended Phase": "Q3",
+            "Value Score (0-40)": 40,
+            "Effort Score (0-30)": 19,
+            "Priority Score (0-100)": 69
+          },
+          {
+            "ID": "UC-01",
+            "Use Case": "Regulatory Research Assistant",
+            "Priority Tier": "Critical",
+            "TTV Score (0-30)": 20,
+            "Recommended Phase": "Q1",
+            "Value Score (0-40)": 38,
+            "Effort Score (0-30)": 24,
+            "Priority Score (0-100)": 82
+          },
+          {
+            "ID": "UC-05",
+            "Use Case": "Contract Compliance Monitor",
+            "Priority Tier": "Critical",
+            "TTV Score (0-30)": 28,
+            "Recommended Phase": "Q1",
+            "Value Score (0-40)": 36,
+            "Effort Score (0-30)": 28,
+            "Priority Score (0-100)": 92
+          },
+          {
+            "ID": "UC-06",
+            "Use Case": "LNG Market Intelligence Synthesizer",
+            "Priority Tier": "Critical",
+            "TTV Score (0-30)": 28,
+            "Recommended Phase": "Q1",
+            "Value Score (0-40)": 34,
+            "Effort Score (0-30)": 28,
+            "Priority Score (0-100)": 90
+          },
+          {
+            "ID": "UC-03",
+            "Use Case": "Construction Defect Intelligence Engine",
+            "Priority Tier": "High",
+            "TTV Score (0-30)": 20,
+            "Recommended Phase": "Q2",
+            "Value Score (0-40)": 33,
+            "Effort Score (0-30)": 24,
+            "Priority Score (0-100)": 77
+          },
+          {
+            "ID": "UC-04",
+            "Use Case": "Safety Incident Investigator",
+            "Priority Tier": "High",
+            "TTV Score (0-30)": 20,
+            "Recommended Phase": "Q2",
+            "Value Score (0-40)": 31,
+            "Effort Score (0-30)": 24,
+            "Priority Score (0-100)": 75
+          },
+          {
+            "ID": "UC-02",
+            "Use Case": "Technical Documentation Generator",
+            "Priority Tier": "High",
+            "TTV Score (0-30)": 15,
+            "Recommended Phase": "Q3",
+            "Value Score (0-40)": 28,
+            "Effort Score (0-30)": 19,
+            "Priority Score (0-100)": 62
+          },
+          {
+            "ID": "UC-08",
+            "Use Case": "Vendor Proposal Analyzer",
+            "Priority Tier": "Critical",
+            "TTV Score (0-30)": 28,
+            "Recommended Phase": "Q1",
+            "Value Score (0-40)": 25,
+            "Effort Score (0-30)": 28,
+            "Priority Score (0-100)": 81
+          },
+          {
+            "ID": "UC-10",
+            "Use Case": "Contract Precedent Search Engine",
+            "Priority Tier": "Critical",
+            "TTV Score (0-30)": 28,
+            "Recommended Phase": "Q2",
+            "Value Score (0-40)": 24,
+            "Effort Score (0-30)": 28,
+            "Priority Score (0-100)": 80
+          },
+          {
+            "ID": "UC-09",
+            "Use Case": "Financial Variance Intelligence",
+            "Priority Tier": "High",
+            "TTV Score (0-30)": 28,
+            "Recommended Phase": "Q2",
+            "Value Score (0-40)": 23,
+            "Effort Score (0-30)": 28,
+            "Priority Score (0-100)": 79
+          }
+        ],
+        "step": 7,
+        "title": "Priority Scoring & Roadmap",
+        "content": "Priority scoring combines financial value, time-to-value, and implementation effort with recommended phasing across four quarters."
+      }
+    ],
+    "summary": "This assessment identifies $136.5M in annual value across 10 AI use cases for Venture Global LNG. Five initiatives qualify as Critical-priority for immediate Q1-Q2 execution with combined first-year impact of $67.7M. The portfolio concentrates on regulatory compliance automation, commercial intelligence, and predictive operations with conservative probability-weighted returns.\n\nCost reduction dominates the portfolio at $27.4M representing 20% of total identified value. Revenue growth opportunities contribute $58.6M at 43%. Risk mitigation accounts for $33.3M at 24%. Cash flow acceleration rounds out the portfolio at $16.3M representing 12%. This distribution reflects the operational maturity profile of LNG infrastructure companies where process optimization and risk management precede aggressive revenue expansion.\n\nContract Compliance Monitor represents a $19.3M annual opportunity with highest implementation feasibility. AI-powered continuous monitoring of 45 offtake agreements eliminates manual monthly reconciliation cycles consuming 10,000 professional hours annually. The system flags compliance exceptions in real time enabling commercial teams to address contractual deviations before they escalate into disputes. Revenue optimization captures 1.5% improvement through better contract enforcement and pricing formula verification. The solution requires integration with existing contract management systems and a 6-month implementation timeline with commercial director approval of all flagged exceptions.\n\nRegulatory Research Assistant generates $23.7M in value through permit modification acceleration. AI ingestion of Federal Register updates and state regulatory notices across 14 federal agencies and 3 state jurisdictions produces compliance briefs reducing response cycles from 45 days to 18 days. Each day of delay carries $320K in working capital impact with documentation errors triggering $2M per day in production delays. The system requires regulatory affairs director validation before external submission and carries higher implementation complexity due to fragmented data sources across multiple jurisdictions.\n\nPredictive Maintenance Optimizer delivers the highest absolute value at $48.4M through uptime improvement and failure prevention. Sensor data analysis from liquefaction trains and loading systems predicts equipment failures 15 to 30 days in advance enabling proactive maintenance scheduling. Production uptime gains of 1.5% generate $34.2M in incremental revenue while emergency maintenance cost reduction contributes $3.4M. Major failure prevention avoids $10.8M in expected incident costs. Implementation requires 15 months due to sensor integration complexity and operational process redesign with operations manager approval of all maintenance scheduling decisions.\n\nThe top three initiatives account for 67% of total portfolio value creating concentration risk if any single initiative underperforms expectations. However, each targets distinct operational domains with independent failure modes providing natural hedging. Back-office automation opportunities outnumber customer-facing initiatives 9 to 1 reflecting the regulatory and operational intensity of LNG infrastructure.\n\nImplementation hinges on data standardization across fragmented permit management systems spanning 14 federal agencies and 3 state jurisdictions. Current data maturity assessed at Level 2 based on disclosed reliance on traditional document management with limited automation. Schema mapping and data cleansing represent a 90-day prerequisite before AI deployment begins. Failure to address data readiness reduces Year 1 projected value by 40% with corresponding delays in time-to-value across all regulatory and compliance use cases. Token consumption totals 21.9M monthly across all use cases generating $135,366 in annual AI infrastructure costs representing 0.10% of total identified value.",
+    "executiveDashboard": {
+      "topUseCases": [
+        {
+          "rank": 1,
+          "useCase": "Contract Compliance Monitor",
+          "annualValue": 19300000,
+          "monthlyTokens": 2925000,
+          "priorityScore": 92
+        },
+        {
+          "rank": 2,
+          "useCase": "LNG Market Intelligence Synthesizer",
+          "annualValue": 11300000,
+          "monthlyTokens": 374000,
+          "priorityScore": 90
+        },
+        {
+          "rank": 3,
+          "useCase": "Regulatory Research Assistant",
+          "annualValue": 23700000,
+          "monthlyTokens": 3600000,
+          "priorityScore": 82
+        },
+        {
+          "rank": 4,
+          "useCase": "Vendor Proposal Analyzer",
+          "annualValue": 3800000,
+          "monthlyTokens": 1260000,
+          "priorityScore": 81
+        },
+        {
+          "rank": 5,
+          "useCase": "Contract Precedent Search Engine",
+          "annualValue": 3200000,
+          "monthlyTokens": 1200000,
+          "priorityScore": 80
+        }
+      ],
+      "totalAnnualValue": 136500000,
+      "totalCostBenefit": 27400000,
+      "totalRiskBenefit": 33300000,
+      "totalMonthlyTokens": 21937000,
+      "totalRevenueBenefit": 58600000,
+      "totalCashFlowBenefit": 16300000,
+      "valuePerMillionTokens": 6221
+    }
+  }
+}

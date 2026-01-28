@@ -1,6 +1,6 @@
 import HyperFormula from 'hyperformula';
 import { FORMULA_WEIGHTS, QUADRANT_THRESHOLD, type Quadrant } from '../shared/stonepeak';
-import type { ValueTheme, HoldPeriodTrack } from '../shared/stonepeak';
+import type { HoldPeriodTrack } from '../shared/stonepeak';
 
 // Initialize HyperFormula with configuration
 const hfInstance = HyperFormula.buildEmpty({

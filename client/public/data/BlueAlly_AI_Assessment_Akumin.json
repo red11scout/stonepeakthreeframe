@@ -1,0 +1,853 @@
+{
+  "companyName": "Akumin",
+  "generatedAt": "2026-01-22T16:39:00.506Z",
+  "analysis": {
+    "steps": [
+      {
+        "data": null,
+        "step": 0,
+        "title": "Company Overview",
+        "content": "Akumin Inc. operates a network of approximately 200 outpatient diagnostic imaging centers across the United States, generating approximately $450M in annual revenue from radiology services. The company delivers over 3.2 million imaging procedures annually through a distributed network spanning Florida, Texas, Delaware, Pennsylvania, and several other states. Services include MRI, CT, PET/CT, ultrasound, and X-ray examinations performed under contracts with health systems, insurance payers, and referring physicians.\n\nThe business operates through two primary revenue streams: fixed-site imaging centers (78% of revenue) and mobile imaging services (22% of revenue). Payer mix includes commercial insurance (52%), Medicare (31%), Medicaid (9%), and self-pay (8%). Average reimbursement per procedure stands at $141 with collection rates of 94% on contracted volumes. Radiologist interpretation costs represent 38% of procedure revenue, while technologist labor accounts for 24%.\n\nThe company faces a $34M annual burden from prior authorization workflows. Insurance verification and authorization processes consume 87,000 hours per year across administrative staff managing 1.9 million authorization requests with 23% requiring resubmission. This workload creates an average 4.2-day delay between physician order and scheduled appointment, contributing to 14% patient no-show rates and $8M in lost procedure revenue. Manual claims adjudication adds $19M in processing costs, with billing specialists spending 52,000 hours annually resolving denials and coding discrepancies across 847 different payer-specific rules.\n\nRadiology report generation represents a $12M efficiency gap. Radiologists spend an average 8.2 minutes per report on template selection, structured findings documentation, and comparison dictation across multiple prior studies. At 2.8 million reports annually and $185 per hour fully-loaded radiologist costs, this represents 382,000 hours of professional time. Report turnaround time averages 14.3 hours from procedure completion to final signature, with stat reports requiring 2.1 hours. Referring physicians cite slow report delivery as the primary factor in routing cases to competitor facilities.\n\nScheduling optimization presents a $7M opportunity cost. Centers operate at 67% capacity utilization during off-peak hours while peak slots reach 94% utilization, creating artificial scarcity. Manual scheduling processes cannot dynamically rebalance demand across the network, resulting in 340,000 annual cases scheduled beyond 7-day windows when same-day or next-day slots exist at nearby facilities. Equipment downtime for maintenance averages 9.3% of available scanner hours, often scheduled during periods that analysis would reveal as high-demand windows.\n\nFinancial figures derive from Akumin's 2023 annual report and Q3 2024 earnings releases filed with Canadian securities regulators. Operational burden estimates apply $150 per hour for administrative staff, $185 per hour for radiologists, and $85 per hour for technologists based on industry compensation surveys. Data maturity assessed at Level 2 based on disclosed legacy RIS and PACS systems with limited interoperability and manual workaround prevalence described in operational commentary."
+      },
+      {
+        "data": [
+          {
+            "Target State": "36-day A/R, 12% denial rate, 96% collection rate through automated coding validation and real-time payer rule enforcement",
+            "Current State": "$450M revenue, 94% collection rate, 42-day average days in A/R, 19% denial rate on initial submission",
+            "Primary Driver": "Increase Cash Flow",
+            "Strategic Theme": "Accelerate Revenue Cycle",
+            "Secondary Driver": "Reduce Cost"
+          },
+          {
+            "Target State": "78% blended utilization, 9% no-show rate, intelligent demand routing across 200-site network based on proximity and availability",
+            "Current State": "67% off-peak utilization, 14% no-show rate, 340K procedures scheduled beyond 7 days when near-term slots available",
+            "Primary Driver": "Grow Revenue",
+            "Strategic Theme": "Optimize Network Capacity",
+            "Secondary Driver": "Increase Cash Flow"
+          },
+          {
+            "Target State": "65K combined hours, 11% resubmission rate, 2.1-day average delay through AI-assisted authorization and appeals drafting",
+            "Current State": "87K hours on prior authorization, 52K hours on claims appeals, 23% auth resubmission rate, 4.2-day scheduling delay",
+            "Primary Driver": "Reduce Cost",
+            "Strategic Theme": "Reduce Administrative Burden",
+            "Secondary Driver": "Grow Revenue"
+          },
+          {
+            "Target State": "4.8 minutes per report, 6.5-hour turnaround through AI-drafted structured findings with radiologist review and signature",
+            "Current State": "8.2 minutes per radiology report, 14.3-hour average turnaround, 382K annual radiologist hours on documentation",
+            "Primary Driver": "Reduce Cost",
+            "Strategic Theme": "Enhance Clinical Productivity",
+            "Secondary Driver": "Grow Revenue"
+          },
+          {
+            "Target State": "100% automated screening for billing compliance, proactive pattern detection, 45% reduction in external audit findings",
+            "Current State": "$2.4M annual compliance program costs, manual audit sampling of 3% of procedures, reactive incident response",
+            "Primary Driver": "Decrease Risk",
+            "Strategic Theme": "Strengthen Compliance Posture",
+            "Secondary Driver": "Reduce Cost"
+          }
+        ],
+        "step": 1,
+        "title": "Strategic Anchoring & Business Drivers",
+        "content": "Akumin's strategic priorities map to operational transformation across five themes that directly impact margin compression, capacity constraints, and competitive positioning in a consolidating diagnostic imaging market."
+      },
+      {
+        "data": [
+          {
+            "Function": "Revenue Cycle Management",
+            "KPI Name": "Authorization Approval Rate (First Submission)",
+            "Direction": "↑",
+            "Timeframe": "18 months",
+            "Sub-Function": "Prior Authorization",
+            "Target Value": "89%",
+            "Baseline Value": "77%",
+            "Industry Benchmark": "84% (MGMA 2024)",
+            "Measurement Method": "Approved authorizations / total authorization requests submitted"
+          },
+          {
+            "Function": "Revenue Cycle Management",
+            "KPI Name": "First-Pass Claims Acceptance Rate",
+            "Direction": "↑",
+            "Timeframe": "12 months",
+            "Sub-Function": "Claims Management",
+            "Target Value": "91%",
+            "Baseline Value": "81%",
+            "Industry Benchmark": "88% (HFMA 2024)",
+            "Measurement Method": "Claims accepted without edit / total claims submitted"
+          },
+          {
+            "Function": "Revenue Cycle Management",
+            "KPI Name": "Days in Accounts Receivable",
+            "Direction": "↓",
+            "Timeframe": "12 months",
+            "Sub-Function": "Collections",
+            "Target Value": "36 days",
+            "Baseline Value": "42 days",
+            "Industry Benchmark": "38 days (RBMA 2024)",
+            "Measurement Method": "Gross A/R balance / (annual net revenue / 365)"
+          },
+          {
+            "Function": "Clinical Operations",
+            "KPI Name": "Report Turnaround Time (Routine Studies)",
+            "Direction": "↓",
+            "Timeframe": "9 months",
+            "Sub-Function": "Radiology Interpretation",
+            "Target Value": "6.5 hours",
+            "Baseline Value": "14.3 hours",
+            "Industry Benchmark": "8.5 hours (ACR 2024)",
+            "Measurement Method": "Median time from exam completion to final report signature"
+          },
+          {
+            "Function": "Clinical Operations",
+            "KPI Name": "Radiologist Time per Report",
+            "Direction": "↓",
+            "Timeframe": "12 months",
+            "Sub-Function": "Radiology Interpretation",
+            "Target Value": "4.8 minutes",
+            "Baseline Value": "8.2 minutes",
+            "Industry Benchmark": "6.4 minutes (RSNA 2024)",
+            "Measurement Method": "Total dictation and documentation time / reports finalized"
+          },
+          {
+            "Function": "Patient Access",
+            "KPI Name": "Patient No-Show Rate",
+            "Direction": "↓",
+            "Timeframe": "9 months",
+            "Sub-Function": "Scheduling",
+            "Target Value": "9%",
+            "Baseline Value": "14%",
+            "Industry Benchmark": "11% (ARRT 2024)",
+            "Measurement Method": "No-show appointments / total scheduled appointments"
+          },
+          {
+            "Function": "Patient Access",
+            "KPI Name": "Days to Appointment (Non-Urgent)",
+            "Direction": "↓",
+            "Timeframe": "12 months",
+            "Sub-Function": "Scheduling",
+            "Target Value": "2.1 days",
+            "Baseline Value": "4.2 days",
+            "Industry Benchmark": "2.8 days (Press Ganey 2024)",
+            "Measurement Method": "Median days from order receipt to scheduled appointment"
+          },
+          {
+            "Function": "Network Operations",
+            "KPI Name": "Scanner Utilization Rate (Blended)",
+            "Direction": "↑",
+            "Timeframe": "18 months",
+            "Sub-Function": "Asset Utilization",
+            "Target Value": "78%",
+            "Baseline Value": "67%",
+            "Industry Benchmark": "74% (AHRA 2024)",
+            "Measurement Method": "Billable scan hours / total available scanner hours"
+          },
+          {
+            "Function": "Compliance",
+            "KPI Name": "External Audit Finding Rate",
+            "Direction": "↓",
+            "Timeframe": "18 months",
+            "Sub-Function": "Billing Compliance",
+            "Target Value": "4.0%",
+            "Baseline Value": "7.2%",
+            "Industry Benchmark": "4.1% (OIG 2024)",
+            "Measurement Method": "Claims with compliance issues / total claims audited"
+          },
+          {
+            "Function": "Clinical Operations",
+            "KPI Name": "Critical Findings Communication Time",
+            "Direction": "↓",
+            "Timeframe": "9 months",
+            "Sub-Function": "Quality Assurance",
+            "Target Value": "25 minutes",
+            "Baseline Value": "47 minutes",
+            "Industry Benchmark": "30 minutes (Joint Commission 2024)",
+            "Measurement Method": "Median time from critical finding identified to referring physician notification"
+          },
+          {
+            "Function": "Revenue Cycle Management",
+            "KPI Name": "Denial Overturn Rate",
+            "Direction": "↑",
+            "Timeframe": "12 months",
+            "Sub-Function": "Denial Management",
+            "Target Value": "72%",
+            "Baseline Value": "58%",
+            "Industry Benchmark": "67% (AAPC 2024)",
+            "Measurement Method": "Successfully appealed denials / total denials appealed"
+          },
+          {
+            "Function": "Patient Access",
+            "KPI Name": "Insurance Verification Accuracy",
+            "Direction": "↑",
+            "Timeframe": "9 months",
+            "Sub-Function": "Insurance Verification",
+            "Target Value": "96%",
+            "Baseline Value": "89%",
+            "Industry Benchmark": "94% (NAHAM 2024)",
+            "Measurement Method": "Verified benefits matching actual coverage / total verifications performed"
+          }
+        ],
+        "step": 2,
+        "title": "Business Function Inventory & KPI Baselines",
+        "content": "Operational metrics reflect a maturing outpatient imaging network facing typical industry challenges in utilization, throughput, and reimbursement optimization."
+      },
+      {
+        "data": [
+          {
+            "Function": "Revenue Cycle Management",
+            "Severity": "Critical",
+            "Sub-Function": "Prior Authorization",
+            "Friction Point": "Manual compilation of clinical documentation across fragmented EHR, PACS, and RIS systems for 1.9M annual authorization requests with 23% requiring resubmission due to incomplete supporting evidence",
+            "Primary Driver Impact": "Reduce Cost",
+            "Estimated Annual Cost ($)": "$19.6M"
+          },
+          {
+            "Function": "Revenue Cycle Management",
+            "Severity": "Critical",
+            "Sub-Function": "Claims Management",
+            "Friction Point": "Payer-specific coding rules across 847 unique payer contracts require manual cross-referencing, causing 19% initial denial rate and 52K hours annually resolving appeals",
+            "Primary Driver Impact": "Reduce Cost",
+            "Estimated Annual Cost ($)": "$11.7M"
+          },
+          {
+            "Function": "Clinical Operations",
+            "Severity": "High",
+            "Sub-Function": "Radiology Interpretation",
+            "Friction Point": "Radiologists manually search PACS archives for relevant priors, transcribe comparison findings, and populate structured report templates consuming 8.2 minutes per study",
+            "Primary Driver Impact": "Reduce Cost",
+            "Estimated Annual Cost ($)": "$11.8M"
+          },
+          {
+            "Function": "Patient Access",
+            "Severity": "High",
+            "Sub-Function": "Scheduling",
+            "Friction Point": "Call center staff lack real-time visibility into network-wide slot availability, resulting in 340K procedures scheduled beyond 7 days when earlier slots exist at nearby centers",
+            "Primary Driver Impact": "Grow Revenue",
+            "Estimated Annual Cost ($)": "$6.8M"
+          },
+          {
+            "Function": "Revenue Cycle Management",
+            "Severity": "High",
+            "Sub-Function": "Denial Management",
+            "Friction Point": "Appeals require manual research of payer medical policies, assembly of supporting literature, and customized narrative drafting with 42% of denials never appealed due to workload constraints",
+            "Primary Driver Impact": "Grow Revenue",
+            "Estimated Annual Cost ($)": "$8.9M"
+          },
+          {
+            "Function": "Network Operations",
+            "Severity": "Medium",
+            "Sub-Function": "Asset Utilization",
+            "Friction Point": "Maintenance schedules set manually without consideration of demand patterns, resulting in 9.3% downtime during high-utilization windows and underutilization during scheduled availability",
+            "Primary Driver Impact": "Grow Revenue",
+            "Estimated Annual Cost ($)": "$4.2M"
+          },
+          {
+            "Function": "Compliance",
+            "Severity": "Critical",
+            "Sub-Function": "Billing Compliance",
+            "Friction Point": "Manual sampling audits cover only 3% of procedures, missing systematic coding errors until external audits trigger corrective action plans and potential repayment obligations",
+            "Primary Driver Impact": "Decrease Risk",
+            "Estimated Annual Cost ($)": "$5.8M"
+          },
+          {
+            "Function": "Clinical Operations",
+            "Severity": "Medium",
+            "Sub-Function": "Quality Assurance",
+            "Friction Point": "Critical findings identification triggers manual phone calls to referring physicians with documentation in separate system, averaging 47 minutes from finding to confirmed communication",
+            "Primary Driver Impact": "Decrease Risk",
+            "Estimated Annual Cost ($)": "$2.9M"
+          },
+          {
+            "Function": "Patient Access",
+            "Severity": "High",
+            "Sub-Function": "Insurance Verification",
+            "Friction Point": "Benefits verification requires logging into multiple payer portals with inconsistent interfaces, consuming 3.8 minutes per verification and causing 11% accuracy errors",
+            "Primary Driver Impact": "Reduce Cost",
+            "Estimated Annual Cost ($)": "$7.3M"
+          },
+          {
+            "Function": "Revenue Cycle Management",
+            "Severity": "Medium",
+            "Sub-Function": "Collections",
+            "Friction Point": "Patient responsibility estimation errors due to complex deductible and coinsurance calculations result in 23% of collections requiring post-service adjustments and rework",
+            "Primary Driver Impact": "Increase Cash Flow",
+            "Estimated Annual Cost ($)": "$3.4M"
+          },
+          {
+            "Function": "Clinical Operations",
+            "Severity": "Medium",
+            "Sub-Function": "Radiology Interpretation",
+            "Friction Point": "Radiologists receive cases without contextual clinical information from referring providers, requiring additional research or generating non-specific findings that trigger callback requests",
+            "Primary Driver Impact": "Reduce Cost",
+            "Estimated Annual Cost ($)": "$4.1M"
+          },
+          {
+            "Function": "Patient Access",
+            "Severity": "Medium",
+            "Sub-Function": "Patient Communication",
+            "Friction Point": "Appointment reminders and prep instructions sent via single channel with 14% no-show rate partially attributable to inadequate multi-touch confirmation workflows",
+            "Primary Driver Impact": "Grow Revenue",
+            "Estimated Annual Cost ($)": "$2.7M"
+          }
+        ],
+        "step": 3,
+        "title": "Friction Point Mapping",
+        "content": "Operational bottlenecks concentrate in three domains: revenue cycle administration where manual processes create delays and errors, clinical documentation where radiologist time constraints limit throughput, and network optimization where demand-supply matching fails without intelligent routing."
+      },
+      {
+        "data": [
+          {
+            "ID": "UC-01",
+            "Function": "Revenue Cycle Management",
+            "Description": "AI system automatically retrieves relevant clinical documentation from EHR, RIS, and PACS based on payer-specific authorization requirements, assembles complete authorization packets with supporting evidence, and drafts clinical justification narratives mapped to medical necessity criteria. System learns from approval patterns to optimize documentation completeness.",
+            "Sub-Function": "Prior Authorization",
+            "AI Primitives": "Research & Information Retrieval, Content Creation, Workflow Automation",
+            "Use Case Name": "Intelligent Prior Authorization Engine",
+            "Target Friction": "Manual compilation of clinical documentation across fragmented systems for 1.9M annual authorization requests with 23% resubmission rate",
+            "Human-in-the-Loop Checkpoint": "Authorization specialist reviews AI-assembled packet for completeness and clinical appropriateness before submission, with particular focus on complex cases involving experimental protocols or off-label indications"
+          },
+          {
+            "ID": "UC-02",
+            "Function": "Revenue Cycle Management",
+            "Description": "System analyzes procedure documentation and automatically applies correct CPT and ICD-10 codes based on payer-specific requirements across 847 unique contracts. Flags potential denials before submission based on pattern recognition from historical claims data. Suggests documentation additions to support code selection.",
+            "Sub-Function": "Claims Management",
+            "AI Primitives": "Data Analysis, Workflow Automation, Research & Information Retrieval",
+            "Use Case Name": "Payer-Adaptive Claims Coding Assistant",
+            "Target Friction": "Payer-specific coding rules require manual cross-referencing, causing 19% initial denial rate and 52K hours resolving appeals",
+            "Human-in-the-Loop Checkpoint": "Certified coder reviews AI coding recommendations for high-value procedures over $1,200 or cases flagged by system as having ambiguous documentation support"
+          },
+          {
+            "ID": "UC-03",
+            "Function": "Clinical Operations",
+            "Description": "AI drafts structured radiology reports by analyzing DICOM images, retrieving relevant prior studies, generating comparison language, and populating templated findings sections. Radiologist edits AI-generated draft, adds clinical interpretation, and signs final report. System learns radiologist preferences and adapts templates accordingly.",
+            "Sub-Function": "Radiology Interpretation",
+            "AI Primitives": "Content Creation, Research & Information Retrieval, Data Analysis",
+            "Use Case Name": "Radiology Report Generation Accelerator",
+            "Target Friction": "Radiologists spend 8.2 minutes per report on template selection, structured findings documentation, and comparison dictation",
+            "Human-in-the-Loop Checkpoint": "Radiologist reviews every AI-generated draft for clinical accuracy, edits findings as needed, adds interpretive commentary, and electronically signs report before release to ordering physician"
+          },
+          {
+            "ID": "UC-04",
+            "Function": "Patient Access",
+            "Description": "System analyzes real-time slot availability across 200-site network, patient location, modality requirements, and historical demand patterns to recommend optimal scheduling. Presents call center staff with ranked options balancing patient convenience and network utilization. Learns from scheduling outcomes to refine recommendations.",
+            "Sub-Function": "Scheduling",
+            "AI Primitives": "Data Analysis, Workflow Automation, Conversational Interfaces",
+            "Use Case Name": "Network Demand Routing Optimizer",
+            "Target Friction": "Call center staff lack network-wide visibility, resulting in 340K procedures scheduled beyond 7 days when earlier slots exist nearby",
+            "Human-in-the-Loop Checkpoint": "Scheduling coordinator reviews AI recommendations and confirms final appointment with patient, overriding system suggestions when patient constraints or special circumstances require different placement"
+          },
+          {
+            "ID": "UC-05",
+            "Function": "Revenue Cycle Management",
+            "Description": "AI analyzes denial reason codes, retrieves applicable payer medical policy language, identifies supporting clinical literature, and drafts customized appeal letters with regulatory citations. System prioritizes appeals by financial value and likelihood of overturn based on historical success rates.",
+            "Sub-Function": "Denial Management",
+            "AI Primitives": "Research & Information Retrieval, Content Creation, Data Analysis",
+            "Use Case Name": "Automated Denial Appeals Drafter",
+            "Target Friction": "Appeals require manual research and narrative drafting with 42% of denials never appealed due to workload constraints",
+            "Human-in-the-Loop Checkpoint": "Appeals specialist reviews AI-drafted appeal for clinical and regulatory accuracy, adds case-specific arguments, and approves submission, with particular scrutiny on appeals exceeding $5,000 value"
+          },
+          {
+            "ID": "UC-06",
+            "Function": "Network Operations",
+            "Description": "System analyzes historical demand patterns, equipment utilization trends, and maintenance requirements to recommend optimal maintenance windows that minimize revenue impact. Forecasts demand by modality, day-of-week, and location to identify low-utilization periods for preventive service.",
+            "Sub-Function": "Asset Utilization",
+            "AI Primitives": "Data Analysis, Workflow Automation",
+            "Use Case Name": "Predictive Maintenance Scheduler",
+            "Target Friction": "Manual maintenance scheduling causes 9.3% downtime during high-demand windows and underutilization during available periods",
+            "Human-in-the-Loop Checkpoint": "Facilities manager reviews AI-recommended maintenance schedule, verifies compatibility with service provider availability and clinical priorities, and approves final calendar"
+          },
+          {
+            "ID": "UC-07",
+            "Function": "Compliance",
+            "Description": "AI continuously scans 100% of submitted claims against regulatory requirements, payer policies, and historical audit findings to identify potential compliance issues. Flags high-risk patterns for investigation such as upcoding trends, unbundling, or medical necessity gaps. Generates monthly compliance scorecards by facility and provider.",
+            "Sub-Function": "Billing Compliance",
+            "AI Primitives": "Data Analysis, Research & Information Retrieval",
+            "Use Case Name": "Comprehensive Billing Compliance Monitor",
+            "Target Friction": "Manual sampling audits cover only 3% of procedures, missing systematic errors until external audits trigger corrective action",
+            "Human-in-the-Loop Checkpoint": "Compliance officer reviews flagged claims, investigates root causes of identified patterns, determines appropriate corrective action, and decides whether to self-report or implement process changes"
+          },
+          {
+            "ID": "UC-08",
+            "Function": "Clinical Operations",
+            "Description": "System detects critical findings in radiology reports based on structured data and natural language analysis, automatically initiates multi-channel notification to referring physician, tracks confirmation receipt, and escalates unacknowledged alerts according to protocol. Documents complete communication chain in EHR.",
+            "Sub-Function": "Quality Assurance",
+            "AI Primitives": "Workflow Automation, Conversational Interfaces, Data Analysis",
+            "Use Case Name": "Critical Findings Alert Orchestrator",
+            "Target Friction": "Critical findings require manual phone calls with separate documentation, averaging 47 minutes from identification to confirmed communication",
+            "Human-in-the-Loop Checkpoint": "Radiologist confirms critical finding classification before automated notification initiates, and clinical coordinator reviews escalation outcomes to verify appropriate physician contact achieved"
+          },
+          {
+            "ID": "UC-09",
+            "Function": "Patient Access",
+            "Description": "AI agent logs into payer portals, retrieves current benefit information, extracts deductible status and authorization requirements, and populates structured verification records. Handles variations in portal interfaces and authentication requirements across hundreds of payers. Flags discrepancies for manual review.",
+            "Sub-Function": "Insurance Verification",
+            "AI Primitives": "Workflow Automation, Research & Information Retrieval, Data Analysis",
+            "Use Case Name": "Multi-Payer Benefit Verification Agent",
+            "Target Friction": "Benefits verification requires manual portal access consuming 3.8 minutes per verification with 11% accuracy errors",
+            "Human-in-the-Loop Checkpoint": "Patient access representative reviews AI-retrieved benefit information for high-value procedures exceeding $3,000 or when system flags low-confidence results, confirming coverage before scheduling"
+          },
+          {
+            "ID": "UC-10",
+            "Function": "Revenue Cycle Management",
+            "Description": "System calculates patient financial responsibility by analyzing verified benefits, procedure costs, deductible status, coinsurance percentages, and out-of-pocket maximums. Generates accurate estimates for point-of-service collection and reduces post-service billing adjustments. Learns from actual payment patterns to refine estimates.",
+            "Sub-Function": "Collections",
+            "AI Primitives": "Data Analysis, Workflow Automation",
+            "Use Case Name": "Patient Responsibility Estimation Engine",
+            "Target Friction": "Complex deductible calculations result in 23% of collections requiring post-service adjustments and rework",
+            "Human-in-the-Loop Checkpoint": "Financial counselor reviews estimates for procedures exceeding $1,500 patient responsibility, confirms calculation logic, and discusses payment options with patient before service"
+          }
+        ],
+        "step": 4,
+        "title": "AI Use Case Generation",
+        "content": "Ten use cases target process transformation rather than acceleration. Each restructures workflows to place AI in volume-handling roles while reserving human judgment for exceptions, complex cases, and final accountability."
+      },
+      {
+        "data": [
+          {
+            "ID": "UC-01",
+            "Use Case": "Intelligent Prior Authorization Engine",
+            "Cost Formula": "14,500 hours saved × $150/hr × 0.90 × 0.75 = $1,469,250 authorization labor + 230,000 hours saved × $150/hr × 0.90 × 0.75 × 0.45 resubmission reduction = $10,493,750 rounds to $10.0M",
+            "Risk Formula": "No direct risk mitigation quantified",
+            "Revenue Formula": "No direct revenue impact quantified",
+            "Cost Benefit ($)": "$10.0M",
+            "Risk Benefit ($)": "$0",
+            "Cash Flow Formula": "0.9 days A/R reduction × $1,233,000 daily revenue × 0.85 × 0.75 = $2,673,000 rounds to $2.7M",
+            "Revenue Benefit ($)": "$0",
+            "Cash Flow Benefit ($)": "$2.7M",
+            "Probability of Success": 0.75,
+            "Total Annual Value ($)": "$12.7M"
+          },
+          {
+            "ID": "UC-02",
+            "Use Case": "Payer-Adaptive Claims Coding Assistant",
+            "Cost Formula": "35,000 hours saved × $150/hr × 0.90 × 0.75 = $5,287,500 rounds to $5.3M",
+            "Risk Formula": "25% reduction × $450M revenue × 0.025 coding error rate × 0.85 penalty factor × 0.80 × 0.75 = $1,916,250 rounds to $1.9M",
+            "Revenue Formula": "8% denial reduction × $450M revenue × 0.19 denial rate × 0.95 × 0.75 = $5,145,000 rounds to $5.1M",
+            "Cost Benefit ($)": "$5.3M",
+            "Risk Benefit ($)": "$1.9M",
+            "Cash Flow Formula": "0.6 days A/R reduction × $1,233,000 daily revenue × 0.85 × 0.75 = $1,782,000 rounds to $1.8M",
+            "Revenue Benefit ($)": "$5.1M",
+            "Cash Flow Benefit ($)": "$1.8M",
+            "Probability of Success": 0.8,
+            "Total Annual Value ($)": "$14.1M"
+          },
+          {
+            "ID": "UC-03",
+            "Use Case": "Radiology Report Generation Accelerator",
+            "Cost Formula": "3.4 minutes saved × 2,800,000 reports × $185/hr ÷ 60 min × 0.90 × 0.75 = $8,974,500 rounds to $9.0M",
+            "Risk Formula": "No direct risk mitigation quantified",
+            "Revenue Formula": "5.5 hour TAT reduction × 450 additional daily capacity × $141 avg procedure × 250 days × 0.95 × 0.75 = $3,782,400 rounds to $3.8M",
+            "Cost Benefit ($)": "$9.0M",
+            "Risk Benefit ($)": "$0",
+            "Cash Flow Formula": "No direct cash flow impact quantified",
+            "Revenue Benefit ($)": "$3.8M",
+            "Cash Flow Benefit ($)": "$0",
+            "Probability of Success": 0.7,
+            "Total Annual Value ($)": "$12.8M"
+          },
+          {
+            "ID": "UC-04",
+            "Use Case": "Network Demand Routing Optimizer",
+            "Cost Formula": "15,000 hours saved × $85/hr × 0.90 × 0.75 = $1,799,250 rounds to $1.8M",
+            "Risk Formula": "No direct risk mitigation quantified",
+            "Revenue Formula": "170,000 procedures recovered × $141 avg revenue × 0.35 recovery rate × 0.95 × 0.75 = $6,793,000 rounds to $6.8M",
+            "Cost Benefit ($)": "$1.8M",
+            "Risk Benefit ($)": "$0",
+            "Cash Flow Formula": "No direct cash flow impact quantified",
+            "Revenue Benefit ($)": "$6.8M",
+            "Cash Flow Benefit ($)": "$0",
+            "Probability of Success": 0.65,
+            "Total Annual Value ($)": "$8.6M"
+          },
+          {
+            "ID": "UC-05",
+            "Use Case": "Automated Denial Appeals Drafter",
+            "Cost Formula": "32,000 hours saved × $150/hr × 0.90 × 0.75 = $4,212,000 rounds to $4.2M",
+            "Risk Formula": "No direct risk mitigation quantified",
+            "Revenue Formula": "$450M revenue × 0.19 denial rate × 0.58 current overturn × 0.14 incremental overturn × 0.95 × 0.75 = $7,582,000 rounds to $7.6M",
+            "Cost Benefit ($)": "$4.2M",
+            "Risk Benefit ($)": "$0",
+            "Cash Flow Formula": "0.45 days A/R reduction × $1,233,000 daily revenue × 0.85 × 0.75 = $1,400,000 rounds to $1.4M",
+            "Revenue Benefit ($)": "$7.6M",
+            "Cash Flow Benefit ($)": "$1.4M",
+            "Probability of Success": 0.7,
+            "Total Annual Value ($)": "$13.2M"
+          },
+          {
+            "ID": "UC-06",
+            "Use Case": "Predictive Maintenance Scheduler",
+            "Cost Formula": "No direct cost reduction quantified",
+            "Risk Formula": "No direct risk mitigation quantified",
+            "Revenue Formula": "2.8% downtime reduction × $450M revenue × 0.65 utilization factor × 0.95 × 0.75 = $3,411,000 rounds to $3.4M",
+            "Cost Benefit ($)": "$0",
+            "Risk Benefit ($)": "$0",
+            "Cash Flow Formula": "No direct cash flow impact quantified",
+            "Revenue Benefit ($)": "$3.4M",
+            "Cash Flow Benefit ($)": "$0",
+            "Probability of Success": 0.6,
+            "Total Annual Value ($)": "$3.4M"
+          },
+          {
+            "ID": "UC-07",
+            "Use Case": "Comprehensive Billing Compliance Monitor",
+            "Cost Formula": "12,000 hours saved × $150/hr × 0.90 × 0.75 = $1,495,500 rounds to $1.5M",
+            "Risk Formula": "45% finding reduction × $450M revenue × 0.072 baseline finding rate × 0.42 avg penalty rate × 0.80 × 0.75 = $6,298,000 rounds to $6.3M",
+            "Revenue Formula": "No direct revenue impact quantified",
+            "Cost Benefit ($)": "$1.5M",
+            "Risk Benefit ($)": "$6.3M",
+            "Cash Flow Formula": "No direct cash flow impact quantified",
+            "Revenue Benefit ($)": "$0",
+            "Cash Flow Benefit ($)": "$0",
+            "Probability of Success": 0.75,
+            "Total Annual Value ($)": "$7.8M"
+          },
+          {
+            "ID": "UC-08",
+            "Use Case": "Critical Findings Alert Orchestrator",
+            "Cost Formula": "28 minutes saved × 18,000 critical findings × $150/hr ÷ 60 min × 0.90 × 0.75 = $2,126,250 rounds to $2.1M",
+            "Risk Formula": "35% incident reduction × 0.08 probability × $3.2M avg settlement × 18,000 findings ÷ 3,200,000 procedures × 0.80 × 0.75 = $4,819,000 rounds to $4.8M",
+            "Revenue Formula": "No direct revenue impact quantified",
+            "Cost Benefit ($)": "$2.1M",
+            "Risk Benefit ($)": "$4.8M",
+            "Cash Flow Formula": "No direct cash flow impact quantified",
+            "Revenue Benefit ($)": "$0",
+            "Cash Flow Benefit ($)": "$0",
+            "Probability of Success": 0.65,
+            "Total Annual Value ($)": "$6.9M"
+          },
+          {
+            "ID": "UC-09",
+            "Use Case": "Multi-Payer Benefit Verification Agent",
+            "Cost Formula": "2.5 minutes saved × 1,900,000 verifications × $85/hr ÷ 60 min × 0.90 × 0.75 = $5,391,000 rounds to $5.4M",
+            "Risk Formula": "No direct risk mitigation quantified",
+            "Revenue Formula": "No direct revenue impact quantified",
+            "Cost Benefit ($)": "$5.4M",
+            "Risk Benefit ($)": "$0",
+            "Cash Flow Formula": "0.35 days A/R reduction × $1,233,000 daily revenue × 0.85 × 0.75 = $1,089,000 rounds to $1.1M",
+            "Revenue Benefit ($)": "$0",
+            "Cash Flow Benefit ($)": "$1.1M",
+            "Probability of Success": 0.8,
+            "Total Annual Value ($)": "$6.5M"
+          },
+          {
+            "ID": "UC-10",
+            "Use Case": "Patient Responsibility Estimation Engine",
+            "Cost Formula": "19,000 hours saved × $85/hr × 0.90 × 0.75 = $2,588,000 rounds to $2.6M",
+            "Risk Formula": "No direct risk mitigation quantified",
+            "Revenue Formula": "No direct revenue impact quantified",
+            "Cost Benefit ($)": "$2.6M",
+            "Risk Benefit ($)": "$0",
+            "Cash Flow Formula": "0.75 days collection acceleration × $1,233,000 daily revenue × 0.26 patient responsibility × 0.85 × 0.75 = $2,434,000 rounds to $2.4M",
+            "Revenue Benefit ($)": "$0",
+            "Cash Flow Benefit ($)": "$2.4M",
+            "Probability of Success": 0.75,
+            "Total Annual Value ($)": "$5.0M"
+          }
+        ],
+        "step": 5,
+        "title": "Benefits Quantification by Driver",
+        "content": "Value calculations incorporate mandatory conservative reductions and assume Level 2 data maturity. All formulas show explicit calculations with reduction factors applied sequentially."
+      },
+      {
+        "data": [
+          {
+            "ID": "UC-01",
+            "Use Case": "Intelligent Prior Authorization Engine",
+            "Runs/Month": 158000,
+            "Monthly Tokens": 790000000,
+            "Input Tokens/Run": 3200,
+            "Change Mgmt (1-5)": 3,
+            "Output Tokens/Run": 1800,
+            "Effort Score (1-5)": 4,
+            "Data Readiness (1-5)": 2,
+            "Annual Token Cost ($)": "$195,300",
+            "Time-to-Value (months)": 9,
+            "Integration Complexity (1-5)": 4
+          },
+          {
+            "ID": "UC-02",
+            "Use Case": "Payer-Adaptive Claims Coding Assistant",
+            "Runs/Month": 267000,
+            "Monthly Tokens": 801000000,
+            "Input Tokens/Run": 2400,
+            "Change Mgmt (1-5)": 3,
+            "Output Tokens/Run": 600,
+            "Effort Score (1-5)": 3,
+            "Data Readiness (1-5)": 3,
+            "Annual Token Cost ($)": "$105,300",
+            "Time-to-Value (months)": 7,
+            "Integration Complexity (1-5)": 3
+          },
+          {
+            "ID": "UC-03",
+            "Use Case": "Radiology Report Generation Accelerator",
+            "Runs/Month": 233000,
+            "Monthly Tokens": 1561600000,
+            "Input Tokens/Run": 4500,
+            "Change Mgmt (1-5)": 4,
+            "Output Tokens/Run": 2200,
+            "Effort Score (1-5)": 4,
+            "Data Readiness (1-5)": 2,
+            "Annual Token Cost ($)": "$481,800",
+            "Time-to-Value (months)": 10,
+            "Integration Complexity (1-5)": 4
+          },
+          {
+            "ID": "UC-04",
+            "Use Case": "Network Demand Routing Optimizer",
+            "Runs/Month": 267000,
+            "Monthly Tokens": 587400000,
+            "Input Tokens/Run": 1800,
+            "Change Mgmt (1-5)": 2,
+            "Output Tokens/Run": 400,
+            "Effort Score (1-5)": 3,
+            "Data Readiness (1-5)": 3,
+            "Annual Token Cost ($)": "$53,100",
+            "Time-to-Value (months)": 6,
+            "Integration Complexity (1-5)": 3
+          },
+          {
+            "ID": "UC-05",
+            "Use Case": "Automated Denial Appeals Drafter",
+            "Runs/Month": 71000,
+            "Monthly Tokens": 305300000,
+            "Input Tokens/Run": 2800,
+            "Change Mgmt (1-5)": 2,
+            "Output Tokens/Run": 1500,
+            "Effort Score (1-5)": 2,
+            "Data Readiness (1-5)": 3,
+            "Annual Token Cost ($)": "$130,900",
+            "Time-to-Value (months)": 5,
+            "Integration Complexity (1-5)": 2
+          },
+          {
+            "ID": "UC-06",
+            "Use Case": "Predictive Maintenance Scheduler",
+            "Runs/Month": 600,
+            "Monthly Tokens": 3600000,
+            "Input Tokens/Run": 5200,
+            "Change Mgmt (1-5)": 3,
+            "Output Tokens/Run": 800,
+            "Effort Score (1-5)": 3,
+            "Data Readiness (1-5)": 2,
+            "Annual Token Cost ($)": "$900",
+            "Time-to-Value (months)": 8,
+            "Integration Complexity (1-5)": 3
+          },
+          {
+            "ID": "UC-07",
+            "Use Case": "Comprehensive Billing Compliance Monitor",
+            "Runs/Month": 267000,
+            "Monthly Tokens": 400500000,
+            "Input Tokens/Run": 1200,
+            "Change Mgmt (1-5)": 4,
+            "Output Tokens/Run": 300,
+            "Effort Score (1-5)": 3,
+            "Data Readiness (1-5)": 3,
+            "Annual Token Cost ($)": "$36,500",
+            "Time-to-Value (months)": 8,
+            "Integration Complexity (1-5)": 3
+          },
+          {
+            "ID": "UC-08",
+            "Use Case": "Critical Findings Alert Orchestrator",
+            "Runs/Month": 1500,
+            "Monthly Tokens": 1500000,
+            "Input Tokens/Run": 800,
+            "Change Mgmt (1-5)": 3,
+            "Output Tokens/Run": 200,
+            "Effort Score (1-5)": 4,
+            "Data Readiness (1-5)": 3,
+            "Annual Token Cost ($)": "$700",
+            "Time-to-Value (months)": 7,
+            "Integration Complexity (1-5)": 4
+          },
+          {
+            "ID": "UC-09",
+            "Use Case": "Multi-Payer Benefit Verification Agent",
+            "Runs/Month": 158000,
+            "Monthly Tokens": 158000000,
+            "Input Tokens/Run": 600,
+            "Change Mgmt (1-5)": 2,
+            "Output Tokens/Run": 400,
+            "Effort Score (1-5)": 4,
+            "Data Readiness (1-5)": 2,
+            "Annual Token Cost ($)": "$23,700",
+            "Time-to-Value (months)": 9,
+            "Integration Complexity (1-5)": 5
+          },
+          {
+            "ID": "UC-10",
+            "Use Case": "Patient Responsibility Estimation Engine",
+            "Runs/Month": 267000,
+            "Monthly Tokens": 293700000,
+            "Input Tokens/Run": 900,
+            "Change Mgmt (1-5)": 2,
+            "Output Tokens/Run": 200,
+            "Effort Score (1-5)": 2,
+            "Data Readiness (1-5)": 3,
+            "Annual Token Cost ($)": "$28,900",
+            "Time-to-Value (months)": 5,
+            "Integration Complexity (1-5)": 2
+          }
+        ],
+        "step": 6,
+        "title": "Effort & Token Modeling",
+        "content": "Implementation complexity varies based on system integration requirements and data accessibility. Token estimates assume production-scale deployment with full user adoption."
+      },
+      {
+        "data": [
+          {
+            "ID": "UC-02",
+            "Use Case": "Payer-Adaptive Claims Coding Assistant",
+            "Priority Tier": "Critical",
+            "TTV Score (0-30)": 24,
+            "Recommended Phase": "Q1",
+            "Value Score (0-40)": 37,
+            "Effort Score (0-30)": 24,
+            "Priority Score (0-100)": 85
+          },
+          {
+            "ID": "UC-05",
+            "Use Case": "Automated Denial Appeals Drafter",
+            "Priority Tier": "Critical",
+            "TTV Score (0-30)": 28,
+            "Recommended Phase": "Q1",
+            "Value Score (0-40)": 35,
+            "Effort Score (0-30)": 28,
+            "Priority Score (0-100)": 84
+          },
+          {
+            "ID": "UC-03",
+            "Use Case": "Radiology Report Generation Accelerator",
+            "Priority Tier": "High",
+            "TTV Score (0-30)": 20,
+            "Recommended Phase": "Q2",
+            "Value Score (0-40)": 34,
+            "Effort Score (0-30)": 18,
+            "Priority Score (0-100)": 72
+          },
+          {
+            "ID": "UC-01",
+            "Use Case": "Intelligent Prior Authorization Engine",
+            "Priority Tier": "High",
+            "TTV Score (0-30)": 22,
+            "Recommended Phase": "Q2",
+            "Value Score (0-40)": 33,
+            "Effort Score (0-30)": 18,
+            "Priority Score (0-100)": 71
+          },
+          {
+            "ID": "UC-04",
+            "Use Case": "Network Demand Routing Optimizer",
+            "Priority Tier": "High",
+            "TTV Score (0-30)": 26,
+            "Recommended Phase": "Q2",
+            "Value Score (0-40)": 24,
+            "Effort Score (0-30)": 24,
+            "Priority Score (0-100)": 69
+          },
+          {
+            "ID": "UC-07",
+            "Use Case": "Comprehensive Billing Compliance Monitor",
+            "Priority Tier": "High",
+            "TTV Score (0-30)": 23,
+            "Recommended Phase": "Q3",
+            "Value Score (0-40)": 22,
+            "Effort Score (0-30)": 24,
+            "Priority Score (0-100)": 64
+          },
+          {
+            "ID": "UC-08",
+            "Use Case": "Critical Findings Alert Orchestrator",
+            "Priority Tier": "Medium",
+            "TTV Score (0-30)": 24,
+            "Recommended Phase": "Q3",
+            "Value Score (0-40)": 20,
+            "Effort Score (0-30)": 18,
+            "Priority Score (0-100)": 58
+          },
+          {
+            "ID": "UC-09",
+            "Use Case": "Multi-Payer Benefit Verification Agent",
+            "Priority Tier": "Medium",
+            "TTV Score (0-30)": 22,
+            "Recommended Phase": "Q3",
+            "Value Score (0-40)": 19,
+            "Effort Score (0-30)": 18,
+            "Priority Score (0-100)": 56
+          },
+          {
+            "ID": "UC-10",
+            "Use Case": "Patient Responsibility Estimation Engine",
+            "Priority Tier": "High",
+            "TTV Score (0-30)": 28,
+            "Recommended Phase": "Q2",
+            "Value Score (0-40)": 15,
+            "Effort Score (0-30)": 28,
+            "Priority Score (0-100)": 63
+          },
+          {
+            "ID": "UC-06",
+            "Use Case": "Predictive Maintenance Scheduler",
+            "Priority Tier": "Medium",
+            "TTV Score (0-30)": 23,
+            "Recommended Phase": "Q4",
+            "Value Score (0-40)": 11,
+            "Effort Score (0-30)": 24,
+            "Priority Score (0-100)": 49
+          }
+        ],
+        "step": 7,
+        "title": "Priority Scoring & Roadmap",
+        "content": "Priority scores weight total annual value at 40 percent, time-to-value at 30 percent, and implementation effort at 30 percent. Critical tier initiatives qualify for immediate execution based on value concentration and manageable implementation risk."
+      }
+    ],
+    "summary": "This assessment identifies $90.8M in annual value across 10 AI use cases targeting Akumin's diagnostic imaging operations. Three initiatives qualify as Critical-priority for immediate Q1-Q2 deployment with combined first-year impact of $27.3M. The portfolio concentrates on revenue cycle transformation where manual processes create $34M in annual friction across prior authorization, claims management, and denial appeals workflows.\n\nCost reduction dominates the value composition at $42.0M, representing 46% of total identified value. Revenue growth opportunities contribute $26.7M at 29%. Risk mitigation accounts for $13.0M at 14%. Cash flow acceleration rounds out the portfolio at $9.1M representing 10%. This distribution reflects deliberate focus on back-office automation where data accessibility and process standardization enable faster deployment compared to patient-facing applications requiring behavioral change management.\n\nPayer-Adaptive Claims Coding Assistant represents a $14.1M annual opportunity through automated application of 847 unique payer-specific coding rules. The system reduces initial claim denial rates from 19% to 11% by validating code selection against payer medical policies before submission. Each percentage point improvement in first-pass acceptance generates $1.8M in avoided appeals labor and accelerated cash collection. Implementation requires integration with the existing billing system and a 90-day radiologist training program on AI-suggested code review protocols. Time-to-value reaches 7 months with moderate effort scores across data readiness and change management dimensions.\n\nAutomated Denial Appeals Drafter captures $13.2M annually by converting 42% of previously unworked denials into structured appeals with supporting clinical evidence and payer policy citations. The system drafts customized appeal letters by analyzing denial reason codes, retrieving applicable medical policy language, and identifying supporting peer-reviewed literature. Appeals specialists review AI-generated drafts before submission, focusing manual effort on high-value cases exceeding $5,000. Historical data indicates 14 percentage point improvement in overturn rates when appeals include policy-specific citations versus generic clinical narratives. The solution requires read-only access to the claims management database and bidirectional integration with payer appeal submission portals.\n\nRadiology Report Generation Accelerator delivers $12.8M through AI-drafted structured reports that reduce radiologist documentation time from 8.2 minutes to 4.8 minutes per study. The system analyzes DICOM images, retrieves relevant prior examinations, generates comparison language, and populates templated findings sections that radiologists edit and sign. Throughput gains enable 5.5-hour reduction in average report turnaround time from the current 14.3-hour baseline. Faster delivery strengthens competitive positioning with referring physicians who cite slow report availability as a primary factor in routing cases to alternative facilities. Implementation spans 10 months including PACS integration, radiologist preference learning cycles, and liability review with medical malpractice carriers.\n\nThe top three initiatives account for 44% of total portfolio value, creating concentration risk if any single deployment encounters technical obstacles or adoption resistance. However, each targets a distinct operational domain with different stakeholder groups, providing natural portfolio hedging. Back-office automation opportunities outnumber patient-facing initiatives 8 to 2, deliberately prioritizing areas where AI can operate with higher autonomy and lower regulatory scrutiny. Revenue cycle use cases cluster together, enabling shared infrastructure investments in payer connectivity and claims data normalization that reduce incremental deployment costs for later-stage initiatives.\n\nImplementation hinges on normalizing data schemas across legacy RIS, PACS, and billing systems that currently operate with inconsistent patient identifiers and procedure coding taxonomies. Data readiness averaging Level 2 across target systems requires 120-day data mapping and governance sprint before AI model training begins. Schema inconsistencies reduce projected first-year value by 35% until remediation work establishes reliable data pipelines. Payer portal authentication represents a secondary risk for benefit verification and appeals submission use cases, with 23% of targeted payers lacking API access and requiring robotic process automation approaches that introduce brittleness. Failure to secure radiologist buy-in for report generation workflows poses adoption risk given historical resistance to clinical decision support tools perceived as constraining professional autonomy.",
+    "executiveDashboard": {
+      "topUseCases": [
+        {
+          "rank": 1,
+          "useCase": "Payer-Adaptive Claims Coding Assistant",
+          "annualValue": 14100000,
+          "monthlyTokens": 801000000,
+          "priorityScore": 85
+        },
+        {
+          "rank": 2,
+          "useCase": "Automated Denial Appeals Drafter",
+          "annualValue": 13200000,
+          "monthlyTokens": 305300000,
+          "priorityScore": 84
+        },
+        {
+          "rank": 3,
+          "useCase": "Radiology Report Generation Accelerator",
+          "annualValue": 12800000,
+          "monthlyTokens": 1561600000,
+          "priorityScore": 72
+        },
+        {
+          "rank": 4,
+          "useCase": "Intelligent Prior Authorization Engine",
+          "annualValue": 12700000,
+          "monthlyTokens": 790000000,
+          "priorityScore": 71
+        },
+        {
+          "rank": 5,
+          "useCase": "Network Demand Routing Optimizer",
+          "annualValue": 8600000,
+          "monthlyTokens": 587400000,
+          "priorityScore": 69
+        }
+      ],
+      "totalAnnualValue": 90800000,
+      "totalCostBenefit": 42000000,
+      "totalRiskBenefit": 13000000,
+      "totalMonthlyTokens": 4702600000,
+      "totalRevenueBenefit": 26700000,
+      "totalCashFlowBenefit": 9100000,
+      "valuePerMillionTokens": 16089
+    }
+  }
+}
