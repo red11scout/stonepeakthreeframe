@@ -351,28 +351,28 @@ export const VALUE_READINESS_METHODOLOGY = {
   ],
   quadrants: [
     {
-      name: "Champions",
-      condition: "Value ≥ 7, Readiness ≥ 7",
-      action: "Full resources, 90-day implementation target",
-      color: "oklch(0.65 0.18 145)",
-    },
-    {
-      name: "Quick Wins",
-      condition: "Value < 7, Readiness ≥ 7",
-      action: "Fast implementation, accumulate learnings",
-      color: "oklch(0.60 0.18 250)",
-    },
-    {
       name: "Strategic",
       condition: "Value ≥ 7, Readiness < 7",
       action: "Invest in readiness enablers first",
       color: "oklch(0.60 0.15 300)",
     },
     {
+      name: "Champions",
+      condition: "Value ≥ 7, Readiness ≥ 7",
+      action: "Full resources, 90-day implementation target",
+      color: "oklch(0.65 0.18 145)",
+    },
+    {
       name: "Foundations",
       condition: "Value < 7, Readiness < 7",
       action: "Revisit after foundation work",
       color: "oklch(0.45 0.02 250)",
+    },
+    {
+      name: "Quick Wins",
+      condition: "Value < 7, Readiness ≥ 7",
+      action: "Fast implementation, accumulate learnings",
+      color: "oklch(0.60 0.18 250)",
     },
   ],
   keyInsights: [
